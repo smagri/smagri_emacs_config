@@ -263,10 +263,19 @@
 
 ;; this does not overwrite the existing hook, it appends to it, for emacs30.1.
 ;; turns on default program highlighting
+;;(add-hook 'python-mode-hook #'font-lock-mode)
+;; enable yas snippets in python mode, for emacs30.1
+;;(add-hook 'python-mode-hook #'yas-minor-mode)
+
+; auto enable python-mode when .py file detected
+;;(autoload 'python-mode "python-mode" "Python Mode." t)
+;;(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+;;(add-to-list 'interpreter-mode-alist '("python" . python-mode)
+;;)
 
 
 
-;; startup old look emacs/emacs20
+; startup old look emacs/emacs20
 (mouse-wheel-mode 1)
 (put 'upcase-region 'disabled nil)
 
@@ -364,17 +373,10 @@
 (add-hook 'ediff-quit-hook
           (lambda ()
             (remove-hook 'post-command-hook 'my-ediff-sync-scroll t)))
-;;
-;;
-;;
-;; END ediff setup
 
 
 
-;; Howto launch  meld from emacs,  it does  a diff between  two files.
-;; This works better than ediff so  use it instead, ediff doesn't seem
-;; to scroll files side by side properly.
-;;
+;; Howto launch meld from emacs
 ;;
 ;; M-x meld-files
 (defun meld-files (file1 file2)
@@ -401,7 +403,7 @@
   :config
   ;;  (setq company-idle-delay              0)
   (setq company-idle-delay              0) 
-  (setq	company-minimum-prefix-length   1)
+  (setq	company-minimum-prefix-length   3)
   (setq	company-show-numbers            t)
   (setq	company-tooltip-show            t)
   (setq	company-tooltip-limit           50)
