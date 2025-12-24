@@ -1,0 +1,74 @@
+(setq c-mode-hook 'richards-c-mode-hook)
+
+;; And once again Stallman and FSF show their arrogance by making incompatible
+;; changes.
+(defun richards-c-mode-hook ()
+  "Set up desired indent style"
+  (interactive)
+  (setq c-basic-offset 2)
+;;  (setq c-auto-newline t) ;; put newline before & after { }, and after ; :
+			  ;; This only enables some features to be controlled
+			  ;; by other variables: see below
+  (setq c-hanging-braces-alist
+   '( (brace-list-open)
+      (brace-list-close)
+;      (substatement-open before after)  ;; supposedly the default
+;      (block-close . c-snug-do-while)   ;; supposedly the default
+    )
+  )
+  (setq c-hanging-colons-alist
+   '( (case-label after)
+    )
+  )
+  (c-set-offset 'substatement-open 0 t)
+  (c-set-offset 'statement-case-intro 2 t)
+  (c-set-offset 'case-label 2 t)
+  (c-set-offset 'statement-case-open 2 t)
+  (setq c-comment-only-line-offset 0)
+
+  "setup custom colours - smagri"
+  (hilit-rehighlight-buffer 't)
+  (load-file "~/.custom_c-mode_colors.home")
+
+)
+
+
+(setq vm-summary-mode-hook 'sm-vm-summary-customisations)
+
+(defun sm-vm-summary-customisations ()
+  "setup custom colours"
+  (interactive)
+  (hilit-rehighlight-buffer 't)
+  (load-file "~/.custom_vm_colors.vm-summary-mode.home")
+)
+
+(setq vm-mode-hook 'sm-vm-customisations)
+
+(defun sm-vm-customisations ()
+  "setup custom colours"
+  (interactive)
+; firstly we must activate buffer faces
+  (hilit-rehighlight-buffer 't)
+  (load-file "~/.custom_vm_colors.vm-mode.home")
+)
+
+
+(setq gnus-summary-mode-hook 'sm-gnus-summary-customisations)
+
+(defun sm-gnus-summary-customisations ()
+  "setup custom colours"
+  (interactive)
+
+  (hilit-rehighlight-buffer 't)
+  (load-file "~/.custom_gnus_colors.gnus-summary-mode.home")
+)
+
+(setq gnus-article-mode-hook 'sm-gnus-article-customisations)
+
+(defun sm-gnus-article-customisations ()
+  "setup custom colours"
+  (interactive)
+
+  (hilit-rehighlight-buffer 't)
+  (load-file "~/.custom_gnus_colors.gnus-article-mode.home")
+)

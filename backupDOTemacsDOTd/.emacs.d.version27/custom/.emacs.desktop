@@ -1,0 +1,43 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Feb 19 23:29:36 2021
+;; Desktop file format version 208
+;; Emacs version 27.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24623 44848 434874 748000) (desktop . "208") "smagri@luqa" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-normal-normal-normal-*-27-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (height . 61) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (sticky) (environment) (modeline . t) (unsplittable) (tty-color-mode . 8) (frameset--id . "9A66-ED02-6471-AE14") (frameset--mini t . t) (display . ":0") (last-focus-update . t) (icon-name) (explicit-name) (width . 231) (left . 3938) (top . 0)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 8) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 128) (min-pixel-width . 320) (min-pixel-height-ignore . 96) (min-pixel-width-ignore . 128) (min-pixel-height-safe . 32) (min-pixel-width-safe . 64)) hc (pixel-width . 3742) (pixel-height . 1932) (total-width . 234) (total-height . 60) (normal-height . 1.0) (normal-width . 1.0) (combination-limit . t) (leaf (pixel-width . 1902) (pixel-height . 1932) (total-width . 119) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5068493150684932) (buffer "Zombies.cs" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("Zombies.cs" 1 1) ("*scratch*" 1 145))) (leaf (last . t) (pixel-width . 1840) (pixel-height . 1932) (total-width . 115) (total-height . 60) (normal-height . 1.0) (normal-width . 0.4931506849315068) (buffer "PlayerMoveAnimate.cs" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("PlayerMoveAnimate.cs" 1 1) ("*scratch*" 1 145)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/smagri/games/unity3d/learn/mman.stages/codeStages/mman.zombies/scripts/Zombies.cs"
+  "Zombies.cs"
+  'csharp-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-ff-cache-mode helm-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24623 44752 610561 511000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/games/unity3d/learn/mman.stages/codeStages/mman.zombies/scripts/PlayerMoveAnimate.cs"
+  "PlayerMoveAnimate.cs"
+  'csharp-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-ff-cache-mode helm-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24623 44752 610561 812000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+

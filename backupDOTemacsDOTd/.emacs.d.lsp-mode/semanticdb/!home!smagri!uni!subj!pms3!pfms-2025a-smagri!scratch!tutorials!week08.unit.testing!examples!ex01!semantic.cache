@@ -1,0 +1,43 @@
+;; Object semanticdb-project-database-file-18ed016d475c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18ed016d475c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18ed01426160"
+      :major-mode c++-mode
+      :tags 
+        '( ("ackerman.h" include nil nil [1 22])
+            ("skidsteer.h" include nil nil [23 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("pfms_types.h" include nil nil [64 87])
+            ("iostream" include (:system-flag t) nil [88 107])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [109 127])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [128 144])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [145 161])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [172 181])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [182 195]))                  
+                :type "int")
+                nil [163 1101]))          
+      :file "main.cpp"
+      :pointmax 1102
+      :fsize 1101
+      :lastmodtime '(26616 40272 101816 88000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week08.unit.testing!examples!ex01!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

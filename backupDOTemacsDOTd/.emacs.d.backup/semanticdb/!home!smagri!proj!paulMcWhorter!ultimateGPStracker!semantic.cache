@@ -1,0 +1,364 @@
+;; Object semanticdb-project-database-file-124e1fb2d664
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-124e1fb2d664"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-124e1fb2da2c"
+      :major-mode python-mode
+      :tags 
+        '( ("machine" include nil nil [3371 3412])
+            ("time" include nil nil [3413 3424])
+            ("_thread" include nil nil [3425 3439])
+            ("ssd1306" include nil nil [3440 3471])
+            ("math" include nil nil [3472 3483])
+            ("sys" include nil nil [3484 3494])
+            ("os" include nil nil [3495 3504])
+            ("logging2pico" function nil nil [3570 6258])
+            ("radians2degrees" function (:arguments 
+              ( ("radians" variable nil (reparse-symbol function_parameters) [6281 6288]))              ) nil [6261 6495])
+            ("degrees2radians" function (:arguments 
+              ( ("decimalDegrees" variable nil (reparse-symbol function_parameters) [6518 6532]))              ) nil [6498 6814])
+            ("distanceBtw2PointsOnEarth" function (:arguments 
+              ( ("latitudeDecimalDegrees1" variable nil (reparse-symbol function_parameters) [6847 6870])
+                ("longitudeDecimalDegrees1" variable nil (reparse-symbol function_parameters) [6902 6926])
+                ("latitudeDecimalDegrees2" variable nil (reparse-symbol function_parameters) [6958 6981])
+                ("longitudeDecimalDegrees2" variable nil (reparse-symbol function_parameters) [7013 7037]))              ) nil [6817 8830])
+            ("headingBtw2PointsOnEarth" function (:arguments 
+              ( ("latitudeDecimalDegrees1" variable nil (reparse-symbol function_parameters) [8866 8889])
+                ("longitudeDecimalDegrees1" variable nil (reparse-symbol function_parameters) [8920 8944])
+                ("latitudeDecimalDegrees2" variable nil (reparse-symbol function_parameters) [8975 8998])
+                ("longitudeDecimalDegrees2" variable nil (reparse-symbol function_parameters) [9029 9053]))              ) nil [8837 10910])
+            ("firstSunday" function (:arguments 
+              ( ("year" variable nil (reparse-symbol function_parameters) [10930 10934])
+                ("month" variable nil (reparse-symbol function_parameters) [10936 10941]))              ) nil [10914 13264])
+            ("sydneyAutoCalcUTCoffset" function (:arguments 
+              ( ("year" variable nil (reparse-symbol function_parameters) [13295 13299])
+                ("month" variable nil (reparse-symbol function_parameters) [13301 13306])
+                ("day" variable nil (reparse-symbol function_parameters) [13308 13311])
+                ("hour" variable nil (reparse-symbol function_parameters) [13313 13317]))              ) nil [13267 14792])
+            ("yield_thread" function nil nil [14795 15006])
+            ("readGPSdata" function nil nil [15313 19454])
+            ("parseAndProcessGPSdata" function (:arguments 
+              ( ("NMEAmain" variable nil (reparse-symbol function_parameters) [19647 19655]))              ) nil [19620 24932])
+            ("displayOLED" function nil nil [27027 31206])
+            ("displayOLEDlogging" function (:arguments 
+              ( ("curLatitude" variable nil (reparse-symbol function_parameters) [31243 31254])
+                ("curLongitude" variable nil (reparse-symbol function_parameters) [31256 31268]))              ) nil [31220 31534])
+            ("displayOLEDterminateMain" function nil nil [31537 35090])
+            ("is_leap_year" function (:arguments 
+              ( ("year" variable nil (reparse-symbol function_parameters) [35135 35139]))              ) nil [35118 35758])
+            ("UTCtoLocalDateAndTime" function (:arguments 
+              ( ("utcTime" variable nil (reparse-symbol function_parameters) [35880 35887])
+                ("utcDate" variable nil (reparse-symbol function_parameters) [35889 35896]))              ) nil [35854 40062])
+            ("butOneIRQ" function (:arguments 
+              ( ("pin" variable nil (reparse-symbol function_parameters) [40079 40082]))              ) nil [40065 41487])
+            ("button2irq" function (:arguments 
+              ( ("pin" variable nil (reparse-symbol function_parameters) [41509 41512]))              ) nil [41494 43590])
+            ("main" function nil nil [43918 60047])
+            ("ackGPScommand" function nil nil [60053 63747])
+            ("main" code nil nil [63965 63971]))          
+      :file "ultimateGPStracker.py"
+      :pointmax 64190
+      :fsize 64305
+      :lastmodtime '(26863 9969 735280 218000)
+      :unmatched-syntax '((INDENT_BLOCK 6157 . 6220) (NEWLINE 6116 . 6117) (COLON 6115 . 6116) (TRY 4128 . 4131) (AS 6111 . 6113)))
+    (semanticdb-table "semanticdb-table-124e1fb2da04"
+      :major-mode python-mode
+      :tags 
+        '( ("micropython" include nil nil [60 89])
+            ("framebuf" include nil nil [90 105])
+            ("SET_CONTRAST" variable nil nil [131 157])
+            ("SET_ENTIRE_ON" variable nil nil [158 185])
+            ("SET_NORM_INV" variable nil nil [186 212])
+            ("SET_DISP" variable nil nil [213 235])
+            ("SET_MEM_ADDR" variable nil nil [236 262])
+            ("SET_COL_ADDR" variable nil nil [263 289])
+            ("SET_PAGE_ADDR" variable nil nil [290 317])
+            ("SET_DISP_START_LINE" variable nil nil [318 351])
+            ("SET_SEG_REMAP" variable nil nil [352 379])
+            ("SET_MUX_RATIO" variable nil nil [380 407])
+            ("SET_IREF_SELECT" variable nil nil [408 437])
+            ("SET_COM_OUT_DIR" variable nil nil [438 467])
+            ("SET_DISP_OFFSET" variable nil nil [468 497])
+            ("SET_COM_PIN_CFG" variable nil nil [498 527])
+            ("SET_DISP_CLK_DIV" variable nil nil [528 558])
+            ("SET_PRECHARGE" variable nil nil [559 586])
+            ("SET_VCOM_DESEL" variable nil nil [587 615])
+            ("SET_CHARGE_PUMP" variable nil nil [616 645])
+            ("SSD1306" type
+               (:superclasses ("framebuf")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [883 901])
+                            ("self" variable nil (reparse-symbol indented_block_body) [910 930])
+                            ("self" variable nil (reparse-symbol indented_block_body) [939 971])
+                            ("self" code nil (reparse-symbol indented_block_body) [980 1009])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1018 1066])
+                            ("super" code nil (reparse-symbol indented_block_body) [1075 1149])
+                            ("self" code nil (reparse-symbol indented_block_body) [1158 1177]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [839 843])
+                            ("width" variable nil (reparse-symbol function_parameters) [845 850])
+                            ("height" variable nil (reparse-symbol function_parameters) [852 858])
+                            ("external_vcc" variable nil (reparse-symbol function_parameters) [860 872]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [826 1178])
+                    ("init_display" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1200 1204]))                          )
+                        (reparse-symbol indented_block_body) [1183 2490])
+                    ("poweroff" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2508 2512]))                          )
+                        (reparse-symbol indented_block_body) [2495 2548])
+                    ("poweron" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2565 2569]))                          )
+                        (reparse-symbol indented_block_body) [2553 2612])
+                    ("contrast" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2630 2634])
+                            ("contrast" variable nil (reparse-symbol function_parameters) [2636 2644]))                          )
+                        (reparse-symbol indented_block_body) [2617 2717])
+                    ("invert" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2733 2737])
+                            ("invert" variable nil (reparse-symbol function_parameters) [2739 2745]))                          )
+                        (reparse-symbol indented_block_body) [2722 2800])
+                    ("rotate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2816 2820])
+                            ("rotate" variable nil (reparse-symbol function_parameters) [2822 2828]))                          )
+                        (reparse-symbol indented_block_body) [2805 2946])
+                    ("show" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2960 2964]))                          )
+                        (reparse-symbol indented_block_body) [2951 3428]))                  
+                :type "class")
+                nil [785 3428])
+            ("SSD1306_I2C" type
+               (:superclasses ("SSD1306")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3541 3555])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3564 3580])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3589 3613])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3622 3655])
+                            ("super" code nil (reparse-symbol indented_block_body) [3680 3725]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3475 3479])
+                            ("width" variable nil (reparse-symbol function_parameters) [3481 3486])
+                            ("height" variable nil (reparse-symbol function_parameters) [3488 3494])
+                            ("i2c" variable nil (reparse-symbol function_parameters) [3496 3499])
+                            ("addr" variable nil (reparse-symbol function_parameters) [3501 3505])
+                            ("external_vcc" variable nil (reparse-symbol function_parameters) [3512 3524]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3462 3726])
+                    ("write_cmd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3745 3749])
+                            ("cmd" variable nil (reparse-symbol function_parameters) [3751 3754]))                          )
+                        (reparse-symbol indented_block_body) [3731 3875])
+                    ("write_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3895 3899])
+                            ("buf" variable nil (reparse-symbol function_parameters) [3901 3904]))                          )
+                        (reparse-symbol indented_block_body) [3880 3994]))                  
+                :type "class")
+                nil [3430 3994])
+            ("SSD1306_SPI" type
+               (:superclasses ("SSD1306")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" code nil (reparse-symbol indented_block_body) [4109 4137])
+                            ("dc" code nil (reparse-symbol indented_block_body) [4146 4170])
+                            ("res" code nil (reparse-symbol indented_block_body) [4179 4205])
+                            ("cs" code nil (reparse-symbol indented_block_body) [4214 4238])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4247 4261])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4270 4282])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4291 4305])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4314 4326])
+                            ("time" include nil (reparse-symbol indented_block_body) [4335 4346])
+                            ("self" code nil (reparse-symbol indented_block_body) [4356 4367])
+                            ("time" code nil (reparse-symbol indented_block_body) [4376 4392])
+                            ("self" code nil (reparse-symbol indented_block_body) [4401 4412])
+                            ("time" code nil (reparse-symbol indented_block_body) [4421 4438])
+                            ("self" code nil (reparse-symbol indented_block_body) [4447 4458])
+                            ("super" code nil (reparse-symbol indented_block_body) [4467 4512]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4041 4045])
+                            ("width" variable nil (reparse-symbol function_parameters) [4047 4052])
+                            ("height" variable nil (reparse-symbol function_parameters) [4054 4060])
+                            ("spi" variable nil (reparse-symbol function_parameters) [4062 4065])
+                            ("dc" variable nil (reparse-symbol function_parameters) [4067 4069])
+                            ("res" variable nil (reparse-symbol function_parameters) [4071 4074])
+                            ("cs" variable nil (reparse-symbol function_parameters) [4076 4078])
+                            ("external_vcc" variable nil (reparse-symbol function_parameters) [4080 4092]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4028 4513])
+                    ("write_cmd" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4532 4536])
+                            ("cmd" variable nil (reparse-symbol function_parameters) [4538 4541]))                          )
+                        (reparse-symbol indented_block_body) [4518 4724])
+                    ("write_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4744 4748])
+                            ("buf" variable nil (reparse-symbol function_parameters) [4750 4753]))                          )
+                        (reparse-symbol indented_block_body) [4729 4923]))                  
+                :type "class")
+                nil [3996 4923]))          
+      :file "ssd1306.py"
+      :pointmax 4923
+      :fsize 4922
+      :lastmodtime '(26769 44488 593212 978000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-124e1fb2d61c"
+      :major-mode python-mode
+      :tags 
+        '( ("machine" include nil nil [3371 3412])
+            ("time" include nil nil [3413 3424])
+            ("_thread" include nil nil [3425 3439])
+            ("ssd1306" include nil nil [3440 3471])
+            ("math" include nil nil [3472 3483])
+            ("sys" include nil nil [3484 3494])
+            ("os" include nil nil [3495 3504])
+            ("logging2pico" function nil nil [3570 6258])
+            ("radians2degrees" function (:arguments 
+              ( ("radians" variable nil (reparse-symbol function_parameters) [6281 6288]))              ) nil [6261 6495])
+            ("degrees2radians" function (:arguments 
+              ( ("decimalDegrees" variable nil (reparse-symbol function_parameters) [6518 6532]))              ) nil [6498 6814])
+            ("distanceBtw2PointsOnEarth" function (:arguments 
+              ( ("latitudeDecimalDegrees1" variable nil (reparse-symbol function_parameters) [6847 6870])
+                ("longitudeDecimalDegrees1" variable nil (reparse-symbol function_parameters) [6902 6926])
+                ("latitudeDecimalDegrees2" variable nil (reparse-symbol function_parameters) [6958 6981])
+                ("longitudeDecimalDegrees2" variable nil (reparse-symbol function_parameters) [7013 7037]))              ) nil [6817 8830])
+            ("headingBtw2PointsOnEarth" function (:arguments 
+              ( ("latitudeDecimalDegrees1" variable nil (reparse-symbol function_parameters) [8866 8889])
+                ("longitudeDecimalDegrees1" variable nil (reparse-symbol function_parameters) [8920 8944])
+                ("latitudeDecimalDegrees2" variable nil (reparse-symbol function_parameters) [8975 8998])
+                ("longitudeDecimalDegrees2" variable nil (reparse-symbol function_parameters) [9029 9053]))              ) nil [8837 10910])
+            ("firstSunday" function (:arguments 
+              ( ("year" variable nil (reparse-symbol function_parameters) [10930 10934])
+                ("month" variable nil (reparse-symbol function_parameters) [10936 10941]))              ) nil [10914 13264])
+            ("sydneyAutoCalcUTCoffset" function (:arguments 
+              ( ("year" variable nil (reparse-symbol function_parameters) [13295 13299])
+                ("month" variable nil (reparse-symbol function_parameters) [13301 13306])
+                ("day" variable nil (reparse-symbol function_parameters) [13308 13311])
+                ("hour" variable nil (reparse-symbol function_parameters) [13313 13317]))              ) nil [13267 14792])
+            ("yield_thread" function nil nil [14795 15006])
+            ("readGPSdata" function nil nil [15313 19454])
+            ("parseAndProcessGPSdata" function (:arguments 
+              ( ("NMEAmain" variable nil (reparse-symbol function_parameters) [19647 19655]))              ) nil [19620 24932])
+            ("displayOLED" function nil nil [27027 31206])
+            ("displayOLEDlogging" function (:arguments 
+              ( ("curLatitude" variable nil (reparse-symbol function_parameters) [31243 31254])
+                ("curLongitude" variable nil (reparse-symbol function_parameters) [31256 31268]))              ) nil [31220 31534])
+            ("displayOLEDterminateMain" function nil nil [31537 35090])
+            ("is_leap_year" function (:arguments 
+              ( ("year" variable nil (reparse-symbol function_parameters) [35135 35139]))              ) nil [35118 35758])
+            ("UTCtoLocalDateAndTime" function (:arguments 
+              ( ("utcTime" variable nil (reparse-symbol function_parameters) [35880 35887])
+                ("utcDate" variable nil (reparse-symbol function_parameters) [35889 35896]))              ) nil [35854 40062])
+            ("butOneIRQ" function (:arguments 
+              ( ("pin" variable nil (reparse-symbol function_parameters) [40079 40082]))              ) nil [40065 41487])
+            ("button2irq" function (:arguments 
+              ( ("pin" variable nil (reparse-symbol function_parameters) [41509 41512]))              ) nil [41494 43590])
+            ("main" function nil nil [43918 60047])
+            ("ackGPScommand" function nil nil [60053 63747])
+            ("main" code nil nil [63965 63971]))          
+      :file "main.py"
+      :pointmax 64190
+      :fsize 64305
+      :lastmodtime '(26863 9969 735280 218000)
+      :unmatched-syntax '((INDENT_BLOCK 6157 . 6220) (NEWLINE 6116 . 6117) (COLON 6115 . 6116) (TRY 4128 . 4131) (AS 6111 . 6113)))
+
+    (semanticdb-table "semanticdb-table-124e1fb2d64c"
+      :major-mode python-mode
+      :tags 
+        '( ("serial" include nil nil [1238 1251])
+            ("time" include nil nil [1252 1263])
+            ("sys" include nil nil [1264 1274])
+            ("busy_wait_us" function (:arguments 
+              ( ("us" variable nil (reparse-symbol function_parameters) [1294 1296]))              ) nil [1277 1690])
+            ("serialPort" variable nil nil [1697 1723])
+            ("baudRate" variable nil nil [1724 1741])
+            ("serialObj" code nil nil [2815 2868])
+            ("serialObj" code nil nil [2869 2923])
+            ("while" code nil nil [2924 3150])
+            ("serialObj" code nil nil [4581 4654])
+            ("busy_wait_us" code nil nil [4655 4670])
+            ("picoCmdResultLine" variable nil nil [5025 5089])
+            ("busy_wait_us" code nil nil [5165 5180])
+            ("with" code nil nil [5447 7977])
+            ("serialObj" code nil nil [8011 8057])
+            ("busy_wait_us" code nil nil [8058 8073])
+            ("serialObj" code nil nil [8116 8159])
+            ("while" code nil nil [8160 8375])
+            ("serialObj" code nil nil [8436 8453])
+            ("busy_wait_us" code nil nil [8454 8469])
+            ("kml_waypoints" variable nil nil [8694 8712])
+            ("kml_waypoints_path" variable nil nil [8713 8736])
+            ("cvs_file" variable nil nil [8737 8781])
+            ("with" code nil nil [8783 10604])
+            ("\"\"\"<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<kml xmlns=\"http://www.opengis.net/kml/2.2\">
+  <Document>
+    <name>Path from Pico</name>
+    <Style id=\"pointStyle\">
+      <IconStyle>
+        <Icon><href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+        <scale>1.0</scale>
+      </IconStyle>
+    </Style>
+    <Style id=\"lineStyle\">
+      <LineStyle><color>ff0000ff</color><width>3</width></LineStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#pointStyle</styleUrl>
+      <MultiGeometry>
+      {kml_waypoints}
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>Path</name>
+      <styleUrl>#lineStyle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>
+        {kml_waypoints_path}
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
+\"\"\"" code nil nil [12508 13409])
+            ("kml_file" variable nil nil [13411 13459])
+            ("with" code nil nil [13461 13562])
+            ("print" code nil nil [13627 13678]))          
+      :file "xferPicoLog2PCcsv2kml.py"
+      :pointmax 13784
+      :fsize 13799
+      :lastmodtime '(26874 45980 431263 920000)
+      :unmatched-syntax '((INDENT_BLOCK 2269 . 2310) (COLON 2267 . 2268) (TRY 2145 . 2148) (AS 2263 . 2265))))
+  :file "!home!smagri!proj!paulMcWhorter!ultimateGPStracker!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

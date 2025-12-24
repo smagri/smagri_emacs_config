@@ -1,0 +1,787 @@
+;;
+;; ***** should move this .emacs file to .emacs.d/init.el, preferred
+;; system these days ****
+;;
+;; ***** see:
+;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Init-File.html#Init-File
+;; https://www.gnu.org/software/emacs/manual/html_node/elisp/Init-File.html#Init-File
+
+
+;;Add the best selection of plugin packages for emacs, the MELPA
+;;repository.(emacs >=24.x.x).
+;;
+;; package.el plugin is required to be present first, this is
+;; installed by default in 25.2.2(or > 24.x.x).
+;;
+;; (use-package pkgName
+;;  :ensure t
+;;  :init     ;;execute code before a package is loaded
+;;  :config   ;;execute code after a package is loaded
+;;	;;configure package here...)
+;; will tell emacs to install a package if it hasn't already been
+;; installed.  It does this on demand, ie loads package only when you
+;; want to use it for the first time, instead of on startup which
+;; makes things slow
+;;
+;; You might also consider adding MELPA-stable and marmalade, but
+;; MELPA should be fine for most things.  If you prefer versions that
+;; have been tagged by their maintainers for release, you can use this
+;; instead:
+;;
+;; you use ‘M-x package-list-packages’ to install the packages
+;;
+(require 'package) ;; start package each time we run emacs
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/") t)
+;;(add-to-list 'package-archives
+;;             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+(package-initialize)
+
+
+
+;;From Linus's dot emacs file: http://home.thep.lu.se/~karlf/emacs.html#sec-17-5
+;;Fontify -------------------------------------
+;;Highlight columns longer than 80 lines
+(when (> (display-color-cells) 16)         ;if not in CLI
+  (add-hook 'prog-mode-hook
+            (lambda ()
+              (font-lock-add-keywords nil
+				      '(("^[^\n]\\{80\\}\\(.*\\)$"
+					 1 font-lock-warning-face t)))
+              (font-lock-add-keywords nil
+				      '(("\\<\\(FIXA\\|TEST\\|TODO\\|FIXME\\|BUG\\|NOTE\\)"
+					 1 font-lock-warning-face prepend)))
+              (font-lock-add-keywords nil
+				      '(("\\<\\(__FUNCTION__\\|__PRETTY_FUNCTION__\\|__LINE__\\)"
+					 1 font-lock-preprocessor-face prepend)))
+           )))
+
+
+;; puts an 's' character at the 80 character mark on a page at the top
+;; of the coding window
+;;
+(setq column-number-mode t)
+(setq-default header-line-format 
+              (list " " (make-string 82 ?-) "s"))
+
+; Default to text mode
+(setq default-major-mode 'text-mode)
+; By default I like to always auto-fill in text modes.
+(setq text-mode-hook 'turn-on-auto-fill)
+
+;; A list of the packages we always want
+(setq package-selected-packages
+      '(;; gnu packages
+	company
+	)
+      )
+
+
+
+;; Wrting code globals
+(which-function-mode t) ;; show function name in mode-line
+ 
+
+
+
+; Writing FORTRAN code
+;
+; recognise .F, .FOR extensions as fortran, .f and .for are defaults
+(setq auto-mode-alist (nconc '(("\\.F$" . fortran-mode)) 
+			     auto-mode-alist))
+(setq auto-mode-alist (nconc '(("\\.FOR$" . fortran-mode)) 
+
+			     auto-mode-alist))
+
+
+
+
+
+;
+; customise fortran-mode
+(setq fortran-blink-matching-if 't)
+;(setq fortran-comment-indent-char "c")
+(setq fortran-continuation-string "*")
+(setq fortran-comment-region "c")
+(setq fortran-do-indent 2)
+(setq fortran-if-indent 2)
+(setq fill-column 72) 
+(setq fortran-mode-hook 'turn-on-auto-fill)
+
+
+; Writing C code
+(setq c-mode-hook 'simones-c-mode-hook)
+;
+;; And once again Stallman and FSF show their arrogance by making incompatible
+;; changes.
+(defun simones-c-mode-hook () ;; define a function
+  "Set up desired indent style"
+  (interactive)
+  (setq c-basic-offset 2)
+;;  (setq c-auto-newline t) ;; put newline before & after { }, and after ; :
+			  ;; This only enables some features to be controlled
+			  ;; by other variables: see below
+  (setq c-hanging-braces-alist
+   '( (brace-list-open)
+      (brace-list-close)
+;      (substatement-open before after)  ;; supposedly the default
+;      (block-close . c-snug-do-while)   ;; supposedly the default
+    )
+  )
+  (setq c-hanging-colons-alist
+   '( (case-label after)
+    )
+  )
+  (c-set-offset 'substatement-open 0 t)
+  (c-set-offset 'statement-case-intro 2 t)
+  (c-set-offset 'case-label 2 t)
+  (c-set-offset 'statement-case-open 2 t)
+  (setq c-comment-only-line-offset 0)
+
+  (c-toggle-comment-style -1)
+;
+; Setup custom colours for user smagri
+  ;;(load-file "~/.custom_c-mode_colors")
+  ;; Setup custom colours for user smagri
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+;;  (load-file "~/.custom_cpp-mode_colors")
+  (custom-set-faces
+   '(font-lock-variable-name-face ((((class color)) (:foreground "#FF4277"))))
+;;   '(font-lock-comment-face ((((class color)) (:foreground "#4E4E4E"))))
+   '(font-lock-comment-face ((((class color)) (:foreground "#04465D"))))
+   '(font-lock-type-face ((((class color)) (:foreground "plum"))))
+   ;;'(default ((t (:family "Liberation Mono" :foundry "1ASC" :slant normal :weight normal :height 90 :width normal))))
+   '(default ((t (:family "Liberation Mono" :foundry "1ASC" :background "#000015" :foreground "white" :slant normal :weight normal :height 100 :width normal) )) )
+;;   '(default ((t (:family "Liberation Mono-10" :foundry "1ASC" :background "#000015" :foreground "white" :slant normal :weight normal :height 90 :width normal) )) )
+
+   
+   ;;   '(default ((t (:family "Liberation Mono" :foundry "1ASC" :slant normal :weight normal :height 90 :width semi-condensed) )) )
+
+   )
+  
+  (setq mode-name "")
+  
+  )
+
+
+; Writing C++ code
+(setq c++-mode-hook 'simones-c++-mode-hook)
+(defun simones-c++-mode-hook () ;; define a function
+;;   "Set up desired indent style"
+   (interactive)
+   (setq c++-basic-offset 4)
+   (setq c-basic-offset 4)
+   (setq c++-hanging-braces-alist
+    '( (brace-list-open)
+       (brace-list-close)
+     )
+   )
+   (setq c++-hanging-colons-alist
+    '( (case-label after)
+     )
+   )
+   (c-set-offset 'substatement-open 0 t) ;;c++-set-offset ;; !wrks here
+   (c-set-offset 'statement-case-intro 4 t)
+   (c-set-offset 'case-label 4 t)
+   (c-set-offset 'statement-case-open 4 t)
+   (setq c-comment-only-line-offset 0)
+   (setq indent-tabs-mode nil) ;; disable using tabs for indentation, use spaces instead
+   (setq tab-width 4) ;; set the number of spaces for indentation, or tabs
+
+;; Setup custom colours for user smagri
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+;;  (load-file "~/.custom_cpp-mode_colors")
+  (custom-set-faces
+   '(font-lock-variable-name-face ((((class color)) (:foreground "#FF4277"))))
+;;   '(font-lock-comment-face ((((class color)) (:foreground "#4E4E4E"))))
+   '(font-lock-comment-face ((((class color)) (:foreground "#04465D"))))
+   '(font-lock-type-face ((((class color)) (:foreground "plum"))))
+   ;;'(default ((t (:family "Liberation Mono" :foundry "1ASC" :slant normal :weight normal :height 90 :width normal))))
+   '(default ((t (:family "Liberation Mono" :foundry "1ASC" :background "#000015" :foreground "white" :slant normal :weight normal :height 100 :width normal) )) )
+;;   '(default ((t (:family "Liberation Mono-10" :foundry "1ASC" :background "#000015" :foreground "white" :slant normal :weight normal :height 90 :width normal) )) )
+
+   
+   ;;   '(default ((t (:family "Liberation Mono" :foundry "1ASC" :slant normal :weight normal :height 90 :width semi-condensed) )) )
+
+   )
+
+  (setq mode-name "")
+  
+  )
+
+
+; To load specific .emacs for a particular environment
+(defun quick-load-work-dot_emacs-file ()
+  (interactive)
+  (load-file "~/.emacs")
+)
+
+(defun quick-load-work-NT-dot_emacs-file ()
+  (interactive)
+  (load-file "~/.emacs.NT")
+)
+
+(defun quick-load-home-dot_emacs-file ()
+  (interactive)
+  (load-file "~/.emacs.home")
+)
+
+
+;; Set the line number mode on by default.
+;;
+;;    (global-linum-mode 1) (add-hook 'term-mode-hook (lambda () (linum-mode -1)))
+
+;; python
+(add-hook 'python-mode-hook
+	  ; Setup custom colours for user smagri
+  ;;(load-file "~/.custom_c-mode_colors")
+  ;; Setup custom colours for user smagri
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+;;  (load-file "~/.custom_cpp-mode_colors")
+  (custom-set-faces
+   '(font-lock-variable-name-face ((((class color)) (:foreground "#FF4277"))))
+;;   '(font-lock-comment-face ((((class color)) (:foreground "#4E4E4E"))))
+   '(font-lock-comment-face ((((class color)) (:foreground "#04465D"))))
+   '(font-lock-type-face ((((class color)) (:foreground "plum"))))
+   '(default ((t (:family "Liberation Mono" :foundry "1ASC" :background "#000015" :foreground "white" :slant normal :weight normal :height 100 :width normal) )) )
+   )
+
+  (setq mode-name "")
+  
+  )
+
+
+; auto enable python-mode when .py file detected
+;;(autoload 'python-mode "python-mode" "Python Mode." t)
+ ;;(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+;;(add-to-list 'interpreter-mode-alist '("python" . python-mode)
+;;)
+
+
+
+; startup old look emacs/emacs20
+(mouse-wheel-mode 1)
+(put 'upcase-region 'disabled nil)
+
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ede-project-directories '("/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2"))
+ '(package-selected-packages
+   '(company irony json-mode helm-core diminish use-package vdiff diffview gnu-elpa gnu-elpa-keyring-update gnu-apl-mode spinner agda2-mode arduino-cli-mode helm-swoop helm projectile helm-gtags helm-projectile flycheck treemacs-evil auto-complete-c-headers yasnippet-classic-snippets yasnippet-snippets yasnippet company-arduino arduino-mode company-irony ivy)))
+
+
+;; toggle(?)/turn off line numbers.  to toggle M-x linum-mode in emacs
+;; <26.0.50.  in emacs  <26.0.50 line numbers are  enabled by default.
+;; Cant'  seem to  set  an  option here  to  disable  them by  default
+;; initially.
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Liberation Mono" :foundry "1ASC" :background "#000015" :foreground "white" :slant normal :weight normal :height 100 :width normal))))
+ '(font-lock-comment-face ((((class color)) (:foreground "#04465D"))))
+ '(font-lock-type-face ((((class color)) (:foreground "plum"))))
+ '(font-lock-variable-name-face ((((class color)) (:foreground "#FF4277")))))
+
+
+;; INTELLEGENT AUTO-COMPETE, uses company-mode with 'backend packages.
+;;
+;; starts these packages each time emacs starts
+(require 'use-package)
+(require 'company)
+
+
+;;
+;; CONFIGURING global-company-mode
+;; START:,
+(use-package company ;; install 'company' package
+  :diminish
+  :ensure t ;; install package if not already insalled
+  :init (global-company-mode 1)
+  :config
+  ;;  (setq company-idle-delay              0)
+  (setq company-idle-delay              0.3) 
+  (setq	company-minimum-prefix-length   3)
+  (setq	company-show-numbers            t)
+  (setq	company-tooltip-show            t)
+  (setq	company-tooltip-limit           50)
+;; (setq	company-dabbrev-downcase        nil)
+
+  
+;;
+  ;;  (setq	company-backends                '((company-irony company-gtags))
+  )
+;;
+;;
+;; Navigation the dropdown menu
+;; by default M-x n, M-x p for down and up the list
+;; C-g cancels completion
+;; TAB to inforce completion
+;; ENTER to select completion
+;; change to C-n, C-p
+;;
+;; changing meta n and p to control n and p
+;; Evaluate after company is loaded:
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "M-n") 0)
+  (define-key company-active-map (kbd "M-p") 0)
+  (define-key company-active-map (kbd "C-n") #'company-select-next)
+  (define-key company-active-map (kbd "C-p") #'company-select-previous))
+;;
+;; END:
+;; CONFIGURING global-company-mode
+
+
+
+;; company-mode CONFIG for C/C++, irony-mode is used as the backend.
+;;
+;; START:
+;;
+;; ACTIVATE company-irony BACKEND to company-mode
+;; (use-package company-irony
+;;   :diminish
+;;   :ensure t
+;;   :config
+;;   (require 'company)
+;;   ;; can setup DIFFERENT BACKENDS here for python, elisp, bash... completion,
+;;   ;; see his other videos
+;;   '(add-to-list 'company-backends 'company-irony)
+;;   )
+
+;; ENABLES comapany-mode for all buffers
+(add-hook 'after-init-hook 'global-company-mode)
+
+;; company-c-headers BACKEND to company-mode
+;;
+;; *** this does not appear to work, ie automatic determination of
+;; *** system includes ***
+;;
+;; (require 'ede)
+;; (defun ede-object-system-include-path ()
+;;   (when ede-object
+;;     (ede-system-include-path ede-object))
+;;   )
+;; (setq company-c-headers-path-system 'ede-object-system-include-path)
+;; (global-ede-mode t)???
+;; (global-ede-mode)???
+
+
+
+;; ;; company-c-headers BACKEND to company-mode
+;; ;;
+;; ;; ***** use: 'gcc -xc++ -E -v -' to detrmine your system header files *****
+;; ;;
+;; (require 'company-c-headers)
+;; (use-package company-c-headers
+;;   :diminish
+;;   :ensure t
+;;   :config
+;;   (add-to-list 'company-backends 'company-c-headers)
+;;   (add-to-list 'company-c-headers-path-system "/usr/include/c++/7")
+;;   (add-to-list 'company-c-headers-path-system "/usr/include/x86_64-linux-gnu/c++/7")
+;;   (add-to-list 'company-c-headers-path-system "/usr/include/c++/7/backward")
+;;   (add-to-list 'company-c-headers-path-system "/usr/lib/gcc/x86_64-linux-gnu/7/include")
+;;   (add-to-list 'company-c-headers-path-system "/usr/local/include/")
+;;   (add-to-list 'company-c-headers-path-system "/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed")
+;;   (add-to-list 'company-c-headers-path-system "/usr/include/x86_64-linux-gnu")
+;;   (add-to-list 'company-c-headers-path-system "/usr/include/")
+;;   )
+;; ;;  After that, you can complete local C++ header files with:
+;; ;; company-c-headers-path-user, you can also put this in .dir-locals.el
+;; ;;  .dir-locals.el.
+(use-package company-c-headers
+  :ensure t
+  :after company
+  :config
+  (add-to-list 'company-backends 'company-c-headers))
+
+(setq company-c-headers-path-system
+      '(
+        "/usr/include/c++/11"
+	"/usr/include/x86_64-linux-gnu/c++/11"
+	"/usr/include/c++/11/backward"
+	"/usr/lib/gcc/x86_64-linux-gnu/11/include"
+	"/usr/local/include"
+	"/usr/include/x86_64-linux-gnu"
+	"/usr/include"
+        ))
+
+
+;; ;; ACTIVATE company-irony-c-headers BACKEND to company-mode
+;; (require 'company-irony-c-headers)
+;; (use-package company-irony-c-headers
+;;   :diminish
+;;   :ensure t
+;;   :config
+;;   (require 'company)
+;;   (require 'company-irony)
+;;   '(add-to-list 'company-backends '(company-irony-c-headers company-irony))
+;;   )
+
+;; ;; ACTIVATE irony-mode and company-mode for C/C++
+;; (use-package irony
+;;   :diminish
+;;   :ensure t
+;;   :config
+;;   (add-hook 'c++-mode-hook 'irony-mode)
+;;   (add-hook 'c-mode-hook 'irony-mode)
+;;   ;;
+;;   ;; maybe needs these two lines to work for me, as it stopped working
+;;   ;; at some point
+;;   ;;
+;;   (add-hook 'simones-c++-mode-hook 'irony-mode)
+;;   (add-hook 'simones-c-mode-hook 'irony-mode)
+;; ;;  (add-hook 'objc-mode-hook 'irony-mode)
+;;   (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options))
+
+(with-eval-after-load 'company
+  (add-hook 'c++-mode-hook 'company-mode)
+  (add-hook 'c-mode-hook 'company-mode)
+  ;;  (add-hook 'objc-mode-hook 'company-mode)
+  ;;
+  ;; maybe needs these two lines to work for me, as it stopped working
+  ;; at some point
+  ;;
+  (add-hook 'simones-c++-mode-hook 'company-mode)
+  (add-hook 'simones-c-mode-hook 'company-mode)
+  )
+;; END:
+
+
+;; add yasnippet to modes, ie AUTO-COMPLETION of LANGUAGE PRIMATIVES
+;;
+;; type 'yas-describe-tables' to determine the snippets available in
+;; the current mode
+;;
+;; see@5:37min 4 this cleaner settup https://www.youtube.com/watch?v=4aYMa8f6B0o
+;;
+(require 'yasnippet) ;; starts yasnippet each time emacs starts
+(use-package yasnippet ;; install package
+  :diminish 
+  :ensure t ;; install package if not already installed
+  :config   ;; execute code after package is loaded
+  :init     ;; execute code before package is loaded
+  (yas-global-mode 1) ;; enables yasnippet in all modes
+  (use-package yasnippet-snippets  ;; package dependancy
+    :diminish
+    :ensure t
+    )
+  (yas-reload-all) ;; seems important when you write your own snippets
+
+  )
+
+
+
+;; Enable matching parentheses.  This means you do not need to type
+;; closing braces, quotes, etc.
+(electric-pair-mode 1)
+;;
+;; maybe this contains this mode when we are at eol only no elsewhere
+;; (defun electric-pair ()
+;;       "If at end of line, insert character pair without surrounding spaces.
+;;     Otherwise, just insert the typed character."
+;;       (interactive)
+;;       (if (eolp) (let (parens-require-spaces) (insert-pair)) (self-insert-command 1)))
+
+
+;; use company-mode in ALL BUFFERS
+;;;;;(add-hook 'after-init-hook 'global-company-mode)
+;; use company-mode in ALL BUFFERS
+
+
+;; permanently enable syntax checking, Flycheck needs GNU Emacs 24.3+
+;;
+;; If everything is green, Flycheck will now start to check the buffer on
+;; the fly while you are editing. Whenever you make a mistake that eslint
+;; or Pylint can  catch, Flycheck will highlight  the corresponding place
+;; in  the  buffer with  an  error  underline  whose color  reflects  the
+;; severity of the  issue. Additionally, Flycheck will put  a symbol into
+;; the fringe for affected lines and  show the total number of errors and
+;; and warnings in the buffer in the mode line.
+;;
+;; Navigate and list  errors: With C-c ! n  and C-c ! p you  can now jump
+;; back and forth  between erroneous places. If you keep  on such a place
+;; for a little while Flycheck  will show the corresponding error message
+;; in the each area.  Likewise, if you hover such a  place with the mouse
+;; cursor Flycheck will show the error message in a tooltip.
+;;
+;; Press C-c ! l to pop up a list of all errors buffer. This list
+;; follows the currently selected buffer. If the error list is
+;; selected you can type n and p to move up and down between errors
+;; and jump to their corresponding location in the buffer.
+;;
+;; Look in Menu on toolbar for more. Tools->Syntax Checking.
+;; The same menu also pops up when you click on the mode line lighter.
+;;
+;; warnings in the buffer in the mode line.
+(require 'flycheck) ;; starts flycheck each time emacs starts
+(use-package flycheck ;; defer loading of package untill you use it.
+  :diminish
+  :ensure t ;; install package if its not already installed.
+  :init	    ;; execute code before a package is loaded
+;;  :config   ;; execute code after a package is loaded	
+  (global-flycheck-mode)
+  )
+;; permanently enable syntax checking
+
+
+;; gdb IDE-like interface
+;;
+(setq
+;; use gdb-many-windows by default
+ gdb-many-windows t
+
+;; Non-nil means display source file containing the main routine at startup
+ gdb-show-main t
+ 
+ )
+;;
+;; sidebar/fringe of a buffer
+;;
+;; very useful for gdb/GUD debugging
+;;
+;; make both fringes 4 pixels wide
+;; (fringe-mode 4)
+;;
+;; ;; make the left fringe 4 pixels wide and the right disappear
+;; (fringe-mode '(4 . 0))
+;;
+;; ;; restore the default sizes == 8pixels,(rounded to multiple)
+;; (fringe-mode nil)
+(fringe-mode '(32 . 0))
+
+
+;; set titlebar to path/filename:
+;;
+;; sets filename with full path %f
+;; major mode type %m
+;; narrow if appropriate %n
+;; biffer name %b
+;;
+;; /lu1/smagri
+;; (when window-system
+;;   (setq-default frame-title-format '("%f [%m] %n"))
+;;   (setq frame-title-format '((:eval default-directory)))
+;;   )
+
+;; directories ~/
+;; filenames /lu1/smagri
+(setq frame-title-format
+      '(buffer-file-name "%f [%m] %n"
+			 (dired-directory dired-directory "%b")))
+
+;; emacs -nw
+;;
+(defun xterm-title-update ()
+  (interactive)
+  (send-string-to-terminal (concat "\033]1; " (buffer-name) "\007"))
+  (if buffer-file-name
+      (send-string-to-terminal (concat "\033]2; " (buffer-file-name) "\007"))
+    (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007")))
+)
+;;(add-hook 'post-command-hook 'xterm-title-update)
+
+
+;; desktop will load at startup the buffers you were editing when you
+;; last quit emacs.  Will also attempt to restor frames and sizes.
+;;
+;; https://www.emacswiki.org/emacs?action=browse;oldid=DeskTop;id=Desktop
+;;
+;;;;;(desktop-save-mode 1)
+;;
+;; best to use desktop-save and desktop-read manually as undesired results when
+;; you've just used emacs-nw in a terminal.
+
+
+
+;; enable/disable menubar, toolbar and scrollbar
+;;
+;;(customize-set-variable 'menu-bar-mode nil)
+(customize-set-variable 'menu-bar-mode t)
+(customize-set-variable 'tool-bar-mode t)
+;;;(customize-set-variable 'menu-bar-mode 1)
+;;;(customize-set-variable 'tool-bar-mode 1)
+;;(customize-set-variable 'scroll-bar-mode 'right)
+;;(customize-set-variable 'scroll-bar-mode -1)
+(scroll-bar-mode -1)
+
+;; (defun restore-menu-bar()
+;;   (interactive)
+;;   (if (fboundp 'scroll-bar-mode) (scroll-bar-mode 1))
+;;   (if (fboundp 'tool-bar-mode) (tool-bar-mode 1))
+;;   (if (fboundp 'menu-bar-mode) (menu-bar-mode 1)))
+;; (restore-menu-bar)
+
+
+;; use treemacs for IDE like file navigation and more, can inclue
+;; 'projectile' functionality as an option
+;;
+;; https://www.youtube.com/watch?v=Bu7nF9hPSts, 3min
+;;
+;; (use-package treemacs
+;;   :ensure t
+;;   :config
+;; )
+;; (define-key treemacs-mode-map [mouse-1] #'treemacs-single-click-expand-action)
+;;(require 'evil)
+;;(define-key treemacs-mode-map [mouse-3] #'treemacs-rightclick-menu)
+(use-package treemacs
+  :diminish
+  :ensure t
+  :defer t
+  :init
+  (with-eval-after-load 'winum
+    (define-key winum-keymap (kbd "M-0") #'treemacs-select-window))
+  :config
+  (progn
+    (setq treemacs-collapse-dirs                 (if treemacs-python-executable 3 0)
+          treemacs-deferred-git-apply-delay      0.5
+          treemacs-directory-name-transformer    #'identity
+          treemacs-display-in-side-window        t
+          treemacs-eldoc-display                 t
+          treemacs-file-event-delay              5000
+          treemacs-file-extension-regex          treemacs-last-period-regex-value
+          treemacs-file-follow-delay             0.2
+          treemacs-file-name-transformer         #'identity
+          treemacs-follow-after-init             t
+          treemacs-git-command-pipe              ""
+          treemacs-goto-tag-strategy             'refetch-index
+          treemacs-indentation                   2
+          treemacs-indentation-string            " "
+          treemacs-is-never-other-window         nil
+          treemacs-max-git-entries               5000
+          treemacs-missing-project-action        'ask
+          treemacs-move-forward-on-expand        nil
+          treemacs-no-png-images                 nil
+          treemacs-no-delete-other-windows       t
+	  treemacs-project-follow-cleanup        nil
+          treemacs-persist-file                  (expand-file-name ".cache/treemacs-persist" user-emacs-directory)
+          treemacs-position                      'left
+          treemacs-recenter-distance             0.1
+          treemacs-recenter-after-file-follow    nil
+          treemacs-recenter-after-tag-follow     nil
+          treemacs-recenter-after-project-jump   'always
+          treemacs-recenter-after-project-expand 'on-distance
+          treemacs-show-cursor                   nil
+          treemacs-show-hidden-files             t
+          treemacs-silent-filewatch              nil
+          treemacs-silent-refresh                nil
+          treemacs-sorting                       'alphabetic-asc
+          treemacs-space-between-root-nodes      t
+          treemacs-tag-follow-cleanup            t
+          treemacs-tag-follow-delay              1.5
+          treemacs-user-mode-line-format         nil
+          treemacs-user-header-line-format       nil
+          treemacs-width                         35
+          treemacs-workspace-switch-cleanup      nil)
+        ;; The default width and height of the icons is 22 pixels. If you are
+    ;; using a Hi-DPI display, uncomment this to double the icon size.
+    ;;(treemacs-resize-icons 44)
+    (treemacs-follow-mode t)
+    (treemacs-filewatch-mode t)
+    (treemacs-fringe-indicator-mode t)
+    (pcase (cons (not (null (executable-find "git")))
+                 (not (null treemacs-python-executable)))
+      (`(t . t)
+       (treemacs-git-mode 'deferred))
+      (`(t . _)
+       (treemacs-git-mode 'simple))))
+  :bind
+  (:map global-map
+        ("M-0"       . treemacs-select-window)
+        ("C-x t 1"   . treemacs-delete-other-windows)
+        ("C-x t t"   . treemacs)
+        ("C-x t B"   . treemacs-bookmark)
+        ("C-x t C-t" . treemacs-find-file)
+        ("C-x t M-t" . treemacs-find-tag)))
+
+
+;; package projectile
+;;
+;; most useful commands(but I think treemacs-helm combination makes
+;; this useless for finding the 'other' files). 'other' files are same
+;; name but different type, eg ranger.cpp to ranger.h
+;;
+;; projectile-find-other-file-other-window
+;; projectile-find-other-file-other-buffer
+;;
+;; (use-package projectile-mode-line
+;;   :init
+;;   (projectile-global-mode)
+;;   (setq projectile-enable-caching t))
+
+
+
+;; THIS conflicts with treemacs add project via menu ;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; cd ~/sftw/emacs/helm-gtags
+;; git clone https://github.com/tuhdo/emacs-c-ide-demo.git .emacs.d
+;; cd .emacs.d
+;; copy .emacs.d/filename to ~/.emacs.d/ as required
+;;
+;; OR
+;;
+;; treemacs-add-project-to-workspace (C-c C-p a)
+
+(add-to-list 'load-path "~/.emacs.d/custom")
+(require 'setup-helm)
+(require 'setup-helm-gtags)
+
+;; helm-gtags for python mode, all commands don't seem to work, like C-c g g
+;; use ctags instead for python mode.  You need to follow:
+;;https://blade6570.github.io/soumyatripathy/blog_gnuglobal/gnu_global.html
+;;https://www.spacemacs.org/layers/+tags/gtags/README.html
+;;    (add-hook 'python-mode-hook 'helm-gtags-mode)
+;; ie:
+;; sudo apt-get install global
+;; cp gtags.conf ~/.globalrc
+;; setenv GTAGSLABEL pygments, in .login
+;; MAY also need:
+;; exuberant ctags
+;; % gtags --gtagslabel=ctags
+
+;; # universal ctags
+;; % gtags --gtagslabel=new-ctags
+
+;;(provide 'setup-arduino-company)
+
+
+
+;; disable minor mode labels from modeline
+;;
+;; To diminish a major mode, (setq mode-name "whatever") in the mode hook.
+(require 'diminish)
+(diminish 'abbrev-mode "")
+;;(diminish 'l-mode "")
+(diminish 'yas-minor-mode)
+(diminish 'toggle-mode)
+
+
+;; Personal general key mappings, put here so other mode remappings
+;; get overridden, I don't like it when that happens.
+(global-set-key (kbd "\C-cg")   'goto-line)
+(global-set-key "\C-cwl"	'what-line)
+(global-set-key "\C-cfj"	'set-justification-full)
+(global-set-key	"\C-ci"		'indent-region)
+(global-set-key	"\C-cm"		'menu-bar-mode)
+(global-set-key	"\C-cc"		'comment-or-uncomment-region)
+(global-set-key	"\C-cpl"	'compile)
+(global-set-key	"\C-cds"	'desktop-save)
+(global-set-key	"\C-cdr"	'desktop-read)
+(global-set-key [f12] 'quick-load-home-dot_emacs-file)
+(global-set-key [f11] 'quick-load-work-dot_emacs-file)
+(global-set-key [f10] 'quick-load-work-NT-dot_emacs-file)
+

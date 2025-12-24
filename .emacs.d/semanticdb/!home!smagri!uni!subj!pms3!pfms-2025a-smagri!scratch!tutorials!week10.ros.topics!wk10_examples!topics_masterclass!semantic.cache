@@ -1,0 +1,14 @@
+;; Object semanticdb-project-database-file-1560dd7d7270
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1560dd7d7270"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1560dd7d728c"
+      :major-mode c++-mode
+      :tags nil
+      :file "sample.cpp"
+      :pointmax 1
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week10.ros.topics!wk10_examples!topics_masterclass!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

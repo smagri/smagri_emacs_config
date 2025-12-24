@@ -1,0 +1,797 @@
+;; Object semanticdb-project-database-file-18eb83fb6d00
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18eb83fb6d00"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18eb83fb6c80"
+      :major-mode c++-mode
+      :tags 
+        '( ("PFMS_TYPES_H" variable (:constant-flag t) nil [30 42])
+            ("vector" include (:system-flag t) nil [44 61])
+            ("pfms" type
+               (:members 
+                  ( ("commands" type
+                       (:members 
+                          ( ("Ackerman" type
+                               (:members 
+                                  ( ("seq" variable (:type "unsigned long") (reparse-symbol classsubparts) [143 161])
+                                    ("brake" variable (:type "double") (reparse-symbol classsubparts) [312 325])
+                                    ("steering" variable (:type "double") (reparse-symbol classsubparts) [366 382])
+                                    ("throttle" variable (:type "double") (reparse-symbol classsubparts) [429 445]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [114 478])
+                            ("Quadcopter" type
+                               (:members 
+                                  ( ("seq" variable (:type "unsigned long") (reparse-symbol classsubparts) [519 537])
+                                    ("turn_l_r" variable (:type "double") (reparse-symbol classsubparts) [688 704])
+                                    ("move_l_r" variable (:type "double") (reparse-symbol classsubparts) [769 785])
+                                    ("move_u_d" variable (:type "double") (reparse-symbol classsubparts) [853 869])
+                                    ("move_f_b" variable (:type "double") (reparse-symbol classsubparts) [932 948]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [488 1023])
+                            ("SkidSteer" type
+                               (:members 
+                                  ( ("seq" variable (:type "unsigned long") (reparse-symbol classsubparts) [1062 1080])
+                                    ("turn_l_r" variable (:type "double") (reparse-symbol classsubparts) [1231 1247])
+                                    ("move_f_b" variable (:type "double") (reparse-symbol classsubparts) [1312 1328]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1032 1403]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [85 1417])
+                    ("geometry_msgs" type
+                       (:members 
+                          ( ("Pose2D" type
+                               (:members 
+                                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [1484 1493])
+                                    ("y" variable (:type "double") (reparse-symbol classsubparts) [1528 1537])
+                                    ("theta" variable (:type "double") (reparse-symbol classsubparts) [1572 1585]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1457 1619])
+                            ("Point" type
+                               (:members 
+                                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [1655 1664])
+                                    ("y" variable (:type "double") (reparse-symbol classsubparts) [1699 1708])
+                                    ("z" variable (:type "double") (reparse-symbol classsubparts) [1743 1752]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1629 1784])
+                            ("Vector3" type
+                               (:members 
+                                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [1820 1829])
+                                    ("y" variable (:type "double") (reparse-symbol classsubparts) [1864 1873])
+                                    ("z" variable (:type "double") (reparse-symbol classsubparts) [1908 1917]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1794 1952])
+                            ("Quaternion" type
+                               (:members 
+                                  ( ("x" variable (:type "double") (reparse-symbol classsubparts) [1991 2000])
+                                    ("y" variable (:type "double") (reparse-symbol classsubparts) [2033 2042])
+                                    ("z" variable (:type "double") (reparse-symbol classsubparts) [2075 2084])
+                                    ("w" variable (:type "double") (reparse-symbol classsubparts) [2117 2126]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1962 2159])
+                            ("Goal" type
+                               (:members 
+                                  ( ("seq" variable (:type "unsigned long") (reparse-symbol classsubparts) [2194 2212])
+                                    ("point" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2225 2237]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2169 2248]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1423 2255])
+                    ("nav_msgs" type
+                       (:members 
+                          ( ("Odometry" type
+                               (:members 
+                                  ( ("time" variable (:type "double") (reparse-symbol classsubparts) [2318 2330])
+                                    ("position" variable (:type ("geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2481 2511])
+                                    ("yaw" variable (:type "double") (reparse-symbol classsubparts) [2544 2555])
+                                    ("linear" variable (:type ("geometry_msgs::Vector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2586 2616]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2289 2657]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2261 2663])
+                    ("sensor_msgs" type
+                       (:members 
+                          ( ("LaserScan" type
+                               (:members 
+                                  ( ("time" variable (:type "double") (reparse-symbol classsubparts) [2730 2742])
+                                    ("angle_min" variable (:type "double") (reparse-symbol classsubparts) [2893 2910])
+                                    ("angle_max" variable (:type "double") (reparse-symbol classsubparts) [2975 2992])
+                                    ("angle_increment" variable (:type "double") (reparse-symbol classsubparts) [3062 3085])
+                                    ("range_min" variable (:type "double") (reparse-symbol classsubparts) [3128 3145])
+                                    ("range_max" variable (:type "double") (reparse-symbol classsubparts) [3184 3201])
+                                    ("ranges" variable (:type ("std::vector" type
+                                         (:template-specifier 
+                                            ( ("float" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3240 3266]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2700 3362])
+                            ("Sonar" type
+                               (:members 
+                                  ( ("time" variable (:type "double") (reparse-symbol classsubparts) [3398 3410])
+                                    ("field_of_view" variable (:type "double") (reparse-symbol classsubparts) [3561 3582])
+                                    ("range_min" variable (:type "double") (reparse-symbol classsubparts) [3658 3675])
+                                    ("range_max" variable (:type "double") (reparse-symbol classsubparts) [3714 3731])
+                                    ("range" variable (:type "double") (reparse-symbol classsubparts) [3770 3783]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3372 3887]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2669 3893])
+                    ("PlatformType" type
+                       (:typedef ("" type
+                             (:members 
+                                ( ("ACKERMAN" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [3920 3929])
+                                  ("SKIDSTEER" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [3983 3993])
+                                  ("QUADCOPTER" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [4040 4051])
+                                  ("ACKERMAN_BLUE" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [4077 4091]))                                
+                              :type "enum")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3899 4173])
+                    ("PlatformStatus" type
+                       (:typedef ("" type
+                             (:members 
+                                ( ("IDLE" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [4223 4228])
+                                  ("RUNNING" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [4254 4262])
+                                  ("TAKEOFF" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [4296 4304])
+                                  ("LANDING" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [4340 4379]))                                
+                              :type "enum")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4202 4395])
+                    ("RangerType" type
+                       (:typedef ("" type
+                             (:members 
+                                ( ("POINT" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [4446 4452])
+                                  ("CONE" variable
+                                     (:constant-flag t
+                                      :type "int")
+                                      (reparse-symbol enumsubparts) [4492 4542]))                                
+                              :type "enum")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4425 4554]))                  
+                :type "namespace")
+                nil [63 4578]))          
+      :file "pfms_types.h"
+      :pointmax 4603
+      :fsize 4602
+      :lastmodtime '(26613 62765 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PFMS_TYPES_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-18eb83fb6ca0"
+      :major-mode c++-mode
+      :tags 
+        '( ("PFMSCONNECTOR_H" variable (:constant-flag t) nil [33 48])
+            ("string" include (:system-flag t) nil [49 66])
+            ("vector" include (:system-flag t) nil [67 84])
+            ("atomic" include (:system-flag t) nil [86 103])
+            ("mutex" include (:system-flag t) nil [104 120])
+            ("condition_variable" include (:system-flag t) nil [121 150])
+            ("thread" include (:system-flag t) nil [151 168])
+            ("chrono" include (:system-flag t) nil [169 186])
+            ("pfms_types.h" include nil nil [188 211])
+            ("rclcpp/rclcpp.hpp" include nil nil [246 274])
+            ("nav_msgs/msg/odometry.hpp" include nil nil [275 311])
+            ("sensor_msgs/msg/laser_scan.hpp" include nil nil [312 353])
+            ("sensor_msgs/msg/range.hpp" include nil nil [354 390])
+            ("visualization_msgs/msg/marker_array.hpp" include nil nil [391 441])
+            ("std_msgs/msg/float64.hpp" include nil nil [442 477])
+            ("std_msgs/msg/empty.hpp" include nil nil [478 511])
+            ("sstream" include (:system-flag t) nil [513 531])
+            ("chrono" include (:system-flag t) nil [592 609])
+            ("thread" include (:system-flag t) nil [610 627])
+            ("string" include (:system-flag t) nil [628 645])
+            ("std::string" using (:type ("std::string" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [685 703])
+            ("PfmsConnector" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [727 734])
+                    ("PfmsConnector" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("type" variable (:type ("pfms::PlatformType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1261 1285]))                          
+                        :type ("PfmsConnector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1247 1286])
+                    ("PfmsConnector" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1292 1309])
+                    ("send" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cmd" variable (:type ("pfms::commands::Ackerman" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1443 1472]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1433 1473])
+                    ("send" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cmd" variable (:type ("pfms::commands::Quadcopter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1614 1645]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1604 1646])
+                    ("send" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cmd" variable (:type ("pfms::commands::SkidSteer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1786 1816]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1776 1817])
+                    ("send" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("point" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1961 1994]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1951 1995])
+                    ("send" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("goal" variable (:type ("pfms::geometry_msgs::Goal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2242 2273]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2232 2274])
+                    ("send" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable (:type ("pfms::PlatformStatus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2461 2489]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2451 2490])
+                    ("read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("laserScan" variable
+                               (:reference 1
+                                :type ("pfms::sensor_msgs::LaserScan" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2772 2813]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2762 2814])
+                    ("read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("scan" variable
+                               (:reference 1
+                                :type ("pfms::sensor_msgs::Sonar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3125 3157]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3115 3158])
+                    ("read" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("odo" variable
+                               (:reference 1
+                                :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3523 3553]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3513 3554])
+                    ("private" label nil (reparse-symbol classsubparts) [3556 3564])
+                    ("readAckermanOdometry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3595 3625]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3569 3626])
+                    ("readSkidSteerOdometry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3658 3688]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3631 3689])
+                    ("readQuadcopterOdometry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3722 3752]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3694 3753])
+                    ("ackermanOdoCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("nav_msgs::msg::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3783 3818]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3758 3819])
+                    ("skidSteerOdoCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("nav_msgs::msg::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3850 3885]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3824 3886])
+                    ("quadcopterOdoCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("nav_msgs::msg::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3918 3953]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3891 3954])
+                    ("laserCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3978 4017]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3959 4018])
+                    ("sonarCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::msg::Range" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4042 4077]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4023 4078])
+                    ("spin" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4093 4098]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4083 4099])
+                    ("addMarker" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [4119 4128])
+                            ("y" variable (:type "double") (reparse-symbol arg-sub-list) [4129 4138])
+                            ("seq" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4139 4156]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4104 4157])
+                    ("quadcopterLand" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4182 4187]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4162 4188])
+                    ("quadcopterTakeOff" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4216 4221]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4193 4222])
+                    ("private" label nil (reparse-symbol classsubparts) [4224 4232])
+                    ("sync_details" type
+                       (:members 
+                          ( ("cv" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4267 4294])
+                            ("ready" variable (:type ("std::atomic" type
+                                 (:template-specifier 
+                                    ( ("bool" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4349 4373])
+                            ("mtx" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4431 4446]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [4238 4492])
+                    ("ackermanOdo_" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4498 4536])
+                    ("skidSteerOdo_" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4572 4611])
+                    ("quadcopterOdo_" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4647 4687])
+                    ("sonar_" variable (:type ("pfms::sensor_msgs::Sonar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4724 4756])
+                    ("laser_" variable (:type ("pfms::sensor_msgs::LaserScan" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4761 4797])
+                    ("threads_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::thread" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4802 4836])
+                    ("running_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4921 4948])
+                    ("ackermanOdoSub_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5013 5086])
+                    ("skidSteerOdoSub_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5091 5165])
+                    ("quadcopterOdoSub_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5170 5245])
+                    ("laserSub_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5250 5321])
+                    ("sonarSub_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5326 5393])
+                    ("ackermanOdoSync_" variable (:type ("sync_details" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5399 5429])
+                    ("skidSteerOdoSync_" variable (:type ("sync_details" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5434 5465])
+                    ("quadcopterOdoSync_" variable (:type ("sync_details" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5470 5502])
+                    ("sonarSync_" variable (:type ("sync_details" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5507 5531])
+                    ("laserSync_" variable (:type ("sync_details" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5536 5560])
+                    ("vizPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5566 5641])
+                    ("quadcopterCmdPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5646 5720])
+                    ("skidSteerCmdPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5725 5798])
+                    ("quadcopterTakeOffPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5803 5876])
+                    ("quadcopterLandPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5881 5951])
+                    ("throttlePub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5956 6022])
+                    ("brakePub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6027 6090])
+                    ("steeringPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6095 6161])
+                    ("pointPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6166 6232])
+                    ("node_" variable (:type ("rclcpp::Node::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6238 6268])
+                    ("marker_counter_" variable (:type "int") (reparse-symbol classsubparts) [6274 6294])
+                    ("seq_" variable (:type "unsigned int") (reparse-symbol classsubparts) [6299 6317])
+                    ("marker_array_" variable (:type ("visualization_msgs::msg::MarkerArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6322 6373])
+                    ("quadcopterFlying_" variable (:type "bool") (reparse-symbol classsubparts) [6383 6406])
+                    ("ugvSeq_" variable (:type "unsigned int") (reparse-symbol classsubparts) [6411 6432])
+                    ("timeout" variable (:type ("std::chrono::seconds" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6466 6495])
+                    ("connectionFailureCount_" variable (:type "int") (reparse-symbol classsubparts) [6500 6528])
+                    ("platformType_" variable (:type ("pfms::PlatformType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6534 6567]))                  
+                :type "class")
+                nil [705 6646]))          
+      :file "pfmsconnector.h"
+      :pointmax 6674
+      :fsize 6673
+      :lastmodtime '(26613 62765 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PFMSCONNECTOR_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-18eb83fb6cc0"
+      :major-mode c++-mode
+      :tags 
+        '( ("AUDI_H" variable (:constant-flag t) nil [24 30])
+            ("pfms_types.h" include nil nil [32 55])
+            ("Audi" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [506 513])
+                    ("Audi" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Audi" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [591 598])
+                    ("Audi" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [601 609])
+                    ("checkOriginToDestination" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("origin" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1337 1369])
+                            ("goal" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1370 1402])
+                            ("distance" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1436 1453])
+                            ("time" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1454 1467])
+                            ("estimatedGoalPose" variable
+                               (:reference 1
+                                :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1468 1512]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1307 1513])
+                    ("computeSteering" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("origin" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2013 2045])
+                            ("goal" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2046 2078])
+                            ("steering" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2101 2118])
+                            ("dist" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2118 2131]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1992 2132])
+                    ("private" label nil (reparse-symbol classsubparts) [2134 2142])
+                    ("type_" variable (:type ("pfms::PlatformType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2145 2170])
+                    ("steering_ratio_" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [2173 2202])
+                    ("lock_to_lock_revs_" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [2205 2237])
+                    ("max_steer_angle_" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [2240 2270])
+                    ("wheelbase_" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [2273 2297])
+                    ("max_break_torque_" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [2300 2331])
+                    ("steadyStateV_" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [2334 2361])
+                    ("deltaD_" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [2364 2385])
+                    ("prevD_" variable (:type "double") (reparse-symbol classsubparts) [2388 2402]))                  
+                :type "class")
+                nil [493 2406]))          
+      :file "audi.h"
+      :pointmax 2425
+      :fsize 2424
+      :lastmodtime '(26173 64285 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AUDI_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-18eb83fb6ce0"
+      :major-mode c++-mode
+      :tags 
+        '( ("PFMSHOG_H" variable (:constant-flag t) nil [27 36])
+            ("vector" include (:system-flag t) nil [38 55])
+            ("atomic" include (:system-flag t) nil [56 73])
+            ("mutex" include (:system-flag t) nil [74 90])
+            ("condition_variable" include (:system-flag t) nil [91 120])
+            ("thread" include (:system-flag t) nil [121 138])
+            ("string" include (:system-flag t) nil [139 156])
+            ("future" include (:system-flag t) nil [157 174])
+            ("pfms_types.h" include nil nil [176 199])
+            ("rclcpp/rclcpp.hpp" include nil nil [201 229])
+            ("nav_msgs/msg/odometry.hpp" include nil nil [230 266])
+            ("visualization_msgs/msg/marker_array.hpp" include nil nil [267 317])
+            ("gazebo_msgs/srv/set_entity_state.hpp" include nil nil [318 365])
+            ("rcl_interfaces/srv/get_parameters.hpp" include nil nil [366 414])
+            ("gazebo_msgs/srv/delete_entity.hpp" include nil nil [415 459])
+            ("gazebo_msgs/srv/spawn_entity.hpp" include nil nil [460 503])
+            ("std_srvs/srv/trigger.hpp" include nil nil [504 539])
+            ("geometry_msgs/msg/pose_array.hpp" include nil nil [540 583])
+            ("PfmsHog" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [601 608])
+                    ("PfmsHog" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("platform" variable (:type ("pfms::PlatformType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [621 649]))                          
+                        :type ("PfmsHog" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [613 650])
+                    ("PfmsHog" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("platform" variable (:type ("pfms::PlatformType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [663 691])
+                            ("debug" variable (:type "bool") (reparse-symbol arg-sub-list) [692 703]))                          
+                        :type ("PfmsHog" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [655 704])
+                    ("PfmsHog" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [709 720])
+                    ("mapServiceToPlatform" function
+                       (:arguments 
+                          ( ("platform" variable (:type ("pfms::PlatformType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [759 787]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [726 1207])
+                    ("mapModelNameToPlatform" function
+                       (:arguments 
+                          ( ("platform" variable (:type ("pfms::PlatformType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1248 1276]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1213 1749])
+                    ("teleport" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("odo" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2034 2063]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2020 2064])
+                    ("setGoal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("goal" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2427 2459]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2414 2460])
+                    ("setGoals" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("goals" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("pfms::geometry_msgs::Point" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2828 2874]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2814 2875])
+                    ("checkGoalsReached" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("distances" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3519 3550]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3496 3551])
+                    ("private" label nil (reparse-symbol classsubparts) [3905 3913])
+                    ("spin" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3928 3933]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3918 3934])
+                    ("produceMarkerList" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("goals" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("pfms::geometry_msgs::Point" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [4245 4291]))                          
+                        :type ("visualization_msgs::msg::MarkerArray" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4190 4292])
+                    ("private" label nil (reparse-symbol classsubparts) [4391 4399])
+                    ("sync_details" type
+                       (:members 
+                          ( ("cv" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4434 4461])
+                            ("ready" variable (:type ("std::atomic" type
+                                 (:template-specifier 
+                                    ( ("bool" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [4516 4540])
+                            ("mtx" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4598 4613]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [4405 4659])
+                    ("platform_" variable (:type ("pfms::PlatformType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4666 4695])
+                    ("node_" variable (:type ("rclcpp::Node::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4700 4730])
+                    ("client_" variable (:type ("rclcpp::Client::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4735 4803])
+                    ("clientParams_" variable (:type ("rclcpp::Client::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4808 4884])
+                    ("clientDelete_" variable (:type ("rclcpp::Client::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4889 4961])
+                    ("clientSpawn_" variable (:type ("rclcpp::Client::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4966 5036])
+                    ("clientGoals_" variable (:type ("rclcpp::Client::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5041 5104])
+                    ("clientState_" variable (:type ("rclcpp::Client::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5114 5187])
+                    ("response_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("future" variable (:type ("rclcpp::Client::SharedFuture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5216 5276]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5193 5277])
+                    ("responseParam_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("future" variable (:type ("rclcpp::Client::SharedFuture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5310 5382]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5282 5383])
+                    ("responseDelete_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("future" variable (:type ("rclcpp::Client::SharedFuture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5417 5485]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5388 5486])
+                    ("responseSpawn_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("future" variable (:type ("rclcpp::Client::SharedFuture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5519 5586]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5491 5587])
+                    ("responseState_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("future" variable (:type ("rclcpp::Client::SharedFuture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5620 5690]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5592 5691])
+                    ("service_done_" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5696 5723])
+                    ("debug_" variable (:type "bool") (reparse-symbol classsubparts) [5769 5781])
+                    ("vizPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5845 5920])
+                    ("uavCmdPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5925 5992])
+                    ("goalPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6030 6099])
+                    ("threads_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::thread" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6137 6171])
+                    ("running_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6256 6283])
+                    ("markerCount_" variable (:type "unsigned int") (reparse-symbol classsubparts) [6347 6373])
+                    ("goalSuccess_" variable (:type "bool") (reparse-symbol classsubparts) [6379 6397])
+                    ("distances_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6402 6433])
+                    ("checkedGoals_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6438 6470])
+                    ("serviceTeleport_done_" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6535 6570])
+                    ("paramDone_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6615 6645])
+                    ("serviceDelete_done_" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6655 6688])
+                    ("deleteDone_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6733 6764])
+                    ("serviceSpawn_done_" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6770 6802])
+                    ("spawnDone_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6847 6877])
+                    ("serviceState_done_" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6883 6915])
+                    ("stateDone_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6960 6990])
+                    ("robotDescription_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6996 7026]))                  
+                :type "class")
+                nil [585 7030]))          
+      :file "pfmshog.h"
+      :pointmax 7052
+      :fsize 7051
+      :lastmodtime '(26613 62765 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PFMSHOG_H")
+          )
+))
+  :file "!usr!local!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

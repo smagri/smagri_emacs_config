@@ -1,0 +1,245 @@
+;; Object semanticdb-project-database-file-18c5b60a2558
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18c5b60a2558"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18c5b60a2574"
+      :major-mode c++-mode
+      :tags 
+        '( ("functional" include (:system-flag t) nil [616 637])
+            ("memory" include (:system-flag t) nil [638 655])
+            ("rclcpp/rclcpp.hpp" include nil nil [657 685])
+            ("std_msgs/msg/string.hpp" include nil nil [686 720])
+            ("visualization_msgs/msg/marker_array.hpp" include nil nil [721 771])
+            ("string" include (:system-flag t) nil [772 789])
+            ("sstream" include (:system-flag t) nil [790 808])
+            ("chrono" include (:system-flag t) nil [809 826])
+            ("std::placeholders::_1" using (:type ("std::placeholders::_1" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [828 856])
+            ("std::chrono_literals" using (:type ("std::chrono_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [857 894])
+            ("MinimalSubscriber" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [944 951])
+                    ("MinimalSubscriber" function
+                       (:constructor-flag t
+                        :type ("MinimalSubscriber" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [954 1616])
+                    ("private" label nil (reparse-symbol classsubparts) [1618 1626])
+                    ("topic_callback" function
+                       (:arguments 
+                          ( ("msg" variable
+                               (:constant-flag t
+                                :type ("std_msgs::msg::String::UniquePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1649 1692]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1629 2039])
+                    ("send" function
+                       (:arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2053 2058]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2043 4064])
+                    ("subscription_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4068 4137])
+                    ("vizPub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4140 4215])
+                    ("marker_counter_" variable (:type "unsigned int") (reparse-symbol classsubparts) [4218 4247])
+                    ("timer_" variable (:type ("rclcpp::TimerBase::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4250 4286])
+                    ("msg_str_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4289 4310])
+                    ("ts_" variable (:type ("rclcpp::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4314 4331])
+                    ("tnode_" variable (:type ("rclcpp::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4334 4354]))                  
+                :type "class")
+                nil [896 4357])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4368 4377])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4378 4392]))                  
+                :type "int")
+                nil [4359 4513]))          
+      :file "member_function.cpp"
+      :pointmax 4514
+      :fsize 4513
+      :lastmodtime '(26643 1296 85390 153000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18c5b520a108"
+      :major-mode c++-mode
+      :tags 
+        '( ("memory" include (:system-flag t) nil [616 633])
+            ("rclcpp/rclcpp.hpp" include nil nil [635 663])
+            ("std_msgs/msg/string.hpp" include nil nil [664 698])
+            ("MinimalSubscriber" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [748 755])
+                    ("MinimalSubscriber" function
+                       (:constructor-flag t
+                        :type ("MinimalSubscriber" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [758 1076])
+                    ("private" label nil (reparse-symbol classsubparts) [1078 1086])
+                    ("subscription_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1089 1158]))                  
+                :type "class")
+                nil [700 1161])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1172 1181])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1182 1196]))                  
+                :type "int")
+                nil [1163 1317]))          
+      :file "lambda.cpp"
+      :pointmax 1318
+      :fsize 1292
+      :lastmodtime '(26643 1296 85390 153000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18c5b52ce07c"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [592 611])
+            ("memory" include (:system-flag t) nil [612 629])
+            ("rclcpp/rclcpp.hpp" include nil nil [631 659])
+            ("std_msgs/msg/string.hpp" include nil nil [660 694])
+            ("StaticWaitSetSubscriber" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("rclcpp::StaticWaitSet" variable (:type "int") (reparse-symbol classsubparts) [968 1008])
+                    ("public" label nil (reparse-symbol classsubparts) [1010 1017])
+                    ("StaticWaitSetSubscriber" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("options" variable (:type ("rclcpp::NodeOptions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1053 1081]))                          
+                        :type ("StaticWaitSetSubscriber" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1029 2046])
+                    ("StaticWaitSetSubscriber" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2050 2142])
+                    ("spin_wait_set" function (:type "void") (reparse-symbol classsubparts) [2146 3121])
+                    ("private" label nil (reparse-symbol classsubparts) [3123 3131])
+                    ("subscription_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3134 3203])
+                    ("wait_set_" variable (:type ("MyStaticWaitSet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3206 3232])
+                    ("thread_" variable (:type ("std::thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3235 3255]))                  
+                :type "class")
+                nil [888 3258])
+            ("rclcpp_components/register_node_macro.hpp" include nil nil [3260 3312]))          
+      :file "static_wait_set_subscriber.cpp"
+      :pointmax 3371
+      :fsize 3370
+      :lastmodtime '(26643 1296 85390 153000)
+      :unmatched-syntax '((semantic-list 3345 . 3370) (symbol 3314 . 3345) (EXPLICIT 1020 . 1028) (punctuation 966 . 967) (symbol 950 . 965) (USING 944 . 949)))
+    (semanticdb-table "semanticdb-table-18c5b60e89a0"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [592 611])
+            ("memory" include (:system-flag t) nil [612 629])
+            ("rclcpp/rclcpp.hpp" include nil nil [631 659])
+            ("std_msgs/msg/string.hpp" include nil nil [660 694])
+            ("std::chrono_literals" using (:type ("std::chrono_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [696 733])
+            ("TimeTriggeredWaitSetSubscriber" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [960 967])
+                    ("TimeTriggeredWaitSetSubscriber" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("options" variable (:type ("rclcpp::NodeOptions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1010 1038]))                          
+                        :type ("TimeTriggeredWaitSetSubscriber" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [979 2295])
+                    ("TimeTriggeredWaitSetSubscriber" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2299 2360])
+                    ("spin_wait_set" function (:type "void") (reparse-symbol classsubparts) [2364 3120])
+                    ("private" label nil (reparse-symbol classsubparts) [3122 3130])
+                    ("subscription_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3133 3202])
+                    ("timer_" variable (:type ("rclcpp::TimerBase::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3205 3241])
+                    ("wait_set_" variable (:type ("rclcpp::WaitSet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3244 3270])
+                    ("thread_" variable (:type ("std::thread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3273 3293]))                  
+                :type "class")
+                nil [899 3296])
+            ("rclcpp_components/register_node_macro.hpp" include nil nil [3298 3350]))          
+      :file "time_triggered_wait_set_subscriber.cpp"
+      :pointmax 3416
+      :fsize 3415
+      :lastmodtime '(26643 1296 85390 153000)
+      :unmatched-syntax '((semantic-list 3383 . 3415) (symbol 3352 . 3383) (EXPLICIT 970 . 978)))
+    (semanticdb-table "semanticdb-table-18c5b51e1fa8"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [635 652])
+            ("memory" include (:system-flag t) nil [653 670])
+            ("rclcpp/rclcpp.hpp" include nil nil [672 700])
+            ("rclcpp/subscription_options.hpp" include nil nil [701 743])
+            ("std_msgs/msg/string.hpp" include nil nil [745 779])
+            ("MinimalSubscriberWithTopicStatistics" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [848 855])
+                    ("MinimalSubscriberWithTopicStatistics" function
+                       (:constructor-flag t
+                        :type ("MinimalSubscriberWithTopicStatistics" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [858 1631])
+                    ("private" label nil (reparse-symbol classsubparts) [1633 1641])
+                    ("topic_callback" function
+                       (:methodconst-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std_msgs::msg::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1664 1698]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1644 1784])
+                    ("subscription_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1787 1856]))                  
+                :type "class")
+                nil [781 1859])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1870 1879])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1880 1894]))                  
+                :type "int")
+                nil [1861 2034]))          
+      :file "member_function_with_topic_statistics.cpp"
+      :pointmax 2035
+      :fsize 2034
+      :lastmodtime '(26643 1296 85390 153000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week10.ros.topics!wk10_starter!final_fixed!topics!minimal_subscriber!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

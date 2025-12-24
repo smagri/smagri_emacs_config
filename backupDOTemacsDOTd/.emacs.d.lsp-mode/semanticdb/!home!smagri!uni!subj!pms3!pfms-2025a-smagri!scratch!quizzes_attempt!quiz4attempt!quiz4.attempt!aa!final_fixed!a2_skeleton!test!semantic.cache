@@ -1,0 +1,53 @@
+;; Object semanticdb-project-database-file-18ed025d060c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18ed025d060c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18ed025d0618"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("algorithm" include (:system-flag t) nil [64 84])
+            ("thread" include (:system-flag t) nil [85 102])
+            ("cmath" include (:system-flag t) nil [103 119])
+            ("pfms_types.h" include nil nil [120 143])
+            ("quadcopter.h" include nil nil [173 196])
+            ("test_helper.h" include nil nil [256 280])
+            ("pfmshog.h" include nil nil [281 301])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [303 323])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [324 355])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("QuadcopterReachGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [506 527])
+                    ("" variable (:type ("ThreeGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [528 539]))                  
+                :type "int")
+                nil [501 3308])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3319 3328])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3329 3341]))                  
+                :type "int")
+                nil [3310 3414]))          
+      :file "test_quad_reach_goals.cpp"
+      :pointmax 3415
+      :fsize 3414
+      :lastmodtime '(26614 11001 410749 10000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18ed01e20424"
+      :file "test_helper.h"
+      :fsize 1120
+      :lastmodtime '(26612 35202 592921 317000)))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!quizzes_attempt!quiz4attempt!quiz4.attempt!aa!final_fixed!a2_skeleton!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

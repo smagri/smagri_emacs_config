@@ -1,0 +1,58 @@
+;; Object semanticdb-project-database-file-13a144a8ea05
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-13a144a8ea05"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-13a144a8ea31"
+      :major-mode arduino-mode
+      :tags 
+        '( ("SPI.h" include (:system-flag t) nil [375 391])
+            ("printf.h" include nil nil [392 411])
+            ("RF24.h" include nil nil [412 429])
+            ("NewPing.h" include (:system-flag t) nil [430 450])
+            ("TRIGGER_PIN" variable (:constant-flag t) nil [460 471])
+            ("ECHO_PIN" variable (:constant-flag t) nil [483 491])
+            ("MAX_DISTANCE" variable (:constant-flag t) nil [506 518])
+            ("duration" variable (:type "unsigned long") nil [524 547])
+            ("sonar" function
+               (:prototype-flag t
+                :type ("NewPing" type (:type "class") nil nil))
+                nil [600 651])
+            ("radio" function
+               (:prototype-flag t
+                :type ("RF24" type (:type "class") nil nil))
+                nil [707 724])
+            ("address" variable
+               (:dereference 2
+                :default-value "{ \"1Node\", \"2Node\" }"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [828 872])
+            ("radioNumber" variable
+               (:default-value "1"
+                :type "bool")
+                nil [1120 1141])
+            ("role" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1269 1287])
+            ("payload" variable
+               (:default-value "0.0"
+                :type "unsigned long")
+                nil [1525 1553])
+            ("setup" function (:type "void") nil [1555 3690])
+            ("loop" function (:type "void") nil [3702 5962])
+            ("calculateDistance" function (:type "long") nil [5973 6760]))          
+      :file "GettingStarted.smagri.ino"
+      :pointmax 6761
+      :fsize 6967
+      :lastmodtime '(25397 9825 237017 559000)
+      :unmatched-syntax '((number 721 . 722) (number 718 . 719) (number "500" 637 . 649) (number "4" 627 . 635) (number "3" 614 . 625))
+      :lexical-table 
+        '(("ECHO_PIN" . ((number "4" 496 . 497)))
+          ("TRIGGER_PIN" . ((number "3" 473 . 474)))
+          ("MAX_DISTANCE" . ((number "500" 519 . 522)))
+          )
+))
+  :file "!home!smagri!proj!arduino!rfTxRxTankLevel!nRF24L01!GettingStarted.smagri.tx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

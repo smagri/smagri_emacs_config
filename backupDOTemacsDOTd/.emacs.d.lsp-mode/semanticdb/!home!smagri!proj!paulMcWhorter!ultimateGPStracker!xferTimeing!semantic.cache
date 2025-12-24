@@ -1,0 +1,125 @@
+;; Object semanticdb-project-database-file-121d3960e49f
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-121d3960e49f"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-121d3960e4ab"
+      :major-mode python-mode
+      :tags 
+        '( ("time" include nil nil [25 36])
+            ("info" variable nil nil [378 420])
+            ("print" code nil nil [421 432]))          
+      :file "resolutn.time.perf_counter.py"
+      :pointmax 434
+      :fsize 435
+      :lastmodtime '(26874 54021 465487 788000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-121d3987dba9"
+      :major-mode python-mode
+      :tags 
+        '( ("time" include nil nil [26 37])
+            ("start" variable nil nil [39 66])
+            ("for" code nil nil [89 98])
+            ("end" variable nil nil [98 123])
+            ("print" code nil nil [125 174]))          
+      :file "timing.python.overhead.py"
+      :pointmax 175
+      :fsize 175
+      :lastmodtime '(26874 59355 978562 233000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-121d39957aa4"
+      :major-mode python-mode
+      :tags 
+        '( ("time" include nil nil [1059 1070])
+            ("start" variable nil nil [1072 1099])
+            ("for" code nil nil [1100 1149])
+            ("end" variable nil nil [1149 1174])
+            ("print" code nil nil [1175 1223]))          
+      :file "timing.time.perf_counter.py"
+      :pointmax 1224
+      :fsize 1237
+      :lastmodtime '(26874 61949 130440 251000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-121d39860756"
+      :major-mode python-mode
+      :tags 
+        '( ("time" include nil nil [26 37])
+            ("last" variable nil nil [438 464])
+            ("min_diff" variable nil nil [465 488])
+            ("count" variable nil nil [489 498])
+            ("try" code nil nil [1759 2134])
+            ("if" code nil nil [2168 2369]))          
+      :file "minDelta.time.perf_counter.py"
+      :pointmax 2369
+      :fsize 2383
+      :lastmodtime '(26874 63431 9356 282000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-121d39f02ad5"
+      :major-mode python-mode
+      :tags 
+        '( ("serial" include nil nil [1238 1251])
+            ("time" include nil nil [1252 1263])
+            ("sys" include nil nil [1264 1274])
+            ("busy_wait_us" function (:arguments 
+              ( ("us" variable nil (reparse-symbol function_parameters) [1294 1296]))              ) nil [1277 1690])
+            ("serialPort" variable nil nil [1697 1723])
+            ("baudRate" variable nil nil [1724 1741])
+            ("serialObj" code nil nil [2834 2887])
+            ("serialObj" code nil nil [2888 2942])
+            ("while" code nil nil [2943 3169])
+            ("serialObj" code nil nil [4600 4673])
+            ("busy_wait_us" code nil nil [4674 4708])
+            ("picoCmdResultLine" variable nil nil [5063 5127])
+            ("with" code nil nil [5504 8110])
+            ("serialObj" code nil nil [8144 8190])
+            ("serialObj" code nil nil [8268 8311])
+            ("while" code nil nil [8312 8527])
+            ("serialObj" code nil nil [8588 8605])
+            ("kml_waypoints" variable nil nil [8865 8883])
+            ("kml_waypoints_path" variable nil nil [8884 8907])
+            ("cvs_file" variable nil nil [8908 8952])
+            ("with" code nil nil [8954 10775])
+            ("\"\"\"<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<kml xmlns=\"http://www.opengis.net/kml/2.2\">
+  <Document>
+    <name>Path from Pico</name>
+    <Style id=\"pointStyle\">
+      <IconStyle>
+        <Icon><href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon>
+        <scale>1.0</scale>
+      </IconStyle>
+    </Style>
+    <Style id=\"lineStyle\">
+      <LineStyle><color>ff0000ff</color><width>3</width></LineStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#pointStyle</styleUrl>
+      <MultiGeometry>
+      {kml_waypoints}
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>Path</name>
+      <styleUrl>#lineStyle</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <altitudeMode>clampToGround</altitudeMode>
+        <coordinates>
+        {kml_waypoints_path}
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
+\"\"\"" code nil nil [12679 13580])
+            ("kml_file" variable nil nil [13582 13630])
+            ("with" code nil nil [13632 13733])
+            ("print" code nil nil [13798 13849]))          
+      :file "xferPicoLog2PCcsv2kml.py.1ns"
+      :pointmax 13955
+      :fsize 13835
+      :lastmodtime '(26874 46754 243070 602000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!proj!paulMcWhorter!ultimateGPStracker!xferTimeing!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

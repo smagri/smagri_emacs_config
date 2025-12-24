@@ -1,0 +1,96 @@
+;; Object semanticdb-project-database-file-15daa75af8e4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15daa75af8e4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15daa75af8f0"
+      :major-mode c++-mode
+      :tags 
+        '( ("rclcpp/rclcpp.hpp" include (:system-flag t) nil [1 29])
+            ("grid_map_ros/grid_map_ros.hpp" include (:system-flag t) nil [30 70])
+            ("grid_map_msgs/msg/grid_map.hpp" include (:system-flag t) nil [71 112])
+            ("cmath" include (:system-flag t) nil [113 129])
+            ("memory" include (:system-flag t) nil [130 147])
+            ("utility" include (:system-flag t) nil [148 166])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [177 186])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [187 200]))                  
+                :type "int")
+                nil [168 2088]))          
+      :file "simple_demo_node.cpp"
+      :pointmax 2089
+      :fsize 2088
+      :lastmodtime '(26654 46062 872288 755000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15daa68ba7ac"
+      :major-mode c++-mode
+      :tags 
+        '( ("sample.h" include nil nil [1 20])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [130 146])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [147 163])
+            ("std::placeholders::_1" using (:type ("std::placeholders::_1" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [165 193])
+            ("PfmsSample" function
+               (:constructor-flag t
+                :parent "PfmsSample"
+                :type ("PfmsSample" type (:type "class") nil nil))
+                nil [196 1516])
+            ("PfmsSample" function
+               (:destructor-flag t
+                :parent "PfmsSample"
+                :type "void")
+                nil [1518 1658])
+            ("odom_callback" function
+               (:parent "PfmsSample"
+                :arguments 
+                  ( ("msg" variable
+                       (:constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("nav_msgs::msg::Odometry" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1691 1742]))                  
+                :type "void")
+                nil [1660 1982])
+            ("sonar_callback" function
+               (:parent "PfmsSample"
+                :arguments 
+                  ( ("msg" variable
+                       (:constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("sensor_msgs::msg::Range" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2016 2067]))                  
+                :type "void")
+                nil [1984 2256])
+            ("process" function
+               (:parent "PfmsSample"
+                :type "void")
+                nil [2259 4053]))          
+      :file "sample.cpp"
+      :pointmax 4054
+      :fsize 4053
+      :lastmodtime '(26654 46062 871288 776000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15daa7a06978"
+      :file "sample.h"
+      :fsize 2161
+      :lastmodtime '(26654 46062 872288 755000)))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week11.rosServices.unitTesting!wk11_starter!grid_example!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

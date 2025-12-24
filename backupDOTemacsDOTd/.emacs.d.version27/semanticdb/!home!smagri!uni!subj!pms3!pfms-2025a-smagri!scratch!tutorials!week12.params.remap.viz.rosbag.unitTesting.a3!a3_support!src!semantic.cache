@@ -1,0 +1,214 @@
+;; Object semanticdb-project-database-file-155d68ccbd34
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155d68ccbd34"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155d68ccbcd4"
+      :major-mode c++-mode
+      :tags 
+        '( ("rclcpp/rclcpp.hpp" include nil nil [1 29])
+            ("geometry_msgs/msg/pose_array.hpp" include nil nil [30 73])
+            ("visualization_msgs/msg/marker_array.hpp" include nil nil [74 124])
+            ("string" include (:system-flag t) nil [125 142])
+            ("ament_index_cpp/get_package_share_directory.hpp" include (:system-flag t) nil [143 201])
+            ("thread" include (:system-flag t) nil [224 241])
+            ("fstream" include (:system-flag t) nil [242 260])
+            ("vector" include (:system-flag t) nil [261 278])
+            ("random" include (:system-flag t) nil [279 296])
+            ("produceMarkerList" function
+               (:arguments 
+                  ( ("goals" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("geometry_msgs::msg::Point" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [595 640])
+                    ("stamp" variable (:type ("rclcpp::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [641 660]))                  
+                :type ("visualization_msgs::msg::MarkerArray" type (:type "class") nil nil))
+                nil [540 6241])
+            ("loadPoints" function
+               (:arguments 
+                  ( ("fileName" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6259 6280])
+                    ("points" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("geometry_msgs::msg::Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6281 6328]))                  
+                :type "bool")
+                nil [6243 7097])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7108 7117])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7118 7130]))                  
+                :type "int")
+                nil [7099 13401]))          
+      :file "goals_publisher.cpp"
+      :pointmax 13402
+      :fsize 13401
+      :lastmodtime '(26665 30530 492918 986000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155d68ccbcf4"
+      :major-mode c++-mode
+      :tags 
+        '( ("rclcpp/rclcpp.hpp" include nil nil [1 29])
+            ("geometry_msgs/msg/pose_stamped.hpp" include nil nil [30 75])
+            ("visualization_msgs/msg/marker_array.hpp" include nil nil [76 126])
+            ("string" include (:system-flag t) nil [127 144])
+            ("fstream" include (:system-flag t) nil [145 163])
+            ("GoalsLogger" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [230 238])
+                    ("sub_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [241 311])
+                    ("pub_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [342 414])
+                    ("filename_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [453 475])
+                    ("file_" variable (:type ("std::ofstream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [509 529])
+                    ("markerArray_" variable (:type ("visualization_msgs::msg::MarkerArray" type (:type "class") nil nil)) (reparse-symbol classsubparts) [552 602])
+                    ("ct_" variable (:type "unsigned int") (reparse-symbol classsubparts) [623 640])
+                    ("public" label nil (reparse-symbol classsubparts) [661 668])
+                    ("GoalsLogger" function
+                       (:constructor-flag t
+                        :type ("GoalsLogger" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [671 1916])
+                    ("GoalsLogger" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1921 2050])
+                    ("private" label nil (reparse-symbol classsubparts) [2052 2060])
+                    ("produceMarker" function
+                       (:arguments 
+                          ( ("pt" variable (:type ("geometry_msgs::msg::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2353 2382]))                          
+                        :type ("visualization_msgs::msg::Marker" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2307 4190])
+                    ("goalsCallback" function
+                       (:arguments 
+                          ( ("msg" variable
+                               (:constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("geometry_msgs::msg::PoseStamped" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4213 4272]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4194 4779]))                  
+                :type "class")
+                nil [188 4786])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4798 4807])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4808 4820]))                  
+                :type "int")
+                nil [4789 4935]))          
+      :file "goals_logger.cpp"
+      :pointmax 4936
+      :fsize 4935
+      :lastmodtime '(26662 25276 224816 996000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155d68ccbd14"
+      :major-mode c++-mode
+      :tags 
+        '( ("rclcpp/rclcpp.hpp" include (:system-flag t) nil [1 29])
+            ("functional" include (:system-flag t) nil [30 51])
+            ("sensor_msgs/msg/range.hpp" include (:system-flag t) nil [53 89])
+            ("sensor_msgs/msg/laser_scan.hpp" include (:system-flag t) nil [90 131])
+            ("nav_msgs/msg/odometry.hpp" include (:system-flag t) nil [132 168])
+            ("std_msgs/msg/string.hpp" include (:system-flag t) nil [169 203])
+            ("std_msgs/msg/empty.hpp" include (:system-flag t) nil [204 237])
+            ("std_msgs/msg/float64.hpp" include (:system-flag t) nil [238 273])
+            ("geometry_msgs/msg/pose_stamped.hpp" include (:system-flag t) nil [274 319])
+            ("geometry_msgs/msg/pose_array.hpp" include (:system-flag t) nil [320 363])
+            ("tf2_msgs/msg/tf_message.hpp" include (:system-flag t) nil [364 402])
+            ("rosbag2_cpp/writer.hpp" include (:system-flag t) nil [404 437])
+            ("std::placeholders::_1" using (:type ("std::placeholders::_1" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [440 468])
+            ("std::placeholders::_2" using (:type ("std::placeholders::_2" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [469 497])
+            ("std::placeholders::_3" using (:type ("std::placeholders::_3" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [498 526])
+            ("SingleMessageRecorder" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [580 587])
+                    ("SingleMessageRecorder" function
+                       (:constructor-flag t
+                        :type ("SingleMessageRecorder" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [592 9826])
+                    ("private" label nil (reparse-symbol classsubparts) [9829 9837])
+                    ("record_message" function
+                       (:arguments 
+                          ( ("serialized_msg" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("rclcpp::SerializedMessage" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [9864 9922])
+                            ("topic" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9923 9949])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9950 9975]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [9844 10805])
+                    ("generate_default_bag_name" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10811 11200])
+                    ("writer_" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("rosbag2_cpp::Writer" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11209 11254])
+                    ("topics_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11259 11292])
+                    ("subscriptions_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("rclcpp::SubscriptionBase::SharedPtr" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [11387 11451]))                  
+                :type "class")
+                nil [528 11454])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [11466 11475])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11476 11490]))                  
+                :type "int")
+                nil [11457 11645]))          
+      :file "simple_bag_recorder.cpp"
+      :pointmax 11645
+      :fsize 11644
+      :lastmodtime '(26662 25276 224816 996000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week12.params.remap.viz.rosbag.unitTesting.a3!a3_support!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,95 @@
+;; Object semanticdb-project-database-file-18eb840b6690
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18eb840b6690"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18eb840b6670"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("stack" include (:system-flag t) nil [39 55])
+            ("set" include (:system-flag t) nil [56 70])
+            ("queue" include (:system-flag t) nil [71 87])
+            ("map" include (:system-flag t) nil [88 102])
+            ("algorithm" include (:system-flag t) nil [103 123])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [125 143])
+            ("std::pair" using (:type ("std::pair" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [144 160])
+            ("std::stack" using (:type ("std::stack" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [161 178])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [179 195])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [196 212])
+            ("std::map" using (:type ("std::map" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [213 228])
+            ("std::set" using (:type ("std::set" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [229 244])
+            ("std::queue" using (:type ("std::queue" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [245 262])
+            ("AdjacencyList" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("vector" type (:template-specifier 
+                            ( ("pair" type (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("double" type nil nil nil))                                ) nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [264 320])
+            ("print_adjacency_list" function
+               (:arguments 
+                  ( ("graph" variable (:type ("AdjacencyList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [369 389]))                  
+                :type "void")
+                nil [343 727])
+            ("print_path" function
+               (:arguments 
+                  ( ("graph" variable (:type ("AdjacencyList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [765 785])
+                    ("path" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [785 802]))                  
+                :type "void")
+                nil [749 1443])
+            ("brute_force_tsp" function
+               (:arguments 
+                  ( ("graph" variable
+                       (:reference 1
+                        :type ("AdjacencyList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1474 1495])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [1496 1506]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1446 3278])
+            ("main" function (:type "int") nil [3281 4000]))          
+      :file "graph_search.cpp"
+      :pointmax 4001
+      :fsize 4000
+      :lastmodtime '(26633 46059 255999 439000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week07.threads2!examples!tsp_search!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

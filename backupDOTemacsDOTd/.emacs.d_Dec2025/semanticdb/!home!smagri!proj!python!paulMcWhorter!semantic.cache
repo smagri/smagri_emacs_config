@@ -1,0 +1,140 @@
+;; Object semanticdb-project-database-file-134857126c7a
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-134857126c7a"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-13485725d065"
+      :major-mode python-mode
+      :tags 
+        '( ("math" include nil nil [25 36])
+            ("print" code nil nil [151 173])
+            ("circumference" code nil nil [187 219])
+            ("area" code nil nil [220 246])
+            ("print" code nil nil [248 319]))          
+      :file "tute1.homework.py"
+      :pointmax 320
+      :fsize 319
+      :lastmodtime '(26879 4442 741770 529000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-13485725d04d"
+      :major-mode python-mode
+      :tags 
+        '( ("grades" variable nil nil [54 91])
+            ("print" code nil nil [92 121])
+            ("print" code nil nil [122 153])
+            ("print" code nil nil [154 185])
+            ("x" code nil nil [187 212])
+            ("print" code nil nil [213 242])
+            ("grades" code nil nil [337 346])
+            ("picture" variable nil nil [359 405])
+            ("print" code nil nil [406 447])
+            ("print" code nil nil [448 465])
+            ("print" code nil nil [466 483])
+            ("picture" variable nil nil [513 579])
+            ("print" code nil nil [580 600])
+            ("fruits" variable nil nil [602 647])
+            ("print" code nil nil [648 673])
+            ("print" code nil nil [674 690])
+            ("grades" variable nil nil [861 899])
+            ("print" code nil nil [900 916])
+            ("print" code nil nil [917 933])
+            ("x" variable nil nil [968 972])
+            ("y" variable nil nil [973 977])
+            ("z" variable nil nil [978 982])
+            ("a" variable nil nil [983 987])
+            ("b" variable nil nil [988 993])
+            ("c" variable nil nil [994 999])
+            ("grades" variable nil nil [1000 1025])
+            ("print" code nil nil [1026 1039])
+            ("grades_strs" variable nil nil [1040 1082])
+            ("print" code nil nil [1083 1101])
+            ("fruits" variable nil nil [1104 1149])
+            ("fruits" variable nil nil [1155 1224])
+            ("print" code nil nil [1225 1241])
+            ("print" code nil nil [1242 1261])
+            ("grades" variable nil nil [1264 1301])
+            ("grades" variable nil nil [1302 1314])
+            ("print" code nil nil [1315 1339]))          
+      :file "tute2.arraysAndLists.py"
+      :pointmax 1624
+      :fsize 1623
+      :lastmodtime '(26880 23094 24237 519000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-134857127465"
+      :major-mode python-mode
+      :tags 
+        '( ("greeting_msg" variable nil nil [26 54])
+            ("print" code nil nil [55 74])
+            ("x" variable nil nil [76 79])
+            ("y" variable nil nil [80 83])
+            ("z" code nil nil [84 89])
+            ("print" code nil nil [90 118])
+            ("x_str" variable nil nil [121 162])
+            ("print" code nil nil [163 193])
+            ("name" variable nil nil [196 234])
+            ("print" code nil nil [235 285]))          
+      :file "tute3.getInputFromUsers.py"
+      :pointmax 287
+      :fsize 324
+      :lastmodtime '(26888 6657 226028 360000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-13485712744d"
+      :major-mode python-mode
+      :tags 
+        '( ("x" variable nil nil [142 179])
+            ("y" variable nil nil [257 295])
+            ("z" code nil nil [350 355])
+            ("print" code nil nil [376 400])
+            ("x" variable nil nil [403 440])
+            ("y" variable nil nil [441 479])
+            ("z" code nil nil [480 485])
+            ("print" code nil nil [486 510])
+            ("x" variable nil nil [512 548])
+            ("y" variable nil nil [549 586])
+            ("z" code nil nil [587 592])
+            ("print" code nil nil [593 617]))          
+      :file "tute3.homework.py"
+      :pointmax 618
+      :fsize 617
+      :lastmodtime '(26880 27495 913985 626000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-134857127435"
+      :major-mode python-mode
+      :tags 
+        '( ("name" variable nil nil [25 52])
+            ("print" code nil nil [53 107]))          
+      :file "tute5.howtoInstallVSCODE.py"
+      :pointmax 108
+      :fsize 107
+      :lastmodtime '(26881 50979 446107 348000)
+      :unmatched-syntax '(($EOI 108 . 108) ($EOI 107 . 107)))
+    (semanticdb-table "semanticdb-table-13485712741d"
+      :major-mode python-mode
+      :tags nil
+      :file "tute7.ifCompoundCondinsANDandOR.py"
+      :pointmax 27
+      :fsize 26
+      :lastmodtime '(26888 13154 92143 546000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1348570bec4e"
+      :major-mode python-mode
+      :tags 
+        '( ("my_colour" variable nil nil [65 131])
+            ("if" code nil nil [338 426])
+            ("if" code nil nil [427 489])
+            ("my_number" variable nil nil [655 724])
+            ("if" code nil nil [726 815])
+            ("my_number" variable nil nil [817 925])
+            ("if" code nil nil [926 982])
+            ("if" code nil nil [983 1042])
+            ("my_number" variable nil nil [1049 1125])
+            ("if" code nil nil [1127 1216])
+            ("if" code nil nil [1217 1383]))          
+      :file "tute6.ifCondnInputFloatModOperator.py"
+      :pointmax 1384
+      :fsize 1383
+      :lastmodtime '(26888 20947 445197 173000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!proj!python!paulMcWhorter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

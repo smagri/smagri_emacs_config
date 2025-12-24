@@ -1,0 +1,18 @@
+;; Object semanticdb-project-database-file-18df3339d368
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18df3339d368"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18df3339d384"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [12 31])
+            ("main" function (:type "int") nil [33 79]))          
+      :file "crash.c"
+      :pointmax 80
+      :fsize 79
+      :lastmodtime '(26681 17136 237301 313000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!ros2_ws!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

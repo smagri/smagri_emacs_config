@@ -1,0 +1,1336 @@
+;; Object semanticdb-project-database-file-18ed02270b20
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18ed02270b20"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18ed01010b80"
+      :major-mode c++-mode
+      :tags 
+        '( ("mission.h" include nil nil [1 21])
+            ("Mission" function
+               (:constructor-flag t
+                :parent "Mission"
+                :arguments 
+                  ( ("controllers" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("ControllerInterface" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [42 88]))                  
+                :type ("Mission" type (:type "class") nil nil))
+                nil [25 406])
+            ("setGoals" function
+               (:parent "Mission"
+                :arguments 
+                  ( ("goals" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("pfms::geometry_msgs::Point" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [432 478])
+                    ("platform" variable (:type ("pfms::PlatformType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [502 530]))                  
+                :type "void")
+                nil [409 5108])
+            ("status" function
+               (:parent "Mission"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5161 5166]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("unsigned int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [5119 6379])
+            ("setMissionObjective" function
+               (:parent "Mission"
+                :arguments 
+                  ( ("objective" variable (:type ("mission::Objective" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6416 6445]))                  
+                :type "void")
+                nil [6382 6554])
+            ("run" function
+               (:parent "Mission"
+                :type "bool")
+                nil [6557 7083])
+            ("getDistanceTravelled" function
+               (:parent "Mission"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7087 7792])
+            ("getTimeMoving" function
+               (:parent "Mission"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7795 7912])
+            ("getPlatformGoalAssociation" function
+               (:parent "Mission"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("std::pair" type (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [7915 8408])
+            ("distanceRemaining" function
+               (:parent "Mission"
+                :arguments 
+                  ( ("cur_controller" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8445 8473]))                  
+                :type "double")
+                nil [8411 11943])
+            ("brute_force_tsp" function
+               (:parent "Mission"
+                :arguments 
+                  ( ("graph" variable
+                       (:reference 1
+                        :type ("AdjacencyList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11988 12009])
+                    ("cur_controller" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12052 12080])
+                    ("ordered_goals" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("pfms::geometry_msgs::Point" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [12123 12177]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("int" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [11946 15376]))          
+      :file "mission.cpp"
+      :pointmax 15381
+      :fsize 15380
+      :lastmodtime '(26637 41952 634823 188000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18ed022792ec"
+      :file "mission.h"
+      :fsize 4094
+      :lastmodtime '(26637 41676 712480 371000))
+    (semanticdb-table "semanticdb-table-18ed016d76c4"
+      :major-mode c++-mode
+      :tags 
+        '( ("pfms_types.h" include nil nil [1 24])
+            ("iostream" include (:system-flag t) nil [25 44])
+            ("vector" include (:system-flag t) nil [45 62])
+            ("algorithm" include (:system-flag t) nil [63 83])
+            ("cmath" include (:system-flag t) nil [84 100])
+            ("ackerman.h" include nil nil [102 123])
+            ("quadcopter.h" include nil nil [124 147])
+            ("mission.h" include nil nil [148 168])
+            ("logger.h" include nil nil [169 188])
+            ("pfmshog.h" include nil nil [190 210])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [235 266])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [277 286])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [287 300]))                  
+                :type "int")
+                nil [268 3597]))          
+      :file "main.cpp"
+      :pointmax 3598
+      :fsize 3597
+      :lastmodtime '(26636 40763 238584 970000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18ed01d36474"
+      :file "ackerman.h"
+      :fsize 4850
+      :lastmodtime '(26633 36535 589698 944000))
+    (semanticdb-table "semanticdb-table-18ed01d3a8b4"
+      :major-mode c++-mode
+      :tags 
+        '( ("QUADCOPTER_H" variable (:constant-flag t) nil [30 42])
+            ("cmath" include (:system-flag t) nil [44 60])
+            ("controller.h" include nil nil [61 84])
+            ("drone.h" include nil nil [85 103])
+            ("MAX_LINEAR_VELOCITY" variable (:constant-flag t) nil [115 134])
+            ("MAX_ANGULAR_VELOCITY" variable (:constant-flag t) nil [147 167])
+            ("quadcopter" type
+               (:members 
+                  ( ("State" type
+                       (:members 
+                          ( ("IDLE" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [232 237])
+                            ("COURSE_ROTATION" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [250 266])
+                            ("FINE_ROTATION" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [279 293])
+                            ("MOVE_TO_GOAL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [306 319])
+                            ("SLOW_MOVE_TO_GOAL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [332 350])
+                            ("UNREACHABLE_GOAL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [363 380])
+                            ("AT_GOAL" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [393 401])
+                            ("TAKEOFF" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [414 422])
+                            ("MOVE_TO_HEIGHT" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [435 459]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [199 460]))                  
+                :type "namespace")
+                nil [173 462])
+            ("Quadcopter" type
+               (:superclasses 
+                  ( ("Controller" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [917 924])
+                    ("Quadcopter" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Quadcopter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [998 1011])
+                    ("Quadcopter" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1016 1030])
+                    ("run" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1114 1119]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1105 1120])
+                    ("checkOriginToDestination" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("origin" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1828 1860])
+                            ("goal" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1901 1933])
+                            ("distance" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1974 1991])
+                            ("time" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2032 2045])
+                            ("estimatedGoalPose" variable
+                               (:reference 1
+                                :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2086 2130]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1798 2131])
+                    ("distanceToGoal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2313 2318]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2291 2319])
+                    ("timeToGoal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2468 2473]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2450 2475])
+                    ("getObstacles" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2703 2708]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pfms::geometry_msgs::Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2650 2709])
+                    ("private" label nil (reparse-symbol classsubparts) [2715 2723])
+                    ("moveToSteeringAngle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("turn_rate" variable (:type "double") (reparse-symbol arg-sub-list) [3355 3372])
+                            ("angle_tolerence" variable (:type "double") (reparse-symbol arg-sub-list) [3373 3396])
+                            ("" variable (:type "long") (reparse-symbol arg-sub-list) [3426 3439])
+                            ("cmd_num" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [3431 3453]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3330 3454])
+                    ("moveObjectToGoal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("move_rate" variable (:type "double") (reparse-symbol arg-sub-list) [3943 3960])
+                            ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [3961 3978])
+                            ("" variable (:type "long") (reparse-symbol arg-sub-list) [4005 4018])
+                            ("cum_num" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [4010 4032]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3921 4033])
+                    ("reachGoals" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5079 5084]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5063 5085])
+                    ("takeoff" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "long") (reparse-symbol arg-sub-list) [5265 5278])
+                            ("cmd_num" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [5270 5292]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5252 5293])
+                    ("moveToHeight" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "long") (reparse-symbol arg-sub-list) [5475 5488])
+                            ("cmd_num" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [5480 5502]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5457 5503])
+                    ("normaliseAngle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [5635 5648]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [5613 5649])
+                    ("turn_l_r_" variable (:type "double") (reparse-symbol classsubparts) [5785 5802])
+                    ("move_l_r_" variable (:type "double") (reparse-symbol classsubparts) [5862 5879])
+                    ("move_u_d_" variable (:type "double") (reparse-symbol classsubparts) [5934 5951])
+                    ("move_f_b_" variable (:type "double") (reparse-symbol classsubparts) [6109 6126])
+                    ("object_" variable (:type ("Drone" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6132 6146])
+                    ("steering_" variable (:type "double") (reparse-symbol classsubparts) [6202 6219])
+                    ("state_" variable (:type ("quadcopter::State" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6282 6307])
+                    ("running_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [6347 6374])
+                    ("mtxStart_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6423 6444])
+                    ("thread_" variable
+                       (:pointer 1
+                        :type ("std::thread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6554 6575])
+                    ("cvStart_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6654 6687]))                  
+                :type "class")
+                nil [879 6691]))          
+      :file "quadcopter.h"
+      :pointmax 6716
+      :fsize 6715
+      :lastmodtime '(26637 43125 917810 801000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_ANGULAR_VELOCITY" . ((number "1.0" 168 . 171)))
+          ("QUADCOPTER_H")
+          ("MAX_LINEAR_VELOCITY" . ((number "1.0" 135 . 138)))
+          )
+)
+    (semanticdb-table "semanticdb-table-18ed01d1cb40"
+      :file "logger.h"
+      :fsize 916
+      :lastmodtime '(26612 35202 591921 332000))
+    (semanticdb-table "semanticdb-table-18ed025b7954"
+      :major-mode c++-mode
+      :tags 
+        '( ("quadcopter.h" include nil nil [1 24])
+            ("Quadcopter" function
+               (:constructor-flag t
+                :parent "Quadcopter"
+                :type ("Quadcopter" type (:type "class") nil nil))
+                nil [27 490])
+            ("setStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pfms::PlatformStatus::IDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [511 538]))                  
+                :type "int")
+                nil [501 539])
+            ("setRunning" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [614 620]))                  
+                :type "int")
+                nil [603 621])
+            ("thread_" variable
+               (:default-value "new std::thread(&Quadcopter::reachGoals, this)"
+                :type "int")
+                nil [691 748])
+            ("setRunning" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [856 862]))                  
+                :type "int")
+                nil [845 863])
+            ("join" function
+               (:prototype-flag t
+                :type "int")
+                nil [906 913])
+            ("thread_" variable (:type "int") nil [925 933])
+            ("setRunning" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1241 1246]))                  
+                :type "int")
+                nil [1230 1247])
+            ("setStatus" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pfms::PlatformStatus::RUNNING" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1268 1298]))                  
+                :type "int")
+                nil [1258 1299])
+            ("lck" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mtxStart_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1337 1347]))                  
+                :type ("std::unique_lock" type
+                     (:template-specifier 
+                        ( ("std::mutex" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [1304 1348])
+            ("unlock" function
+               (:prototype-flag t
+                :type "int")
+                nil [1363 1372])
+            ("notify_all" function
+               (:prototype-flag t
+                :type "int")
+                nil [1386 1399])
+            ("lck" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mtxStart_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3090 3100]))                  
+                :type ("std::unique_lock" type
+                     (:template-specifier 
+                        ( ("std::mutex" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3057 3101])
+            ("wait" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("lck" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3616 3620]))                  
+                :type "int")
+                nil [3611 3662])
+            ("pfms::PlatformType" using (:type ("pfms::PlatformType" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [3721 3746])
+            ("pfms::commands::Quadcopter" using (:type ("pfms::commands::Quadcopter" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [3803 3836])
+            ("origin" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) nil [3841 3873])
+            ("estimatedGoalPose" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) nil [3909 3952])
+            ("distance_to_goal" variable (:type "double") nil [3980 4004])
+            ("time_to_goal" variable (:type "double") nil [4040 4060])
+            ("origin_to_destination_possible" variable (:type "bool") nil [4147 4183])
+            ("steering_destination_possible" variable (:type "bool") nil [4256 4291])
+            ("cur_controller_odometry" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) nil [4388 4437])
+            ("cur_distance_to_goal" variable (:type "double") nil [4533 4561])
+            ("pointing_in_goal_direction" variable
+               (:default-value "false"
+                :type "bool")
+                nil [4614 4654])
+            ("more_moving_needed_to_reach_goal" variable
+               (:default-value "true"
+                :type "bool")
+                nil [4736 4781])
+            ("move_rate" variable
+               (:default-value "2.5"
+                :type "double")
+                nil [4787 4808])
+            ("slow_move_rate" variable
+               (:default-value "0.5"
+                :type "double")
+                nil [4851 4877])
+            ("cmd_num" variable
+               (:default-value "1"
+                :type "unsigned long")
+                nil [4933 4957])
+            ("takeoff_reached" variable
+               (:default-value "false"
+                :type "bool")
+                nil [5057 5086])
+            ("at_takeoff_height" variable
+               (:default-value "false"
+                :type "bool")
+                nil [5243 5274])
+            ("seq" variable
+               (:default-value "0"
+                :type "unsigned int")
+                nil [5475 5494])
+            ("setGoalSafe" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("this" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5524 5529])
+                    ("" variable (:type ("getGoalsSafe" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5530 5544])
+                    ("" variable (:type ("at" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5545 5575]))                  
+                :type "int")
+                nil [5512 5577])
+            ("goal" variable (:type ("pfms::geometry_msgs::Goal" type (:type "class") nil nil)) nil [5582 5641])
+            ("send" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("goal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5670 5675]))                  
+                :type "int")
+                nil [5665 5676])
+            ("sleep_for" function
+               (:prototype-flag t
+                :parent "std::this_thread"
+                :arguments 
+                  ( ("" variable (:type ("std::chrono::milliseconds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5710 5739]))                  
+                :type "int")
+                nil [5681 5741])
+            ("quadcopter::State::TAKEOFF" variable (:type "int") nil [5812 5839])
+            ("true" variable (:type "int") nil [13214 13219])
+            ("checkOriginToDestination" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("origin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13665 13672])
+                    ("" variable (:type ("goal" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13673 13678])
+                    ("" variable (:type ("distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13723 13732])
+                    ("" variable (:type ("time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13733 13738])
+                    ("" variable (:type ("estimatedGoalPose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13783 13801]))                  
+                :type "int")
+                nil [13640 13802])
+            ("distance_to_goal_now" variable (:type "double") nil [14011 14039])
+            ("time_to_goal_now" variable (:type "double") nil [14083 14107])
+            ("odometry_now" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) nil [14147 14185])
+            ("estimatedGoalPose" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) nil [14223 14266])
+            ("destination_possible" variable (:type "bool") nil [14297 14323])
+            ("odometry_now" variable
+               (:default-value "this->getOdometry()"
+                :type "int")
+                nil [14549 14584])
+            ("destination_possible" variable
+               (:default-value "object_.checkOriginToDestination(odometry_now, this->getGoalSafe(),
+                                           distance_to_goal_now, time_to_goal_now,
+                                           estimatedGoalPose)"
+                :type "int")
+                nil [14590 14835])
+            ("distance_to_goal_now" variable (:type "int") nil [14852 14873])
+            ("linear_time_to_goal_now" variable (:type "double") nil [15136 15167])
+            ("angular_time_to_goal_now" variable (:type "double") nil [15172 15204])
+            ("total_time_to_goal_now" variable (:type "double") nil [15209 15239])
+            ("origin" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) nil [15244 15276])
+            ("distance" variable (:type "double") nil [15315 15331])
+            ("steering" variable (:type "double") nil [15336 15352])
+            ("angular_distance_yaw_to_steering" variable (:type "double") nil [15492 15532])
+            ("linear_time_to_goal_now" variable
+               (:default-value "(this->distanceToGoal() / MAX_LINEAR_VELOCITY)"
+                :type "int")
+                nil [15610 15683])
+            ("origin" variable
+               (:default-value "this->getOdometry()"
+                :type "int")
+                nil [15690 15719])
+            ("computeSteering" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("origin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15748 15755])
+                    ("" variable (:type ("this" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15756 15761])
+                    ("" variable (:type ("getGoalSafe" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15762 15775])
+                    ("" variable (:type ("steering" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15777 15786])
+                    ("" variable (:type ("distance" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15787 15796]))                  
+                :type "int")
+                nil [15732 15797])
+            ("angular_distance_yaw_to_steering" variable
+               (:default-value "fabs(steering - origin.yaw)"
+                :type "int")
+                nil [15802 15865])
+            ("angular_time_to_goal_now" variable
+               (:default-value "(angular_distance_yaw_to_steering / MAX_ANGULAR_VELOCITY)"
+                :type "int")
+                nil [16274 16367])
+            ("total_time_to_goal_now" variable
+               (:default-value "linear_time_to_goal_now + angular_time_to_goal_now"
+                :type "int")
+                nil [16374 16450])
+            ("total_time_to_goal_now" variable (:type "int") nil [16468 16491])
+            ("obstacles" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("pfms::geometry_msgs::Point" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [16573 16623])
+            ("getObstacles" function
+               (:prototype-flag t
+                :type "int")
+                nil [16650 16665])
+            ("getObsticales" function
+               (:prototype-flag t
+                :type "int")
+                nil [16650 16665])
+            ("obstacles" variable (:type "int") nil [16677 16687])
+            ("pfms::commands::Quadcopter" using (:type ("pfms::commands::Quadcopter" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [17466 17499])
+            ("cur_controller_odometry" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) nil [17780 17829])
+            ("cur_controller_odometry" variable
+               (:default-value "this->getOdometry()"
+                :type "int")
+                nil [17836 17882])
+            ("diff" variable
+               (:default-value "normaliseAngle(cur_controller_odometry.yaw - steering_)"
+                :type "double")
+                nil [17985 18053])
+            ("move_l_r_" variable
+               (:default-value "0"
+                :type "int")
+                nil [18404 18416])
+            ("move_u_d_" variable
+               (:default-value "0"
+                :type "int")
+                nil [18421 18433])
+            ("move_f_b_" variable
+               (:default-value "0"
+                :type "int")
+                nil [18438 18450])
+            ("cmd" variable (:type ("Quadcopter" type (:type "class") nil nil)) nil [18761 18981])
+            ("send" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cmd" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19010 19014]))                  
+                :type "int")
+                nil [19005 19015])
+            ("sleep_for" function
+               (:prototype-flag t
+                :parent "std::this_thread"
+                :arguments 
+                  ( ("" variable (:type ("std::chrono::milliseconds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19049 19078]))                  
+                :type "int")
+                nil [19020 19080])
+            ("false" variable (:type "int") nil [19276 19282])
+            ("theta" variable
+               (:default-value "theta - (2 * M_PI)"
+                :type "int")
+                nil [19373 19400])
+            ("theta" variable
+               (:default-value "theta + (2 * M_PI)"
+                :type "int")
+                nil [19433 19460])
+            ("theta" variable (:type "int") nil [19542 19548])
+            ("pfms::commands::Quadcopter" using (:type ("pfms::commands::Quadcopter" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [19982 20015])
+            ("moveToSteeringAngle" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cmd_num" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20154 20162]))                  
+                :type "int")
+                nil [20121 20163])
+            ("turn_l_r_" variable
+               (:default-value "0.0"
+                :type "int")
+                nil [20516 20530])
+            ("move_l_r_" variable
+               (:default-value "0.0"
+                :type "int")
+                nil [20535 20549])
+            ("move_f_b_" variable
+               (:default-value "move_rate"
+                :type "int")
+                nil [20554 20574])
+            ("move_u_d_" variable
+               (:default-value "0"
+                :type "int")
+                nil [20579 20591])
+            ("cmd" variable (:type ("Quadcopter" type (:type "class") nil nil)) nil [20653 20871])
+            ("send" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cmd" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20900 20904]))                  
+                :type "int")
+                nil [20895 20905])
+            ("sleep_for" function
+               (:prototype-flag t
+                :parent "std::this_thread"
+                :arguments 
+                  ( ("" variable (:type ("std::chrono::milliseconds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21021 21050]))                  
+                :type "int")
+                nil [20993 21052])
+            ("true" variable (:type "int") nil [21200 21205])
+            ("cur_odometry" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) nil [21557 21595])
+            ("num_takeoff_attempts" variable
+               (:default-value "0"
+                :type "unsigned int")
+                nil [21677 21713])
+            ("pfms::commands::Quadcopter" using (:type ("pfms::commands::Quadcopter" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [21775 21808])
+            ("OK" variable
+               (:default-value "pfmsConnectorPtr_->read(cur_odometry)"
+                :type "bool")
+                nil [21858 21907])
+            ("pfms::commands::Quadcopter" using (:type ("pfms::commands::Quadcopter" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [23200 23233])
+            ("cur_odometry" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) nil [23238 23276])
+            ("cur_odometry" variable
+               (:default-value "this->getOdometry()"
+                :type "int")
+                nil [23315 23350])
+            ("turn_l_r_" variable
+               (:default-value "0"
+                :type "int")
+                nil [23471 23483])
+            ("move_l_r_" variable
+               (:default-value "0"
+                :type "int")
+                nil [23488 23500])
+            ("move_u_d_" variable
+               (:default-value "0.4"
+                :type "int")
+                nil [23505 23519])
+            ("move_f_b_" variable
+               (:default-value "0"
+                :type "int")
+                nil [23557 23569])
+            ("cmd" variable (:type ("Quadcopter" type (:type "class") nil nil)) nil [23575 23795])
+            ("send" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cmd" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23824 23828]))                  
+                :type "int")
+                nil [23819 23829])
+            ("sleep_for" function
+               (:prototype-flag t
+                :parent "std::this_thread"
+                :arguments 
+                  ( ("" variable (:type ("std::chrono::milliseconds" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23863 23893]))                  
+                :type "int")
+                nil [23834 23895])
+            ("false" variable (:type "int") nil [24005 24011]))          
+      :file "quadcopter.cpp"
+      :pointmax 24014
+      :fsize 24013
+      :lastmodtime '(26641 47160 326642 805000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18ed010102ac"
+      :major-mode c++-mode
+      :tags 
+        '( ("controller.h" include nil nil [1 24])
+            ("Controller" function
+               (:constructor-flag t
+                :parent "Controller"
+                :type ("Controller" type (:type "class") nil nil))
+                nil [27 147])
+            ("Controller" function
+               (:destructor-flag t
+                :parent "Controller"
+                :type "void")
+                nil [150 183])
+            ("getPlatformType" function
+               (:parent "Controller"
+                :type ("pfms::PlatformType" type (:type "class") nil nil))
+                nil [497 576])
+            ("setStatus" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("status" variable (:type ("pfms::PlatformStatus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [606 634]))                  
+                :type "void")
+                nil [579 732])
+            ("status" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [775 780]))                  
+                :type ("pfms::PlatformStatus" type (:type "class") nil nil))
+                nil [735 949])
+            ("setGoals" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("goals" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("pfms::geometry_msgs::Point" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [978 1024]))                  
+                :type "bool")
+                nil [952 3185])
+            ("setTolerance" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [3218 3235]))                  
+                :type "bool")
+                nil [3188 3519])
+            ("getTolerance" function
+               (:parent "Controller"
+                :type "double")
+                nil [3522 3704])
+            ("setGoalsSafe" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("goals" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("pfms::geometry_msgs::Point" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [3737 3783]))                  
+                :type "void")
+                nil [3707 3884])
+            ("getGoalsSafe" function
+               (:parent "Controller"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("pfms::geometry_msgs::Point" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3887 4139])
+            ("setGoalSafe" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("goal" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4171 4203]))                  
+                :type "void")
+                nil [4142 4302])
+            ("getGoalSafe" function
+               (:parent "Controller"
+                :type ("pfms::geometry_msgs::Point" type (:type "class") nil nil))
+                nil [4305 4634])
+            ("setRunning" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("running" variable (:type "bool") (reparse-symbol arg-sub-list) [4665 4678]))                  
+                :type "void")
+                nil [4637 4783])
+            ("getRunning" function
+               (:parent "Controller"
+                :type "bool")
+                nil [4786 4963])
+            ("getNextGoalToReach" function
+               (:parent "Controller"
+                :type "unsigned int")
+                nil [4966 5194])
+            ("incrementNextGoalToReach" function
+               (:parent "Controller"
+                :type "void")
+                nil [5197 5348])
+            ("distanceTravelled" function
+               (:parent "Controller"
+                :type "double")
+                nil [5350 6249])
+            ("timeTravelled" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6285 6290]))                  
+                :type "double")
+                nil [6252 6309])
+            ("getOdometry" function
+               (:parent "Controller"
+                :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                nil [6312 6986])
+            ("setPlatformRosHandle" function
+               (:parent "Controller"
+                :type "void")
+                nil [6989 7315])
+            ("distanceRemaining" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7355 7360]))                  
+                :type "double")
+                nil [7318 9316]))          
+      :file "controller.cpp"
+      :pointmax 9317
+      :fsize 9316
+      :lastmodtime '(26641 35691 138972 927000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18ed01f12268"
+      :major-mode c++-mode
+      :tags 
+        '( ("CONTROLLER_H" variable (:constant-flag t) nil [30 42])
+            ("controllerinterface.h" include nil nil [44 76])
+            ("pfmsconnector.h" include nil nil [77 103])
+            ("pfms_types.h" include nil nil [104 127])
+            ("Controller" type
+               (:superclasses 
+                  ( ("ControllerInterface" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1116 1123])
+                    ("Controller" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Controller" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1200 1213])
+                    ("Controller" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1218 1232])
+                    ("getPlatformType" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1652 1657]))                          
+                        :type ("pfms::PlatformType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1617 1658])
+                    ("setStatus" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("status" variable (:type ("pfms::PlatformStatus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2131 2159]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2116 2160])
+                    ("status" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2640 2645]))                          
+                        :type ("pfms::PlatformStatus" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2612 2646])
+                    ("setGoals" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("goals" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("pfms::geometry_msgs::Point" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2782 2828]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2768 2829])
+                    ("setTolerance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [3219 3236]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3201 3237])
+                    ("getTolerance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3635 3640]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [3615 3641])
+                    ("setGoalsSafe" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("goals" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("pfms::geometry_msgs::Point" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [4060 4106]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4042 4107])
+                    ("getGoalsSafe" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4524 4529]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pfms::geometry_msgs::Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4470 4530])
+                    ("setGoalSafe" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("goal" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4943 4975]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4926 4976])
+                    ("getGoalSafe" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5406 5411]))                          
+                        :type ("pfms::geometry_msgs::Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5366 5412])
+                    ("setRunning" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("running" variable (:type "bool") (reparse-symbol arg-sub-list) [5844 5857]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5828 5858])
+                    ("getRunning" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6299 6317])
+                    ("getNextGoalToReach" function
+                       (:prototype-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [6706 6740])
+                    ("incrementNextGoalToReach" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7145 7177])
+                    ("distanceTravelled" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7361 7366]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [7336 7367])
+                    ("timeTravelled" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7544 7549]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [7523 7550])
+                    ("getOdometry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7723 7728]))                          
+                        :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7686 7729])
+                    ("protected" label nil (reparse-symbol classsubparts) [7856 7866])
+                    ("setPlatformRosHandle" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [7946 7974])
+                    ("tolerance_" variable (:type "double") (reparse-symbol classsubparts) [8060 8078])
+                    ("platform_type_" variable (:type ("pfms::PlatformType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8084 8118])
+                    ("status_" variable (:type ("pfms::PlatformStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8205 8234])
+                    ("goals_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("pfms::geometry_msgs::Point" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8290 8337])
+                    ("goal_" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8382 8415])
+                    ("pfmsConnectorPtr_" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("PfmsConnector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [8468 8517])
+                    ("mtxData_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8523 8543])
+                    ("running_" variable (:type "bool") (reparse-symbol classsubparts) [8599 8613])
+                    ("next_goal_to_reach_" variable (:type "unsigned int") (reparse-symbol classsubparts) [8773 8806])
+                    ("private" label nil (reparse-symbol classsubparts) [8813 8821])
+                    ("distanceRemaining" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8947 8952]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [8922 8953])
+                    ("prev_distance_remaining_" variable (:type "double") (reparse-symbol classsubparts) [9030 9062])
+                    ("total_distance_travelled_" variable (:type "double") (reparse-symbol classsubparts) [9147 9180]))                  
+                :type "class")
+                nil [1069 9184]))          
+      :file "controller.h"
+      :pointmax 9209
+      :fsize 9208
+      :lastmodtime '(26633 45360 274084 53000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CONTROLLER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-18ed01f6dcd8"
+      :major-mode c++-mode
+      :tags 
+        '( ("CONTROLLERINTERFACE_H" variable (:constant-flag t) nil [39 60])
+            ("vector" include (:system-flag t) nil [62 79])
+            ("pfms_types.h" include nil nil [80 103])
+            ("ControllerInterface" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [681 688])
+                    ("ControllerInterface" function
+                       (:constructor-flag t
+                        :type ("ControllerInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [691 714])
+                    ("run" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [803 808]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [786 813])
+                    ("status" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [996 1001]))                          
+                        :type ("pfms::PlatformStatus" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [960 1006])
+                    ("setGoals" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("goals" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("pfms::geometry_msgs::Point" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1126 1172]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1104 1177])
+                    ("checkOriginToDestination" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("origin" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1893 1925])
+                            ("goal" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1966 1998])
+                            ("distance" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2039 2056])
+                            ("time" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2097 2110])
+                            ("estimatedGoalPose" variable
+                               (:reference 1
+                                :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2151 2195]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1855 2200])
+                    ("getPlatformType" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2307 2312]))                          
+                        :type ("pfms::PlatformType" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2264 2317])
+                    ("distanceToGoal" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2482 2487]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2452 2492])
+                    ("timeToGoal" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2618 2623]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2592 2628])
+                    ("setTolerance" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [2737 2754]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2711 2759])
+                    ("distanceTravelled" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2934 2939]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2901 2944])
+                    ("timeTravelled" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3113 3118]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [3084 3123])
+                    ("getOdometry" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3260 3265]))                          
+                        :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3215 3270])
+                    ("getObstacles" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3484 3489]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("pfms::geometry_msgs::Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3423 3494]))                  
+                :type "class")
+                nil [653 3501]))          
+      :file "controllerinterface.h"
+      :pointmax 3535
+      :fsize 3534
+      :lastmodtime '(26629 52713 988762 517000)
+      :unmatched-syntax '((punctuation 714 . 715))
+      :lexical-table 
+        '(("CONTROLLERINTERFACE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-18ed0225b6fc"
+      :major-mode c++-mode
+      :tags 
+        '( ("ackerman.h" include nil nil [1 22])
+            ("Ackerman" function
+               (:constructor-flag t
+                :parent "Ackerman"
+                :type ("Ackerman" type (:type "class") nil nil))
+                nil [25 522])
+            ("Ackerman" function
+               (:destructor-flag t
+                :parent "Ackerman"
+                :type "void")
+                nil [525 707])
+            ("run" function
+               (:parent "Ackerman"
+                :type "void")
+                nil [710 1171])
+            ("reachGoals" function
+               (:parent "Ackerman"
+                :type "bool")
+                nil [1174 8207])
+            ("checkOriginToDestination" function
+               (:parent "Ackerman"
+                :arguments 
+                  ( ("origin" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8250 8282])
+                    ("goal" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8323 8355])
+                    ("distance" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [8396 8413])
+                    ("time" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [8414 8427])
+                    ("estimatedGoalPose" variable
+                       (:reference 1
+                        :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8468 8512]))                  
+                :type "bool")
+                nil [8210 8766])
+            ("distanceToGoal" function
+               (:parent "Ackerman"
+                :type "double")
+                nil [8770 9838])
+            ("timeToGoal" function
+               (:parent "Ackerman"
+                :type "double")
+                nil [9841 10784])
+            ("getObstacles" function
+               (:parent "Ackerman"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10850 10855]))                  
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("pfms::geometry_msgs::Point" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [10787 10936])
+            ("accelerateToGoal" function
+               (:parent "Ackerman"
+                :arguments 
+                  ( ("cmd_num" variable
+                       (:reference 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [10982 11005]))                  
+                :type ("ackerman::State" type (:type "class") nil nil))
+                nil [10939 13957])
+            ("decelerateToGoal" function
+               (:parent "Ackerman"
+                :arguments 
+                  ( ("cmd_num" variable
+                       (:reference 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [14003 14026]))                  
+                :type ("ackerman::State" type (:type "class") nil nil))
+                nil [13960 17703])
+            ("nudgeForward" function
+               (:parent "Ackerman"
+                :arguments 
+                  ( ("cmd_num" variable
+                       (:reference 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [17746 17769]))                  
+                :type ("ackerman::State" type (:type "class") nil nil))
+                nil [17707 20977]))          
+      :file "ackerman.cpp"
+      :pointmax 20979
+      :fsize 20978
+      :lastmodtime '(26637 43979 517745 958000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18ed02273a9c"
+      :major-mode c++-mode
+      :tags 
+        '( ("DRONE_H" variable (:constant-flag t) nil [25 32])
+            ("pfms_types.h" include nil nil [34 57])
+            ("Drone" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [510 517])
+                    ("Drone" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Drone" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [595 603])
+                    ("Drone" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [606 615])
+                    ("checkOriginToDestination" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("origin" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1343 1375])
+                            ("goal" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1376 1408])
+                            ("distance" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1442 1459])
+                            ("time" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1460 1473])
+                            ("estimatedGoalPose" variable
+                               (:reference 1
+                                :type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1474 1518]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1313 1519])
+                    ("computeSteering" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("origin" variable (:type ("pfms::nav_msgs::Odometry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2019 2051])
+                            ("goal" variable (:type ("pfms::geometry_msgs::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2052 2084])
+                            ("steering" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2107 2124])
+                            ("dist" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2124 2137]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1998 2138])
+                    ("private" label nil (reparse-symbol classsubparts) [2141 2149]))                  
+                :type "class")
+                nil [496 2154]))          
+      :file "drone.h"
+      :pointmax 2174
+      :fsize 2173
+      :lastmodtime '(26632 28976 814589 872000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DRONE_H")
+          )
+))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!quizzes_attempt!quiz4attempt!quiz4.attempt!aa!final_fixed!a2_skeleton!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

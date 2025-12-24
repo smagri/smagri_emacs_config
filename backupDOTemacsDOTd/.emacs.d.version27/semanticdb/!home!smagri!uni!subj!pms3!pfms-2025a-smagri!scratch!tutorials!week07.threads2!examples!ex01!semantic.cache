@@ -1,0 +1,74 @@
+;; Object semanticdb-project-database-file-155d697c6b9c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155d697c6b9c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155d697c6ba8"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("thread" include (:system-flag t) nil [21 38])
+            ("mutex" include (:system-flag t) nil [39 55])
+            ("vector" include (:system-flag t) nil [56 73])
+            ("chrono" include (:system-flag t) nil [74 91])
+            ("random" include (:system-flag t) nil [92 109])
+            ("algorithm" include (:system-flag t) nil [141 161])
+            ("condition_variable" include (:system-flag t) nil [188 217])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [219 239])
+            ("fibonacci" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [290 296]))                  
+                :type "int")
+                nil [276 466])
+            ("generateSamples" function
+               (:arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [523 541])
+                    ("numMutex" variable
+                       (:reference 1
+                        :type ("mutex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [542 558])
+                    ("cv" variable
+                       (:reference 1
+                        :type ("condition_variable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [559 582]))                  
+                :type "void")
+                nil [502 1758])
+            ("processSamples" function
+               (:arguments 
+                  ( ("data" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1818 1836])
+                    ("numMutex" variable
+                       (:reference 1
+                        :type ("mutex" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1837 1853])
+                    ("cv" variable
+                       (:reference 1
+                        :type ("condition_variable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1854 1877]))                  
+                :type "void")
+                nil [1798 2299])
+            ("main" function (:type "int") nil [2301 2742]))          
+      :file "main_convar.cpp"
+      :pointmax 2746
+      :fsize 2745
+      :lastmodtime '(26608 46392 130520 453000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week07.threads2!examples!ex01!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

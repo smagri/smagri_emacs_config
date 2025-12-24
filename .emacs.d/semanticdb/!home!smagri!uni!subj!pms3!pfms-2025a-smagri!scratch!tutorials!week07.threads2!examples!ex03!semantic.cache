@@ -1,0 +1,183 @@
+;; Object semanticdb-project-database-file-155d693f9f8c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155d693f9f8c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155d69686adc"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("stdlib.h" include (:system-flag t) nil [21 40])
+            ("radar.h" include nil nil [41 59])
+            ("vector" include (:system-flag t) nil [60 77])
+            ("chrono" include (:system-flag t) nil [78 95])
+            ("thread" include (:system-flag t) nil [96 113])
+            ("Radar" function
+               (:constructor-flag t
+                :parent "Radar"
+                :type ("Radar" type (:type "class") nil nil))
+                nil [116 573])
+            ("Radar" function
+               (:destructor-flag t
+                :parent "Radar"
+                :type "void")
+                nil [575 673])
+            ("start" function
+               (:parent "Radar"
+                :type "void")
+                nil [675 818])
+            ("generateData" function
+               (:parent "Radar"
+                :type "void")
+                nil [820 2061])
+            ("getData" function
+               (:parent "Radar"
+                :type ("std::vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2064 2397])
+            ("setScanningTime" function
+               (:parent "Radar"
+                :arguments 
+                  ( ("scanningTime" variable (:type "double") (reparse-symbol arg-sub-list) [2428 2448]))                  
+                :type "void")
+                nil [2400 2483])
+            ("getScanningTime" function
+               (:parent "Radar"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2515 2520]))                  
+                :type "double")
+                nil [2485 2547])
+            ("getMaxDistance" function
+               (:parent "Radar"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2578 2583]))                  
+                :type "double")
+                nil [2549 2609]))          
+      :file "radar.cpp"
+      :pointmax 2610
+      :fsize 2609
+      :lastmodtime '(26612 35182 546217 707000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155d68f627cc"
+      :major-mode c++-mode
+      :tags 
+        '( ("RADAR_H" variable (:constant-flag t) nil [117 124])
+            ("string" include (:system-flag t) nil [126 143])
+            ("vector" include (:system-flag t) nil [144 161])
+            ("random" include (:system-flag t) nil [162 179])
+            ("atomic" include (:system-flag t) nil [180 197])
+            ("mutex" include (:system-flag t) nil [198 214])
+            ("condition_variable" include (:system-flag t) nil [215 244])
+            ("thread" include (:system-flag t) nil [245 262])
+            ("Radar" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [281 288])
+                    ("Radar" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Radar" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [294 302])
+                    ("Radar" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [307 316])
+                    ("getData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [408 413]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [380 414])
+                    ("getScanningTime" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [455 460]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [432 461])
+                    ("setScanningTime" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("scanningTime" variable (:type "double") (reparse-symbol arg-sub-list) [532 552]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [511 553])
+                    ("start" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [590 603])
+                    ("getMaxDistance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [704 709]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [682 710])
+                    ("private" label nil (reparse-symbol classsubparts) [755 763])
+                    ("generateData" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [786 791]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [768 792])
+                    ("data_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [797 823])
+                    ("scanningTime_" variable (:type "double") (reparse-symbol classsubparts) [866 887])
+                    ("maxDistance_" variable
+                       (:constant-flag t
+                        :default-value "80.0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [892 925])
+                    ("numTarget_" variable
+                       (:constant-flag t
+                        :default-value "20"
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [930 965])
+                    ("generator_" variable
+                       (:pointer 1
+                        :type ("std::mt19937" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [970 995])
+                    ("value_" variable
+                       (:pointer 1
+                        :type ("std::uniform_real_distribution" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1000 1047])
+                    ("ready_" variable (:type "bool") (reparse-symbol classsubparts) [1052 1064])
+                    ("mtx_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1132 1148])
+                    ("cv_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1153 1181])
+                    ("mtxStart_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1187 1208])
+                    ("cvStart_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1213 1246])
+                    ("threads_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::thread" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1252 1286])
+                    ("running_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1370 1397]))                  
+                :type "class")
+                nil [264 1486]))          
+      :file "radar.h"
+      :pointmax 1507
+      :fsize 1506
+      :lastmodtime '(26612 52812 625035 221000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("RADAR_H")
+          )
+))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week07.threads2!examples!ex03!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

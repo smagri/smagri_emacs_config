@@ -1,0 +1,19 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Aug 24 22:07:21 2020
+;; Desktop file format version 208
+;; Emacs version 25.2.2
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24387 44409 241913 97000) (desktop . "208") "smagri@luqa" nil nil ((((font-backend xft x) (font . "-1ASC-Liberation Mono-normal-normal-normal-*-27-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 0) (alpha) (fullscreen . maximized) (display-type . color) (background-mode . dark) (cursor-color . "white") (sticky) (environment) (frameset--id . "968A-525A-48B0-C08E") (frameset--mini t . t) (height . 61) (width . 230) (modeline . t) (minibuffer . t) (unsplittable) (left . 3938) (top . 55) (icon-name) (visibility . t) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 48) (min-height-ignore . 3) (min-width-ignore . 10) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 128) (min-pixel-width . 768) (min-pixel-height-ignore . 96) (min-pixel-width-ignore . 160) (min-pixel-height-safe . 32) (min-pixel-width-safe . 64)) hc (pixel-width . 3742) (pixel-height . 1920) (total-width . 234) (total-height . 60) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 608) (pixel-height . 1920) (total-width . 38) (total-height . 60) (normal-height . 1.0) (normal-width . 0.16221272047033675) (buffer " *Treemacs-Scoped-Buffer-#<frame  *Minibuf-1* 0x11e7c30>*" (selected . t) (hscroll . 0) (fringes 32 0 nil) (margins nil) (scroll-bars nil 1 t nil 0 t) (vscroll . 0) (dedicated . t) (point . 185) (start . 1))) (leaf (last . t) (pixel-width . 3134) (pixel-height . 1920) (total-width . 196) (total-height . 60) (normal-height . 1.0) (normal-width . 0.8377872795296633) (buffer "*GNU Emacs*" (selected) (hscroll . 0) (fringes 32 0 nil) (margins nil) (scroll-bars nil 1 t nil 0 t) (vscroll . 0) (dedicated) (point . 77) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:

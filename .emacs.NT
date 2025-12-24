@@ -1,0 +1,15 @@
+;; notes:
+;; - brackets must be present for the commands
+;; - watch for type of argument, eg ' is type facep (?), and "" is type stringp
+;; - &optional SOMETHING => no need to enter anything
+
+(set-background-color "Midnight Blue")
+;; set-face-font
+(set-foreground-color "Khaki")
+(set-cursor-color "salmon")
+;;(set-default-font "-adobe-courier-medium-o-normal--10-100-75-75-m-60-iso8859-1")
+
+(set-face-background 'highlight "SteelBlue")
+(set-face-background 'modeline "Khaki")
+(set-face-foreground 'modeline "Midnight Blue")
+(set-face-background 'region "SteelBlue")

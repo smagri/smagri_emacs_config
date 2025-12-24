@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file-13a14488eaa0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-13a14488eaa0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-13a14488eaf7"
+      :major-mode arduino-mode
+      :tags 
+        '( ("ESP8266WiFi.h" include (:system-flag t) nil [1 25])
+            ("ESP8266HTTPClient.h" include (:system-flag t) nil [62 92])
+            ("ArduinoJson.h" include (:system-flag t) nil [93 117])
+            ("ssid" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"EXETEL B31980 2.4G\""
+                :type "char")
+                nil [328 372])
+            ("password" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"6jqCKz5Y\""
+                :type "char")
+                nil [404 438])
+            ("url" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"https://maker.ifttt.com/trigger/tank_level/with/key/ptJbZEpqEFQaB5ZwcLwwBBAJ6KhmVoqpiGvrxModLOp\""
+                :type "char")
+                nil [518 634])
+            ("setup" function (:type "void") nil [674 1757])
+            ("loop" function (:type "void") nil [1760 2753]))          
+      :file "esp8266iftttJson.smagri.ino"
+      :pointmax 2754
+      :fsize 2753
+      :lastmodtime '(25401 12442 759672 21000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!proj!arduino!rfTxRxTankLevel!esp8266iftttJson.smagri!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,84 @@
+;; Object semanticdb-project-database-file-1873dfa3865c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1873dfa3865c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1873e03b2ca4"
+      :major-mode mhtml-mode
+      :tags 
+        '( ("My Project: Assignment 2 for 41012 Students" section nil nil [415 531])
+            ("do not remove this div, it is closed by doxygen! -->
+<div id=\"titlearea\">
+<table cellspacing=\"0\" cellpadding=\"0\">
+ <tbody>
+ <tr style=\"height: 56px;\">
+  <td id=\"projectalign\" style=\"padding-left: 0.5em;\">
+   <div id=\"projectname\">My Project" section nil nil [531 588])
+            ("do not remove this div, it is closed by doxygen! -->
+<div id=\"titlearea\">
+<table cellspacing=\"0\" cellpadding=\"0\">
+ <tbody>
+ <tr style=\"height: 56px;\">
+  <td id=\"projectalign\" style=\"padding-left: 0.5em;\">
+   <div id=\"projectname\">My Project" section nil nil [588 716])
+            ("do not remove this div, it is closed by doxygen! -->
+<div id=\"titlearea\">
+<table cellspacing=\"0\" cellpadding=\"0\">
+ <tbody>
+ <tr style=\"height: 56px;\">
+  <td id=\"projectalign\" style=\"padding-left: 0.5em;\">
+   <div id=\"projectname\">My Project" section nil nil [716 784])
+            ("do not remove this div, it is closed by doxygen! -->
+<div id=\"titlearea\">
+<table cellspacing=\"0\" cellpadding=\"0\">
+ <tbody>
+ <tr style=\"height: 56px;\">
+  <td id=\"projectalign\" style=\"padding-left: 0.5em;\">
+   <div id=\"projectname\">My Project" section nil nil [784 917])
+            ("do not remove this div, it is closed by doxygen! -->
+<div id=\"titlearea\">
+<table cellspacing=\"0\" cellpadding=\"0\">
+ <tbody>
+ <tr style=\"height: 56px;\">
+  <td id=\"projectalign\" style=\"padding-left: 0.5em;\">
+   <div id=\"projectname\">My Project" section nil nil [917 1296])
+            ("/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox(\"searchBox\", \"search\",false,'Search','.html');
+/* @license-end */" section nil nil [1296 1536])
+            ("/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */" section nil nil [1536 1595])
+            ("/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */" section nil nil [1595 1650])
+            ("/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */" section (:members 
+              ( ("SUMMARY" section (:members 
+                  ( ("BASIC MODE:" section nil nil [3767 5087])
+                    ("ADVANCED MODE:" section nil nil [5087 5510]))                  ) nil [2647 5510])
+                ("Operational Details:" section nil nil [5510 6316])
+                ("Installation and operation:" section (:members 
+                  ( ("Step 1: Installing and Running the Simulator:" section (:members 
+                      ( ("https://canvas.uts.edu.au/courses/34249/pages/customising-ubuntu-for-pfms?module_item_id=2098173" anchor nil nil [6842 6845]))                      ) nil [6396 7635])
+                    ("Step 2:  To run the assignment code on command line:" section nil nil [7635 7833])
+                    ("Step 3:  Unit  Tests  are provided:" section (:members 
+                      ( ("simon<span style=\"display: none;\">.nosp@m." anchor nil nil [9600 9603])
+                        ("1.9.1" anchor nil nil [10189 10192]))                      ) nil [7833 10357]))                  ) nil [6316 10357]))              ) nil [1650 10357]))          
+      :file "index.html"
+      :pointmax 10357
+      :fsize 10356
+      :lastmodtime '(26637 62496 583621 394000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!skeleton!a2_skeleton!html!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

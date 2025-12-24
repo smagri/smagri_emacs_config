@@ -1,0 +1,100 @@
+;; Object semanticdb-project-database-file-17c6144f7a6c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17c6144f7a6c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-17c6144f7a4c"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include (:system-flag t) nil [45 69])
+            ("rclcpp/rclcpp.hpp" include nil nil [70 98])
+            ("rclcpp/serialization.hpp" include nil nil [99 134])
+            ("rosbag2_cpp/reader.hpp" include nil nil [135 168])
+            ("ament_index_cpp/get_package_share_directory.hpp" include (:system-flag t) nil [169 227])
+            ("sensor_msgs/msg/range.hpp" include nil nil [229 265])
+            ("sensor_msgs/msg/laser_scan.hpp" include nil nil [342 383])
+            ("../src/laserprocessing.h" include nil nil [540 575])
+            ("../src/mission.h" include nil nil [576 603])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("LaserProcessing" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [660 676])
+                    ("" variable (:type ("CountReturns" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [676 689]))                  
+                :type "int")
+                nil [655 2913])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("LaserProcessing" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2995 3011])
+                    ("" variable (:type ("CountSegments" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3011 3025]))                  
+                :type "int")
+                nil [2990 4206])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("Mission" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4288 4296])
+                    ("" variable (:type ("CreateGridmapFromSonarOdometryMsgs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4296 4331]))                  
+                :type "int")
+                nil [4283 10869])
+            ("shutdown" function
+               (:prototype-flag t
+                :parent "rclcpp"
+                :type "int")
+                nil [10761 10780]))          
+      :file "utest.cpp"
+      :pointmax 10871
+      :fsize 10870
+      :lastmodtime '(26702 21206 320573 980000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c614fb6470"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include (:system-flag t) nil [45 69])
+            ("rclcpp/rclcpp.hpp" include nil nil [70 98])
+            ("rclcpp/serialization.hpp" include nil nil [99 134])
+            ("rosbag2_cpp/reader.hpp" include nil nil [135 168])
+            ("ament_index_cpp/get_package_share_directory.hpp" include (:system-flag t) nil [169 227])
+            ("sensor_msgs/msg/laser_scan.hpp" include nil nil [304 345])
+            ("../src/laserprocessing.h" include nil nil [502 537])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("LaserProcessing" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [594 610])
+                    ("" variable (:type ("CountReturns" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [610 623]))                  
+                :type "int")
+                nil [589 2847])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("Mission" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2929 2937])
+                    ("" variable (:type ("Visualisation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2937 2951]))                  
+                :type "int")
+                nil [2924 4552])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("Mission" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4560 4568])
+                    ("" variable (:type ("Gridmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4568 4576]))                  
+                :type "int")
+                nil [4555 5757]))          
+      :file "utestGridMap.cpp"
+      :pointmax 5758
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c61546d328"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include (:system-flag t) nil [45 69])
+            ("rclcpp/rclcpp.hpp" include nil nil [70 98])
+            ("rclcpp/serialization.hpp" include nil nil [99 134])
+            ("rosbag2_cpp/reader.hpp" include nil nil [135 168])
+            ("ament_index_cpp/get_package_share_directory.hpp" include (:system-flag t) nil [169 227])
+            ("sensor_msgs/msg/laser_scan.hpp" include nil nil [304 345])
+            ("../src/laserprocessing.h" include nil nil [502 537])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("LaserProcessing" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [594 610])
+                    ("" variable (:type ("CountReturns" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [610 623]))                  
+                :type "int")
+                nil [589 2845]))          
+      :file "utest.cpp.orig"
+      :pointmax 2921
+      :fsize 2920
+      :lastmodtime '(26660 20972 353483 802000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!skeleton!a3_submission!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

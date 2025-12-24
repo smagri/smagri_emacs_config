@@ -1,0 +1,43 @@
+;; Object semanticdb-project-database-file-16b1d3c5c3a4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-16b1d3c5c3a4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-16b1d3c59374"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include (:system-flag t) nil [1 25])
+            ("climits" include (:system-flag t) nil [26 44])
+            ("vector" include (:system-flag t) nil [45 62])
+            ("rclcpp/rclcpp.hpp" include nil nil [251 279])
+            ("rclcpp/serialization.hpp" include nil nil [280 315])
+            ("rosbag2_cpp/reader.hpp" include nil nil [316 349])
+            ("ament_index_cpp/get_package_share_directory.hpp" include (:system-flag t) nil [350 408])
+            ("sensor_msgs/msg/laser_scan.hpp" include nil nil [448 489])
+            ("../src/laserprocessing.h" include nil nil [624 659])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("LaserProcessing" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [666 682])
+                    ("" variable (:type ("CountReturns" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [682 695]))                  
+                :type "int")
+                nil [661 1829])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("LaserProcessing" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1836 1852])
+                    ("" variable (:type ("CountSegments" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1852 1866]))                  
+                :type "int")
+                nil [1831 3034])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("LaserProcessing" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3042 3058])
+                    ("" variable (:type ("DetectClosestCone" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3058 3076]))                  
+                :type "int")
+                nil [3037 4285]))          
+      :file "utest.cpp"
+      :pointmax 4285
+      :fsize 4284
+      :lastmodtime '(26654 46062 832289 602000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!quizzes!quiz5!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

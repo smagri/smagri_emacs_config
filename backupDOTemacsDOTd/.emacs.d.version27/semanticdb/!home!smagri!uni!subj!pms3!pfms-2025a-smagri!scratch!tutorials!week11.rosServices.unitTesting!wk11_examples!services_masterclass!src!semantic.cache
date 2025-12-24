@@ -1,0 +1,685 @@
+;; Object semanticdb-project-database-file-170ea6491cb0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-170ea6491cb0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-170ea6491bf0"
+      :major-mode c++-mode
+      :tags 
+        '( ("controller.h" include nil nil [1 24])
+            ("cmath" include (:system-flag t) nil [25 41])
+            ("std::placeholders::_1" using (:type ("std::placeholders::_1" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [43 71])
+            ("Controller" function
+               (:constructor-flag t
+                :parent "Controller"
+                :type ("Controller" type (:type "class") nil nil))
+                nil [151 1144])
+            ("setGoal" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1502 1539]))                  
+                :type "void")
+                nil [1477 1639])
+            ("setGoalClicked" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("geometry_msgs::msg::PointStamped" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1673 1717]))                  
+                :type "void")
+                nil [1641 1944])
+            ("setTolerance" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [1977 1994]))                  
+                :type "bool")
+                nil [1947 2039])
+            ("distanceToGoal" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2075 2080]))                  
+                :type "double")
+                nil [2041 2111])
+            ("timeToGoal" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2142 2147]))                  
+                :type "double")
+                nil [2112 2174])
+            ("distanceTravelled" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2212 2217]))                  
+                :type "double")
+                nil [2175 2253])
+            ("timeInMotion" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2286 2291]))                  
+                :type "double")
+                nil [2254 2323])
+            ("getGoalStats" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2360 2365]))                  
+                :type ("GoalStats" type (:type "class") nil nil))
+                nil [2325 2435])
+            ("goalReached" function
+               (:parent "Controller"
+                :type "bool")
+                nil [2437 2931])
+            ("odoCallback" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("nav_msgs::msg::Odometry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2963 2998]))                  
+                :type "void")
+                nil [2934 3076])
+            ("getOdometry" function
+               (:parent "Controller"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3127 3132]))                  
+                :type ("geometry_msgs::msg::Pose" type (:type "class") nil nil))
+                nil [3078 3201])
+            ("getInfoString" function
+               (:parent "Controller"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [3203 3656]))          
+      :file "controller.cpp"
+      :pointmax 3657
+      :fsize 3656
+      :lastmodtime '(26673 24946 727147 595000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-170ea6491c10"
+      :major-mode c++-mode
+      :tags 
+        '( ("CONTROLLER_H" variable (:constant-flag t) nil [30 42])
+            ("cmath" include (:system-flag t) nil [44 60])
+            ("functional" include (:system-flag t) nil [62 83])
+            ("memory" include (:system-flag t) nil [84 101])
+            ("rclcpp/rclcpp.hpp" include nil nil [104 132])
+            ("tf2/utils.h" include (:system-flag t) nil [133 155])
+            ("tf2_geometry_msgs/tf2_geometry_msgs.hpp" include (:system-flag t) nil [216 266])
+            ("nav_msgs/msg/odometry.hpp" include nil nil [268 304])
+            ("geometry_msgs/msg/point.hpp" include nil nil [305 343])
+            ("geometry_msgs/msg/pose.hpp" include nil nil [344 381])
+            ("std_srvs/srv/set_bool.hpp" include nil nil [412 448])
+            ("controllerinterface.h" include nil nil [450 482])
+            ("GoalStats" type
+               (:members 
+                  ( ("location" variable (:type ("geometry_msgs::msg::Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [623 658])
+                    ("distance" variable (:type "double") (reparse-symbol classsubparts) [689 705])
+                    ("time" variable (:type "double") (reparse-symbol classsubparts) [731 743]))                  
+                :type "struct")
+                nil [532 746])
+            ("Controller" type
+               (:superclasses 
+                  ( ("ControllerInterface" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1209 1216])
+                    ("Controller" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Controller" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1307 1320])
+                    ("setGoal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1729 1766]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1716 1767])
+                    ("checkOriginToDestination" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("origin" variable (:type ("geometry_msgs::msg::Pose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2484 2516])
+                            ("goal" variable (:type ("geometry_msgs::msg::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2557 2588])
+                            ("distance" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2629 2646])
+                            ("time" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2687 2700])
+                            ("estimatedGoalPose" variable
+                               (:reference 1
+                                :type ("geometry_msgs::msg::Pose" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2741 2785]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2446 2790])
+                    ("setTolerance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [2860 2877]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2842 2878])
+                    ("distanceTravelled" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2907 2912]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2882 2913])
+                    ("timeInMotion" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2937 2942]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2917 2943])
+                    ("distanceToGoal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2969 2974]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2947 2975])
+                    ("timeToGoal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2997 3002]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2979 3003])
+                    ("getOdometry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3273 3278]))                          
+                        :type ("geometry_msgs::msg::Pose" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3236 3279])
+                    ("odoCallback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("nav_msgs::msg::Odometry" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3300 3335]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3283 3336])
+                    ("control" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("req" variable
+                               (:constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("std_srvs::srv::SetBool::Request" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3397 3456])
+                            ("res" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("std_srvs::srv::SetBool::Response" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3456 3510]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3376 3513])
+                    ("protected" label nil (reparse-symbol classsubparts) [3515 3525])
+                    ("calcNewGoal" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type ("GoalStats" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3746 3782])
+                    ("goalReached" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3923 3942])
+                    ("getGoalStats" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4020 4025]))                          
+                        :type ("GoalStats" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3997 4026])
+                    ("setGoalClicked" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::msg::PointStamped" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4050 4094]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4030 4095])
+                    ("getInfoString" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4259 4264]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4233 4265])
+                    ("protected" label nil (reparse-symbol classsubparts) [4267 4277])
+                    ("goalSet_" variable (:type "bool") (reparse-symbol classsubparts) [4280 4294])
+                    ("tolerance_" variable (:type "double") (reparse-symbol classsubparts) [4341 4359])
+                    ("status_" variable (:type ("pfms::PlatformStatus" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4387 4416])
+                    ("private" label nil (reparse-symbol classsubparts) [4450 4458])
+                    ("pose_" variable (:type ("geometry_msgs::msg::Pose" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4462 4493])
+                    ("poseMtx_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4529 4549])
+                    ("goal_" variable (:type ("GoalStats" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4605 4621])
+                    ("goalMtx_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4624 4644])
+                    ("distance_travelled_" variable (:type "double") (reparse-symbol classsubparts) [4693 4720])
+                    ("time_travelled_" variable (:type "double") (reparse-symbol classsubparts) [4774 4797])
+                    ("seq_" variable (:type "unsigned int") (reparse-symbol classsubparts) [4859 4877])
+                    ("sub1_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4980 5043])
+                    ("sub2_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5046 5111])
+                    ("sub3_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5114 5186])
+                    ("srv1_" variable (:type ("rclcpp::Service::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5190 5247]))                  
+                :type "class")
+                nil [1141 5251]))          
+      :file "controller.h"
+      :pointmax 5276
+      :fsize 5275
+      :lastmodtime '(26654 46110 77292 460000)
+      :unmatched-syntax '((LONG 4854 . 4858))
+      :lexical-table 
+        '(("CONTROLLER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-170ea6491c30"
+      :major-mode c++-mode
+      :tags 
+        '( ("CONTROLLERINTERFACE_H" variable (:constant-flag t) nil [39 60])
+            ("vector" include (:system-flag t) nil [62 79])
+            ("functional" include (:system-flag t) nil [80 101])
+            ("memory" include (:system-flag t) nil [102 119])
+            ("pfms_types.h" include (:system-flag t) nil [159 182])
+            ("rclcpp/rclcpp.hpp" include nil nil [183 211])
+            ("nav_msgs/msg/odometry.hpp" include nil nil [212 248])
+            ("geometry_msgs/msg/point.hpp" include nil nil [249 287])
+            ("geometry_msgs/msg/pose.hpp" include nil nil [288 325])
+            ("ControllerInterface" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [881 888])
+                    ("ControllerInterface" function
+                       (:constructor-flag t
+                        :type ("ControllerInterface" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [891 914])
+                    ("reachGoal" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1134 1139]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1111 1144])
+                    ("setGoal" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1681 1718]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1660 1723])
+                    ("checkOriginToDestination" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("origin" variable (:type ("geometry_msgs::msg::Pose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2442 2474])
+                            ("goal" variable (:type ("geometry_msgs::msg::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2515 2546])
+                            ("distance" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2587 2604])
+                            ("time" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [2645 2658])
+                            ("estimatedGoalPose" variable
+                               (:reference 1
+                                :type ("geometry_msgs::msg::Pose" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2699 2743]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2404 2748])
+                    ("distanceToGoal" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3071 3076]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [3041 3081])
+                    ("timeToGoal" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3238 3243]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [3212 3248])
+                    ("setTolerance" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("tolerance" variable (:type "double") (reparse-symbol arg-sub-list) [3357 3374]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3331 3379])
+                    ("distanceTravelled" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3523 3528]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [3490 3533])
+                    ("timeInMotion" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3664 3669]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [3636 3674])
+                    ("getOdometry" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3838 3843]))                          
+                        :type ("geometry_msgs::msg::Pose" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3793 3848]))                  
+                :type "class")
+                nil [853 3852]))          
+      :file "controllerinterface.h"
+      :pointmax 3886
+      :fsize 3885
+      :lastmodtime '(26654 46110 77292 460000)
+      :unmatched-syntax '((punctuation 914 . 915))
+      :lexical-table 
+        '(("CONTROLLERINTERFACE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-170ea6491c50"
+      :major-mode c++-mode
+      :tags 
+        '( ("QUADCOPTER_H" variable (:constant-flag t) nil [30 42])
+            ("controller.h" include nil nil [44 67])
+            ("geometry_msgs/msg/twist.hpp" include nil nil [112 150])
+            ("std_msgs/msg/empty.hpp" include nil nil [151 184])
+            ("Quadcopter" type
+               (:superclasses 
+                  ( ("Controller" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [258 265])
+                    ("Quadcopter" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Quadcopter" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [268 281])
+                    ("Quadcopter" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [285 299])
+                    ("reachGoal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [318 323]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [303 324])
+                    ("checkOriginToDestination" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("origin" variable (:type ("geometry_msgs::msg::Pose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [359 391])
+                            ("goal" variable (:type ("geometry_msgs::msg::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [392 423])
+                            ("distance" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [457 474])
+                            ("time" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [475 488])
+                            ("estimatedGoalPose" variable
+                               (:reference 1
+                                :type ("geometry_msgs::msg::Pose" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [522 566]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [329 567])
+                    ("control" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("req" variable
+                               (:constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("std_srvs::srv::SetBool::Request" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [618 677])
+                            ("res" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("std_srvs::srv::SetBool::Response" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [677 731]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [605 732])
+                    ("private" label nil (reparse-symbol classsubparts) [734 742])
+                    ("calcNewGoal" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [949 954]))                          
+                        :type ("GoalStats" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [927 955])
+                    ("sendCmd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("turn_l_r" variable (:type "double") (reparse-symbol arg-sub-list) [972 988])
+                            ("move_l_r" variable (:type "double") (reparse-symbol arg-sub-list) [989 1005])
+                            ("move_u_d" variable (:type "double") (reparse-symbol arg-sub-list) [1006 1022])
+                            ("move_f_b" variable (:type "double") (reparse-symbol arg-sub-list) [1023 1039]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [959 1040])
+                    ("sendTakeOff" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1062 1067]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1045 1068])
+                    ("sendLanding" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1091 1096]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1074 1097])
+                    ("target_angle_" variable
+                       (:default-value "0"
+                        :type "double")
+                        (reparse-symbol classsubparts) [1102 1127])
+                    ("liftoff_" variable (:type "bool") (reparse-symbol classsubparts) [1202 1216])
+                    ("landed_" variable (:type "bool") (reparse-symbol classsubparts) [1266 1279])
+                    ("TARGET_SPEED" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [1326 1352])
+                    ("TARGET_HEIGHT_TOLERANCE" variable
+                       (:constant-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [1355 1392])
+                    ("pubCmdVel_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1396 1463])
+                    ("pubTakeOff_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1466 1529])
+                    ("pubLanding_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1533 1596])
+                    ("timer_" variable (:type ("rclcpp::TimerBase::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1600 1636]))                  
+                :type "class")
+                nil [220 1640]))          
+      :file "quadcopter.h"
+      :pointmax 1665
+      :fsize 1664
+      :lastmodtime '(26654 46110 78292 439000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("QUADCOPTER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-170ea6491c70"
+      :major-mode c++-mode
+      :tags 
+        '( ("quadcopter.h" include nil nil [1 24])
+            ("iostream" include (:system-flag t) nil [25 44])
+            ("cmath" include (:system-flag t) nil [45 61])
+            ("thread" include (:system-flag t) nil [62 79])
+            ("chrono" include (:system-flag t) nil [80 97])
+            ("time.h" include (:system-flag t) nil [98 115])
+            ("DEBUG" variable (:constant-flag t) nil [125 130])
+            ("ROS_INFO" variable (:constant-flag t) nil [141 149])
+            ("ROS_DEBUG" variable (:constant-flag t) nil [175 184])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [204 220])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [221 237])
+            ("std::chrono_literals" using (:type ("std::chrono_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [238 275])
+            ("Quadcopter" function
+               (:constructor-flag t
+                :parent "Quadcopter"
+                :type ("Quadcopter" type (:type "class") nil nil))
+                nil [433 945])
+            ("Quadcopter" function
+               (:destructor-flag t
+                :parent "Quadcopter"
+                :type "void")
+                nil [948 980])
+            ("checkOriginToDestination" function
+               (:parent "Quadcopter"
+                :arguments 
+                  ( ("origin" variable (:type ("geometry_msgs::msg::Pose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1025 1057])
+                    ("goal" variable (:type ("geometry_msgs::msg::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1087 1118])
+                    ("distance" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1147 1164])
+                    ("time" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1165 1178])
+                    ("estimatedGoalPose" variable
+                       (:reference 1
+                        :type ("geometry_msgs::msg::Pose" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1207 1251]))                  
+                :type "bool")
+                nil [983 1839])
+            ("calcNewGoal" function
+               (:parent "Quadcopter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1875 1880]))                  
+                :type ("GoalStats" type (:type "class") nil nil))
+                nil [1841 2371])
+            ("sendCmd" function
+               (:parent "Quadcopter"
+                :arguments 
+                  ( ("turn_l_r" variable (:type "double") (reparse-symbol arg-sub-list) [2398 2414])
+                    ("move_l_r" variable (:type "double") (reparse-symbol arg-sub-list) [2415 2431])
+                    ("move_u_d" variable (:type "double") (reparse-symbol arg-sub-list) [2432 2448])
+                    ("move_f_b" variable (:type "double") (reparse-symbol arg-sub-list) [2449 2465]))                  
+                :type "void")
+                nil [2373 2739])
+            ("sendTakeOff" function
+               (:parent "Quadcopter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2771 2776]))                  
+                :type "void")
+                nil [2742 2841])
+            ("sendLanding" function
+               (:parent "Quadcopter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2873 2878]))                  
+                :type "void")
+                nil [2844 2943])
+            ("reachGoal" function
+               (:parent "Quadcopter"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2973 2978]))                  
+                :type "bool")
+                nil [2946 4928])
+            ("control" function
+               (:parent "Quadcopter"
+                :arguments 
+                  ( ("req" variable
+                       (:constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("std_srvs::srv::SetBool::Request" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4989 5048])
+                    ("res" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("std_srvs::srv::SetBool::Response" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5048 5102]))                  
+                :type "void")
+                nil [4964 5629]))          
+      :file "quadcopter.cpp"
+      :pointmax 5631
+      :fsize 5630
+      :lastmodtime '(26658 62628 557816 270000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ROS_INFO" . ((symbol "RCUTILS_LOG_INFO" 150 . 166)))
+          ("DEBUG" . ((number "1" 131 . 132)))
+          ("ROS_DEBUG" . ((symbol "RCUTILS_LOG_DEBUG" 185 . 202)))
+          )
+)
+    (semanticdb-table "semanticdb-table-170ea6491c90"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("algorithm" include (:system-flag t) nil [39 59])
+            ("cmath" include (:system-flag t) nil [60 76])
+            ("quadcopter.h" include nil nil [78 101])
+            ("rclcpp/rclcpp.hpp" include nil nil [102 130])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [141 150])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [151 163]))                  
+                :type "int")
+                nil [132 324]))          
+      :file "main.cpp"
+      :pointmax 325
+      :fsize 324
+      :lastmodtime '(26654 46110 77292 460000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week11.rosServices.unitTesting!wk11_examples!services_masterclass!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,298 @@
+;; Object semanticdb-project-database-file-17c61540f6ac
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17c61540f6ac"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-17c61540f5ac"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("algorithm" include (:system-flag t) nil [64 84])
+            ("thread" include (:system-flag t) nil [85 102])
+            ("cmath" include (:system-flag t) nil [103 119])
+            ("pfms_types.h" include nil nil [120 143])
+            ("ackerman.h" include nil nil [173 194])
+            ("mission.h" include nil nil [195 215])
+            ("test_helper.h" include nil nil [275 299])
+            ("pfmshog.h" include nil nil [300 320])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [322 342])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [343 374])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("AckermanReachGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [525 544])
+                    ("" variable (:type ("ThreeGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [545 556]))                  
+                :type "int")
+                nil [520 3250])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3261 3270])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3271 3283]))                  
+                :type "int")
+                nil [3252 3356]))          
+      :file "test_audi_reach_goals.cpp"
+      :pointmax 3357
+      :fsize 3356
+      :lastmodtime '(26614 11001 409749 24000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c61540f5cc"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("algorithm" include (:system-flag t) nil [64 84])
+            ("thread" include (:system-flag t) nil [85 102])
+            ("cmath" include (:system-flag t) nil [103 119])
+            ("pfms_types.h" include nil nil [120 143])
+            ("quadcopter.h" include nil nil [173 196])
+            ("test_helper.h" include nil nil [256 280])
+            ("pfmshog.h" include nil nil [281 301])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [303 323])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [324 355])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("QuadcopterReachGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [506 527])
+                    ("" variable (:type ("ThreeGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [528 539]))                  
+                :type "int")
+                nil [501 3374])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3385 3394])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3395 3407]))                  
+                :type "int")
+                nil [3376 3480]))          
+      :file "test_quad_reach_goals.cpp"
+      :pointmax 3481
+      :fsize 3480
+      :lastmodtime '(26699 49485 83690 341000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c61540f5ec"
+      :major-mode c-mode
+      :tags 
+        '( ("TEST_HELPER_H" variable (:constant-flag t) nil [31 44])
+            ("pfms_types.h" include nil nil [46 69])
+            ("cmath" include (:system-flag t) nil [70 86])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [88 119])
+            ("populateOdo" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [398 407])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [408 417])
+                    ("yaw" variable (:type "double") (reparse-symbol arg-sub-list) [418 429]))                  
+                :type ("Odometry" type (:type "class") nil nil))
+                nil [377 589])
+            ("populateOdo" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [894 903])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [904 913])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [914 923])
+                    ("yaw" variable (:type "double") (reparse-symbol arg-sub-list) [924 935]))                  
+                :type ("Odometry" type (:type "class") nil nil))
+                nil [873 1095]))          
+      :file "test_helper.h"
+      :pointmax 1121
+      :fsize 1120
+      :lastmodtime '(26612 35202 592921 317000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TEST_HELPER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-17c61540f60c"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("algorithm" include (:system-flag t) nil [64 84])
+            ("thread" include (:system-flag t) nil [85 102])
+            ("cmath" include (:system-flag t) nil [103 119])
+            ("pfms_types.h" include nil nil [120 143])
+            ("ackerman.h" include nil nil [173 194])
+            ("quadcopter.h" include nil nil [195 218])
+            ("mission.h" include nil nil [219 239])
+            ("test_helper.h" include nil nil [299 323])
+            ("pfmshog.h" include nil nil [324 344])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [346 366])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [367 398])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("MissionReachGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [549 567])
+                    ("" variable (:type ("ThreeGoalsEach" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [568 583]))                  
+                :type "int")
+                nil [544 5255])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5266 5275])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5276 5288]))                  
+                :type "int")
+                nil [5257 5361]))          
+      :file "test_mission_reach_goals.cpp"
+      :pointmax 5362
+      :fsize 5361
+      :lastmodtime '(26624 33257 370498 90000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c61540f62c"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("algorithm" include (:system-flag t) nil [64 84])
+            ("thread" include (:system-flag t) nil [85 102])
+            ("cmath" include (:system-flag t) nil [103 119])
+            ("pfms_types.h" include nil nil [120 143])
+            ("ackerman.h" include nil nil [173 194])
+            ("mission.h" include nil nil [195 215])
+            ("test_helper.h" include nil nil [275 299])
+            ("pfmshog.h" include nil nil [300 320])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [322 342])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [343 374])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("TSPAckerman" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [525 537])
+                    ("" variable (:type ("FiveGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [538 548]))                  
+                :type "int")
+                nil [520 4314])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4325 4334])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4335 4347]))                  
+                :type "int")
+                nil [4316 4420]))          
+      :file "tsp_reach_goals_ack.cpp"
+      :pointmax 4421
+      :fsize 4420
+      :lastmodtime '(26612 35202 592921 317000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c61540f64c"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("algorithm" include (:system-flag t) nil [64 84])
+            ("thread" include (:system-flag t) nil [85 102])
+            ("cmath" include (:system-flag t) nil [103 119])
+            ("pfms_types.h" include nil nil [120 143])
+            ("quadcopter.h" include nil nil [173 196])
+            ("mission.h" include nil nil [197 217])
+            ("test_helper.h" include nil nil [277 301])
+            ("pfmshog.h" include nil nil [302 322])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [324 344])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [345 376])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("TSPQuadcopter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [527 541])
+                    ("" variable (:type ("FiveGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [542 552]))                  
+                :type "int")
+                nil [522 4406])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4417 4426])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4427 4439]))                  
+                :type "int")
+                nil [4408 4512]))          
+      :file "tsp_reach_goals_quad.cpp"
+      :pointmax 4513
+      :fsize 4512
+      :lastmodtime '(26624 33257 370498 90000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c61540f66c"
+      :major-mode c++-mode
+      :tags nil
+      :file "tsp_order_goals_quad.cpp"
+      :pointmax 1
+      :fsize 1972
+      :lastmodtime '(26637 33555 802322 71000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c61540f68c"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("algorithm" include (:system-flag t) nil [64 84])
+            ("thread" include (:system-flag t) nil [85 102])
+            ("cmath" include (:system-flag t) nil [103 119])
+            ("pfms_types.h" include nil nil [120 143])
+            ("ackerman.h" include nil nil [173 194])
+            ("mission.h" include nil nil [195 215])
+            ("test_helper.h" include nil nil [217 241])
+            ("pfmshog.h" include nil nil [242 262])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [265 296])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("TSPAckerman" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [525 537])
+                    ("" variable (:type ("OrderGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [538 549]))                  
+                :type "int")
+                nil [520 1909])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1920 1929])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1930 1942]))                  
+                :type "int")
+                nil [1911 2019]))          
+      :file "tsp_order_goals_ack.cpp"
+      :pointmax 2020
+      :fsize 2019
+      :lastmodtime '(26637 32959 103470 976000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!skeleton!a2_skeleton!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

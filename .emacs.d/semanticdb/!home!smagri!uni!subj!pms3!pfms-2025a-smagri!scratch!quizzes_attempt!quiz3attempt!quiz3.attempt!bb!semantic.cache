@@ -1,0 +1,64 @@
+;; Object semanticdb-project-database-file-1563b1a610ac
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1563b1a610ac"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1563b149b7a8"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("thread" include (:system-flag t) nil [21 38])
+            ("vector" include (:system-flag t) nil [39 56])
+            ("iostream" include (:system-flag t) nil [57 76])
+            ("radar.h" include nil nil [78 96])
+            ("analysis.h" include nil nil [97 118])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [133 138]))                  
+                :type "int")
+                nil [123 1026]))          
+      :file "main.cpp"
+      :pointmax 1028
+      :fsize 1027
+      :lastmodtime '(26603 34976 733780 717000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1563b0cc9af0"
+      :file "analysis.h"
+      :fsize 656
+      :lastmodtime '(26599 21256 683050 838000))
+    (semanticdb-table "semanticdb-table-1563b1426a04"
+      :major-mode c++-mode
+      :tags 
+        '( ("analysis.h" include nil nil [1 22])
+            ("iostream" include (:system-flag t) nil [24 43])
+            ("thread" include (:system-flag t) nil [89 106])
+            ("chrono" include (:system-flag t) nil [107 124])
+            ("Analysis" function
+               (:constructor-flag t
+                :parent "Analysis"
+                :arguments 
+                  ( ("radarPtr" variable (:type ("std::shared_ptr" type
+                         (:template-specifier 
+                            ( ("Radar" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [145 177]))                  
+                :type ("Analysis" type (:type "class") nil nil))
+                nil [126 207])
+            ("computeScanningSpeed" function
+               (:parent "Analysis"
+                :arguments 
+                  ( ("samples" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [328 349])
+                    ("scanningSpeed" variable
+                       (:reference 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [350 372]))                  
+                :type "void")
+                nil [292 1114]))          
+      :file "analysis.cpp"
+      :pointmax 1115
+      :fsize 1114
+      :lastmodtime '(26603 34771 352245 798000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!quizzes_attempt!quiz3attempt!quiz3.attempt!bb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

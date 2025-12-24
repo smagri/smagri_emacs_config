@@ -1,0 +1,73 @@
+;; Object semanticdb-project-database-file-16059de15d94
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-16059de15d94"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-16059e1726cc"
+      :major-mode c++-mode
+      :tags 
+        '( ("sample.h" include nil nil [1 20])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [130 146])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [147 163])
+            ("std::placeholders::_1" using (:type ("std::placeholders::_1" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [165 193])
+            ("PfmsSample" function
+               (:constructor-flag t
+                :parent "PfmsSample"
+                :type ("PfmsSample" type (:type "class") nil nil))
+                nil [196 759])
+            ("PfmsSample" function
+               (:destructor-flag t
+                :parent "PfmsSample"
+                :type "void")
+                nil [761 901])
+            ("odom_callback" function
+               (:parent "PfmsSample"
+                :arguments 
+                  ( ("msg" variable
+                       (:constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("nav_msgs::msg::Odometry" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1032 1083]))                  
+                :type "void")
+                nil [1001 1326])
+            ("laser_callback" function
+               (:parent "PfmsSample"
+                :arguments 
+                  ( ("msg" variable
+                       (:constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("sensor_msgs::msg::LaserScan" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1443 1498]))                  
+                :type "void")
+                nil [1411 1691])
+            ("process" function
+               (:parent "PfmsSample"
+                :type "void")
+                nil [1694 3408]))          
+      :file "sample.cpp"
+      :pointmax 3409
+      :fsize 3408
+      :lastmodtime '(26644 41182 422884 534000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-16059e4e5b2c"
+      :file "sample.h"
+      :fsize 2124
+      :lastmodtime '(26644 41182 422884 534000)))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!tutorials!week10!wk10_examples!topics_masterclass!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

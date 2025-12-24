@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file-18ed020a16b4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18ed020a16b4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18ed0226c258"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [92 109])
+            ("../src/analysis.h" include nil nil [152 180])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [181 201])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("AnalysisTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [210 223])
+                    ("" variable (:type ("CountCharacters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [224 240]))                  
+                :type "int")
+                nil [204 341])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [354 363])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [364 376]))                  
+                :type "int")
+                nil [345 449]))          
+      :file "utest.cpp"
+      :pointmax 450
+      :fsize 449
+      :lastmodtime '(26627 9638 401149 631000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!quizzes_attempt!quiz4attempt!quiz4.attempt!bb!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

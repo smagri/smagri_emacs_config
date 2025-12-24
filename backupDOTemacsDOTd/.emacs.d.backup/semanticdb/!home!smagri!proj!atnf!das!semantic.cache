@@ -1,0 +1,1548 @@
+;; Object semanticdb-project-database-file-158e13d785a4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-158e13d785a4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-158e13d785b0"
+      :major-mode c-mode
+      :tags 
+        '( ("Xm/ToggleB.h" include (:system-flag t) nil [13176 13199])
+            ("Xm/TextF.h" include (:system-flag t) nil [13200 13221])
+            ("Xm/Text.h" include (:system-flag t) nil [13222 13242])
+            ("Xm/RowColumn.h" include (:system-flag t) nil [13243 13268])
+            ("Xm/Scale.h" include (:system-flag t) nil [13269 13290])
+            ("Xm/Separator.h" include (:system-flag t) nil [13291 13316])
+            ("Xm/PushB.h" include (:system-flag t) nil [13317 13338])
+            ("Xm/MessageB.h" include (:system-flag t) nil [13339 13363])
+            ("Xm/LabelG.h" include (:system-flag t) nil [13364 13386])
+            ("Xm/Label.h" include (:system-flag t) nil [13387 13408])
+            ("Xm/Form.h" include (:system-flag t) nil [13409 13429])
+            ("Xm/FileSB.h" include (:system-flag t) nil [13430 13452])
+            ("Xm/DialogS.h" include (:system-flag t) nil [13453 13476])
+            ("Xm/CascadeB.h" include (:system-flag t) nil [13477 13501])
+            ("Xm/BulletinB.h" include (:system-flag t) nil [13502 13527])
+            ("Xm/Xm.h" include (:system-flag t) nil [13528 13546])
+            ("X11/cursorfont.h" include (:system-flag t) nil [13593 13620])
+            ("sys/utsname.h" include (:system-flag t) nil [13621 13645])
+            ("sys/types.h" include (:system-flag t) nil [13646 13668])
+            ("sys/time.h" include (:system-flag t) nil [13669 13690])
+            ("sys/stat.h" include (:system-flag t) nil [13691 13712])
+            ("sys/ioctl.h" include (:system-flag t) nil [13713 13735])
+            ("unistd.h" include (:system-flag t) nil [13736 13755])
+            ("time.h" include (:system-flag t) nil [13756 13773])
+            ("stdlib.h" include (:system-flag t) nil [13774 13793])
+            ("stdio.h" include (:system-flag t) nil [13794 13812])
+            ("signal.h" include (:system-flag t) nil [13813 13832])
+            ("math.h" include (:system-flag t) nil [13833 13850])
+            ("getopt.h" include (:system-flag t) nil [13851 13870])
+            ("fcntl.h" include (:system-flag t) nil [13871 13889])
+            ("errno.h" include (:system-flag t) nil [13890 13908])
+            ("generic.h" include (:system-flag t) nil [13910 13930])
+            ("das.h" include (:system-flag t) nil [13932 13948])
+            ("ds.h" include (:system-flag t) nil [13949 13964])
+            ("APP_FCOLOUR" variable (:constant-flag t) nil [14026 14037])
+            ("APP_BCOLOUR" variable (:constant-flag t) nil [14091 14102])
+            ("NO_IFP_VALID" variable (:constant-flag t) nil [14240 14252])
+            ("NUM_MVIEWS" variable (:constant-flag t) nil [14265 14275])
+            ("NUM_IFPS" variable (:constant-flag t) nil [14286 14294])
+            ("MVIEWS" variable (:constant-flag t) nil [14305 14311])
+            ("MVIEWD" variable (:constant-flag t) nil [14322 14328])
+            ("NOTNORM_BCOLOUR" variable (:constant-flag t) nil [14508 14523])
+            ("ERR_BCOLOUR" variable (:constant-flag t) nil [14549 14560])
+            ("MONITOR_STATUS_BCOLOUR" variable (:constant-flag t) nil [14607 14629])
+            ("DAS_WIDTH" variable (:constant-flag t) nil [14761 14770])
+            ("DAS_HEIGHT" variable (:constant-flag t) nil [15076 15086])
+            ("DAS_ROW_HEIGHT" variable (:constant-flag t) nil [15099 15113])
+            ("COL_SPACE" variable (:constant-flag t) nil [15157 15166])
+            ("COL_SPACE2" variable (:constant-flag t) nil [15178 15188])
+            ("COMM_WIDTH" variable (:constant-flag t) nil [15272 15282])
+            ("COMM_HEIGHT" variable (:constant-flag t) nil [15377 15388])
+            ("COMM_NUM_TEXT_WIDGETS" variable (:constant-flag t) nil [15428 15449])
+            ("BSB_NUM_TEXT_WIDGETS" variable (:constant-flag t) nil [15497 15517])
+            ("BSB_NUM_OPTN_MENU_WIDGETS" variable (:constant-flag t) nil [15553 15578])
+            ("BSB_NUM_ROWS" variable (:constant-flag t) nil [15594 15606])
+            ("OPTNMENU_EXTRA" variable (:constant-flag t) nil [15618 15632])
+            ("BSB_WIDTH" variable (:constant-flag t) nil [15676 15685])
+            ("BSB_HEIGHT" variable (:constant-flag t) nil [15698 15708])
+            ("MAX_FTB_INPUT_BW" variable (:constant-flag t) nil [15808 15824])
+            ("FTB_NUM_ROWS" variable (:constant-flag t) nil [15879 15891])
+            ("FTB_NUM_INT_TEXT_WIDGETS" variable (:constant-flag t) nil [15903 15927])
+            ("FTB_NUM_DOUBLE_TEXT_WIDGETS" variable (:constant-flag t) nil [15963 15990])
+            ("FTB_NUM_TEXT_WIDGETS" variable (:constant-flag t) nil [16005 16025])
+            ("FTB_NUM_OPTN_MENU_WIDGETS" variable (:constant-flag t) nil [16102 16127])
+            ("FTB_WIDTH" variable (:constant-flag t) nil [16143 16152])
+            ("FTB_HEIGHT" variable (:constant-flag t) nil [16165 16175])
+            ("ALARMS_WIDTH" variable (:constant-flag t) nil [16275 16287])
+            ("ALARMS_HEIGHT" variable (:constant-flag t) nil [16300 16313])
+            ("MONITORFREQ_WIDTH" variable (:constant-flag t) nil [16375 16392])
+            ("MONITORFREQ_HEIGHT" variable (:constant-flag t) nil [16405 16423])
+            ("MVIEWS_SCALE_WIDTH" variable (:constant-flag t) nil [16500 16518])
+            ("S2CORR_MAX_ROWS" variable (:constant-flag t) nil [16575 16590])
+            ("S2_MAX_ROWS" variable (:constant-flag t) nil [16602 16613])
+            ("CORR_MAX_ROWS" variable (:constant-flag t) nil [16625 16638])
+            ("S2_NUM_OPTN_MENU_WIDGETS" variable (:constant-flag t) nil [16649 16673])
+            ("CORR_NUM_OPTN_MENU_WIDGETS" variable (:constant-flag t) nil [16722 16748])
+            ("S2_MAX_OPTN_MENU_OPTNS" variable (:constant-flag t) nil [16799 16821])
+            ("CORR_MAX_OPTN_MENU_OPTNS" variable (:constant-flag t) nil [16832 16856])
+            ("S2CORR_WIDTH" variable (:constant-flag t) nil [16868 16880])
+            ("S2CORR_HEIGHT" variable (:constant-flag t) nil [16893 16906])
+            ("S2CORR_SECTN0_NUM_OPTN_MENU_WIDGETS" variable (:constant-flag t) nil [16919 16954])
+            ("S2CORR_SECTN1_NUM_OPTN_MENU_WIDGETS" variable (:constant-flag t) nil [16965 17000])
+            ("ALARMS_NUM_ROWS" variable (:constant-flag t) nil [17025 17040])
+            ("MODIFY_CONFIG_FLAG_UNSET" variable (:constant-flag t) nil [17110 17134])
+            ("MODIFY_CONFIG_FLAG_SET" variable (:constant-flag t) nil [17145 17167])
+            ("MODIFY_CONFIG_FLAG_ASIS" variable (:constant-flag t) nil [17178 17201])
+            ("MONITOR_OPERATING_MODE" variable (:constant-flag t) nil [17265 17287])
+            ("CONTROL_OPERATING_MODE" variable (:constant-flag t) nil [17320 17342])
+            ("fallback_resources" variable
+               (:dereference 1
+                :default-value "{
+  \"Das*fontList: *-lucida-bold-r-normal-sans-10-100-75-75-p-66-iso8859-1\",
+  \"Das.geometry:				-0+0\",
+  \"Das*foreground:				white\",
+  \"Das*background:				turquoise4\",
+  \"Das*Done.background: red4\",
+  \"Das*Done.foreground: white\",
+  (char *) NULL
+}"
+                :type ("String" type (:type "class") nil nil))
+                nil [17940 18221])
+            ("int_text_entry_info_struct" type
+               (:members 
+                  ( ("cur_struct_member_ptr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [18286 18313])
+                    ("widget_id" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18316 18333])
+                    ("cur_entry_label_ptr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [18336 18362])
+                    ("ifp" variable (:type "int") (reparse-symbol classsubparts) [18365 18373]))                  
+                :type "struct")
+                nil [18249 18376])
+            ("luint_text_entry_info_struct" type
+               (:members 
+                  ( ("cur_var_ptr" variable
+                       (:pointer 1
+                        :type "unsigned long int")
+                        (reparse-symbol classsubparts) [18417 18448])
+                    ("widget_id" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18451 18468]))                  
+                :type "struct")
+                nil [18378 18471])
+            ("double_text_entry_info_struct" type
+               (:members 
+                  ( ("cur_struct_member_ptr" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [18513 18543])
+                    ("widget_id" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18546 18563])
+                    ("cur_entry_label_ptr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [18566 18592])
+                    ("ifp" variable (:type "int") (reparse-symbol classsubparts) [18595 18603]))                  
+                :type "struct")
+                nil [18473 18606])
+            ("optn_menu_entry_info_struct" type
+               (:members 
+                  ( ("cur_struct_member_ptr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [18646 18673])
+                    ("cur_entry_label_str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [18676 18702])
+                    ("btn_str" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [18705 18722])
+                    ("ifp" variable (:type "int") (reparse-symbol classsubparts) [18725 18733]))                  
+                :type "struct")
+                nil [18608 18736])
+            ("alarms_info_struct" type
+               (:members 
+                  ( ("cur_struct_member_ptr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [18767 18795])
+                    ("widget_id" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18798 18815]))                  
+                :type "struct")
+                nil [18738 18818])
+            ("error_dialog_struct" type
+               (:members 
+                  ( ("message_cmpd_str" variable (:type ("XmString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18850 18876])
+                    ("parent_widget_id" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol classsubparts) [18879 18903]))                  
+                :type "struct")
+                nil [18820 18906])
+            ("update_config_status_info_struct" type
+               (:members 
+                  ( ("modify_sftw_config_flag" variable (:type "char") (reparse-symbol classsubparts) [18951 18980])
+                    ("modify_hdw_config_flag" variable (:type "char") (reparse-symbol classsubparts) [18983 19011])
+                    ("update_mode" variable (:type "char") (reparse-symbol classsubparts) [19014 19031]))                  
+                :type "struct")
+                nil [18908 19034])
+            ("mviews" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19126 19131]))                  
+                :type "void")
+                nil [19114 19132])
+            ("mviewd" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19145 19150]))                  
+                :type "void")
+                nil [19133 19151])
+            ("init_sftw_config_bsb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19178 19183]))                  
+                :type "void")
+                nil [19152 19184])
+            ("init_sftw_config_ftb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19258 19263]))                  
+                :type "void")
+                nil [19232 19264])
+            ("init_sftw_config_s2corr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19294 19299]))                  
+                :type "void")
+                nil [19265 19300])
+            ("init_sftw_config_comm" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [19329 19334]))                  
+                :type "void")
+                nil [19302 19335])
+            ("int_text_entry_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19361 19370])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19371 19393])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19394 19414]))                  
+                :type "void")
+                nil [19337 19415])
+            ("luint_text_entry_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19442 19451])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19451 19473])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19473 19493]))                  
+                :type "void")
+                nil [19416 19494])
+            ("double_text_entry_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19522 19531])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19531 19553])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19553 19573]))                  
+                :type "void")
+                nil [19495 19574])
+            ("optn_menu_entry_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19600 19609])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19610 19632])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19633 19653]))                  
+                :type "void")
+                nil [19575 19654])
+            ("update_sftw_config_status" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("modify_sftw_config_status_flag" variable (:type "char") (reparse-symbol arg-sub-list) [19686 19722]))                  
+                :type "void")
+                nil [19655 19723])
+            ("update_hdw_config_status" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("modify_hdw_config_status_flag" variable (:type "char") (reparse-symbol arg-sub-list) [19754 19789]))                  
+                :type "void")
+                nil [19724 19790])
+            ("update_config_status_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19821 19830])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19831 19853])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19862 19882]))                  
+                :type "void")
+                nil [19791 19883])
+            ("monitor_error_dialog" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cur_err" variable
+                       (:pointer 1
+                        :type ("error_dialog_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19910 19946]))                  
+                :type "void")
+                nil [19884 19947])
+            ("get_ds_get_err_str" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("retval" variable (:type "int") (reparse-symbol arg-sub-list) [19972 19983])
+                    ("err_msg_str" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19984 20003]))                  
+                :type "void")
+                nil [19948 20004])
+            ("change_comm_speed" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20027 20032]))                  
+                :type "int")
+                nil [20005 20033])
+            ("calc_nco_decimation" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [20059 20067]))                  
+                :type "char")
+                nil [20034 20068])
+            ("nco_calculations_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20095 20104])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20104 20126])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20126 20146]))                  
+                :type "void")
+                nil [20069 20147])
+            ("update_status_mview" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [20173 20181]))                  
+                :type "char")
+                nil [20148 20182])
+            ("config_hdw_cbk" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20323 20332])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20332 20354])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20354 20374]))                  
+                :type "void")
+                nil [20296 20375])
+            ("start_monitor_cbk_proc" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20411 20433])
+                    ("id" variable
+                       (:pointer 1
+                        :type ("XtIntervalId" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20434 20451]))                  
+                :type "void")
+                nil [20376 20452])
+            ("error_dialog" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cur_err" variable
+                       (:pointer 1
+                        :type ("error_dialog_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20509 20545]))                  
+                :type "void")
+                nil [20491 20546])
+            ("exit_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20561 20570])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20571 20593])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20594 20614]))                  
+                :type "void")
+                nil [20547 20615])
+            ("show_dialog_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20637 20646])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20647 20669])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20670 20690]))                  
+                :type "void")
+                nil [20616 20691])
+            ("hide_dialog_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20713 20722])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20723 20745])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20746 20766]))                  
+                :type "void")
+                nil [20692 20767])
+            ("cursor_show_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20789 20798])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20799 20821])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20822 20842]))                  
+                :type "void")
+                nil [20768 20843])
+            ("cursor_hide_cbk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20865 20874])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20875 20897])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20898 20918]))                  
+                :type "void")
+                nil [20844 20919])
+            ("show_bsb_vals" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20958 20963]))                  
+                :type "void")
+                nil [20939 20964])
+            ("show_ftb_vals" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20984 20989]))                  
+                :type "void")
+                nil [20965 20990])
+            ("show_s2corr_vals" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [21013 21018]))                  
+                :type "void")
+                nil [20991 21019])
+            ("alarm_trigger" variable
+               (:default-value "{ 100, 100, 1.0}"
+                :type ("alarm_trigger_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [21098 21159])
+            ("old_alarm_trigger" variable
+               (:default-value "{ 100, 100, 1.0}"
+                :type ("alarm_trigger_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [21160 21225])
+            ("alarms" variable
+               (:default-value "{ {1, 1},  {1, 1},  {1, 1},
+			       {1, 1},  {1, 1},  {1, 1}, 1 }"
+                :type ("alarms_tuner" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [21257 21354])
+            ("comm" variable
+               (:default-value "{ 0, 38400, 0, {0, 1}, \"    \", 0, 0 }"
+                :type ("communications" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [21355 21422])
+            ("old_comm" variable
+               (:default-value "{ 0, 0, 0, {0, 0}, \"    \", 0, 0 }"
+                :type ("communications" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [21423 21490])
+            ("bsb" variable (:type ("band_splitter_board" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [21491 21531])
+            ("old_bsb" variable (:type ("band_splitter_board" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [21491 21531])
+            ("s2corr" variable (:type ("s2_and_correlator" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [21610 21642])
+            ("ftb" variable (:type ("fine_tuner_board" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [21643 21680])
+            ("old_ftb" variable (:type ("fine_tuner_board" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [21643 21680])
+            ("mview" variable (:type ("monitor_view" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [21876 21913])
+            ("old_mview" variable (:type ("monitor_view" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [21876 21913])
+            ("topLevel" variable (:type ("Widget" type (:type "class") nil nil)) nil [22884 23147])
+            ("topForm" variable (:type ("Widget" type (:type "class") nil nil)) nil [22884 23147])
+            ("menuBar" variable (:type ("Widget" type (:type "class") nil nil)) nil [22884 23147])
+            ("configStatusForm" variable (:type ("Widget" type (:type "class") nil nil)) nil [22884 23147])
+            ("modify_sftwConfigFlagLabel" variable (:type ("Widget" type (:type "class") nil nil)) nil [22884 23147])
+            ("cur_loaded_sftw_fname_id" variable (:type ("Widget" type (:type "class") nil nil)) nil [22884 23147])
+            ("modify_hdwConfigFlagLabel" variable (:type ("Widget" type (:type "class") nil nil)) nil [22884 23147])
+            ("cur_loaded_hdw_fname_id" variable (:type ("Widget" type (:type "class") nil nil)) nil [22884 23147])
+            ("lastChild" variable (:type ("Widget" type (:type "class") nil nil)) nil [22884 23147])
+            ("lastForm" variable (:type ("Widget" type (:type "class") nil nil)) nil [22884 23147])
+            ("mviewSForm" variable (:type ("Widget" type (:type "class") nil nil)) nil [23224 23254])
+            ("mviewDForm" variable (:type ("Widget" type (:type "class") nil nil)) nil [23224 23254])
+            ("commDialog" variable
+               (:default-value "NULL"
+                :type ("Widget" type (:type "class") nil nil))
+                nil [23512 23537])
+            ("bsbDialog" variable
+               (:default-value "NULL"
+                :type ("Widget" type (:type "class") nil nil))
+                nil [23586 23610])
+            ("ftbDialog" variable
+               (:default-value "NULL"
+                :type ("Widget" type (:type "class") nil nil))
+                nil [23638 23662])
+            ("s2corrDialog" variable
+               (:default-value "NULL"
+                :type ("Widget" type (:type "class") nil nil))
+                nil [23687 23714])
+            ("alarmsDialog" variable
+               (:default-value "NULL"
+                :type ("Widget" type (:type "class") nil nil))
+                nil [23739 23766])
+            ("monitorfreqDialog" variable
+               (:default-value "NULL"
+                :type ("Widget" type (:type "class") nil nil))
+                nil [23782 23814])
+            ("widget_id" variable
+               (:default-value "NULL"
+                :type ("Widget" type (:type "class") nil nil))
+                nil [23860 23884])
+            ("start_monitor_interval_id" variable
+               (:default-value "0"
+                :type ("XtIntervalId" type (:type "class") nil nil))
+                nil [24023 24067])
+            ("alarms_member_ptr" variable
+               (:pointer 1
+                :dereference 1
+                :type "char")
+                nil [24069 24096])
+            ("bsb_member_ptr" variable
+               (:pointer 1
+                :dereference 1
+                :type "int")
+                nil [24174 24245])
+            ("ifp0_ftb_member_ptr" variable
+               (:pointer 1
+                :dereference 1
+                :type "void")
+                nil [24246 24324])
+            ("ifp1_ftb_member_ptr" variable
+               (:pointer 1
+                :dereference 1
+                :type "void")
+                nil [24325 24403])
+            ("s2corr_member_ptr" variable
+               (:pointer 1
+                :dereference 1
+                :type "int")
+                nil [24478 24549])
+            ("bsb_Text_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [24671 24854])
+            ("bsbOptMenu_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [24671 24854])
+            ("bsbOptMenu_btn0_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [24671 24854])
+            ("bsbOptMenu_btn1_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [24671 24854])
+            ("ftb_Text_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [24856 25039])
+            ("ftbOptMenu_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [24856 25039])
+            ("ftbOptMenu_btn0_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [24856 25039])
+            ("ftbOptMenu_btn1_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [24856 25039])
+            ("s2OptMenu_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [25061 25311])
+            ("s2OptMenu_btn_id" variable
+               (:dereference 3
+                :type ("Widget" type (:type "class") nil nil))
+                nil [25061 25311])
+            ("corrOptMenu_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [25061 25311])
+            ("corrOptMenu_btn_id" variable
+               (:dereference 3
+                :type ("Widget" type (:type "class") nil nil))
+                nil [25061 25311])
+            ("bsb_label" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{ \"-- Input --\", \"Image Filter:\", \"Data Input:\", \"SEP\",
+  \"-- Select Band --\", \"Sub Band:\", \"Side Band:\",\" Normal: X=Upper, Y=Lower\",
+  \"SEP\",
+  \"-- Filters --\", \"Pos-Hilbert Filter (1-64):\", \"Neg-Hilbert Filter (1-64):\",
+  \"Q-Channel Filter (1-64):\", \"I-Channel Filter (1-64):\", \"SEP\",
+  \"-- Q/I Processing: --\", \"Add/Sub Mode:\", \"Add/Sub Enable:\",
+  \"X-Ch Spectrum:\", \"Y-Ch Spectrum:\", \"64MHz Output Spectrum:\", \"SEP\",
+  \"-- Fine Tuner --\", \"NCO Sync:\", \"Data Output BS:\", /* \"SEP\", */
+  \"-- Out Mux Modes --\", \"Data-Mux:\", \"Data-Mux-IFP:\",
+  \"Monitor-Mux:\", \"Monitor-Mux-IFP:\",
+   \"X-Mux Mode:\", \"X-Mux-IFP:\", \"Y-Mux-Mode:\", \"Y-Mux-IFP:\",  \"SEP\",
+  \"-- Statistics --\", \"Threshold Control:\", \"Threshold X-IFP (0-255):\",
+  \"Threshold Y-IFP (0-255):\", \"Gain Control:\", \"Gain Level (0-1023):\",
+  \"Offset Control:\", \"Offset Level (0-1023):\", \"Magnitude Statistics:\",
+  \"( 0:4 Level Corr.  34.6% ,   \", \"1:3 Level Corr.  54.06% )\",
+   \" \", \" \", \" \", \" \"
+}"
+                :type "char")
+                nil [25313 26286])
+            ("bsb_entry" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{ \" \", \"Off\", \"On\", \"8_Bit\", \"4_Bit\", \"SEP\",
+  \" \", \"Outer\", \"Inner\", \"Normal\", \"Swap\", \" \", \"SEP\",
+  \" \", \"TXT\", \"TXT\", \"TXT\", \"TXT\", \"SEP\",
+  \" \", \"Auto\", \"Manual\", \"Off\", \"On\", \"Unflipped\", \"Flipped\",
+  \"Unflipped\", \"Flipped\", \"Unflipped\", \"Flipped\", \"SEP\",
+  \" \", \"Sync\", \"1_PPS_A\", \"Disable\", \"Enable\", /* \"SEP\", */
+  \" \", \"Auto\", \"Manual\", \" X \", \" Y \", \"Auto\", \"Manual\", \" X \", \" Y \",
+  \"Auto\", \"Manual\", \" X \", \" Y \", \"Auto\", \"Manual\", \" X \", \" Y \", \"SEP\",
+  \" \", \"Auto\", \"Manual\", \"TXT\", \"TXT\", \"Auto\", \"Manual\", \"TXT\",
+  \"Auto\", \"Manual\", \"TXT\", \" AT \", \"MultiBeam\", \" \", \" \",
+  \" \", \" \", \" \", \" \"
+}"
+                :type "char")
+                nil [26288 26918])
+            ("ftb_label" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{ \"-- NCO Control --\", 
+  \"Oscillator Frequency [Hz]:\", \" Oscillator Offset Frequency [Hz]:\",
+  \"Oscillator Phase Offset [deg]:\", \"Oscillator Timer Interval [sec]:\",
+  \"Sync Reset:\", \"Oscillator Frequency Offset:\", \"Phase Increment:\",
+  \"Oscillator Test:\", \"Centre [Hz]:\", \"C-Err [s]:\", \"Timer [sec]\",
+  \" \",
+  \"-- Filters --\",
+  \"Q-Channel Filter {sin}   (1-64):\", \"I-Channel Filter {cos}   (1-64):\",
+  \" \",
+  \"-- Q/I Processing: --\",
+  \"Add/Sub Mode:\", \"Add/Sub Enable:\",
+  \"X-Ch Spectrum:\", \"Y-Ch Spectrum:\",
+  /* next column */
+  \"-- Out Mux Modes --\", \"Data-Mux:\", \"Data-Mux-IFP:\",
+  \"Monitor-Mux:\", \"Monitor-Mux-IFP:\",
+   \"X-Mux Mode:\", \"X-Mux-IFP:\", \"Y-Mux-Mode:\", \"Y-Mux-IFP:\",
+  \" \",
+  \"-- Statistics --\", \"Threshold Control:\", \"Threshold X-IFP (0-255):\",
+  \"Threshold Y-IFP (0-255):\",
+  \" \",
+  \"-- Data Port --\", \"Output Enable:\"
+  \" \", \" \", \" \", \" \", \" \", \" \"
+}"
+                :type "char")
+                nil [26954 27847])
+            ("ftb_entry" variable
+               (:pointer 1
+                :dereference 1
+                :default-value "{ \" \", \"TXT\", \"TXT\", \"TXT\", \"TXT\", \"Off\",\"On\", \"Off\",\"On\", \"Off\",\"On\",
+  \"Off\",\"On\", \"TXT\", \"TXT\", \"TXT\",
+  \" \",
+  \" \", \"TXT\", \"TXT\",
+  \" \",
+  \" \", \"Auto\",\"Manual\", \"Off\",\"On\", \"Unflipped\",\"Flipped\",
+  \"Unflipped\",\"Flipped\",
+  /* next column */
+  \" \", \"Auto\",\"Manual\", \" X \",\" Y \", \"Auto\",\"Manual\", \" X \",\" Y \",
+  \"Auto\",\"Manual\", \" X \",\" Y \", \"Auto\",\"Manual\", \" X \",\" Y \",
+  \" \",
+  \" \", \"Auto\",\"Manual\", \"TXT\", \"TXT\",
+  \" \",
+  \" \", \"Enable\", \"Disable\"
+  \" \", \" \", \" \", \" \", \" \", \" \"
+}"
+                :type "char")
+                nil [27849 28355])
+            ("cmpd_str" variable (:type ("XmString" type (:type "class") nil nil)) nil [28359 28399])
+            ("cmpd_str1" variable (:type ("XmString" type (:type "class") nil nil)) nil [28359 28399])
+            ("cmpd_str2" variable (:type ("XmString" type (:type "class") nil nil)) nil [28359 28399])
+            ("fontlist" variable (:type ("XmFontList" type (:type "class") nil nil)) nil [28452 28472])
+            ("str_width" variable (:type ("Dimension" type (:type "class") nil nil)) nil [28518 28550])
+            ("str_width1" variable (:type ("Dimension" type (:type "class") nil nil)) nil [28518 28550])
+            ("str_height" variable (:type ("Dimension" type (:type "class") nil nil)) nil [28629 28663])
+            ("str_height1" variable (:type ("Dimension" type (:type "class") nil nil)) nil [28629 28663])
+            ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) nil [28697 28707])
+            ("error" variable
+               (:default-value "0"
+                :type "int")
+                nil [28751 28765])
+            ("sync_source_counter_struct" type
+               (:members 
+                  ( ("day" variable
+                       (:dereference 2
+                        :type "int")
+                        (reparse-symbol classsubparts) [28992 29006])
+                    ("hour" variable
+                       (:dereference 2
+                        :type "int")
+                        (reparse-symbol classsubparts) [29009 29024])
+                    ("minute" variable
+                       (:dereference 2
+                        :type "int")
+                        (reparse-symbol classsubparts) [29027 29044])
+                    ("second" variable
+                       (:dereference 2
+                        :type "int")
+                        (reparse-symbol classsubparts) [29047 29064]))                  
+                :type "struct")
+                nil [28955 29067])
+            ("sync_source_counter" variable (:type ("sync_source_counter_struct" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [29068 29147])
+            ("old_sync_source_counter" variable (:type ("sync_source_counter_struct" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [29068 29147])
+            ("appfname" variable
+               (:pointer 1
+                :type "char")
+                nil [29918 29933])
+            ("dsopen_fd" variable
+               (:default-value "-1"
+                :type "int")
+                nil [29958 29977])
+            ("ring_bell" variable
+               (:pointer 1
+                :type "char")
+                nil [30030 30046])
+            ("dev" variable
+               (:pointer 1
+                :default-value "\"/dev/ds0\""
+                :type "char")
+                nil [30100 30123])
+            ("timout_interval_ms" variable
+               (:default-value "1100"
+                :type "unsigned long")
+                nil [30360 30400])
+            ("app_context" variable (:type ("XtAppContext" type (:type "class") nil nil)) nil [30401 30426])
+            ("cur_loaded_sftw_fname_stray" variable
+               (:dereference 1
+                :default-value "\"default\""
+                :type "char")
+                nil [30653 30715])
+            ("cur_loaded_hdw_fname_stray" variable
+               (:dereference 1
+                :default-value "\"unknown\""
+                :type "char")
+                nil [30716 30777])
+            ("auto_config_hdw_triggered_while_monitoring" variable
+               (:default-value "0"
+                :type "char")
+                nil [30873 30925])
+            ("auto_config_hdw_counter" variable
+               (:default-value "0"
+                :type "int")
+                nil [30953 30985])
+            ("old_auto_config_hdw_counter" variable
+               (:default-value "0"
+                :type "int")
+                nil [31109 31145])
+            ("auto_config_hdw" variable
+               (:default-value "1"
+                :type "char")
+                nil [31219 31244])
+            ("loaded_profile" variable
+               (:default-value "0"
+                :type "char")
+                nil [31275 31299])
+            ("stop_monitor" variable
+               (:default-value "1"
+                :type "char")
+                nil [31329 31351])
+            ("start_monitor_cbk_once" variable (:type "char") nil [31382 31410])
+            ("update_mviews_once" variable
+               (:dereference 1
+                :type "char")
+                nil [31497 31531])
+            ("update_mviewd_once" variable
+               (:dereference 1
+                :type "char")
+                nil [31576 31610])
+            ("profiles_path" variable
+               (:pointer 1
+                :type "char")
+                nil [31612 31632])
+            ("dasn_files_path" variable
+               (:pointer 1
+                :type "char")
+                nil [31665 31687])
+            ("das_num" variable (:type "char") nil [31738 31751])
+            ("cur_dsa" variable
+               (:default-value "0"
+                :type "int")
+                nil [32128 32144])
+            ("isinf" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [32163 32170]))                  
+                :type "int")
+                nil [32146 32171])
+            ("isnan" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [32189 32196]))                  
+                :type "int")
+                nil [32172 32197])
+            ("gethostname" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32221 32228])
+                    ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32229 32236]))                  
+                :type "int")
+                nil [32198 32237])
+            ("app_version" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"1.0.1\""
+                :type "char")
+                nil [32239 32273])
+            ("lockfile_pathfname" variable
+               (:dereference 1
+                :type "char")
+                nil [32275 32316])
+            ("remove_lockfile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32338 32343]))                  
+                :type "void")
+                nil [32317 32344])
+            ("operating_mode" variable (:type "char") nil [32345 32365])
+            ("blank_plain_str" variable
+               (:pointer 1
+                :default-value "\" \""
+                :type "char")
+                nil [32560 32588])
+            ("maxstrwidth_mviews_label1a" variable
+               (:default-value "0"
+                :type "int")
+                nil [32589 32656])
+            ("maxstrwidth_mviews_label1b" variable
+               (:default-value "0"
+                :type "int")
+                nil [32589 32656])
+            ("comm_apply_done_once" variable
+               (:default-value "0"
+                :type "char")
+                nil [32890 32920])
+            ("comm_apply_all" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32942 32947]))                  
+                :type "char")
+                nil [32922 32948])
+            ("comm_apply_dsa" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32969 32974]))                  
+                :type "void")
+                nil [32949 32975])
+            ("comm_apply_baudrate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33001 33006]))                  
+                :type "char")
+                nil [32976 33007])
+            ("status_sectn1_mviews_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33284 33321])
+            ("scale_sectn1_mviews_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33322 33358])
+            ("control_sectn1_mviews_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33359 33397])
+            ("sectn2_mviews_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33398 33428])
+            ("sectn3_mviews_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33447 33474])
+            ("sectn1_mviewd_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33560 33591])
+            ("status_sectn1_mviewd_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33592 33629])
+            ("control_sectn1_mviewd_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33630 33668])
+            ("sectn2_mviewd_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33669 33699])
+            ("sectn3_mviewd_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33700 33730])
+            ("thresh_sectn3_mviewd_id" variable
+               (:dereference 2
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33731 33768])
+            ("tolerance_sectn4_mviewd_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33769 33806])
+            ("sectn4_mviewd_id" variable
+               (:dereference 1
+                :type ("Widget" type (:type "class") nil nil))
+                nil [33839 33866])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [33961 33970])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33971 33984]))                  
+                :type "int")
+                nil [33952 63661])
+            ("sigs_handler" function
+               (:arguments 
+                  ( ("signum" variable (:type "int") (reparse-symbol arg-sub-list) [63939 63950]))                  
+                :type "void")
+                nil [63921 65796])
+            ("remove_lockfile" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [65845 65850]))                  
+                :type "void")
+                nil [65824 66959])
+            ("init_operating_mode" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [67016 67021]))                  
+                :type "void")
+                nil [66991 70700])
+            ("print_help" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [70749 70754]))                  
+                :type "void")
+                nil [70733 70984])
+            ("load_file_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71007 71016])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71017 71039])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71040 71060]))                  
+                :type "void")
+                nil [70988 75215])
+            ("save_file_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75262 75271])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75272 75294])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75295 75315]))                  
+                :type "void")
+                nil [75243 77726])
+            ("alarms_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77770 77779])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77780 77802])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77803 77823]))                  
+                :type "void")
+                nil [77754 80957])
+            ("alarm_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80994 81003])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81004 81026])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81027 81047]))                  
+                :type "void")
+                nil [80978 82157])
+            ("sftw_config_alarms_ptrs" function
+               (:arguments 
+                  ( ("alarms_member_ptr" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [82189 82215]))                  
+                :type "void")
+                nil [82160 82822])
+            ("auto_config_hdw_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82851 82860])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82861 82883])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82884 82904]))                  
+                :type "void")
+                nil [82825 83456])
+            ("monitor_freq_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83481 83490])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83491 83513])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83514 83534]))                  
+                :type "void")
+                nil [83459 87590])
+            ("start_monitor_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87645 87654])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87655 87677])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87678 87698]))                  
+                :type "void")
+                nil [87622 89998])
+            ("stop_monitor_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90063 90072])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90073 90095])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90096 90116]))                  
+                :type "void")
+                nil [90041 91250])
+            ("nco_calculations_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91306 91315])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91316 91338])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91339 91359]))                  
+                :type "void")
+                nil [91280 97267])
+            ("ftb_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97317 97326])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97327 97349])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97350 97370]))                  
+                :type "void")
+                nil [97303 98598])
+            ("sftw_config_ftb" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [98640 98645]))                  
+                :type "void")
+                nil [98619 109876])
+            ("init_sftw_config_ftb" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [109931 109936]))                  
+                :type "void")
+                nil [109905 114017])
+            ("comm_text_entry_info" variable
+               (:dereference 1
+                :type ("int_text_entry_info_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [114139 114217])
+            ("comm_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114233 114242])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114243 114265])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114266 114286]))                  
+                :type "void")
+                nil [114219 124379])
+            ("comm_apply_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124435 124444])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124445 124467])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124468 124488]))                  
+                :type "void")
+                nil [124415 127666])
+            ("comm_apply_all" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [127715 127720]))                  
+                :type "char")
+                nil [127695 127799])
+            ("comm_apply_dsa" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [127847 127852]))                  
+                :type "void")
+                nil [127827 127919])
+            ("comm_apply_baudrate" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [127972 127977]))                  
+                :type "char")
+                nil [127947 128069])
+            ("change_comm_speed" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [128124 128129]))                  
+                :type "int")
+                nil [128102 129333])
+            ("init_sftw_config_comm" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [129392 129397]))                  
+                :type "void")
+                nil [129365 130091])
+            ("bsb_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130142 130151])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130152 130174])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130175 130195]))                  
+                :type "void")
+                nil [130128 131369])
+            ("s2corr_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131389 131398])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131399 131421])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131422 131442]))                  
+                :type "void")
+                nil [131372 132527])
+            ("sftw_config_s2corr" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [132554 132559]))                  
+                :type "void")
+                nil [132530 149189])
+            ("init_sftw_config_s2corr" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [149274 149279]))                  
+                :type "void")
+                nil [149245 151169])
+            ("int_text_entry_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [151231 151240])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [151241 151263])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [151264 151284]))                  
+                :type "void")
+                nil [151206 153870])
+            ("luint_text_entry_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [153929 153938])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [153939 153961])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [153962 153982]))                  
+                :type "void")
+                nil [153903 154640])
+            ("double_text_entry_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [154703 154712])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [154712 154734])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [154734 154754]))                  
+                :type "void")
+                nil [154675 155849])
+            ("optn_menu_entry_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155909 155918])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155919 155941])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155942 155962]))                  
+                :type "void")
+                nil [155884 158776])
+            ("update_config_status_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158840 158849])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158858 158880])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158881 158901]))                  
+                :type "void")
+                nil [158810 160103])
+            ("update_sftw_config_status" function
+               (:arguments 
+                  ( ("modify_sftw_config_status_flag" variable (:type "char") (reparse-symbol arg-sub-list) [160173 160209]))                  
+                :type "void")
+                nil [160142 162028])
+            ("update_hdw_config_status" function
+               (:arguments 
+                  ( ("modify_hdw_config_status_flag" variable (:type "char") (reparse-symbol arg-sub-list) [162097 162132]))                  
+                :type "void")
+                nil [162067 164453])
+            ("mviews_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164509 164518])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164519 164541])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164542 164562]))                  
+                :type "void")
+                nil [164493 164590])
+            ("mviewd_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164610 164619])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164620 164642])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164643 164663]))                  
+                :type "void")
+                nil [164594 164761])
+            ("config_hdw_cbk" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164792 164801])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164801 164823])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [164823 164843]))                  
+                :type "void")
+                nil [164765 173684])
+            ("get_ds_get_err_str" function
+               (:arguments 
+                  ( ("retval" variable (:type "int") (reparse-symbol arg-sub-list) [173735 173746])
+                    ("lib_err_msg_str" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [173747 173770]))                  
+                :type "void")
+                nil [173711 174313])
+            ("start_monitor_cbk_proc" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [174549 174571])
+                    ("id" variable
+                       (:pointer 1
+                        :type ("XtIntervalId" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [174572 174589]))                  
+                :type "void")
+                nil [174514 178870])
+            ("comm_err" function
+               (:arguments 
+                  ( ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [178921 178929]))                  
+                :type "void")
+                nil [178907 180183])
+            ("start_monitor" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [180204 180209]))                  
+                :type "int")
+                nil [180186 182870])
+            ("monitor_error_dialog" function
+               (:arguments 
+                  ( ("cur_err" variable
+                       (:pointer 1
+                        :type ("error_dialog_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [182925 182961]))                  
+                :type "void")
+                nil [182899 184751])
+            ("get_mview_values" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [184809 184814]))                  
+                :type "char")
+                nil [184787 200399])
+            ("update_status_mview" function
+               (:arguments 
+                  ( ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [200453 200461]))                  
+                :type "char")
+                nil [200428 211041])
+            ("update_mviews" function
+               (:arguments 
+                  ( ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [211095 211103]))                  
+                :type "char")
+                nil [211076 235661])
+            ("update_mviewd" function
+               (:arguments 
+                  ( ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [235744 235752]))                  
+                :type "char")
+                nil [235725 269417])
+            ("reset_analogue_sampler_err_flags" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [269522 269527]))                  
+                :type "char")
+                nil [269484 270556])
+            ("set_analogue_filter_switch" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [270635 270640]))                  
+                :type "char")
+                nil [270603 272604])
+            ("reset_clock_pulse_counters" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [272679 272684]))                  
+                :type "void")
+                nil [272647 273577])
+            ("wait_for_sync" function
+               (:arguments 
+                  ( ("dsopen_fd" variable (:type "int") (reparse-symbol arg-sub-list) [273636 273650])
+                    ("dev" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [273651 273661])
+                    ("ring_bell" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [273662 273678]))                  
+                :type "char")
+                nil [273617 277328])
+            ("bsb_ftb_config" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [277377 277382]))                  
+                :type "char")
+                nil [277357 282074])
+            ("bsb_calculate_and_download_config" function
+               (:arguments 
+                  ( ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [282142 282150])
+                    ("dsopen_fd" variable (:type "int") (reparse-symbol arg-sub-list) [282151 282165])
+                    ("dev" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [282166 282176])
+                    ("ring_bell" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [282188 282204]))                  
+                :type "char")
+                nil [282103 290219])
+            ("ftb_calculate_and_download_config" function
+               (:arguments 
+                  ( ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [290307 290315])
+                    ("dsopen_fd" variable (:type "int") (reparse-symbol arg-sub-list) [290316 290330])
+                    ("dev" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [290331 290341])
+                    ("ring_bell" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [290353 290369]))                  
+                :type "char")
+                nil [290268 303752])
+            ("calc_nco_decimation" function
+               (:arguments 
+                  ( ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [303825 303833]))                  
+                :type "char")
+                nil [303800 305082])
+            ("read_filter_config_file" function
+               (:arguments 
+                  ( ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [305145 305153])
+                    ("cur_bsb_output_bw_ptr" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [305154 305181])
+                    ("pathfname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [305190 305206]))                  
+                :type "char")
+                nil [305116 306198])
+            ("mviews" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [306247 306252]))                  
+                :type "void")
+                nil [306235 327230])
+            ("mviewd" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [327302 327307]))                  
+                :type "void")
+                nil [327290 352230])
+            ("init_structs" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [352307 352312]))                  
+                :type "void")
+                nil [352289 353085])
+            ("init_sftw_config_bsb" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [353138 353143]))                  
+                :type "void")
+                nil [353112 356666])
+            ("save_site_config_file_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [356732 356741])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [356752 356774])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [356775 356795]))                  
+                :type "void")
+                nil [356701 358313])
+            ("write_site_config_file" function
+               (:arguments 
+                  ( ("pathfname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [358380 358396]))                  
+                :type "int")
+                nil [358353 360161])
+            ("read_site_config_file" function
+               (:arguments 
+                  ( ("pathfname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [360228 360244]))                  
+                :type "int")
+                nil [360202 361914])
+            ("read_profile" function
+               (:arguments 
+                  ( ("fname_sptr" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [361968 361985]))                  
+                :type "int")
+                nil [361951 370478])
+            ("save_profile" function
+               (:arguments 
+                  ( ("fname_sptr" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [370524 370541]))                  
+                :type "void")
+                nil [370506 380217])
+            ("sftw_config_bsb" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [380276 380281]))                  
+                :type "void")
+                nil [380255 394013])
+            ("error_dialog" function
+               (:arguments 
+                  ( ("cur_err" variable
+                       (:pointer 1
+                        :type ("error_dialog_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [394305 394341]))                  
+                :type "void")
+                nil [394287 395059])
+            ("show_dialog_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [395107 395116])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [395117 395139])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [395140 395160]))                  
+                :type "void")
+                nil [395086 395485])
+            ("hide_dialog_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [395534 395543])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [395544 395566])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [395567 395587]))                  
+                :type "void")
+                nil [395513 395916])
+            ("cursor_show_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [395968 395977])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [395978 396000])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [396001 396021]))                  
+                :type "void")
+                nil [395947 396159])
+            ("cursor_hide_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [396210 396219])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [396220 396242])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [396243 396263]))                  
+                :type "void")
+                nil [396189 396402])
+            ("exit_cbk" function
+               (:arguments 
+                  ( ("w" variable (:type ("Widget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [396446 396455])
+                    ("client_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [396456 396478])
+                    ("call_data" variable (:type ("XtPointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [396479 396499]))                  
+                :type "void")
+                nil [396432 397991])
+            ("show_s2corr_vals" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [398283 398288]))                  
+                :type "void")
+                nil [398261 399323])
+            ("show_bsb_vals" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [399373 399378]))                  
+                :type "void")
+                nil [399354 402476])
+            ("show_ftb_vals" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [402523 402528]))                  
+                :type "void")
+                nil [402504 405327])
+            ("sftw_config_bsb_ptrs" function
+               (:arguments 
+                  ( ("bsb_member_ptr" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [405380 405402]))                  
+                :type "void")
+                nil [405354 407318])
+            ("sftw_config_ftb_ptrs" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [407472 407477]))                  
+                :type "void")
+                nil [407446 407916])
+            ("sftw_config_ifp_ftb_ptrs" function
+               (:arguments 
+                  ( ("ftb_member_ptr" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [407980 408003])
+                    ("ifp" variable (:type "int") (reparse-symbol arg-sub-list) [408004 408012]))                  
+                :type "void")
+                nil [407950 409736])
+            ("sftw_config_s2corr_ptrs" function
+               (:arguments 
+                  ( ("s2corr_member_ptr" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [409804 409829]))                  
+                :type "void")
+                nil [409775 411168]))          
+      :file "das.c"
+      :pointmax 411203
+      :fsize 411202
+      :lastmodtime '(14984 41295 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MVIEWS" . ((number "0" 14312 . 14313)))
+          ("COMM_WIDTH" . ((number "240" 15283 . 15286)))
+          ("MVIEWS_SCALE_WIDTH" . ((number "205" 16519 . 16522)))
+          ("ERR_BCOLOUR" . ((string "\"red4\"" 14562 . 14568)))
+          ("DAS_ROW_HEIGHT" . ((number "28" 15114 . 15116)))
+          ("BSB_NUM_TEXT_WIDGETS" . ((semantic-list "(8*2)" 15518 . 15523)))
+          ("FTB_NUM_TEXT_WIDGETS" . ((semantic-list "(FTB_NUM_INT_TEXT_WIDGETS + \\
+			      FTB_NUM_DOUBLE_TEXT_WIDGETS)" 16026 . 16093)))
+          ("FTB_NUM_DOUBLE_TEXT_WIDGETS" . ((semantic-list "(7*2)" 15991 . 15996)))
+          ("S2CORR_HEIGHT" . ((number "345" 16907 . 16910)))
+          ("S2_MAX_OPTN_MENU_OPTNS" . ((number "4" 16822 . 16823)))
+          ("S2CORR_SECTN0_NUM_OPTN_MENU_WIDGETS" . ((number "5" 16955 . 16956)))
+          ("DAS_HEIGHT" . ((number "355" 15087 . 15090)))
+          ("COL_SPACE" . ((number "30" 15167 . 15169)))
+          ("BSB_NUM_OPTN_MENU_WIDGETS" . ((semantic-list "(23*2)" 15579 . 15585)))
+          ("OPTNMENU_EXTRA" . ((number "42" 15633 . 15635)))
+          ("FTB_NUM_OPTN_MENU_WIDGETS" . ((semantic-list "(18*2)" 16128 . 16134)))
+          ("ALARMS_HEIGHT" . ((number "161" 16314 . 16317)))
+          ("S2CORR_SECTN1_NUM_OPTN_MENU_WIDGETS" . ((number "4" 17001 . 17002)))
+          ("BSB_WIDTH" . ((number "718" 15686 . 15689)))
+          ("FTB_WIDTH" . ((number "776" 16153 . 16156)))
+          ("S2_NUM_OPTN_MENU_WIDGETS" . ((semantic-list "(S2_MAX_ROWS-1)" 16674 . 16689)))
+          ("MODIFY_CONFIG_FLAG_SET" . ((number "1" 17168 . 17169)))
+          ("CONTROL_OPERATING_MODE" . ((number "1" 17343 . 17344)))
+          ("MAX_FTB_INPUT_BW" . ((number "16" 15825 . 15827)))
+          ("CORR_NUM_OPTN_MENU_WIDGETS" . ((semantic-list "(CORR_MAX_ROWS-1)" 16749 . 16766)))
+          ("CORR_MAX_OPTN_MENU_OPTNS" . ((number "6" 16858 . 16859)))
+          ("ALARMS_NUM_ROWS" . ((number "6" 17041 . 17042)))
+          ("COMM_HEIGHT" . ((number "264" 15389 . 15392)))
+          ("S2CORR_WIDTH" . ((number "910" 16881 . 16884)))
+          ("APP_BCOLOUR" . ((string "\"turquoise4\"" 14103 . 14115)))
+          ("NOTNORM_BCOLOUR" . ((string "\"DarkOrange\"" 14524 . 14536)))
+          ("MONITOR_OPERATING_MODE" . ((number "0" 17288 . 17289)))
+          ("NO_IFP_VALID" . ((number "100" 14253 . 14256)))
+          ("NUM_IFPS" . ((number "2" 14295 . 14296)))
+          ("BSB_HEIGHT" . ((number "757" 15709 . 15712)))
+          ("FTB_NUM_INT_TEXT_WIDGETS" . ((semantic-list "(5*2)" 15928 . 15933)))
+          ("FTB_HEIGHT" . ((number "673" 16176 . 16179)))
+          ("MONITORFREQ_HEIGHT" . ((number "85" 16424 . 16426)))
+          ("MODIFY_CONFIG_FLAG_UNSET" . ((number "0" 17135 . 17136)))
+          ("COL_SPACE2" . ((number "14" 15189 . 15191)))
+          ("MVIEWD" . ((number "1" 14329 . 14330)))
+          ("S2_MAX_ROWS" . ((number "6" 16615 . 16616)))
+          ("MODIFY_CONFIG_FLAG_ASIS" . ((number "2" 17202 . 17203)))
+          ("APP_FCOLOUR" . ((string "\"white\"" 14038 . 14045)))
+          ("NUM_MVIEWS" . ((number "2" 14276 . 14277)))
+          ("MONITOR_STATUS_BCOLOUR" . ((string "\"blue\"" 14631 . 14637)))
+          ("DAS_WIDTH" . ((number "670" 14771 . 14774)))
+          ("COMM_NUM_TEXT_WIDGETS" . ((number "2" 15450 . 15451)))
+          ("BSB_NUM_ROWS" . ((number "25" 15607 . 15609)))
+          ("FTB_NUM_ROWS" . ((number "22" 15892 . 15894)))
+          ("ALARMS_WIDTH" . ((number "273" 16288 . 16291)))
+          ("MONITORFREQ_WIDTH" . ((number "228" 16393 . 16396)))
+          ("S2CORR_MAX_ROWS" . ((number "12" 16591 . 16593)))
+          ("CORR_MAX_ROWS" . ((number "5" 16639 . 16640)))
+          )
+))
+  :file "!home!smagri!proj!atnf!das!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

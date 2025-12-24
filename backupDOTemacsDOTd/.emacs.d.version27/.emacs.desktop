@@ -1,0 +1,1375 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue Jun 10 15:56:52 2025
+;; Desktop file format version 208
+;; Emacs version 27.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (26695 51492 318360 479000) (desktop . "208") "smagri@buckleys" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-normal-normal-normal-*-27-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "white") (border-color . "white") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (height . 61) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (skip-taskbar) (z-group) (reverse . t) (display-type . color) (background-mode . dark) (cursor-color . "white") (sticky) (environment) (last-focus-update . t) (frameset--id . "65FA-17B3-A5B8-1BDB") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (width . 238) (left . 3840) (top . 54)) ((min-height . 4) (min-width . 57) (min-height-ignore . 3) (min-width-ignore . 12) (min-height-safe . 1) (min-width-safe . 6) (min-pixel-height . 128) (min-pixel-width . 912) (min-pixel-height-ignore . 96) (min-pixel-width-ignore . 192) (min-pixel-height-safe . 32) (min-pixel-width-safe . 96)) hc (pixel-width . 3840) (pixel-height . 1922) (total-width . 240) (total-height . 60) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 592) (pixel-height . 1922) (total-width . 37) (total-height . 60) (normal-height . 1.0) (normal-width . 0.15416666666666667) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Scoped-Buffer-#<frame /home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/sonarprocessing.h [//l]  0x5c3a961e75c0>*" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 2106) (start . 1149)) (prev-buffers (" *Treemacs-Scoped-Buffer-#<frame /home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/sonarprocessing.h [//l]  0x5c3a961e75c0>*" 1508 2220))) (hc (last . t) (pixel-width . 3248) (pixel-height . 1922) (total-width . 203) (total-height . 60) (normal-height . 1.0) (normal-width . 0.8458333333333333) (combination-limit . t) (leaf (pixel-width . 1616) (pixel-height . 1922) (total-width . 101) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5) (buffer "mission.cpp<src>" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 14638) (start . 13238)) (prev-buffers ("A3_TERRAIN.TXT" 1 41) ("mission.cpp<src>" 13238 15000) ("quadcopter.cpp<a3_submission/src>" 6726 8343) ("pfms-2025a-smagri" 1 1419) ("quadcopter.h<a3_submission/src>" 250 344))) (leaf (last . t) (pixel-width . 1632) (pixel-height . 1922) (total-width . 102) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5) (buffer "quadcopter.cpp<a3_submission/src>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 7418) (start . 5227)) (prev-buffers ("quadcopter.cpp<a3_submission/src>" 6497 8785))))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '(#("sonar" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("::LAN" 0 5 (isearch-regexp-function nil isearch-case-fold-search nil)) #("mission(" 0 7 (isearch-regexp-function nil isearch-case-fold-search t) 7 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("mission" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("_INFO" 0 5 (isearch-regexp-function nil isearch-case-fold-search nil)) #("R" 0 1 (isearch-regexp-function nil isearch-case-fold-search nil)) #("LANDING" 0 7 (isearch-regexp-function nil isearch-case-fold-search nil)) #("LAN" 0 3 (isearch-regexp-function nil isearch-case-fold-search nil)) #("landing(" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("setDroneLanding" 0 15 (isearch-regexp-function nil isearch-case-fold-search nil)) #("land" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("dronelanding(" 0 13 (isearch-regexp-function nil isearch-case-fold-search t)) #("set" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("drone" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("takeoff(" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("tackoff(" 0 8 (isearch-regexp-function nil isearch-case-fold-search t))))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/sonarprocessing.h" "~/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/sonarprocessing.cpp"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/mission.cpp"
+  "mission.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  14638
+  '(2575 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26695 51492 314750 464000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4863 1683 1 7241 21835 19630 19852 11506 18662 18589 16977 17940 18663 18598 19340 14638))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week12.params.remap.viz.rosbag.unitTesting.a3/a3_support/data/A3_TERRAIN.TXT"
+  "A3_TERRAIN.TXT"
+  'text-mode
+  '(auto-fill-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode)
+  41
+  '(23 nil)
+  nil
+  nil
+  '((buffer-display-time 26695 50175 728434 526000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (126 43 41))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/quadcopter.cpp"
+  "quadcopter.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  7418
+  '(8400 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26695 51492 314751 203000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1284 7833 394 585 8156 8156 4026 7665 6067 7730 7117 507 7533 8674 7610 7640))))
+
+(desktop-create-buffer 208
+  nil
+  "pfms-2025a-smagri"
+  'dired-mode
+  '(override-global-mode company-mode yas-minor-mode helm-mode helm-gtags-mode)
+  1419
+  '(1 nil)
+  t
+  '("/home/smagri/uni/subj/pms3/pfms-2025a-smagri/")
+  '((buffer-display-time 26695 46565 765379 789000))
+  '((mark-ring (1419 1419 1419 1419 1419))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/quadcopter.h"
+  "quadcopter.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1228
+  '(6356 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26695 41543 435246 189000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6189 1 5467 809 3523 1860 8272 8204 4498 4511 4503 4213 4148 3835 3590 6377))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/services_masterclass/src/quadcopter.cpp"
+  "quadcopter.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  3583
+  '(3447 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26695 33785 984790 188000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (3440 3496 2925 2699 942 611 1477 4932 432 382 1976 402 787 350 592 592))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/services_masterclass/src/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26695 33783 632594 605000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/services_masterclass/src/controller.cpp"
+  "controller.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1262
+  '(150 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26695 33752 893149 322000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1 2268 290 870 279 2956 592 3133 1097 1262))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/services_masterclass/src/controllerinterface.h"
+  "controllerinterface.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  916
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26695 33747 828423 117000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/mission.h"
+  "mission.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1137
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26694 39650 976569 596000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6305 1137 11068 11134 10405 6412 6331 6199 9782 9784 6281 8009 6189 7728 7631 8007))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/controller.cpp"
+  "controller.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  582
+  '(562 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26694 35495 725440 922000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (669 1 6292 6697 8920 8836 865 6436 3351 1893 6754 1184 1894 6588 867 1830))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/sonarprocessing.cpp"
+  "sonarprocessing.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  4258
+  '(4242 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26694 29896 512654 317000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (4245 3718 2560 4097 3654 4239 3977 3715 4413 116 2397 2397 2397 1133 4795 4258))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/mission.cpp"
+  "mission.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  6300
+  '(6149 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26693 18065 487404 298000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6358 1 751 14745 7914 23 6302 6300 8082 6302 6323 6301 6149))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/sonarprocessing.h"
+  "sonarprocessing.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1767
+  '(1778 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26693 18276 58 354000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1273 248 1767 1767 1767 1767 1772 2551 2552 2903 2902 1389 2270 2269 1767 1786))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/controller.h"
+  "controller.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1435
+  '(9091 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26693 18136 506987 863000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (8382 4194 3106 8568 9570 9511 9276 9337 1621 456 457 9482 9425 5433 9280 9606))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/ackerman.cpp"
+  "ackerman.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  286
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26692 57580 953763 284000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (286 1 345))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/controller.cpp"
+  "controller.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  606
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26692 57550 400979 540000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (895 1 7031 6555 4302 4303 7848 25 4637 145 6878))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/drone.cpp"
+  "drone.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  577
+  '(385 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26691 57131 26809 801000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (385))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/drone.cpp"
+  "drone.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  658
+  '(89 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26691 54996 113481 646000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (89))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/quadcopter.cpp"
+  "quadcopter.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  13265
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26691 54075 439833 493000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (14324 1 1229 3394 2750 2849 1055 1096 3092))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/grid_example/src/sample.cpp"
+  "sample.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1579
+  '(1193 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26691 30398 639879 869000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (233 5236 5566 5300 250 249 798 803 5975 5822 778 5577 4737 3835 4294 1579))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/grid_example/package.xml"
+  "package.xml"
+  'nxml-mode
+  '(auto-fill-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode)
+  1455
+  '(1262 nil)
+  nil
+  nil
+  '((buffer-display-time 26690 38788 567192 918000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1265 1359 1455))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/grid_example/src/sample.h"
+  "sample.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1717
+  '(2069 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26690 38650 602 470000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (257 107 1772 285 1469 1600 1468 286 1466 1769 2139 1897 77 77 54 1717))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode)
+  2384
+  '(2075 nil)
+  nil
+  nil
+  '((buffer-display-time 26690 37905 235825 102000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (885 1564 1594 1 2916 2073 1561 1359 1162 1598 181 2051 2431 2433 2429 2384))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/grid_example/src/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  738
+  '(738 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26690 38552 938243 497000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/grid_example/src/simple_demo_node.cpp"
+  "simple_demo_node.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  887
+  '(945 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26690 38455 860472 821000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (981 982 1257 1 225 801 1295 802 2000 2000 1710 1098 945))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/services_masterclass/package.xml"
+  "package.xml"
+  'nxml-mode
+  '(auto-fill-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26690 38235 688180 786000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/grid_example/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode)
+  707
+  '(499 nil)
+  nil
+  nil
+  '((buffer-display-time 26690 37896 308858 994000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1017 1056 707))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/package.xml"
+  "package.xml"
+  'nxml-mode
+  '(auto-fill-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode)
+  1583
+  '(1484 nil)
+  nil
+  nil
+  '((buffer-display-time 26690 37135 53591 596000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1581 1482 1118 1205 1707 1481 1481 1709 1482 1482 1427 1255 468 1583))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  519
+  '(350 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26690 37004 49326 894000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (404 351 1 277 266 39 491 233 377 519))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/laserprocessing.cpp"
+  "laserprocessing.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1514
+  '(926 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26690 21314 879581 934000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (881 113 1694 877 731 439 849 558 3410 3446 286 805 877 879 993 1433))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/test/utest.cpp"
+  "utest.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  2709
+  '(104 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26690 21268 897411 852000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2613))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week12.params.remap.viz.rosbag.unitTesting.a3/a3_support/src/goals_publisher.cpp"
+  "goals_publisher.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  8343
+  '(8614 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26690 21199 229538 320000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (8076 8614))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/laserprocessing.h"
+  "laserprocessing.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  751
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26688 38819 875797 140000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1271 54 786 202 749 709 744 76 1823 1412 1036 169))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_starter/grid_example/src/sample.cpp"
+  "sample.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  776
+  '(2742 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26688 33583 380126 156000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2460 2531 2523 2517 2671 2634 2433 2634 2461 2510 2603 2432 2800 2751 621))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/quizzes_attempt/quiz4attempt/quiz4.attempt/aa/final_fixed/laserprocessing.cpp"
+  "laserprocessing.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  704
+  '(645 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 21199 26993 66000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (575 926 855 792 704 892 694 694 633 704 704))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_skeleton/src/laserprocessing.cpp"
+  "laserprocessing.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  439
+  '(492 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 21199 225209 877000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (439))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_skeleton/src/laserprocessing.h"
+  "laserprocessing.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1010
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 21040 758720 743000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/quizzes/quiz5/src/laserprocessing.cpp"
+  "laserprocessing.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(5119 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 20141 606052 61000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (213 5119))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/quizzes_attempt/quiz4attempt/quiz4.attempt/aa/laserprocessing.cpp"
+  "laserprocessing.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  613
+  '(614 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 19679 468478 758000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/foo.cpp"
+  "foo.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1103
+  '(1991 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 18316 728672 547000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2216 2332 3502 2400 1990 2462 1680 2410 1678))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/foo.h"
+  "foo.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  2914
+  '(2817 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 18318 595489 989000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (800 1017 3088 3093 2817))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/quizzes/quiz5/src/detection_node.h"
+  "detection_node.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1433
+  '(1735 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 16845 516568 27000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (405 1621 1433))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_skeleton/src/foo.cpp"
+  "foo.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1986
+  '(128 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 16845 768835 441000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1988 2371 2369 2221 1 2316 486 2261 2460 1989 1986))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/mission.h"
+  "mission.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  3281
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 16225 152262 476000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/quizzes/quiz5/src/detection_node.cpp"
+  "detection_node.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1827
+  '(1827 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 16129 412400 665000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2050))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/controller.h"
+  "controller.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  2105
+  '(8523 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 10250 790101 72000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (8599 8523 8523))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/ackerman.h"
+  "ackerman.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  2593
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26687 10129 269688 387000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/quizzes/quiz5/src/laserprocessing.h"
+  "laserprocessing.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1099
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 56554 110756 368000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/quiz5attempt/quiz5.attempt/src/laserprocessing.h"
+  "laserprocessing.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1112
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 56033 406968 866000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/quiz5attempt/quiz5.attempt/src/detection_node.cpp"
+  "detection_node.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  470
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 56087 168477 69000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/quiz5attempt/quiz5.attempt/src/laserprocessing.cpp"
+  "laserprocessing.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  483
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 56061 83286 224000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/quizzes_attempt/quiz4attempt/quiz4.attempt/aa/laserprocessing.h"
+  "laserprocessing.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 55752 731719 851000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/bar.cpp"
+  "bar.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  4453
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 53772 44927 573000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/quizzes_attempt/quiz4attempt/quiz4.attempt/aa/final_fixed/laserprocessing.h"
+  "laserprocessing.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 47845 680105 613000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/examples/quad/receive_laser.cpp"
+  "receive_laser.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1026
+  '(1007 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 47751 744661 323000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1453 1432 1406 1452 1502 1007))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/examples/quad/CMakeLists.txt.only.command_quadcopter.cpp"
+  "CMakeLists.txt.only.command_quadcopter.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  403
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 47726 992442 273000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/starter/quad/final_fixed/receive_laser.cpp"
+  "receive_laser.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1380
+  '(1552 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 45962 334850 113000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1418 1380))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/starter/quad/final_fixed/receive_laser.smagri.cpp"
+  "receive_laser.smagri.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1758
+  '(1758 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 45962 629176 299000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/starter/ex01/final_fixed/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  936
+  '(936 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 44934 644400 966000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/starter/quad/final_fixed/receive_laser.cpp.chatGPT"
+  "receive_laser.cpp.chatGPT"
+  'fundamental-mode
+  '(override-global-mode company-mode yas-minor-mode helm-mode)
+  1327
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26684 44872 348629 764000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/starter/quad/receive_laser.cpp"
+  "receive_laser.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  687
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 44820 447749 74000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/starter/quad/receive_sonar.cpp"
+  "receive_sonar.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  287
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 44802 58136 289000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/starter/quad/final_fixed/command_quadcopter.cpp"
+  "command_quadcopter.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  577
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 44786 563323 137000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/starter/quad/final_fixed/receive_sonar.cpp"
+  "receive_sonar.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1288
+  '(1288 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 44701 597880 369000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/starter/quad/final_fixed/receive_sonar.orig.binary"
+  "receive_sonar.orig.binary"
+  'fundamental-mode
+  '(override-global-mode company-mode yas-minor-mode helm-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26684 44697 24528 892000) (buffer-file-coding-system . no-conversion))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/starter/quad/final_fixed/receive_sonar.orig.cpp"
+  "receive_sonar.orig.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  450
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 44685 406844 974000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/examples/quad/receive_sonar.cpp"
+  "receive_sonar.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1760
+  '(1759 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 39032 461424 713000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1561 1760))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/examples/ex01/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26684 37222 632308 532000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week08.unit.testing/examples/quad/receive_sonar.cpp.orig.broken"
+  "receive_sonar.cpp.orig.broken"
+  'fundamental-mode
+  '(override-global-mode company-mode yas-minor-mode helm-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26684 37132 160165 895000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/README.md"
+  "README.md"
+  'fundamental-mode
+  '(override-global-mode company-mode yas-minor-mode helm-mode)
+  179
+  '(179 nil)
+  nil
+  nil
+  '((buffer-display-time 26684 37042 910518 984000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week07.threads2/examples/ex03/radar.cpp"
+  "radar.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1849
+  '(609 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26683 17870 92317 659000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1849))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week07.threads2/examples/ex02/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26683 17592 806671 882000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week07.threads2/examples/ex01/main_convar.cpp"
+  "main_convar.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1361
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26683 17567 271527 469000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/main_bar.cpp"
+  "main_bar.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  303
+  '(303 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26680 46469 742396 184000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/missioninterface.h"
+  "missioninterface.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1415
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26680 43265 453469 759000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/controllerinterface.h"
+  "controllerinterface.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  504
+  '(448 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26676 43827 323393 260000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (219 530 79 678 79 504))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/quadcopter.h"
+  "quadcopter.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  463
+  '(6493 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26676 43261 858180 702000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6493 6423 6581))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/services_masterclass/src/controller.h"
+  "controller.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1141
+  '(382 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26676 36863 42495 105000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (4920 5190 3513 103))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/tutorials/week11.rosServices.unitTesting/wk11_examples/services_masterclass/src/quadcopter.h"
+  "quadcopter.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  220
+  '(575 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26676 29453 571705 877000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (282 326 738 1017))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/main_foo.cpp"
+  "main_foo.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26676 28751 153818 806000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/bar.h"
+  "bar.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1526
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26676 28550 934252 712000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/controllerinterface.h"
+  "controllerinterface.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  349
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26676 27616 80215 532000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "src"
+  'dired-mode
+  '(override-global-mode company-mode yas-minor-mode helm-mode helm-gtags-mode)
+  1021
+  '(577 nil)
+  t
+  '("/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a3_submission/src/")
+  '((buffer-display-time 26676 27487 256167 726000))
+  '((mark-ring (1075 1021))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/pms3/pfms-2025a-smagri/scratch/skeleton/a2_skeleton/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1723
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26675 23992 607599 581000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/include/pfmsconnector.h"
+  "pfmsconnector.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26676 50440 472584 110000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/stl_vector.h"
+  "stl_vector.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  11893
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26676 50441 644864 275000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/std_mutex.h"
+  "std_mutex.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  2375
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 54735 298704 394000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/ctype.h"
+  "ctype.h"
+  'c-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((buffer-display-time 26685 54735 536927 845000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/mutex"
+  "mutex"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 54735 796129 547000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/localefwd.h"
+  "localefwd.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 54736 16129 602000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/stl_algobase.h"
+  "stl_algobase.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 54736 511064 102000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/type_traits"
+  "type_traits"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 54737 294852 622000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/x86_64-linux-gnu/bits/sched.h"
+  "sched.h"
+  'c-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((buffer-display-time 26685 54737 503985 214000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/ratio"
+  "ratio"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 54737 727727 236000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/shared_ptr.h"
+  "shared_ptr.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  4031
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 54738 148234 121000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/shared_ptr_base.h"
+  "shared_ptr_base.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  29054
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26685 54738 645129 441000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/time.h"
+  "time.h"
+  'c-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((buffer-display-time 26687 33413 980220 923000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/chrono"
+  "chrono"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26688 54709 790482 192000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/x86_64-linux-gnu/bits/types/time_t.h"
+  "time_t.h"
+  'c-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((buffer-display-time 26688 54709 845015 840000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/unique_ptr.h"
+  "unique_ptr.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26688 54710 64519 71000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/unordered_map"
+  "unordered_map"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/cstdint"
+  "cstdint"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/stl_function.h"
+  "stl_function.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/stl_uninitialized.h"
+  "stl_uninitialized.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/unique_lock.h"
+  "unique_lock.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/stl_pair.h"
+  "stl_pair.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/stl_multimap.h"
+  "stl_multimap.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/stl_iterator.h"
+  "stl_iterator.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/bits/stl_iterator_base_types.h"
+  "stl_iterator_base_types.h"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/new"
+  "new"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/c++/11/cmath"
+  "cmath"
+  'c++-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/include/locale.h"
+  "locale.h"
+  'c-mode
+  '(abbrev-mode override-global-mode company-mode yas-minor-mode flycheck-mode helm-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((buffer-display-time) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+

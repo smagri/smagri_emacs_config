@@ -1,0 +1,142 @@
+; Pesonal definitions
+;
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(global-set-key "\C-cg" 'goto-line)
+(global-set-key "\C-cwl" 'what-line)
+(global-set-key "\C-cfj" 'set-justification-full)
+(global-set-key	"\C-ci"	'indent-region)
+(global-set-key [f12] 'quick-load-home-dot_emacs-file)
+(global-set-key [f11] 'quick-load-work-dot_emacs-file)
+(global-set-key [f10] 'quick-load-work-NT-dot_emacs-file)
+
+
+; Default to text mode
+(setq default-major-mode 'text-mode)
+; By default I like to always auto-fill in text modes.
+(setq text-mode-hook 'turn-on-auto-fill)
+
+; Writing FORTRAN code
+;
+; recognise .F, .FOR extensions as fortran, .f and .for are defaults
+(setq auto-mode-alist (nconc '(("\\.F$" . fortran-mode)) 
+			     auto-mode-alist))
+(setq auto-mode-alist (nconc '(("\\.FOR$" . fortran-mode)) 
+			     auto-mode-alist))
+;
+; customise fortran-mode
+(setq fortran-blink-matching-if 't)
+;(setq fortran-comment-indent-char "c")
+(setq fortran-continuation-string "*")
+(setq fortran-comment-region "c")
+(setq fortran-do-indent 2)
+(setq fortran-if-indent 2)
+(setq fill-column 72) 
+(setq fortran-mode-hook 'turn-on-auto-fill)
+
+
+; Writing C code
+(setq c-mode-hook 'richards-c-mode-hook)
+;
+;; And once again Stallman and FSF show their arrogance by making incompatible
+;; changes.
+(defun richards-c-mode-hook ()
+  "Set up desired indent style"
+  (interactive)
+  (setq c-basic-offset 2)
+;;  (setq c-auto-newline t) ;; put newline before & after { }, and after ; :
+			  ;; This only enables some features to be controlled
+			  ;; by other variables: see below
+  (setq c-hanging-braces-alist
+   '( (brace-list-open)
+      (brace-list-close)
+;      (substatement-open before after)  ;; supposedly the default
+;      (block-close . c-snug-do-while)   ;; supposedly the default
+    )
+  )
+  (setq c-hanging-colons-alist
+   '( (case-label after)
+    )
+  )
+  (c-set-offset 'substatement-open 0 t)
+  (c-set-offset 'statement-case-intro 2 t)
+  (c-set-offset 'case-label 2 t)
+  (c-set-offset 'statement-case-open 2 t)
+  (setq c-comment-only-line-offset 0)
+;
+; Setup custom colours for user smagri
+  (load-file "~/.custom_c-mode_colors")
+)
+
+
+; Writing C++ code
+(setq c++-mode-hook 'simones-c++-mode-hook)
+(defun simones-c++-mode-hook ()
+  "Set up desired indent style"
+  (interactive)
+  (setq c++-basic-offset 2)
+  (setq c++-hanging-braces-alist
+   '( (brace-list-open)
+      (brace-list-close)
+    )
+  )
+  (setq c++-hanging-colons-alist
+   '( (case-label after)
+    )
+  )
+  (c-set-offset 'substatement-open 0 t) ;c++-set-offset !wrks here
+  (c-set-offset 'statement-case-intro 2 t)
+  (c-set-offset 'case-label 2 t)
+  (c-set-offset 'statement-case-open 2 t)
+  (setq c-comment-only-line-offset 0)
+;
+; Setup custom colours for user smagri
+					; (load-file "~/.custom_cpp-mode_colors")
+;red-'(font-lock-comment-face ((((class color)) (:foreground "#CC0000")))))
+;dark pink-'(font-lock-comment-face ((((class color)) (:foreground "#FF0148")))))
+;light pink-'(font-lock-comment-face ((((class color)) (:foreground "#FF4277")))))
+;  (custom-set-faces
+;   '(font-lock-comment-face ((((class color)) (:foreground "white"))))
+;   '(font-lock-variable-name-face ((((class color)) (:foreground "#FF4277"))))))
+
+  (custom-set-faces
+;   '(font-lock-preprocessor-face ((((class color)) (:foreground "plum"))))
+   '(font-lock-string-face ((((class color)) (:foreground "Khaki"))))
+   '(font-lock-comment-face ((((class color)) (:foreground "white"))))
+   '(font-lock-type-face ((((class color)) (:foreground "Khaki"))))
+;   '(font-lock-function-name-face ((((class color)) (:foreground "Khaki"))))
+   '(font-lock-variable-name-face ((((class color)) (:foreground "#FF4277"))))
+   '(font-lock-keyword-face ((((class color)) (:foreground "Khaki"))))
+   '(font-lock-constant-face ((((class color)) (:foreground "Khaki")))))
+
+)
+
+
+; To load specific .emacs for a particular environment
+(defun quick-load-work-dot_emacs-file ()
+  (interactive)
+  (load-file "~/.emacs")
+)
+
+(defun quick-load-work-NT-dot_emacs-file ()
+  (interactive)
+  (load-file "~/.emacs.NT")
+)
+
+(defun quick-load-home-dot_emacs-file ()
+  (interactive)
+  (load-file "~/.emacs.home")
+)
+
+
+; startup old look emacs/emacs20
+(mouse-wheel-mode 1)
+(put 'upcase-region 'disabled nil)
+(customize-set-variable 'tool-bar-mode nil)
+(customize-set-variable 'menu-bar-mode nil)
+;(customize-set-variable 'scroll-bar-mode 'right)

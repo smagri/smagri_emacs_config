@@ -1,0 +1,79 @@
+;; Object semanticdb-project-database-file-132a4b60a678
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-132a4b60a678"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-132a4ba01914"
+      :major-mode python-mode
+      :tags 
+        '( ("machine" include nil nil [1 35])
+            ("time" include nil nil [36 47])
+            ("GPS" variable nil nil [48 116])
+            ("myNMEA" variable nil nil [2337 2346])
+            ("GPGGA" variable nil nil [2347 2355])
+            ("GPGSA" variable nil nil [2356 2364])
+            ("GPRMC" variable nil nil [2365 2373])
+            ("GPVTG" variable nil nil [2374 2382])
+            ("GPGSV" variable nil nil [2383 2391])
+            ("while" code nil nil [2439 2469])
+            ("while" code nil nil [2533 2586])
+            ("try" code nil nil [2610 3452]))          
+      :file "ultimateGPStrackerRAW.py"
+      :pointmax 3452
+      :fsize 3451
+      :lastmodtime '(26747 13718 35481 813000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-132a4ba0196c"
+      :major-mode python-mode
+      :tags 
+        '( ("machine" include nil nil [1 35])
+            ("time" include nil nil [36 47])
+            ("_thread" include nil nil [48 62])
+            ("ssd1306" include nil nil [63 94])
+            ("utcCorrect" variable nil nil [170 184])
+            ("i2c2" variable nil nil [186 236])
+            ("dsp" variable nil nil [237 269])
+            ("dataLock" variable nil nil [271 305])
+            ("keepRunning" variable nil nil [306 324])
+            ("GPS" variable nil nil [325 391])
+            ("GPS" code nil nil [466 533])
+            ("NMEAdata" variable nil nil [534 615])
+            ("GPSdata" variable nil nil [616 777])
+            ("gpsThread" function nil nil [779 1991])
+            ("parseGPS" function nil nil [1992 7342])
+            ("dispOLED" function nil nil [7343 7881])
+            ("_thread" code nil nil [7882 7921])
+            ("time" code nil nil [7922 7935])
+            ("try" code nil nil [7936 8775]))          
+      :file "ultimateGPStrackerPaulUTCdateANDtime.py"
+      :pointmax 8775
+      :fsize 8812
+      :lastmodtime '(26771 3882 882389 751000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-132a4d076552"
+      :major-mode python-mode
+      :tags 
+        '( ("is_leap_year" function (:arguments 
+              ( ("year" variable nil (reparse-symbol function_parameters) [41 45]))              ) nil [24 191])
+            ("adjust_gps_datetime" function
+               (:documentation "
+    Convert GPS UTC date/time to local date/time by applying a UTC offset.
+    Handles leap years and day/month/year rollovers.
+
+    utcDate: 'ddmmyy'
+    utcTime: 'hhmmss.sss'
+    utcCorrect: integer or float hours offset from UTC (e.g., +10, -5, +5.5)
+    "
+                :arguments 
+                  ( ("utcDate" variable nil (reparse-symbol function_parameters) [216 223])
+                    ("utcTime" variable nil (reparse-symbol function_parameters) [225 232])
+                    ("utcCorrect" variable nil (reparse-symbol function_parameters) [234 244]))                  )
+                nil [192 2483]))          
+      :file "adjustDateAndTime.py"
+      :pointmax 2484
+      :fsize 2468
+      :lastmodtime '(26776 2669 640208 756000)
+      :unmatched-syntax '(($EOI 2484 . 2484))))
+  :file "!home!smagri!proj!paulMcWhorter!ultimateGPStracker!wrks!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

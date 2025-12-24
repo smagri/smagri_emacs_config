@@ -1,0 +1,34 @@
+;; Object semanticdb-project-database-file-18eb847fd7b4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18eb847fd7b4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18eb847fd7c0"
+      :major-mode c-mode
+      :tags 
+        '( ("GOOGLETEST_INCLUDE_GTEST_INTERNAL_CUSTOM_GTEST_PRINTERS_H_" variable (:constant-flag t) nil [1965 2023]))          
+      :file "gtest-printers.h"
+      :pointmax 2095
+      :fsize 2094
+      :lastmodtime '(24898 40374 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GOOGLETEST_INCLUDE_GTEST_INTERNAL_CUSTOM_GTEST_PRINTERS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table-18eb84835dec"
+      :major-mode c-mode
+      :tags 
+        '( ("GOOGLETEST_INCLUDE_GTEST_INTERNAL_CUSTOM_GTEST_PORT_H_" variable (:constant-flag t) nil [1752 1806]))          
+      :file "gtest-port.h"
+      :pointmax 1874
+      :fsize 1873
+      :lastmodtime '(24898 40374 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GOOGLETEST_INCLUDE_GTEST_INTERNAL_CUSTOM_GTEST_PORT_H_")
+          )
+))
+  :file "!usr!include!gtest!internal!custom!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

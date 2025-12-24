@@ -1,0 +1,205 @@
+; pesonal definitions
+;
+(global-set-key "\C-cg" 'goto-line)
+(global-set-key "\C-cwl" 'what-line)
+(global-set-key "\C-cfj" 'set-justification-full)
+(global-set-key "\C-csv" 'gnus-summary-save-in-vm)
+(global-set-key [f12] 'quick-load-home-dot_emacs-file)
+(global-set-key [f11] 'quick-load-work-dot_emacs-file)
+(global-set-key [f10] 'quick-load-work-NT-dot_emacs-file)
+
+(if (string-match "19.*" emacs-version)
+ (progn
+; These are the bindings for the keypad on a Sun Type 4 keyboard in X
+  (global-set-key [f29] 'scroll-down)           ; Sun: page up
+  (global-set-key [f35] 'scroll-up)             ; Sun: page down
+  (global-set-key [f27] 'beginning-of-buffer)   ; Sun: top of buffer
+  (global-set-key [f33] 'end-of-buffer)         ; Sun: bottom of buffer
+  (global-set-key [f31] 'recenter)              ; Sun: keypad centre
+ )
+)
+
+
+;;(cond (window-system
+;;           (setq hilit-mode-enable-list  '(not text-mode, c-mode)
+;;                 hilit-background-mode   'dark
+;;                 hilit-inhibit-hooks     nil
+;;                 hilit-inhibit-rebinding nil)
+;;
+;;           (require 'hilit19)
+;;           ))
+
+;(cond (window-system
+;           (setq hilit-mode-enable-list	 nil
+;                 hilit-background-mode   'dark
+;                 hilit-inhibit-hooks     nil
+;                 hilit-inhibit-rebinding nil)
+;
+;          (require 'hilit19)
+;          ))
+
+
+; default highlights 
+;;(setq load "~/.custom.elc")
+;;(setq load "~/.custom_vm_colors")
+;;(modify-face 'highlight "Khaki" "SteelBlue"
+;;	     "-misc-fixed-bold-r-normal--15-140-75-75-c-90-iso8859-1"
+;;	     "non-nil" nil nil)
+;;(modify-face 'green "Khaki" "MidnightBlue"
+;;	     "-misc-fixed-bold-r-normal--15-140-75-75-c-h90-iso8859-1"
+;;	     "non-nill" nil nil) 
+
+
+
+; Default to text mode
+(setq default-major-mode 'text-mode)
+; By default I like to always auto-fill in text modes.
+(setq text-mode-hook 'turn-on-auto-fill)
+;
+; writing fortran code
+;
+; recognise .F, .FOR extensions as fortran, .f and .for are defaults
+(setq auto-mode-alist (nconc '(("\\.F$" . fortran-mode)) 
+			     auto-mode-alist))
+(setq auto-mode-alist (nconc '(("\\.FOR$" . fortran-mode)) 
+			     auto-mode-alist))
+;
+; customise fortran-mode
+(setq fortran-blink-matching-if 't)
+;(setq fortran-comment-indent-char "c")
+(setq fortran-continuation-string "*")
+(setq fortran-comment-region "c")
+(setq fortran-do-indent 2)
+(setq fortran-if-indent 2)
+(setq fill-column 72) 
+(setq fortran-mode-hook 'turn-on-auto-fill)
+
+(setq c-mode-hook 'richards-c-mode-hook)
+
+;; And once again Stallman and FSF show their arrogance by making incompatible
+;; changes.
+(defun richards-c-mode-hook ()
+  "Set up desired indent style"
+  (interactive)
+  (setq c-basic-offset 2)
+;;  (setq c-auto-newline t) ;; put newline before & after { }, and after ; :
+			  ;; This only enables some features to be controlled
+			  ;; by other variables: see below
+  (setq c-hanging-braces-alist
+   '( (brace-list-open)
+      (brace-list-close)
+;      (substatement-open before after)  ;; supposedly the default
+;      (block-close . c-snug-do-while)   ;; supposedly the default
+    )
+  )
+  (setq c-hanging-colons-alist
+   '( (case-label after)
+    )
+  )
+  (c-set-offset 'substatement-open 0 t)
+  (c-set-offset 'statement-case-intro 2 t)
+  (c-set-offset 'case-label 2 t)
+  (c-set-offset 'statement-case-open 2 t)
+  (setq c-comment-only-line-offset 0)
+
+;  "setup custom colours - smagri"
+;  (hilit-rehighlight-buffer 't)
+;  (load-file "~/.custom_c-mode_colors")
+
+
+)
+
+
+;; Load up ViewMail
+
+;; !wrks in v20.7 (global-unset-key "^O") ; will need ^O as a prefix later
+
+;; loadup local vm
+;;(autoload 'vm "~/bin/vm" "Start VM on your primary inbox." t)
+;;(autoload 'vm-visit-folder "~/bin/vm" "Start VM on an arbitrary folder." t)
+;;(autoload 'vm-mail "~/bin/vm" "Send a mail message using VM." t)
+;;(autoload 'vm-submit-bug-report "~/bin/vm" "Send a bug report about VM." t)
+
+;; loadup debian vm
+(autoload 'vm "/usr/share/emacs/site-lisp/vm/vm" "Start VM on your primary inbox." t)
+(autoload 'vm-visit-folder "/usr/share/emacs/site-lisp/vm/vm" "Start VM on an arbitrary folder." t)
+(autoload 'vm-mail "/usr/share/emacs/site-lisp/vm/vm" "Send a mail message using VM." t)
+(autoload 'vm-submit-bug-report "/usr/share/emacs/site-lisp/vm/vm" "Send a bug report about VM." t)
+
+;; See ~/.vm for general setup
+
+;; for mail not on local linux machine, eg on sparcs
+;;(setq vm-spool-files (list "~/INBOX" "/var/mail/smagri" "~/INBOX.CRASH"))
+
+;; for mail _on_ Linux machine (eg callisto/ateg2)
+(setq vm-spool-files (list "~/INBOX" "/var/spool/mail/smagri" "~/INBOX.CRASH"))
+
+;; Generic mail setup
+(setq mail-signature 't)
+(setq mail-signature-file "~/.signature")
+
+(put 'upcase-region 'disabled nil)
+
+;(setq vm-summary-mode-hook 'sm-vm-summary-customisations)
+
+;(defun sm-vm-summary-customisations ()
+;  "setup custom colours"
+;  (interactive)
+;  (hilit-rehighlight-buffer 't)
+;  (load-file "~/.custom_vm_colors.vm-summary-mode")
+;)
+
+;(setq vm-mode-hook 'sm-vm-customisations)
+
+;(defun sm-vm-customisations ()
+;  "setup custom colours"
+;  (interactive)
+; firstly we must activate buffer faces
+;  (hilit-rehighlight-buffer 't)
+;  (load-file "~/.custom_vm_colors.vm-mode")
+;)
+
+
+;(setq gnus-summary-mode-hook 'sm-gnus-summary-customisations)
+
+;(defun sm-gnus-summary-customisations ()
+;  "setup custom colours"
+;  (interactive)
+
+;  (hilit-rehighlight-buffer 't)
+;  (load-file "~/.custom_gnus_colors.gnus-summary-mode")
+;)
+
+;(setq gnus-article-mode-hook 'sm-gnus-article-customisations)
+
+;(defun sm-gnus-article-customisations ()
+;  "setup custom colours"
+;  (interactive)
+
+;  (hilit-rehighlight-buffer 't)
+;  (load-file "~/.custom_gnus_colors.gnus-article-mode")
+;)
+
+(defun quick-load-work-dot_emacs-file ()
+  (interactive)
+  (load-file "~/.emacs")
+)
+
+(defun quick-load-work-NT-dot_emacs-file ()
+  (interactive)
+  (load-file "~/.emacs.NT")
+)
+
+(defun quick-load-home-dot_emacs-file ()
+  (interactive)
+  (load-file "~/.emacs.home")
+)
+
+
+; set default browser to mozilla
+;
+;(custom-set-variables
+; '(browse-url-browser-function (quote browse-url-generic))
+; '(browse-url-generic-program "mozilla")
+; '(setq browse-url-generic-program t))
+;(custom-set-faces)

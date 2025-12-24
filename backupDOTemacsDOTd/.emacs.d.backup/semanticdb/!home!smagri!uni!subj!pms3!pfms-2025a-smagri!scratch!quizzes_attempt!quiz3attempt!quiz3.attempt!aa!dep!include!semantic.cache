@@ -1,0 +1,42 @@
+;; Object semanticdb-project-database-file-1560dd65dc24
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1560dd65dc24"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1560dd7e48a4"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF_H" variable (:constant-flag t) nil [22 26])
+            ("types.h" include nil nil [28 46])
+            ("tf" type
+               (:members 
+                  ( ("yawToQuaternion" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("yaw" variable (:type "double") (reparse-symbol arg-sub-list) [110 121]))                          
+                        :type ("geometry_msgs::Quaternion" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [68 122])
+                    ("quaternionToYaw" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("q" variable (:type ("geometry_msgs::Quaternion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [151 179]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [128 180]))                  
+                :type "namespace")
+                nil [48 182]))          
+      :file "tf.h"
+      :pointmax 199
+      :fsize 198
+      :lastmodtime '(26602 12392 866544 91000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TF_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1560dd2a6730"
+      :file "types.h"
+      :fsize 1773
+      :lastmodtime '(26599 21256 675050 995000)))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!quizzes_attempt!quiz3attempt!quiz3.attempt!aa!dep!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

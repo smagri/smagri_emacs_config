@@ -1,0 +1,111 @@
+These are what I think are the most usefull emacs commands:
+-----------------------------------------------------------
+
+M !
+* execute a shell command
+
+C c p l make -k
+* compiles with error line highlighted
+
+------------------------------- very useful ---------------------------------------
+You may need to wait a little while while the system searches for what you want.
+Pattern matches are case insentatives.
+------------------------------- very useful ---------------------------------------
+
+**** first you need to execute gtags on the command line in the
+     directory you want these commands to operate. In emacs27 or
+     ubuntu22.04 gtag files are owned by root so to generate them you
+     must run sudo gtags every time you add a new file to your
+     directory OR use helm-gtags-create-tags command. ----------------
+
+
+***** helm-gtags-find-pattern <RET>
+  * FIRSTLY you must cd to the ROOT directory of your GTAGS file. ie
+    put the directory in an emacs window so it knows where to search.
+C-c g g
+Find pattern: 'put first part of pattern, then hit return'
+pattern: 'rest of pattern in fuzzy matching mode'
+
+
+------------------------------- very useful ---------------------------------------
+These are what I think are the most usefull helm.el commands:
+---------------------------------------------------------------
+
+C-c h o
+helm-occur - fuzzy matched grep within a file.
+
+
+C-c h l
+helm-locate
+== locate on commandline with fuzzy matching and you can browse the
+   result for the one you want. This works on the entire filesystem.
+
+
+C-c h /
+helm-find - list of files for fuzzy matched pattern
+This only works on the current directory you are in.
+
+These are what I think are the most usefull helm-gtags.el commands:
+--------------------------------------------------------------- 
+
+
+Most usefull helm-gtags.el commands for within files:
+---------------------------------------------------------------
+
+M(==ESC) C-a
+* C-M-a runs beginning-of-defun, which moves point to beginning of a
+function. Demo:
+
+M(==ESC) C-e
+* C-M-e runs end-of-defun, which moves point to end of a function. Demo:
+
+M(==ESC) C-h
+C-M-h runs mark-defun, which put a region around whole current or following function. Demo:
+
+* C-s g r
+  * if point is inside a function, the prompt will be default to the function name.
+  * If point is on a function, it lists references of that functions immediately.
+  * If point is on a variable, helm-gtags-find-rtags won't have any
+  * effect. You should use
+   helm-gtags-find-symbol, which is bound to C-c g s.
+
+find* C-c g a
+If you want to list all the  functions that the current function - the
+function  that  point  is  inside  -  calls,  you  can  do  that  with
+helm-gtags-tags-in-this-function,  which is  bound to  C-c g  a in  my
+setup.
+
+------------------------------- very useful ---------------------------------------
+* remember in FUZZY MATCHING mode pattern: can have members in any
+  order
+
+CANCEL helm COMMAND
+C-g g ESC ESC (or some combination of till it works)
+
+
+helm-gtags-find-*
+where * is tag, rtag, files, symbol, pattern C-c g g, tag-from-here, tag-other-window
+
+***** Find files in project using regxp fuzzy matching:
+helm-gtags-find-files<RET>
+  * FIRSTLY you must cd to the ROOT directory of your GTAGS file. ie
+    put the directory in an emacs window so it knows where to search.
+C-c g P    
+Find File: 'put first part of pattern, then hit return'
+pattern: 'rest of pattern in fuzzy matching mode'
+
+
+* Jump to function definition:
+M .
+helm-gtags-dwim
+* If point is on an included header file, helm-gtags-dwim
+     automatically jumps to the file.
+ 
+   * Alternatively, you  have a more  generic solution, that  is using
+     Projectile. Projectile is a  generic project management tool that
+     you  learn   later.  With  Projectile,  jumping   around  version
+     controlled project like  Linux kernel is a breeze,  since you can
+     jump to  any file  regardless of  where you  are standing  in the
+     project.
+
+

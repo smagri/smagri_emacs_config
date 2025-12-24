@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file-121d394b0f77
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-121d394b0f77"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-121d394b090c"
+      :major-mode python-mode
+      :tags 
+        '( ("sys" include nil nil [485 495])
+            ("serial" include nil nil [496 509])
+            ("time" include nil nil [510 521])
+            ("busy_wait_us" function (:arguments 
+              ( ("us" variable nil (reparse-symbol function_parameters) [542 544]))              ) nil [525 943])
+            ("serialPort" variable nil nil [949 976])
+            ("baudRate" variable nil nil [977 994])
+            ("busy_wait_us" code nil nil [1628 1643])
+            ("start_time" variable nil nil [1733 1757])
+            ("serialObj" code nil nil [2020 2075])
+            ("busy_wait_us" code nil nil [2076 2091])
+            ("serialObj" code nil nil [2092 2148])
+            ("busy_wait_us" code nil nil [2149 2164])
+            ("while" code nil nil [2165 2557]))          
+      :file "flush.mycropython.buffers.py"
+      :pointmax 2557
+      :fsize 2556
+      :lastmodtime '(26877 19751 458785 855000)
+      :unmatched-syntax '((INDENT_BLOCK 1587 . 1628) (COLON 1585 . 1586) (TRY 1463 . 1466) (AS 1581 . 1583) (INDENT_BLOCK 1587 . 1628) (COLON 1585 . 1586) (TRY 1463 . 1466) (AS 1581 . 1583) ($EOI 2563 . 2563) (INDENT_BLOCK 1587 . 1628) (COLON 1585 . 1586) (TRY 1463 . 1466) (AS 1581 . 1583) ($EOI 2565 . 2565) (INDENT_BLOCK 1587 . 1628) (COLON 1585 . 1586) (TRY 1463 . 1466) (AS 1581 . 1583))))
+  :file "!home!smagri!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

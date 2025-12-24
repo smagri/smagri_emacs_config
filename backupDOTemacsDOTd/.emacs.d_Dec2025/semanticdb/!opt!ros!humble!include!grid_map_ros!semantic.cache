@@ -1,0 +1,885 @@
+;; Object semanticdb-project-database-file-155d69b11414
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155d69b11414"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155d69b11420"
+      :major-mode c++-mode
+      :tags 
+        '( ("GRID_MAP_ROS__GRID_MAP_ROS_HPP_" variable (:constant-flag t) nil [175 206])
+            ("grid_map_core/grid_map_core.hpp" include (:system-flag t) nil [208 250])
+            ("grid_map_ros/message_traits.hpp" include (:system-flag t) nil [251 293])
+            ("grid_map_ros/GridMapRosConverter.hpp" include (:system-flag t) nil [294 341])
+            ("grid_map_ros/PolygonRosConverter.hpp" include (:system-flag t) nil [342 389])
+            ("grid_map_ros/GridMapMsgHelpers.hpp" include (:system-flag t) nil [390 435]))          
+      :file "grid_map_ros.hpp"
+      :pointmax 480
+      :fsize 480
+      :lastmodtime '(26508 5171 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GRID_MAP_ROS__GRID_MAP_ROS_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-155d68d64090"
+      :major-mode c++-mode
+      :tags 
+        '( ("GRID_MAP_ROS__MESSAGE_TRAITS_HPP_" variable (:constant-flag t) nil [51 84])
+            ("std_msgs/msg/header.hpp" include (:system-flag t) nil [86 120])
+            ("rclcpp/rclcpp.hpp" include (:system-flag t) nil [121 149])
+            ("string" include (:system-flag t) nil [151 168])
+            ("type_traits" include (:system-flag t) nil [169 191])
+            ("memory" include (:system-flag t) nil [192 209])
+            ("ros" type
+               (:members 
+                  ( ("message_traits" type
+                       (:members 
+                          ( ("HasHeader" type
+                               (:superclasses 
+                                  ( ("std::false_type" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [293 338])
+                            ("std::true_type" variable (:type "int") (reparse-symbol namespacesubparts) [410 428])
+                            ("Header" type
+                               (:members 
+                                  ( ("pointer" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :type ("M" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [532 538]))                                          
+                                        :type ("std_msgs::msg::Header" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [493 579])
+                                    ("pointer" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("M" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [627 639]))                                          
+                                        :type ("std_msgs::msg::Header" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [582 680]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [475 683])
+                            ("FrameId" type
+                               (:members 
+                                  ( ("pointer" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :type ("M" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1043 1049]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1014 1090])
+                                    ("pointer" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("M" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1128 1140]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1093 1181]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [995 1184])
+                            ("TimeStamp" type
+                               (:members 
+                                  ( ("pointer" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("M" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1638 1650]))                                          
+                                        :type ("std::unique_ptr" type
+                                             (:template-specifier 
+                                                ( ("rclcpp::Time" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1593 1691])
+                                    ("value" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("M" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1721 1733]))                                          
+                                        :type ("rclcpp::Time" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1695 1781]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1572 1784]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [227 2204]))                  
+                :type "namespace")
+                nil [211 2235]))          
+      :file "message_traits.hpp"
+      :pointmax 2299
+      :fsize 2298
+      :lastmodtime '(26508 5171 0 0)
+      :unmatched-syntax '((punctuation 2200 . 2201) (semantic-list 1879 . 2200) (punctuation 1877 . 1878) (symbol 1873 . 1877) (punctuation 1872 . 1873) (punctuation 1871 . 1872) (punctuation 1870 . 1871) (symbol 1865 . 1870) (punctuation 1864 . 1865) (punctuation 1863 . 1864) (punctuation 1862 . 1863) (symbol 1861 . 1862) (punctuation 1860 . 1861) (symbol 1851 . 1860) (punctuation 1850 . 1851) (symbol 1841 . 1850) (punctuation 1840 . 1841) (punctuation 1839 . 1840) (symbol 1836 . 1839) (TYPENAME 1827 . 1835) (punctuation 1825 . 1826) (symbol 1824 . 1825) (punctuation 1823 . 1824) (symbol 1814 . 1823) (STRUCT 1807 . 1813) (punctuation 1805 . 1806) (symbol 1804 . 1805) (TYPENAME 1795 . 1803) (punctuation 1794 . 1795) (TEMPLATE 1786 . 1794) (punctuation 1570 . 1571) (VOID 1566 . 1570) (punctuation 1564 . 1565) (symbol 1557 . 1563) (TYPENAME 1548 . 1556) (punctuation 1546 . 1547) (symbol 1545 . 1546) (TYPENAME 1536 . 1544) (punctuation 1535 . 1536) (TEMPLATE 1527 . 1535) (punctuation 1524 . 1525) (semantic-list 1277 . 1524) (punctuation 1275 . 1276) (symbol 1271 . 1275) (punctuation 1270 . 1271) (punctuation 1269 . 1270) (punctuation 1268 . 1269) (symbol 1263 . 1268) (punctuation 1262 . 1263) (punctuation 1261 . 1262) (punctuation 1260 . 1261) (symbol 1259 . 1260) (punctuation 1258 . 1259) (symbol 1249 . 1258) (punctuation 1248 . 1249) (symbol 1239 . 1248) (punctuation 1238 . 1239) (punctuation 1237 . 1238) (symbol 1234 . 1237) (TYPENAME 1225 . 1233) (punctuation 1223 . 1224) (symbol 1222 . 1223) (punctuation 1221 . 1222) (symbol 1214 . 1221) (STRUCT 1207 . 1213) (punctuation 1205 . 1206) (symbol 1204 . 1205) (TYPENAME 1195 . 1203) (punctuation 1194 . 1195) (TEMPLATE 1186 . 1194) (punctuation 993 . 994) (VOID 989 . 993) (punctuation 987 . 988) (symbol 980 . 986) (TYPENAME 971 . 979) (punctuation 969 . 970) (symbol 968 . 969) (TYPENAME 959 . 967) (punctuation 958 . 959) (TEMPLATE 950 . 958) (punctuation 947 . 948) (semantic-list 775 . 947) (punctuation 773 . 774) (symbol 769 . 773) (punctuation 768 . 769) (punctuation 767 . 768) (punctuation 766 . 767) (symbol 761 . 766) (punctuation 760 . 761) (punctuation 759 . 760) (punctuation 758 . 759) (symbol 757 . 758) (punctuation 756 . 757) (symbol 747 . 756) (punctuation 746 . 747) (symbol 737 . 746) (punctuation 736 . 737) (punctuation 735 . 736) (symbol 732 . 735) (TYPENAME 723 . 731) (punctuation 721 . 722) (symbol 720 . 721) (punctuation 719 . 720) (symbol 713 . 719) (STRUCT 706 . 712) (punctuation 704 . 705) (symbol 703 . 704) (TYPENAME 694 . 702) (punctuation 693 . 694) (TEMPLATE 685 . 693) (punctuation 473 . 474) (VOID 469 . 473) (punctuation 467 . 468) (symbol 460 . 466) (TYPENAME 451 . 459) (punctuation 449 . 450) (symbol 448 . 449) (TYPENAME 439 . 447) (punctuation 438 . 439) (TEMPLATE 430 . 438) (punctuation 408 . 409) (punctuation 407 . 408) (semantic-list 389 . 407) (symbol 381 . 389) (semantic-list 390 . 396) (punctuation 379 . 380) (symbol 378 . 379) (punctuation 377 . 378) (symbol 368 . 377) (STRUCT 361 . 367) (punctuation 359 . 360) (symbol 358 . 359) (TYPENAME 349 . 357) (punctuation 348 . 349) (TEMPLATE 340 . 348) (punctuation 291 . 292) (VOID 287 . 291) (punctuation 285 . 286) (TYPENAME 276 . 284) (punctuation 274 . 275) (symbol 273 . 274) (TYPENAME 264 . 272) (punctuation 263 . 264) (TEMPLATE 255 . 263))
+      :lexical-table 
+        '(("GRID_MAP_ROS__MESSAGE_TRAITS_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-155d692ebbb8"
+      :major-mode c++-mode
+      :tags 
+        '( ("GRID_MAP_ROS__GRIDMAPROSCONVERTER_HPP_" variable (:constant-flag t) nil [193 231])
+            ("grid_map_core/grid_map_core.hpp" include (:system-flag t) nil [233 275])
+            ("grid_map_msgs/msg/grid_map.hpp" include (:system-flag t) nil [276 317])
+            ("Eigen/Core" include (:system-flag t) nil [328 349])
+            ("rclcpp/rclcpp.hpp" include (:system-flag t) nil [358 386])
+            ("sensor_msgs/msg/point_cloud2.hpp" include (:system-flag t) nil [387 430])
+            ("sensor_msgs/msg/image.hpp" include (:system-flag t) nil [431 467])
+            ("sensor_msgs/image_encodings.hpp" include (:system-flag t) nil [468 510])
+            ("nav_msgs/msg/occupancy_grid.hpp" include (:system-flag t) nil [511 553])
+            ("nav_msgs/msg/grid_cells.hpp" include (:system-flag t) nil [554 592])
+            ("nav2_msgs/msg/costmap.hpp" include (:system-flag t) nil [593 629])
+            ("cv_bridge/cv_bridge.h" include (:system-flag t) nil [630 662])
+            ("vector" include (:system-flag t) nil [671 688])
+            ("unordered_map" include (:system-flag t) nil [689 713])
+            ("string" include (:system-flag t) nil [714 731])
+            ("memory" include (:system-flag t) nil [732 749])
+            ("grid_map" type
+               (:members 
+                  ( ("GridMapRosConverter" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [852 859])
+                            ("GridMapRosConverter" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("GridMapRosConverter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [900 922])
+                            ("GridMapRosConverter" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [955 986])
+                            ("fromMessage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map_msgs::msg::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1485 1529])
+                                    ("gridMap" variable
+                                       (:reference 1
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1530 1558])
+                                    ("layers" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1563 1603])
+                                    ("copyBasicLayers" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1604 1631])
+                                    ("copyAllNonBasicLayers" variable
+                                       (:default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1637 1670]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1456 1672])
+                            ("fromMessage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("message" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map_msgs::msg::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1931 1975])
+                                    ("gridMap" variable
+                                       (:reference 1
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1976 2004]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1907 2005])
+                            ("toMessage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2269 2303]))                                  
+                                :type ("std::unique_ptr" type
+                                     (:template-specifier 
+                                        ( ("grid_map_msgs::msg::GridMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2202 2304])
+                            ("toMessage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2636 2670])
+                                    ("layers" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2671 2711]))                                  
+                                :type ("std::unique_ptr" type
+                                     (:template-specifier 
+                                        ( ("grid_map_msgs::msg::GridMap" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2569 2712])
+                            ("toPointCloud" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3135 3169])
+                                    ("pointLayer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3174 3205])
+                                    ("pointCloud" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::msg::PointCloud2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3210 3253]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3105 3254])
+                            ("toPointCloud" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3809 3843])
+                                    ("layers" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3848 3888])
+                                    ("pointLayer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3893 3924])
+                                    ("pointCloud" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::msg::PointCloud2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3929 3972]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3779 3973])
+                            ("fromOccupancyGrid" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("occupancyGrid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("nav_msgs::msg::OccupancyGrid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4323 4374])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4379 4405])
+                                    ("gridMap" variable
+                                       (:reference 1
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4406 4434]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4288 4435])
+                            ("toOccupancyGrid" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5083 5117])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5118 5144])
+                                    ("dataMin" variable (:type "float") (reparse-symbol arg-sub-list) [5149 5163])
+                                    ("dataMax" variable (:type "float") (reparse-symbol arg-sub-list) [5164 5178])
+                                    ("occupancyGrid" variable
+                                       (:reference 1
+                                        :type ("nav_msgs::msg::OccupancyGrid" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5179 5224]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5050 5225])
+                            ("fromCostmap" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("costmap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("nav2_msgs::msg::Costmap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5549 5589])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5594 5620])
+                                    ("gridMap" variable
+                                       (:reference 1
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5621 5649]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [5520 5650])
+                            ("toCostmap" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6280 6314])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6315 6341])
+                                    ("dataMin" variable (:type "float") (reparse-symbol arg-sub-list) [6346 6360])
+                                    ("dataMax" variable (:type "float") (reparse-symbol arg-sub-list) [6361 6375])
+                                    ("costmap" variable
+                                       (:reference 1
+                                        :type ("nav2_msgs::msg::Costmap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6376 6410]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6253 6411])
+                            ("toGridCells" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7002 7036])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7037 7063])
+                                    ("lowerThreshold" variable (:type "float") (reparse-symbol arg-sub-list) [7068 7089])
+                                    ("upperThreshold" variable (:type "float") (reparse-symbol arg-sub-list) [7090 7111])
+                                    ("gridCells" variable
+                                       (:reference 1
+                                        :type ("nav_msgs::msg::GridCells" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7116 7153]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6973 7154])
+                            ("initializeFromImage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("image" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::msg::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7638 7676])
+                                    ("resolution" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [7677 7701])
+                                    ("gridMap" variable
+                                       (:reference 1
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7706 7734])
+                                    ("position" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "grid_map::Position::Zero()"
+                                        :type ("grid_map::Position" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7739 7803]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7601 7805])
+                            ("addLayerFromImage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("image" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::msg::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8542 8580])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8581 8607])
+                                    ("gridMap" variable
+                                       (:reference 1
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8612 8640])
+                                    ("lowerValue" variable
+                                       (:constant-flag t
+                                        :default-value "0.0"
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [8641 8669])
+                                    ("upperValue" variable
+                                       (:constant-flag t
+                                        :default-value "1.0"
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [8675 8703])
+                                    ("alphaThreshold" variable
+                                       (:constant-flag t
+                                        :default-value "0.5"
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [8705 8738]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8507 8740])
+                            ("addColorLayerFromImage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("image" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("sensor_msgs::msg::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9058 9096])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9097 9123])
+                                    ("gridMap" variable
+                                       (:reference 1
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9128 9156]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9018 9157])
+                            ("toImage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9637 9671])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9672 9698])
+                                    ("encoding" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9703 9730])
+                                    ("image" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::msg::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9731 9763]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9612 9764])
+                            ("toImage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10296 10330])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10331 10357])
+                                    ("encoding" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10362 10389])
+                                    ("lowerValue" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [10390 10413])
+                                    ("upperValue" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [10414 10437])
+                                    ("image" variable
+                                       (:reference 1
+                                        :type ("sensor_msgs::msg::Image" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10442 10474]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10271 10475])
+                            ("toCvImage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10945 10979])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10980 11006])
+                                    ("encoding" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11011 11038])
+                                    ("cvImage" variable
+                                       (:reference 1
+                                        :type ("cv_bridge::CvImage" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11039 11068]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10918 11069])
+                            ("toCvImage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11567 11601])
+                                    ("layer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11602 11628])
+                                    ("encoding" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11633 11660])
+                                    ("lowerValue" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [11661 11684])
+                                    ("upperValue" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [11689 11712])
+                                    ("cvImage" variable
+                                       (:reference 1
+                                        :type ("cv_bridge::CvImage" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11713 11742]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11540 11743])
+                            ("saveToBag" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("gridMap" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12248 12282])
+                                    ("pathToBag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12283 12313])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12318 12344]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12221 12345])
+                            ("loadFromBag" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("pathToBag" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12666 12696])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12697 12723])
+                                    ("gridMap" variable
+                                       (:reference 1
+                                        :type ("grid_map::GridMap" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12728 12756]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12637 12757]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [824 12760]))                  
+                :type "namespace")
+                nil [751 12763]))          
+      :file "GridMapRosConverter.hpp"
+      :pointmax 12837
+      :fsize 12837
+      :lastmodtime '(26508 5171 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GRID_MAP_ROS__GRIDMAPROSCONVERTER_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-155d692eba44"
+      :major-mode c++-mode
+      :tags 
+        '( ("GRID_MAP_ROS__POLYGONROSCONVERTER_HPP_" variable (:constant-flag t) nil [193 231])
+            ("grid_map_core/Polygon.hpp" include (:system-flag t) nil [233 269])
+            ("rclcpp/time.hpp" include (:system-flag t) nil [278 304])
+            ("geometry_msgs/msg/polygon_stamped.hpp" include (:system-flag t) nil [305 353])
+            ("visualization_msgs/msg/marker.hpp" include (:system-flag t) nil [354 398])
+            ("std_msgs/msg/color_rgba.hpp" include (:system-flag t) nil [399 437])
+            ("string" include (:system-flag t) nil [446 463])
+            ("grid_map" type
+               (:members 
+                  ( ("PolygonRosConverter" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [515 522])
+                            ("PolygonRosConverter" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("PolygonRosConverter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [563 585])
+                            ("PolygonRosConverter" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [681 712])
+                            ("toMessage" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("polygon" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::Polygon" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [936 970])
+                                    ("message" variable
+                                       (:reference 1
+                                        :type ("geometry_msgs::msg::PolygonStamped" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [975 1020]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [909 1021])
+                            ("toLineMarker" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("polygon" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::Polygon" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1416 1450])
+                                    ("color" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_msgs::msg::ColorRGBA" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1451 1490])
+                                    ("lineWidth" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [1495 1518])
+                                    ("zCoordinate" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [1523 1548])
+                                    ("marker" variable
+                                       (:reference 1
+                                        :type ("visualization_msgs::msg::Marker" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1549 1590]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1386 1591])
+                            ("toTriangleListMarker" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("polygon" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("grid_map::Polygon" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1942 1976])
+                                    ("color" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std_msgs::msg::ColorRGBA" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1977 2016])
+                                    ("zCoordinate" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2021 2046])
+                                    ("marker" variable
+                                       (:reference 1
+                                        :type ("visualization_msgs::msg::Marker" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2047 2088]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1904 2089]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [487 2092]))                  
+                :type "namespace")
+                nil [465 2095]))          
+      :file "PolygonRosConverter.hpp"
+      :pointmax 2169
+      :fsize 2169
+      :lastmodtime '(26508 5171 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GRID_MAP_ROS__POLYGONROSCONVERTER_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table-155d6930d098"
+      :major-mode c++-mode
+      :tags 
+        '( ("GRID_MAP_ROS__GRIDMAPMSGHELPERS_HPP_" variable (:constant-flag t) nil [189 225])
+            ("rclcpp/rclcpp.hpp" include (:system-flag t) nil [234 262])
+            ("std_msgs/msg/u_int32_multi_array.hpp" include (:system-flag t) nil [263 310])
+            ("std_msgs/msg/float32_multi_array.hpp" include (:system-flag t) nil [311 358])
+            ("std_msgs/msg/float64_multi_array.hpp" include (:system-flag t) nil [359 406])
+            ("Eigen/Core" include (:system-flag t) nil [417 438])
+            ("map" include (:system-flag t) nil [440 454])
+            ("string" include (:system-flag t) nil [455 472])
+            ("grid_map" type
+               (:members 
+                  ( ("nDimensions" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [590 608])
+                    ("StorageIndices" type (:type "class") (reparse-symbol namespacesubparts) [615 656])
+                    ("storageIndexNames" variable
+                       (:typemodifiers ("extern")
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("StorageIndices" type nil nil nil)
+                                  ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [702 765])
+                    ("isRowMajor" function
+                       (:template 
+                          ( ("MultiArrayMessageType_" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MultiArrayMessageType_" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1113 1152]))                          )
+                        (reparse-symbol namespacesubparts) [1055 1549])
+                    ("getCols" function
+                       (:template 
+                          ( ("MultiArrayMessageType_" type (:type "class") nil nil))                          
+                        :type "unsigned int"
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MultiArrayMessageType_" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1854 1893]))                          )
+                        (reparse-symbol namespacesubparts) [1791 2004])
+                    ("getRows" function
+                       (:template 
+                          ( ("MultiArrayMessageType_" type (:type "class") nil nil))                          
+                        :type "unsigned int"
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MultiArrayMessageType_" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2303 2342]))                          )
+                        (reparse-symbol namespacesubparts) [2240 2453])
+                    ("matrixEigenCopyToMultiArrayMessage" function
+                       (:template 
+                          ( ("EigenType_" type (:type "class") nil nil)
+                            ("MultiArrayMessageType_" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("EigenType_" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3080 3101])
+                            ("m" variable
+                               (:reference 1
+                                :type ("MultiArrayMessageType_" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3102 3129]))                          )
+                        (reparse-symbol namespacesubparts) [2977 3749])
+                    ("multiArrayMessageCopyToMatrixEigen" function
+                       (:template 
+                          ( ("EigenType_" type (:type "class") nil nil)
+                            ("MultiArrayMessageType_" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MultiArrayMessageType_" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4273 4306])
+                            ("e" variable
+                               (:reference 1
+                                :type ("EigenType_" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4307 4322]))                          )
+                        (reparse-symbol namespacesubparts) [4170 4719])
+                    ("multiArrayMessageMapToMatrixEigen" function
+                       (:template 
+                          ( ("EigenType_" type (:type "class") nil nil)
+                            ("MultiArrayMessageType_" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("m" variable
+                               (:reference 1
+                                :type ("MultiArrayMessageType_" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5094 5121])
+                            ("e" variable
+                               (:reference 1
+                                :type ("EigenType_" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5122 5137]))                          )
+                        (reparse-symbol namespacesubparts) [4992 5502]))                  
+                :type "namespace")
+                nil [474 5505]))          
+      :file "GridMapMsgHelpers.hpp"
+      :pointmax 5577
+      :fsize 5577
+      :lastmodtime '(26508 5171 0 0)
+      :unmatched-syntax '((symbol 650 . 653) (punctuation 646 . 647) (symbol 640 . 646) (ENUM 610 . 614))
+      :lexical-table 
+        '(("GRID_MAP_ROS__GRIDMAPMSGHELPERS_HPP_")
+          )
+))
+  :file "!opt!ros!humble!include!grid_map_ros!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

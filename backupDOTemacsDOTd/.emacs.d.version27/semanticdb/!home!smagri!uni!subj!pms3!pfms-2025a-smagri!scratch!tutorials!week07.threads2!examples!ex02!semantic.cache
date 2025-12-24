@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file-155d69b82000
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155d69b82000"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155d69b8201c"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("data.h" include nil nil [21 38])
+            ("sensor.h" include nil nil [39 58])
+            ("analysis.h" include nil nil [59 80])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [82 102])
+            ("main" function (:type "int") nil [104 511]))          
+      :file "main.cpp"
+      :pointmax 515
+      :fsize 514
+      :lastmodtime '(26608 46392 130520 453000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155d68f0117c"
+      :file "data.h"
+      :fsize 283
+      :lastmodtime '(26608 46392 130520 453000))
+    (semanticdb-table "semanticdb-table-155d68cb39e0"
+      :file "sensor.h"
+      :fsize 472
+      :lastmodtime '(26608 46392 130520 453000))
+    (semanticdb-table "semanticdb-table-155d68d1b964"
+      :file "analysis.h"
+      :fsize 507
+      :lastmodtime '(26608 46392 130520 453000)))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week07.threads2!examples!ex02!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

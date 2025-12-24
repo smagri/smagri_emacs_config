@@ -1,0 +1,52 @@
+;; Object semanticdb-project-database-file-155d6928c968
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-155d6928c968"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-155d6930de78"
+      :major-mode c++-mode
+      :tags 
+        '( ("pfmsconnector.h" include nil nil [1 27])
+            ("vector" include (:system-flag t) nil [28 45])
+            ("iostream" include (:system-flag t) nil [46 65])
+            ("thread" include (:system-flag t) nil [66 83])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [94 103])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104 117]))                  
+                :type "int")
+                nil [85 1139]))          
+      :file "receive_laser.cpp"
+      :pointmax 1140
+      :fsize 1139
+      :lastmodtime '(26612 35202 604921 140000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-155d6930deb0"
+      :major-mode c++-mode
+      :tags 
+        '( ("pfmsconnector.h" include nil nil [1 27])
+            ("vector" include (:system-flag t) nil [28 45])
+            ("iostream" include (:system-flag t) nil [46 65])
+            ("thread" include (:system-flag t) nil [66 83])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [94 103])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104 117]))                  
+                :type "int")
+                nil [85 1051]))          
+      :file "receive_sonar.cpp"
+      :pointmax 1052
+      :fsize 1051
+      :lastmodtime '(26612 35202 604921 140000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week08.unit.testing!starter!quad!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,67 @@
+;; Object semanticdb-project-database-file-18ed01f9c600
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18ed01f9c600"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18ed01f9c61c"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("algorithm" include (:system-flag t) nil [64 84])
+            ("cmath" include (:system-flag t) nil [85 101])
+            ("quadcopter.h" include nil nil [103 126])
+            ("pfms_types.h" include nil nil [145 168])
+            ("test_helper.h" include nil nil [180 204])
+            ("pfmshog.h" include nil nil [249 269])
+            ("laserprocessing.h" include nil nil [299 327])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [364 395])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("QuadcopterTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [402 417])
+                    ("" variable (:type ("Constructor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [418 430]))                  
+                :type "int")
+                nil [397 2089])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("QuadcopterTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2096 2111])
+                    ("" variable (:type ("CheckObstacles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2112 2127]))                  
+                :type "int")
+                nil [2091 3170])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("QuadcopterTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3177 3192])
+                    ("" variable (:type ("StartingLogic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3193 3207]))                  
+                :type "int")
+                nil [3172 6207])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("QuadcopterTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6214 6229])
+                    ("" variable (:type ("CheckObstaclesMoving" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6230 6251]))                  
+                :type "int")
+                nil [6209 9046])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9057 9066])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9067 9079]))                  
+                :type "int")
+                nil [9048 9151]))          
+      :file "utest.cpp"
+      :pointmax 9152
+      :fsize 9151
+      :lastmodtime '(26627 9638 400149 645000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18ed016ab2bc"
+      :file "test_helper.h"
+      :fsize 1120
+      :lastmodtime '(26627 9638 400149 645000)))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!quizzes_attempt!quiz4attempt!quiz4.attempt!aa!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

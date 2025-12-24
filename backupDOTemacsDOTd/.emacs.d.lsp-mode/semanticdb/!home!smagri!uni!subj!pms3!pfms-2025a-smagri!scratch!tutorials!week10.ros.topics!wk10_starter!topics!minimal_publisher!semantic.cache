@@ -1,0 +1,265 @@
+;; Object semanticdb-project-database-file-167b1ccdcbd0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-167b1ccdcbd0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-167b1d015400"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [616 633])
+            ("memory" include (:system-flag t) nil [634 651])
+            ("string" include (:system-flag t) nil [652 669])
+            ("rclcpp/rclcpp.hpp" include nil nil [671 699])
+            ("std_msgs/msg/string.hpp" include nil nil [700 734])
+            ("std::chrono_literals" using (:type ("std::chrono_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [736 773])
+            ("MinimalPublisher" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1035 1042])
+                    ("count_" function (:type "int") (reparse-symbol classsubparts) [1169 1800])
+                    ("private" label nil (reparse-symbol classsubparts) [1802 1810])
+                    ("timer_" variable (:type ("rclcpp::TimerBase::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1813 1849])
+                    ("publisher_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1852 1915])
+                    ("count_" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1918 1932])
+                    ("initial_odo" variable
+                       (:default-value "populateOdo(3,-3,0,M_PI/4)"
+                        :type ("Odometry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1936 1986]))                  
+                :type "class")
+                nil [988 1990])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2001 2010])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2011 2025]))                  
+                :type "int")
+                nil [1992 2173]))          
+      :file "lambda.cpp"
+      :pointmax 2174
+      :fsize 2173
+      :lastmodtime '(26644 959 64951 88000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-167b1d015420"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [616 633])
+            ("functional" include (:system-flag t) nil [634 655])
+            ("memory" include (:system-flag t) nil [656 673])
+            ("string" include (:system-flag t) nil [674 691])
+            ("rclcpp/rclcpp.hpp" include nil nil [693 721])
+            ("std_msgs/msg/string.hpp" include nil nil [722 756])
+            ("std::chrono_literals" using (:type ("std::chrono_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [758 795])
+            ("MinimalPublisher" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [975 982])
+                    ("MinimalPublisher" function
+                       (:constructor-flag t
+                        :type ("MinimalPublisher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [985 1233])
+                    ("private" label nil (reparse-symbol classsubparts) [1235 1243])
+                    ("timer_callback" function (:type "void") (reparse-symbol classsubparts) [1246 1496])
+                    ("timer_" variable (:type ("rclcpp::TimerBase::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1499 1535])
+                    ("publisher_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1538 1601])
+                    ("count_" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1604 1618]))                  
+                :type "class")
+                nil [928 1621])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1632 1641])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1642 1656]))                  
+                :type "int")
+                nil [1623 1776]))          
+      :file "member_function.cpp"
+      :pointmax 1777
+      :fsize 1776
+      :lastmodtime '(26643 1296 84390 174000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-167b1d015440"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [616 633])
+            ("string" include (:system-flag t) nil [634 651])
+            ("rclcpp/rclcpp.hpp" include nil nil [653 681])
+            ("std_msgs/msg/string.hpp" include nil nil [682 716])
+            ("std::chrono_literals" using (:type ("std::chrono_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [718 755])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1078 1087])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1088 1102]))                  
+                :type "int")
+                nil [1069 1851]))          
+      :file "not_composable.cpp"
+      :pointmax 1852
+      :fsize 1851
+      :lastmodtime '(26643 1296 84390 174000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-167b1d015460"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [616 633])
+            ("functional" include (:system-flag t) nil [634 655])
+            ("memory" include (:system-flag t) nil [656 673])
+            ("string" include (:system-flag t) nil [674 691])
+            ("rclcpp/type_adapter.hpp" include nil nil [693 727])
+            ("rclcpp/rclcpp.hpp" include nil nil [728 756])
+            ("std_msgs/msg/string.hpp" include nil nil [758 792])
+            ("std::chrono_literals" using (:type ("std::chrono_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [794 831])
+            ("TypeAdapter" type
+               (:type "struct"
+                :members 
+                  ( ("std::true_type" variable (:type "int") (reparse-symbol classsubparts) [1183 1198])
+                    ("std::string" variable (:type "int") (reparse-symbol classsubparts) [1221 1233])
+                    ("std_msgs::msg::String" variable (:type "int") (reparse-symbol classsubparts) [1261 1283])
+                    ("convert_to_ros_message" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("custom_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1331 1358])
+                            ("destination" variable
+                               (:reference 1
+                                :type ("ros_message_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1363 1394]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1287 1433])
+                    ("convert_to_custom" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("source" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros_message_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1476 1508])
+                            ("destination" variable
+                               (:reference 1
+                                :type ("custom_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1513 1539]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1437 1578]))                  
+                :template-specifier 
+                  ( ("std::string" type nil nil nil)
+                    ("std_msgs::msg::String" type nil nil nil))                  
+                :parent "rclcpp")
+                nil [1082 1581])
+            ("MinimalPublisher" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("rclcpp::TypeAdapter" variable (:type "int") (reparse-symbol classsubparts) [1902 1958])
+                    ("public" label nil (reparse-symbol classsubparts) [1960 1967])
+                    ("MinimalPublisher" function
+                       (:constructor-flag t
+                        :type ("MinimalPublisher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1970 2210])
+                    ("private" label nil (reparse-symbol classsubparts) [2212 2220])
+                    ("timer_callback" function (:type "void") (reparse-symbol classsubparts) [2223 2431])
+                    ("timer_" variable (:type ("rclcpp::TimerBase::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2434 2470])
+                    ("publisher_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2473 2528])
+                    ("count_" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2531 2545]))                  
+                :type "class")
+                nil [1831 2548])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2559 2568])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2569 2583]))                  
+                :type "int")
+                nil [2550 2703]))          
+      :file "member_function_with_type_adapter.cpp"
+      :pointmax 2704
+      :fsize 2703
+      :lastmodtime '(26643 1296 84390 174000)
+      :unmatched-syntax '((punctuation 1900 . 1901) (symbol 1886 . 1899) (USING 1880 . 1885) (punctuation 1259 . 1260) (symbol 1242 . 1258) (USING 1236 . 1241) (punctuation 1219 . 1220) (symbol 1207 . 1218) (USING 1201 . 1206) (punctuation 1181 . 1182) (symbol 1166 . 1180) (USING 1160 . 1165)))
+    (semanticdb-table "semanticdb-table-167b1d015480"
+      :major-mode c++-mode
+      :tags 
+        '( ("chrono" include (:system-flag t) nil [615 632])
+            ("functional" include (:system-flag t) nil [633 654])
+            ("cinttypes" include (:system-flag t) nil [655 675])
+            ("memory" include (:system-flag t) nil [676 693])
+            ("string" include (:system-flag t) nil [694 711])
+            ("rclcpp/rclcpp.hpp" include nil nil [713 741])
+            ("std_msgs/msg/string.hpp" include nil nil [742 776])
+            ("std::chrono_literals" using (:type ("std::chrono_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [778 815])
+            ("MinimalPublisher" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [938 945])
+                    ("MinimalPublisher" function
+                       (:constructor-flag t
+                        :type ("MinimalPublisher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [948 1586])
+                    ("private" label nil (reparse-symbol classsubparts) [1588 1596])
+                    ("wait_for_all_acked" function (:type "void") (reparse-symbol classsubparts) [1599 2124])
+                    ("timer_callback" function (:type "void") (reparse-symbol classsubparts) [2128 2505])
+                    ("timer_" variable (:type ("rclcpp::TimerBase::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2508 2544])
+                    ("publisher_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2547 2610])
+                    ("count_" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2613 2627])
+                    ("wait_timeout_" variable (:type ("std::chrono::milliseconds" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2630 2670]))                  
+                :type "class")
+                nil [891 2673])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2684 2693])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2694 2708]))                  
+                :type "int")
+                nil [2675 2860]))          
+      :file "member_function_with_wait_for_all_acked.cpp"
+      :pointmax 2861
+      :fsize 2860
+      :lastmodtime '(26643 1296 84390 174000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week10.ros.topics!wk10_starter!topics!minimal_publisher!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

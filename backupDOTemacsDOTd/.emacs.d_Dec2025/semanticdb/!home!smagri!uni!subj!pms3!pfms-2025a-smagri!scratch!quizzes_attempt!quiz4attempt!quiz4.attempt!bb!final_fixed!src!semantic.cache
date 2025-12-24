@@ -1,0 +1,108 @@
+;; Object semanticdb-project-database-file-18c5b52e6d94
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18c5b52e6d94"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18c5b52e6d34"
+      :major-mode c++-mode
+      :tags 
+        '( ("analysis.h" include nil nil [1 22])
+            ("iostream" include (:system-flag t) nil [24 43])
+            ("analysis" type
+               (:members 
+                  ( ("countCharacters" function
+                       (:arguments 
+                          ( ("sentence" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [224 245]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [195 325]))                  
+                :type "namespace")
+                nil [90 328]))          
+      :file "analysis.cpp"
+      :pointmax 329
+      :fsize 328
+      :lastmodtime '(26641 48007 780413 303000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18c5b52e6d54"
+      :major-mode c++-mode
+      :tags 
+        '( ("ANALYSIS_H" variable (:constant-flag t) nil [28 38])
+            ("vector" include (:system-flag t) nil [40 57])
+            ("string" include (:system-flag t) nil [58 75])
+            ("analysis" type
+               (:members 
+                  ( ("countCharacters" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("sentence" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [374 395]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [345 396]))                  
+                :type "namespace")
+                nil [77 398]))          
+      :file "analysis.h"
+      :pointmax 422
+      :fsize 421
+      :lastmodtime '(26627 9638 401149 631000)
+      :unmatched-syntax '((punctuation 398 . 399))
+      :lexical-table 
+        '(("ANALYSIS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-18c5b52e6d74"
+      :major-mode c++-mode
+      :tags 
+        '( ("rclcpp/rclcpp.hpp" include nil nil [1 29])
+            ("std_msgs/msg/string.hpp" include nil nil [30 64])
+            ("analysis.h" include nil nil [65 86])
+            ("chrono" include (:system-flag t) nil [87 104])
+            ("std::placeholders::_1" using (:type ("std::placeholders::_1" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [106 134])
+            ("std::chrono_literals" using (:type ("std::chrono_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [135 172])
+            ("MinimalSubscriber" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [222 229])
+                    ("MinimalSubscriber" function
+                       (:constructor-flag t
+                        :type ("MinimalSubscriber" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [234 741])
+                    ("private" label nil (reparse-symbol classsubparts) [743 751])
+                    ("topic_callback" function
+                       (:arguments 
+                          ( ("msg" variable
+                               (:constant-flag t
+                                :type ("std_msgs::msg::String::UniquePtr" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [815 858]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [795 1306])
+                    ("subscription_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1312 1381])
+                    ("ts_" variable (:type ("rclcpp::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1386 1403])
+                    ("tnode_" variable (:type ("rclcpp::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1408 1428]))                  
+                :type "class")
+                nil [174 1431])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1442 1451])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1452 1466]))                  
+                :type "int")
+                nil [1433 1651]))          
+      :file "listener.cpp"
+      :pointmax 1652
+      :fsize 1651
+      :lastmodtime '(26641 49569 211995 175000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!quizzes_attempt!quiz4attempt!quiz4.attempt!bb!final_fixed!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

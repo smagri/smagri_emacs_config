@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file-13a14458de5d
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-13a14458de5d"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-13a14458dfd9"
+      :major-mode arduino-mode
+      :tags 
+        '( ("SPI.h" include (:system-flag t) nil [1 17])
+            ("WiFi.h" include (:system-flag t) nil [18 35])
+            ("ssid" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"EXETEL B31980 2.4G\""
+                :type "char")
+                nil [37 81])
+            ("password" variable
+               (:pointer 1
+                :constant-flag t
+                :default-value "\"6jqCKz5Y\""
+                :type "char")
+                nil [113 147])
+            ("status" variable
+               (:default-value "WL_IDLE_STATUS"
+                :type "int")
+                nil [388 416])
+            ("setup" function (:type "void") nil [418 1444])
+            ("loop" function (:type "void") nil [1446 1462])
+            ("printWifiStatus" function (:type "void") nil [1469 2147]))          
+      :file "arduinoUNOWiFi.ino.orig"
+      :pointmax 2148
+      :fsize 2147
+      :lastmodtime '(25366 54364 18669 165000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!proj!arduino!rfTxRxTankLevel!arduinoUnoWiFi.rev2!arduinoUNOWiFi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,95 @@
+;; Object semanticdb-project-database-file-17c6144ca418
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-17c6144ca418"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-17c61435546c"
+      :major-mode c++-mode
+      :tags 
+        '( ("pfmsconnector.h" include nil nil [1 27])
+            ("vector" include (:system-flag t) nil [28 45])
+            ("iostream" include (:system-flag t) nil [46 65])
+            ("thread" include (:system-flag t) nil [66 83])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [94 103])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104 117]))                  
+                :type "int")
+                nil [85 2150]))          
+      :file "receive_laser.cpp"
+      :pointmax 2151
+      :fsize 2150
+      :lastmodtime '(26639 7204 355030 438000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c614481b48"
+      :major-mode c++-mode
+      :tags 
+        '( ("pfmsconnector.h" include nil nil [1 27])
+            ("vector" include (:system-flag t) nil [28 45])
+            ("iostream" include (:system-flag t) nil [46 65])
+            ("thread" include (:system-flag t) nil [66 83])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [94 103])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104 117]))                  
+                :type "int")
+                nil [85 1759]))          
+      :file "receive_sonar.cpp"
+      :pointmax 1760
+      :fsize 1759
+      :lastmodtime '(26624 33257 370498 90000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c6143b8f04"
+      :major-mode c++-mode
+      :tags 
+        '( ("pfmsconnector.h" include nil nil [1 27])
+            ("iostream" include (:system-flag t) nil [28 47])
+            ("stdlib.h" include (:system-flag t) nil [48 67])
+            ("thread" include (:system-flag t) nil [68 85])
+            ("chrono" include (:system-flag t) nil [86 103])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [105 121])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [122 138])
+            ("pfms::commands::Quadcopter" using (:type ("pfms::commands::Quadcopter" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [139 172])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [183 192])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [193 206]))                  
+                :type "int")
+                nil [174 3673]))          
+      :file "command_quadcopter.cpp"
+      :pointmax 3674
+      :fsize 3673
+      :lastmodtime '(26616 40272 101816 88000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-17c6144dea78"
+      :major-mode c++-mode
+      :tags nil
+      :file "CMakeLists.txt.only.command_quadcopter.cpp"
+      :pointmax 739
+      :fsize 738
+      :lastmodtime '(26619 28313 164645 345000)
+      :unmatched-syntax '((semantic-list 704 . 738) (symbol 683 . 704) (semantic-list 653 . 682) (symbol 632 . 653) (punctuation 631 . 632) (semantic-list 601 . 630) (symbol 580 . 601) (punctuation 579 . 580) (symbol 571 . 578) (symbol 567 . 570) (symbol 562 . 566) (punctuation 560 . 561) (semantic-list 515 . 558) (symbol 501 . 515) (punctuation 553 . 554) (semantic-list 467 . 500) (symbol 453 . 467) (punctuation 495 . 496) (punctuation 452 . 453) (semantic-list 418 . 451) (symbol 404 . 418) (punctuation 446 . 447) (punctuation 403 . 404) (symbol 391 . 402) (punctuation 389 . 390) (semantic-list 362 . 387) (symbol 350 . 362) (number 375 . 377) (number 372 . 375) (symbol 342 . 349) (number 375 . 377) (number 372 . 375) (symbol 337 . 341) (symbol 334 . 336) (symbol 325 . 333) (symbol 321 . 324) (symbol 313 . 320) (punctuation 311 . 312) (punctuation 310 . 311) (semantic-list 259 . 308) (symbol 256 . 259) (string 276 . 307) (symbol 247 . 255) (string 276 . 307) (number 243 . 246) (punctuation 242 . 243) (punctuation 241 . 242) (symbol 240 . 241) (symbol 237 . 239) (symbol 231 . 236) (symbol 228 . 230) (symbol 223 . 227) (punctuation 221 . 222) (semantic-list 179 . 219) (symbol 171 . 178) (number 216 . 218) (number 213 . 216) (symbol 162 . 170) (number 216 . 218) (number 213 . 216) (USING 141 . 146) (symbol 136 . 140) (symbol 124 . 135) (symbol 120 . 123) (symbol 115 . 119) (punctuation 113 . 114) (symbol 106 . 113) (symbol 101 . 105) (symbol 96 . 100) (symbol 88 . 95) (symbol 84 . 87) (punctuation 82 . 83) (semantic-list 65 . 80) (symbol 42 . 64) (number 77 . 79) (number 74 . 77) (symbol 32 . 40) (number 77 . 79) (number 74 . 77) (symbol 26 . 31) (symbol 23 . 25) (symbol 15 . 22) (symbol 7 . 14) (symbol 3 . 6) (punctuation 1 . 2))))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week08.unit.testing!examples!quad!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

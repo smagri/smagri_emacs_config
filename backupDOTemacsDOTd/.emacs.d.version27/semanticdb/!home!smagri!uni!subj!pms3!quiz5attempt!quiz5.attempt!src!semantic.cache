@@ -1,0 +1,179 @@
+;; Object semanticdb-project-database-file-1878d4d00dc4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1878d4d00dc4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1878d4d00dd0"
+      :major-mode c++-mode
+      :tags 
+        '( ("LASERPROCESSING_H" variable (:constant-flag t) nil [35 52])
+            ("sensor_msgs/msg/laser_scan.hpp" include (:system-flag t) nil [54 95])
+            ("geometry_msgs/msg/pose.hpp" include (:system-flag t) nil [96 133])
+            ("math.h" include (:system-flag t) nil [134 151])
+            ("LaserProcessing" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [284 291])
+                    ("LaserProcessing" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("laserScan" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [429 467]))                          
+                        :type ("LaserProcessing" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [413 468])
+                    ("countObjectReadings" function
+                       (:prototype-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [638 673])
+                    ("countSegments" function
+                       (:prototype-flag t
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [1019 1048])
+                    ("detectClosestCone" function
+                       (:prototype-flag t
+                        :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1401 1447])
+                    ("detectRoadCentre" function
+                       (:prototype-flag t
+                        :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1739 1784])
+                    ("newScan" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("laserScan" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1904 1942]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1891 1943])
+                    ("private" label nil (reparse-symbol classsubparts) [1946 1954])
+                    ("polarToCart" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2239 2258]))                          
+                        :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2201 2259])
+                    ("angleConnectingPoints" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p1" variable (:type ("geometry_msgs::msg::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2534 2563])
+                            ("p2" variable (:type ("geometry_msgs::msg::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2564 2593]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [2505 2594])
+                    ("private" label nil (reparse-symbol classsubparts) [2596 2604])
+                    ("laserScan_" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2607 2646])
+                    ("cones_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::pair" type (:template-specifier 
+                                ( ("double" type nil nil nil)
+                                  ("double" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2651 2696]))                  
+                :type "class")
+                nil [260 2700]))          
+      :file "laserprocessing.h"
+      :pointmax 2728
+      :fsize 2727
+      :lastmodtime '(26654 46062 831289 623000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LASERPROCESSING_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1878d446cb68"
+      :major-mode c++-mode
+      :tags 
+        '( ("laserprocessing.h" include nil nil [1 29])
+            ("algorithm" include (:system-flag t) nil [30 50])
+            ("numeric" include (:system-flag t) nil [51 69])
+            ("iostream" include (:system-flag t) nil [70 89])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [91 111])
+            ("LaserProcessing" function
+               (:constructor-flag t
+                :parent "LaserProcessing"
+                :arguments 
+                  ( ("laserScan" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146 184]))                  
+                :type ("LaserProcessing" type (:type "class") nil nil))
+                nil [113 215])
+            ("countObjectReadings" function
+               (:parent "LaserProcessing"
+                :type "unsigned int")
+                nil [302 398])
+            ("countSegments" function
+               (:parent "LaserProcessing"
+                :type "unsigned int")
+                nil [483 572])
+            ("detectClosestCone" function
+               (:parent "LaserProcessing"
+                :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                nil [659 780])
+            ("detectRoadCentre" function
+               (:parent "LaserProcessing"
+                :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                nil [866 986])
+            ("newScan" function
+               (:parent "LaserProcessing"
+                :arguments 
+                  ( ("laserScan" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1018 1056]))                  
+                :type "void")
+                nil [988 1105])
+            ("polarToCart" function
+               (:parent "LaserProcessing"
+                :arguments 
+                  ( ("index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1163 1182]))                  
+                :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                nil [1108 1484])
+            ("angleConnectingPoints" function
+               (:parent "LaserProcessing"
+                :arguments 
+                  ( ("p1" variable (:type ("geometry_msgs::msg::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1532 1561])
+                    ("p2" variable (:type ("geometry_msgs::msg::Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1562 1591]))                  
+                :type "double")
+                nil [1486 1639]))          
+      :file "laserprocessing.cpp"
+      :pointmax 1640
+      :fsize 1639
+      :lastmodtime '(26654 46062 831289 623000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1878d3da66e4"
+      :major-mode c++-mode
+      :tags 
+        '( ("detection_node.h" include nil nil [1 28])
+            ("Detection" function
+               (:constructor-flag t
+                :parent "Detection"
+                :type ("Detection" type (:type "class") nil nil))
+                nil [62 1135])
+            ("Detection" function
+               (:destructor-flag t
+                :parent "Detection"
+                :type "void")
+                nil [1137 1165])
+            ("laserCallback" function
+               (:parent "Detection"
+                :arguments 
+                  ( ("msg" variable
+                       (:constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("sensor_msgs::msg::LaserScan" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1198 1253]))                  
+                :type "void")
+                nil [1168 1867])
+            ("detect" function
+               (:parent "Detection"
+                :type "void")
+                nil [2001 2174]))          
+      :file "detection_node.cpp"
+      :pointmax 2176
+      :fsize 2175
+      :lastmodtime '(26654 46062 831289 623000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1878d45a1544"
+      :file "detection_node.h"
+      :fsize 1814
+      :lastmodtime '(26654 46062 831289 623000)))
+  :file "!home!smagri!uni!subj!pms3!quiz5attempt!quiz5.attempt!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

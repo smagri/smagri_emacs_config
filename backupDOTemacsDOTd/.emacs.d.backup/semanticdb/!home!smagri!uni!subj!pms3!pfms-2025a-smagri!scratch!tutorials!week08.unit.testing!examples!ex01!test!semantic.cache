@@ -1,0 +1,63 @@
+;; Object semanticdb-project-database-file-18ed019f69d8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18ed019f69d8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18ed019f7db0"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("algorithm" include (:system-flag t) nil [64 84])
+            ("ackerman.h" include nil nil [114 135])
+            ("pfms_types.h" include nil nil [137 160])
+            ("cmath" include (:system-flag t) nil [161 177])
+            ("a1_test_helper.h" include nil nil [236 263])
+            ("ackerman_test.h" include nil nil [264 290])
+            ("pfmshog.h" include nil nil [291 311])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [312 332])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [333 364])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("AckermanExTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [515 530])
+                    ("" variable (:type ("ReachTwoGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [531 545]))                  
+                :type "int")
+                nil [510 2954])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("AckermanExTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2961 2976])
+                    ("" variable (:type ("ThreeGoals" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2977 2988]))                  
+                :type "int")
+                nil [2956 3054])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3065 3074])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3075 3087]))                  
+                :type "int")
+                nil [3056 3160]))          
+      :file "test_audi_reach_goals.cpp"
+      :pointmax 3161
+      :fsize 3160
+      :lastmodtime '(26615 25759 879069 65000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18ed019c428c"
+      :file "a1_test_helper.h"
+      :fsize 619
+      :lastmodtime '(26616 40272 101816 88000))
+    (semanticdb-table "semanticdb-table-18ed019c42ac"
+      :file "ackerman_test.h"
+      :fsize 718
+      :lastmodtime '(26616 40272 101816 88000)))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week08.unit.testing!examples!ex01!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

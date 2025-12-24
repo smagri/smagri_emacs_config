@@ -1,0 +1,259 @@
+;; Object semanticdb-project-database-file-1560dd151f90
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1560dd151f90"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1560dd151f70"
+      :major-mode c++-mode
+      :tags 
+        '( ("laserprocessing.h" include nil nil [1 29])
+            ("algorithm" include (:system-flag t) nil [30 50])
+            ("numeric" include (:system-flag t) nil [51 69])
+            ("iostream" include (:system-flag t) nil [70 89])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [91 111])
+            ("LaserProcessing" function
+               (:constructor-flag t
+                :parent "LaserProcessing"
+                :arguments 
+                  ( ("laserScan" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146 184]))                  
+                :type ("LaserProcessing" type (:type "class") nil nil))
+                nil [113 215])
+            ("closestPoint" function
+               (:parent "LaserProcessing"
+                :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                nil [282 1867])
+            ("newScan" function
+               (:parent "LaserProcessing"
+                :arguments 
+                  ( ("laserScan" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1900 1938]))                  
+                :type "void")
+                nil [1870 1967]))          
+      :file "laserprocessing.cpp"
+      :pointmax 1969
+      :fsize 1968
+      :lastmodtime '(26650 44815 121553 119000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1560dd152b00"
+      :major-mode c++-mode
+      :tags 
+        '( ("LASERPROCESSING_H" variable (:constant-flag t) nil [35 52])
+            ("sensor_msgs/msg/laser_scan.hpp" include nil nil [54 95])
+            ("nav_msgs/msg/odometry.hpp" include nil nil [96 132])
+            ("math.h" include (:system-flag t) nil [134 151])
+            ("LaserProcessing" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [180 187])
+                    ("LaserProcessing" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("laserScan" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [325 363]))                          
+                        :type ("LaserProcessing" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [309 364])
+                    ("closestPoint" function
+                       (:prototype-flag t
+                        :type ("geometry_msgs::msg::Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [512 553])
+                    ("newScan" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("laserScan" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [673 711]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [660 712])
+                    ("private" label nil (reparse-symbol classsubparts) [714 722])
+                    ("laserScan_" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol classsubparts) [725 764]))                  
+                :type "class")
+                nil [156 767]))          
+      :file "laserprocessing.h"
+      :pointmax 797
+      :fsize 796
+      :lastmodtime '(26650 41641 760664 53000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LASERPROCESSING_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1560dd152b20"
+      :major-mode c++-mode
+      :tags 
+        '( ("rclcpp/rclcpp.hpp" include nil nil [2 30])
+            ("sample.h" include nil nil [31 50])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [62 71])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [72 84]))                  
+                :type "int")
+                nil [53 1030]))          
+      :file "main.cpp"
+      :pointmax 1032
+      :fsize 1031
+      :lastmodtime '(26650 41641 760664 53000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1560dd152b40"
+      :major-mode c++-mode
+      :tags 
+        '( ("thread" include (:system-flag t) nil [1 18])
+            ("chrono" include (:system-flag t) nil [19 36])
+            ("mutex" include (:system-flag t) nil [37 53])
+            ("functional" include (:system-flag t) nil [55 76])
+            ("memory" include (:system-flag t) nil [77 94])
+            ("rclcpp/rclcpp.hpp" include nil nil [96 124])
+            ("tf2/utils.h" include (:system-flag t) nil [125 147])
+            ("tf2_geometry_msgs/tf2_geometry_msgs.hpp" include (:system-flag t) nil [148 198])
+            ("nav_msgs/msg/odometry.hpp" include nil nil [200 236])
+            ("sensor_msgs/msg/laser_scan.hpp" include nil nil [237 278])
+            ("geometry_msgs/msg/quaternion.hpp" include (:system-flag t) nil [280 323])
+            ("laserprocessing.h" include nil nil [325 353])
+            ("PfmsSample" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [396 403])
+                    ("PfmsSample" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("PfmsSample" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [408 421])
+                    ("PfmsSample" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [427 441])
+                    ("odom_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("nav_msgs::msg::Odometry" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [682 733]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [663 734])
+                    ("laser_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("sensor_msgs::msg::LaserScan" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1386 1441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1366 1442])
+                    ("process" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1839 1844]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1826 1845])
+                    ("private" label nil (reparse-symbol classsubparts) [1847 1855])
+                    ("sub1_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1860 1923])
+                    ("sub2_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2007 2074])
+                    ("robotPose_" variable (:type ("geometry_msgs::msg::Pose" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2085 2121])
+                    ("robotPoseReceived_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2129 2167])
+                    ("laserData_" variable (:type ("sensor_msgs::msg::LaserScan" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2217 2256])
+                    ("laserDataReceived_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2261 2299])
+                    ("dataMtx_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2349 2369])
+                    ("dataReceivedCv_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2407 2447])
+                    ("laserProcessingPtr_" variable (:type ("std::unique_ptr" type
+                         (:template-specifier 
+                            ( ("LaserProcessing" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2453 2506])
+                    ("thread_" variable
+                       (:pointer 1
+                        :type ("std::thread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2511 2532]))                  
+                :type "class")
+                nil [355 2535]))          
+      :file "sample.h"
+      :pointmax 2537
+      :fsize 2536
+      :lastmodtime '(26651 4780 68026 935000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1560dd152b60"
+      :major-mode c++-mode
+      :tags 
+        '( ("sample.h" include nil nil [1 20])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [299 315])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [316 332])
+            ("std::placeholders::_1" using (:type ("std::placeholders::_1" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [334 362])
+            ("PfmsSample" function
+               (:constructor-flag t
+                :parent "PfmsSample"
+                :type ("PfmsSample" type (:type "class") nil nil))
+                nil [365 1078])
+            ("PfmsSample" function
+               (:destructor-flag t
+                :parent "PfmsSample"
+                :type "void")
+                nil [1080 1261])
+            ("odom_callback" function
+               (:parent "PfmsSample"
+                :arguments 
+                  ( ("msg" variable
+                       (:constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("nav_msgs::msg::Odometry" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1392 1443]))                  
+                :type "void")
+                nil [1361 1686])
+            ("laser_callback" function
+               (:parent "PfmsSample"
+                :arguments 
+                  ( ("msg" variable
+                       (:constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("sensor_msgs::msg::LaserScan" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2042 2097]))                  
+                :type "void")
+                nil [2010 2290])
+            ("process" function
+               (:parent "PfmsSample"
+                :type "void")
+                nil [2294 6930]))          
+      :file "sample.cpp"
+      :pointmax 6931
+      :fsize 6930
+      :lastmodtime '(26651 4743 940582 84000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week10.ros.topics!wk10_starter!topics_masterclass!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,42 @@
+;; Object semanticdb-project-database-file-13a1448f7e08
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-13a1448f7e08"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-13a1448f7e6c"
+      :major-mode arduino-mode
+      :tags 
+        '( ("SPI.h" include (:system-flag t) nil [376 392])
+            ("printf.h" include nil nil [393 412])
+            ("RF24.h" include nil nil [413 430])
+            ("radio" function
+               (:prototype-flag t
+                :type ("RF24" type (:type "class") nil nil))
+                nil [732 749])
+            ("address" variable
+               (:dereference 2
+                :default-value "{ \"1Node\", \"2Node\" }"
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [853 897])
+            ("radioNumber" variable
+               (:default-value "1"
+                :type "bool")
+                nil [1145 1166])
+            ("role" variable
+               (:default-value "false"
+                :type "bool")
+                nil [1294 1312])
+            ("payload" variable
+               (:default-value "0.0"
+                :type "unsigned long")
+                nil [1550 1578])
+            ("setup" function (:type "void") nil [1580 3715])
+            ("loop" function (:type "void") nil [3727 6024]))          
+      :file "GettingStarted.smagri.rx.ino"
+      :pointmax 6979
+      :fsize 7185
+      :lastmodtime '(25366 60619 857363 634000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!proj!arduino!rfTxRxTankLevel!nRF24L01!GettingStarted.smagri.rx!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,97 @@
+;; Object semanticdb-project-database-file-18c5b5baff78
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-18c5b5baff78"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-18c5b5baff38"
+      :major-mode c++-mode
+      :tags 
+        '( ("gtest/gtest.h" include nil nil [1 25])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("algorithm" include (:system-flag t) nil [64 84])
+            ("cmath" include (:system-flag t) nil [85 101])
+            ("quadcopter.h" include nil nil [103 126])
+            ("pfms_types.h" include nil nil [145 168])
+            ("test_helper.h" include nil nil [180 204])
+            ("pfmshog.h" include nil nil [249 269])
+            ("laserprocessing.h" include nil nil [299 327])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [364 395])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("QuadcopterTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [402 417])
+                    ("" variable (:type ("Constructor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [418 430]))                  
+                :type "int")
+                nil [397 2089])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("QuadcopterTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2096 2111])
+                    ("" variable (:type ("CheckObstacles" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2112 2127]))                  
+                :type "int")
+                nil [2091 3170])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("QuadcopterTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3177 3192])
+                    ("" variable (:type ("StartingLogic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3193 3207]))                  
+                :type "int")
+                nil [3172 6292])
+            ("TEST" function
+               (:arguments 
+                  ( ("" variable (:type ("QuadcopterTest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6299 6314])
+                    ("" variable (:type ("CheckObstaclesMoving" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6315 6336]))                  
+                :type "int")
+                nil [6294 9245])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9256 9265])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9266 9278]))                  
+                :type "int")
+                nil [9247 9350]))          
+      :file "utest.cpp"
+      :pointmax 9351
+      :fsize 9341
+      :lastmodtime '(26644 37257 284354 748000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-18c5b5baff58"
+      :major-mode c-mode
+      :tags 
+        '( ("TEST_HELPER_H" variable (:constant-flag t) nil [31 44])
+            ("pfms_types.h" include nil nil [46 69])
+            ("cmath" include (:system-flag t) nil [70 86])
+            ("pfms::nav_msgs" using (:type ("pfms::nav_msgs" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [88 119])
+            ("populateOdo" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [398 407])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [408 417])
+                    ("yaw" variable (:type "double") (reparse-symbol arg-sub-list) [418 429]))                  
+                :type ("Odometry" type (:type "class") nil nil))
+                nil [377 589])
+            ("populateOdo" function
+               (:arguments 
+                  ( ("x" variable (:type "double") (reparse-symbol arg-sub-list) [894 903])
+                    ("y" variable (:type "double") (reparse-symbol arg-sub-list) [904 913])
+                    ("z" variable (:type "double") (reparse-symbol arg-sub-list) [914 923])
+                    ("yaw" variable (:type "double") (reparse-symbol arg-sub-list) [924 935]))                  
+                :type ("Odometry" type (:type "class") nil nil))
+                nil [873 1095]))          
+      :file "test_helper.h"
+      :pointmax 1121
+      :fsize 1120
+      :lastmodtime '(26627 9638 400149 645000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TEST_HELPER_H")
+          )
+))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!quizzes_attempt!quiz4attempt!quiz4.attempt!aa!final_fixed!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

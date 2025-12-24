@@ -1,0 +1,205 @@
+;; Object semanticdb-project-database-file-192d111e62b4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-192d111e62b4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-192d111e6234"
+      :major-mode c++-mode
+      :tags 
+        '( ("rclcpp/rclcpp.hpp" include (:system-flag t) nil [1 29])
+            ("grid_map_ros/grid_map_ros.hpp" include (:system-flag t) nil [30 70])
+            ("grid_map_msgs/msg/grid_map.hpp" include (:system-flag t) nil [71 112])
+            ("cmath" include (:system-flag t) nil [113 129])
+            ("memory" include (:system-flag t) nil [130 147])
+            ("utility" include (:system-flag t) nil [148 166])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [177 186])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [187 200]))                  
+                :type "int")
+                nil [168 2088]))          
+      :file "simple_demo_node.cpp"
+      :pointmax 2088
+      :fsize 2087
+      :lastmodtime '(26684 3619 717062 226000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-192d111e6254"
+      :major-mode c++-mode
+      :tags 
+        '( ("sample.h" include nil nil [1 20])
+            ("std::cout" using (:type ("std::cout" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [130 146])
+            ("std::endl" using (:type ("std::endl" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [147 163])
+            ("std::placeholders::_1" using (:type ("std::placeholders::_1" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [165 193])
+            ("PfmsSample" function
+               (:constructor-flag t
+                :parent "PfmsSample"
+                :type ("PfmsSample" type (:type "class") nil nil))
+                nil [196 1435])
+            ("PfmsSample" function
+               (:destructor-flag t
+                :parent "PfmsSample"
+                :type "void")
+                nil [1437 1577])
+            ("odom_callback" function
+               (:parent "PfmsSample"
+                :arguments 
+                  ( ("msg" variable
+                       (:constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("nav_msgs::msg::Odometry" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1708 1759]))                  
+                :type "void")
+                nil [1677 1964])
+            ("sonar_callback" function
+               (:parent "PfmsSample"
+                :arguments 
+                  ( ("msg" variable
+                       (:constant-flag t
+                        :type ("std::shared_ptr" type
+                             (:template-specifier 
+                                ( ("sensor_msgs::msg::Range" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2081 2132]))                  
+                :type "void")
+                nil [2049 2286])
+            ("process" function
+               (:parent "PfmsSample"
+                :type "void")
+                nil [2289 6333]))          
+      :file "sample.cpp"
+      :pointmax 6334
+      :fsize 6333
+      :lastmodtime '(26685 2001 753272 17000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-192d111e6274"
+      :major-mode c++-mode
+      :tags 
+        '( ("thread" include (:system-flag t) nil [1 18])
+            ("chrono" include (:system-flag t) nil [19 36])
+            ("mutex" include (:system-flag t) nil [37 53])
+            ("functional" include (:system-flag t) nil [55 76])
+            ("rclcpp/rclcpp.hpp" include nil nil [78 106])
+            ("tf2/utils.h" include (:system-flag t) nil [107 129])
+            ("tf2_geometry_msgs/tf2_geometry_msgs.hpp" include (:system-flag t) nil [130 180])
+            ("nav_msgs/msg/odometry.hpp" include nil nil [182 218])
+            ("sensor_msgs/msg/range.hpp" include nil nil [219 255])
+            ("grid_map_ros/grid_map_ros.hpp" include (:system-flag t) nil [257 297])
+            ("grid_map_msgs/msg/grid_map.hpp" include (:system-flag t) nil [298 339])
+            ("PfmsSample" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [382 389])
+                    ("PfmsSample" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("PfmsSample" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [392 405])
+                    ("PfmsSample" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [409 423])
+                    ("odom_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("nav_msgs::msg::Odometry" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [664 715]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [645 716])
+                    ("sonar_callback" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("msg" variable
+                               (:constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("sensor_msgs::msg::Range" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [982 1033]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [962 1034])
+                    ("process" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1450 1455]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1437 1456])
+                    ("private" label nil (reparse-symbol classsubparts) [1458 1466])
+                    ("sub1_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1469 1532])
+                    ("sub2_" variable (:type ("rclcpp::Subscription::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1535 1598])
+                    ("pub1_" variable (:type ("rclcpp::Publisher::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1601 1665])
+                    ("map" variable (:type ("grid_map::GridMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1746 1768])
+                    ("robotPose_" variable (:type ("geometry_msgs::msg::Pose" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1772 1808])
+                    ("robotPoseReceived_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1814 1852])
+                    ("range_" variable (:type ("sensor_msgs::msg::Range" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1900 1931])
+                    ("rangeDataReceived_" variable (:type ("std::atomic" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1934 1972])
+                    ("dataMtx_" variable (:type ("std::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2018 2038])
+                    ("dataReceivedCv_" variable (:type ("std::condition_variable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2074 2114])
+                    ("thread_" variable
+                       (:pointer 1
+                        :type ("std::thread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2118 2139]))                  
+                :type "class")
+                nil [341 2142]))          
+      :file "sample.h"
+      :pointmax 2144
+      :fsize 2143
+      :lastmodtime '(26687 57790 707478 377000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-192d111e6294"
+      :major-mode c++-mode
+      :tags 
+        '( ("rclcpp/rclcpp.hpp" include nil nil [2 30])
+            ("sample.h" include nil nil [31 50])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [62 71])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [72 84]))                  
+                :type "int")
+                nil [53 1030]))          
+      :file "main.cpp"
+      :pointmax 1032
+      :fsize 1031
+      :lastmodtime '(26654 46110 76292 481000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week11.rosServices.unitTesting!wk11_examples!grid_example!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1268f530fb28
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1268f530fb28"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1268f53c6616"
+      :major-mode python-mode
+      :tags 
+        '( ("print" code nil nil [1016 1165])
+            ("print" code nil nil [1166 1182])
+            ("print" code nil nil [1183 1201])
+            ("print" code nil nil [1202 1220])
+            ("print" code nil nil [1221 1235])
+            ("print" code nil nil [1248 1264])
+            ("print" code nil nil [1326 1345])
+            ("print" code nil nil [1387 1398])
+            ("print" code nil nil [1399 1410])
+            ("print" code nil nil [1412 1433])
+            ("print" code nil nil [1517 1528])
+            ("print" code nil nil [1529 1539])
+            ("print" code nil nil [1540 1551])
+            ("print" code nil nil [1552 1563])
+            ("name" variable nil nil [2342 2376])
+            ("print" code nil nil [2377 2397]))          
+      :file "pythonBasics.py"
+      :pointmax 2399
+      :fsize 2398
+      :lastmodtime '(25144 4878 659083 941000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!proj!python!thegreatcourses.com!how2ProgCompSciConceptsAndPyExs!lecture1-intro2python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

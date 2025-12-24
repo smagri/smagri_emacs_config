@@ -1,0 +1,163 @@
+;; -*- mode: emacs-lisp; lexical-binding:t; coding: utf-8-emacs; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Feb 19 18:37:22 2021
+;; Desktop file format version 208
+;; Emacs version 27.1
+
+;; Global section:
+(setq desktop-saved-frameset (vector 'frameset 1 '(24623 27314 185900 953000) '(desktop . "208") "smagri@luqa" nil nil (list (list (list '(minibuffer . t) '(undecorated) '(override-redirect) '(font . "-1ASC-Liberation Mono-normal-normal-normal-*-27-*-*-*-m-0-iso10646-1") '(font-parameter) '(border-width . 0) '(internal-border-width . 0) '(right-divider-width . 6) '(bottom-divider-width . 0) '(vertical-scroll-bars) '(horizontal-scroll-bars) '(foreground-color . "white") '(background-color . "#000015") '(mouse-color . "black") '(border-color . "black") '(screen-gamma) '(line-spacing) '(left-fringe . 32) '(right-fringe . 0) '(no-special-glyphs) '(scroll-bar-foreground) '(scroll-bar-background) '(menu-bar-lines . 1) '(tab-bar-lines . 0) '(height . 59) '(tool-bar-lines . 1) '(title) '(wait-for-wm . t) '(tool-bar-position . top) '(inhibit-double-buffering) '(icon-type . t) '(auto-raise) '(auto-lower) '(cursor-type . box) '(scroll-bar-width . 32) '(scroll-bar-height . 32) '(alpha) '(no-focus-on-map) '(no-accept-focus) '(fullscreen . maximized) '(visibility . t) '(skip-taskbar) '(z-group) '(display-type . color) '(background-mode . dark) '(cursor-color . "white") '(sticky) '(environment) '(last-focus-update . t) (list 'window-state '((min-height . 12) (min-width . 57) (min-height-ignore . 9) (min-width-ignore . 12) (min-height-safe . 3) (min-width-safe . 6) (min-pixel-height . 384) (min-pixel-width . 912) (min-pixel-height-ignore . 288) (min-pixel-width-ignore . 192) (min-pixel-height-safe . 96) (min-pixel-width-safe . 96)) 'hc '(pixel-width . 3742) '(pixel-height . 1878) '(total-width . 234) '(total-height . 59) '(normal-height . 1.0) '(normal-width . 1.0) '(combination-limit) '(parameters (clone-of . "Unprintable entity")) (list 'leaf '(pixel-width . 592) '(pixel-height . 1878) '(total-width . 37) '(total-height . 59) '(normal-height . 1.0) '(normal-width . 0.15793693212186) '(parameters (clone-of . "Unprintable entity") (window-side . left) (window-slot . 0)) (list 'buffer "Unprintable entity" '(selected) '(hscroll . 0) '(fringes 32 0 nil nil) '(margins nil) '(scroll-bars nil 0 t nil 0 t nil) '(vscroll . 0) '(dedicated . t) (desktop-list* 'point (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 99 (get-buffer " *Treemacs-Scoped-Buffer-#<frame *GNU Emacs* 0x55e22756af20>*")))) mk)) (desktop-list* 'start (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 1 (get-buffer " *Treemacs-Scoped-Buffer-#<frame *GNU Emacs* 0x55e22756af20>*")))) mk)))) (list 'hc '(last . t) '(pixel-width . 3150) '(pixel-height . 1878) '(total-width . 197) '(total-height . 59) '(normal-height . 1.0) '(normal-width . 0.84206306787814) '(combination-limit . t) '(parameters (clone-of . "Unprintable entity")) (list 'vc '(pixel-width . 1582) '(pixel-height . 1878) '(total-width . 99) '(total-height . 59) '(normal-height . 1.0) '(normal-width . 0.5) '(combination-limit) '(parameters (clone-of . "Unprintable entity")) (list 'leaf '(pixel-width . 1582) '(pixel-height . 950) '(total-width . 99) '(total-height . 30) '(normal-height . 0.5) '(normal-width . 1.0) '(parameters (clone-of . "Unprintable entity")) (list 'buffer "Unprintable entity" '(selected) '(hscroll . 0) '(fringes 32 0 nil nil) '(margins nil) '(scroll-bars nil 0 t nil 0 t nil) '(vscroll . 0) '(dedicated) (desktop-list* 'point (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 9074 (get-buffer ".saves-*")))) mk)) (desktop-list* 'start (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 9074 (get-buffer ".saves-*")))) mk))) (list 'prev-buffers (list "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 179 (get-buffer "*GNU Emacs*")))) mk) (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 799 (get-buffer "*GNU Emacs*")))) mk)) (list "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 1 (get-buffer "*scratch*")))) mk) (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 145 (get-buffer "*scratch*")))) mk)))) (list 'leaf '(last . t) '(pixel-width . 1582) '(pixel-height . 928) '(total-width . 99) '(total-height . 29) '(normal-height . 0.5) '(normal-width . 1.0) '(parameters (clone-of . "Unprintable entity")) (list 'buffer "Unprintable entity" '(selected) '(hscroll . 0) '(fringes 32 0 nil nil) '(margins nil) '(scroll-bars nil 0 t nil 0 t nil) '(vscroll . 0) '(dedicated) (desktop-list* 'point (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 848 (get-buffer "*GNU Emacs*")))) mk)) (desktop-list* 'start (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 179 (get-buffer "*GNU Emacs*")))) mk))) (list 'prev-buffers (list "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 179 (get-buffer "*GNU Emacs*")))) mk) (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 848 (get-buffer "*GNU Emacs*")))) mk))))) (list 'vc '(last . t) '(pixel-width . 1568) '(pixel-height . 1878) '(total-width . 98) '(total-height . 59) '(normal-height . 1.0) '(normal-width . 0.5) '(combination-limit) '(parameters (clone-of . "Unprintable entity")) (list 'leaf '(pixel-width . 1568) '(pixel-height . 367) '(total-width . 98) '(total-height . 12) '(normal-height . 0.18460697118844083) '(normal-width . 1.0) '(parameters (clone-of . "Unprintable entity")) (list 'buffer "Unprintable entity" '(selected) '(hscroll . 0) '(fringes 32 0 nil nil) '(margins nil) '(scroll-bars nil 0 t nil 0 t nil) '(vscroll . 0) '(dedicated) (desktop-list* 'point (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 848 (get-buffer "*GNU Emacs*")))) mk)) (desktop-list* 'start (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 781 (get-buffer "*GNU Emacs*")))) mk)))) (list 'leaf '(pixel-width . 1568) '(pixel-height . 615) '(total-width . 98) '(total-height . 19) '(normal-height . 0.3324324324324324) '(normal-width . 1.0) '(parameters (clone-of . "Unprintable entity")) (list 'buffer "Unprintable entity" '(selected . t) '(hscroll . 0) '(fringes 32 0 nil nil) '(margins nil) '(scroll-bars nil 0 t nil 0 t nil) '(vscroll . 0) '(dedicated) (desktop-list* 'point (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 758 (get-buffer "*GNU Emacs*")))) mk)) (desktop-list* 'start (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 123 (get-buffer "*GNU Emacs*")))) mk)))) (list 'leaf '(last . t) '(pixel-width . 1568) '(pixel-height . 896) '(total-width . 98) '(total-height . 28) '(normal-height . 0.48296059637912675) '(normal-width . 1.0) '(parameters (clone-of . "Unprintable entity")) (list 'buffer "Unprintable entity" '(selected) '(hscroll . 0) '(fringes 32 0 nil nil) '(margins nil) '(scroll-bars nil 0 t nil 0 t nil) '(vscroll . 0) '(dedicated) (desktop-list* 'point (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 848 (get-buffer "*GNU Emacs*")))) mk)) (desktop-list* 'start (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk 179 (get-buffer "*GNU Emacs*")))) mk))))))) '(frameset--id . "5501-CFF2-8D17-6283") '(frameset--mini t . t) '(width . 231) '(modeline . t) '(unsplittable) '(left . 98) '(top . 55) '(icon-name) '(display . ":0") '(explicit-name)) '((min-height . 8) (min-width . 57) (min-height-ignore . 6) (min-width-ignore . 14) (min-height-safe . 2) (min-width-safe . 6) (min-pixel-height . 256) (min-pixel-width . 912) (min-pixel-height-ignore . 192) (min-pixel-width-ignore . 224) (min-pixel-height-safe . 64) (min-pixel-width-safe . 96)) 'hc '(pixel-width . 3742) '(pixel-height . 1878) '(total-width . 234) '(total-height . 59) '(normal-height . 1.0) '(normal-width . 1.0) '(combination-limit) '(leaf (pixel-width . 592) (pixel-height . 1878) (total-width . 37) (total-height . 59) (normal-height . 1.0) (normal-width . 0.15793693212186) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Scoped-Buffer-#<frame *GNU Emacs* 0x55e22756af20>*" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 599) (start . 8))) '(hc (last . t) (pixel-width . 3150) (pixel-height . 1878) (total-width . 197) (total-height . 59) (normal-height . 1.0) (normal-width . 0.84206306787814) (combination-limit . t) (vc (pixel-width . 1576) (pixel-height . 1878) (total-width . 99) (total-height . 59) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 1576) (pixel-height . 950) (total-width . 99) (total-height . 30) (normal-height . 0.5) (normal-width . 1.0) (buffer "Zombies.cs" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("mman.zombies" 1 275) ("tetris-scores" 1 53) ("SpriteAnimator.cs" 1 541) ("*eww*" 6456 6456) ("*GNU Emacs*" 1 49))) (leaf (last . t) (pixel-width . 1576) (pixel-height . 928) (total-width . 99) (total-height . 29) (normal-height . 0.5) (normal-width . 1.0) (buffer "PlayerMoveAnimate.cs" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 565) (start . 1)) (prev-buffers ("Zombies.cs" 1 1) ("ZombiesFirstPass.cs" 1 572) ("*Warnings*" 1 139) ("PlayerCharacter.cs" 126 581) ("PlayerMoveAnimate.cs" 1 1) ("PlayerAnimator.cs" 1 666) ("SpriteAnimator.cs" 1 686)))) (vc (last . t) (pixel-width . 1574) (pixel-height . 1878) (total-width . 98) (total-height . 59) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 1574) (pixel-height . 950) (total-width . 98) (total-height . 30) (normal-height . 0.5) (normal-width . 1.0) (buffer "PlayerAnimator.cs" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 666) (start . 1)) (prev-buffers ("ZombiesFirstPass.cs" 1 660) ("*eww*" 5456 6936))) (leaf (last . t) (pixel-width . 1574) (pixel-height . 928) (total-width . 98) (total-height . 29) (normal-height . 0.5) (normal-width . 1.0) (buffer "SpriteAnimator.cs" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 541) (start . 1)) (prev-buffers ("scripts" 1 491) ("PlayerMoveAnimate.cs" 1224 1606) ("PlayerMoveAnimateAnimatorComponent.cs" 1110 1110) ("ZombiesFirstPass.cs" 1 1)))))))))
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history nil)
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/smagri/games/unity3d/learn/mman.stages/codeStages/SpriteAnimator.cs"
+  "SpriteAnimator.cs"
+  'csharp-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-ff-cache-mode helm-mode)
+  541
+  '(686 nil)
+  nil
+  nil
+  '((buffer-display-time 24623 27309 517424 391000) (buffer-file-coding-system . utf-8-with-signature-unix))
+  '((mark-ring (680 541))))
+
+(desktop-create-buffer 208
+  nil
+  "scripts"
+  'dired-mode
+  '(override-global-mode company-mode yas-minor-mode helm-ff-cache-mode helm-mode helm-gtags-mode)
+  491
+  '(417 t)
+  t
+  '("/home/smagri/games/unity3d/learn/mman.stages/codeStages/mman.zombies/scripts/")
+  '((buffer-display-time 24623 27261 799294 235000))
+  '((mark-ring (417 418))))
+
+(desktop-create-buffer 208
+  "/home/smagri/games/unity3d/learn/mman.stages/codeStages/PlayerAnimator.cs"
+  "PlayerAnimator.cs"
+  'csharp-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-ff-cache-mode helm-mode)
+  666
+  '(726 nil)
+  nil
+  nil
+  '((buffer-display-time 24623 27309 517424 291000) (buffer-file-coding-system . utf-8-with-signature-unix))
+  '((mark-ring (635 778 298))))
+
+(desktop-create-buffer 208
+  "/home/smagri/games/unity3d/learn/mman.stages/codeStages/ZombiesFirstPass.cs"
+  "ZombiesFirstPass.cs"
+  'csharp-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-ff-cache-mode helm-mode)
+  660
+  '(691 nil)
+  nil
+  nil
+  '((buffer-display-time 24623 27261 799294 82000) (buffer-file-coding-system . utf-8-with-signature-unix))
+  '((mark-ring (877 273 273 437 572 660))))
+
+(desktop-create-buffer 208
+  "/home/smagri/games/unity3d/learn/mman.stages/codeStages/PlayerMoveAnimate.cs"
+  "PlayerMoveAnimate.cs"
+  'csharp-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-ff-cache-mode helm-mode)
+  565
+  '(1606 nil)
+  nil
+  nil
+  '((buffer-display-time 24623 27309 517424 73000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1600 1238 1594 428 1435 1605 1420 1370 1435 1606))))
+
+(desktop-create-buffer 208
+  "/home/smagri/games/unity3d/learn/mman.stages/codeStages/mman.zombies/scripts/Zombies.cs"
+  "Zombies.cs"
+  'csharp-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-ff-cache-mode helm-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24623 27309 517423 929000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  "mman.zombies"
+  'dired-mode
+  '(override-global-mode company-mode yas-minor-mode helm-ff-cache-mode helm-mode helm-gtags-mode)
+  275
+  '(268 nil)
+  t
+  '("/home/smagri/games/unity3d/learn/mman.stages/codeStages/mman.zombies/")
+  '((buffer-display-time 24623 27261 799293 525000))
+  '((mark-ring (269 268))))
+
+(desktop-create-buffer 208
+  "/home/smagri/.emacs.d/games/tetris-scores"
+  "tetris-scores"
+  'fundamental-mode
+  '(override-global-mode company-mode yas-minor-mode helm-ff-cache-mode helm-mode)
+  53
+  '(53 nil)
+  t
+  nil
+  '((buffer-display-time 24622 5635 591153 814000))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/games/unity3d/learn/mman.stages/codeStages/PlayerCharacter.cs"
+  "PlayerCharacter.cs"
+  'csharp-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-ff-cache-mode helm-mode)
+  581
+  '(1320 nil)
+  nil
+  nil
+  '((buffer-display-time 24622 5605 457618 935000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (172))))
+
+(desktop-create-buffer 208
+  "/home/smagri/games/unity3d/learn/mman.stages/codeStages/PlayerMoveAnimateAnimatorComponent.cs"
+  "PlayerMoveAnimateAnimatorComponent.cs"
+  'csharp-mode
+  '(override-global-mode company-mode yas-minor-mode flycheck-mode helm-ff-cache-mode helm-mode)
+  1110
+  '(1606 nil)
+  nil
+  nil
+  '((buffer-display-time 24621 51298 255035 570000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (923))))
+
+(desktop-create-buffer 208
+  nil
+  "*eww*"
+  'eww-mode
+  '(override-global-mode company-mode yas-minor-mode helm-ff-cache-mode helm-mode)
+  6936
+  '(1 nil)
+  t
+  '(:history ((:url "https://www.gnu.org/" :title "The GNU Operating System and the Free Software Movement") (:point 104 :url "https://www.gnu.org/gnu/linux-and-gnu.html" :title "Linux and GNU - GNU Project - Free Software Foundation")))
+  '((buffer-display-time 24621 51255 993083 775000) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t) (eww-history-position . 0))
+  '((mark-ring (6936))))
+
+(desktop-create-buffer 208
+  nil
+  ".saves-*"
+  'dired-mode
+  '(override-global-mode company-mode yas-minor-mode helm-ff-cache-mode helm-mode helm-gtags-mode)
+  9074
+  '(nil nil)
+  t
+  '("/home/smagri/.emacs.d/auto-save-list/.saves-*")
+  '((buffer-display-time 24621 51120 251588 531000))
+  '((mark-ring nil)))
+

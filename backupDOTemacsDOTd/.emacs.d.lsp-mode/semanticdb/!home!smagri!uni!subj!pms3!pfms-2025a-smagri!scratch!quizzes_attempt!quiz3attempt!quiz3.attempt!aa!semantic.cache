@@ -1,0 +1,238 @@
+;; Object semanticdb-project-database-file-1873df70104c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1873df70104c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1873df700fcc"
+      :major-mode c++-mode
+      :tags 
+        '( ("tf2.h" include nil nil [1 17])
+            ("tf.h" include nil nil [18 33])
+            ("cmath" include (:system-flag t) nil [34 50])
+            ("iostream" include (:system-flag t) nil [74 93])
+            ("tf2" type
+               (:members 
+                  ( ("local2Global" function
+                       (:arguments 
+                          ( ("rangeBearing" variable (:type ("RangeBearingStamped" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [226 259])
+                            ("aircraft" variable (:type ("Pose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [260 274]))                          
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [207 3764])
+                    ("global2local" function
+                       (:arguments 
+                          ( ("globalEnemy" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3894 3912])
+                            ("aircraft" variable (:type ("Pose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3913 3927]))                          
+                        :type ("RangeBearingStamped" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3861 5779])
+                    ("normaliseAngle" function
+                       (:arguments 
+                          ( ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [5808 5821]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [5786 6053]))                  
+                :type "namespace")
+                nil [95 6056]))          
+      :file "tf2.cpp"
+      :pointmax 6057
+      :fsize 6056
+      :lastmodtime '(26603 42353 645006 953000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1873df700fec"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_H" variable (:constant-flag t) nil [23 28])
+            ("types.h" include nil nil [30 48])
+            ("vector" include (:system-flag t) nil [49 66])
+            ("geometry_msgs::Pose" using (:type ("geometry_msgs::Pose" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [68 94])
+            ("geometry_msgs::Point" using (:type ("geometry_msgs::Point" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [95 122])
+            ("geometry_msgs::RangeBearingStamped" using (:type ("geometry_msgs::RangeBearingStamped" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [123 164])
+            ("tf2" type
+               (:members 
+                  ( ("local2Global" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("rangeBearing" variable (:type ("RangeBearingStamped" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [614 647])
+                            ("aircraft" variable (:type ("Pose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [648 662]))                          
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [595 663])
+                    ("global2local" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("globalEnemy" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1086 1104])
+                            ("aircraft" variable (:type ("Pose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1105 1119]))                          
+                        :type ("RangeBearingStamped" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1053 1120])
+                    ("normaliseAngle" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("theta" variable (:type "double") (reparse-symbol arg-sub-list) [1316 1329]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [1294 1330]))                  
+                :type "namespace")
+                nil [166 1332]))          
+      :file "tf2.h"
+      :pointmax 1350
+      :fsize 1349
+      :lastmodtime '(26599 21256 683050 838000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TF2_H")
+          )
+)
+    (semanticdb-table "semanticdb-table-1873df70100c"
+      :major-mode c++-mode
+      :tags 
+        '( ("analysis.h" include nil nil [1 22])
+            ("tf.h" include nil nil [23 38])
+            ("tf2.h" include nil nil [39 55])
+            ("cmath" include (:system-flag t) nil [57 73])
+            ("std::vector" using (:type ("std::vector" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [75 93])
+            ("std::pair" using (:type ("std::pair" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [94 110])
+            ("geometry_msgs::Point" using (:type ("geometry_msgs::Point" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [111 138])
+            ("Analysis" function
+               (:constructor-flag t
+                :parent "Analysis"
+                :arguments 
+                  ( ("goals" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Point" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [159 184]))                  
+                :type ("Analysis" type (:type "class") nil nil))
+                nil [140 209])
+            ("timeToImpact" function
+               (:parent "Analysis"
+                :arguments 
+                  ( ("origin" variable (:type ("Pose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [333 345]))                  
+                :type ("vector" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [295 1871])
+            ("exportGraph" function
+               (:parent "Analysis"
+                :type ("AdjacencyList" type (:type "class") nil nil))
+                nil [1956 3704])
+            ("distance" function
+               (:parent "Analysis"
+                :arguments 
+                  ( ("goal_a" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3733 3746])
+                    ("goal_b" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3747 3760]))                  
+                :type "double")
+                nil [3707 3934]))          
+      :file "analysis.cpp"
+      :pointmax 3935
+      :fsize 3934
+      :lastmodtime '(26606 5580 497301 516000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1873df70102c"
+      :major-mode c++-mode
+      :tags 
+        '( ("ANALYSIS_H" variable (:constant-flag t) nil [28 38])
+            ("vector" include (:system-flag t) nil [40 57])
+            ("thread" include (:system-flag t) nil [58 75])
+            ("types.h" include nil nil [76 94])
+            ("display.h" include nil nil [95 115])
+            ("geometry_msgs::Pose" using (:type ("geometry_msgs::Pose" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [117 143])
+            ("geometry_msgs::Point" using (:type ("geometry_msgs::Point" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [144 171])
+            ("std::pair" using (:type ("std::pair" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [172 188])
+            ("EdgeInfo" type
+               (:typedef ("pair" type
+                     (:template-specifier 
+                        ( ("double" type nil nil nil)
+                          ("unsigned int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [190 234])
+            ("AdjacencyList" type
+               (:typedef ("vector" type
+                     (:template-specifier 
+                        ( ("vector" type (:template-specifier 
+                            ( ("EdgeInfo" type nil nil nil))                            ) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [235 283])
+            ("Analysis" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [303 310])
+                    ("Analysis" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("goals" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Point" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [425 450]))                          
+                        :type ("Analysis" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [416 451])
+                    ("timeToImpact" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("origin" variable (:type ("Pose" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [853 865]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [820 866])
+                    ("exportGraph" function
+                       (:prototype-flag t
+                        :type ("AdjacencyList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1493 1521])
+                    ("private" label nil (reparse-symbol classsubparts) [1524 1532])
+                    ("goals_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Point" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1537 1563])
+                    ("distance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("a" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1584 1592])
+                            ("b" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1593 1601]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [1568 1602]))                  
+                :type "class")
+                nil [286 1605]))          
+      :file "analysis.h"
+      :pointmax 1628
+      :fsize 1627
+      :lastmodtime '(26606 5028 32441 426000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ANALYSIS_H")
+          )
+))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!quizzes_attempt!quiz3attempt!quiz3.attempt!aa!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

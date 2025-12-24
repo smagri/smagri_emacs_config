@@ -1,0 +1,138 @@
+;; Object semanticdb-project-database-file-15daa7b96a08
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-15daa7b96a08"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-15daa7b96a24"
+      :major-mode c++-mode
+      :tags 
+        '( ("rclcpp/rclcpp.hpp" include nil nil [56 84])
+            ("std_srvs/srv/trigger.hpp" include nil nil [85 120])
+            ("vector" include (:system-flag t) nil [121 138])
+            ("cstdlib" include (:system-flag t) nil [139 157])
+            ("ctime" include (:system-flag t) nil [172 188])
+            ("Motors" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1825 1832])
+                    ("Node" function (:type "int") (reparse-symbol classsubparts) [1846 3933])
+                    ("private" label nil (reparse-symbol classsubparts) [3935 3943])
+                    ("service_" variable (:type ("rclcpp::Service::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4020 4080])
+                    ("motor_positions_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4083 4117])
+                    ("motor_directions_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("bool" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4155 4191])
+                    ("motor_count_" variable (:type "int") (reparse-symbol classsubparts) [4264 4281])
+                    ("min_position_" variable (:type "int") (reparse-symbol classsubparts) [4304 4322])
+                    ("max_position_" variable (:type "int") (reparse-symbol classsubparts) [4351 4369])
+                    ("moveMotor" function
+                       (:arguments 
+                          ( ("motor_id" variable (:type "int") (reparse-symbol arg-sub-list) [4642 4655]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4627 5343])
+                    ("checkOrientations" function
+                       (:arguments 
+                          ( ("motor_id" variable (:type "int") (reparse-symbol arg-sub-list) [5564 5577]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5541 6229])
+                    ("doChecks" function
+                       (:arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("std_srvs::srv::Trigger::Request" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6248 6303])
+                            ("response" variable (:type ("std::shared_ptr" type
+                                 (:template-specifier 
+                                    ( ("std_srvs::srv::Trigger::Response" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [6320 6379]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6234 7096]))                  
+                :type "class")
+                nil [1788 7099])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7110 7119])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7120 7132]))                  
+                :type "int")
+                nil [7101 7373]))          
+      :file "motor_node.cpp"
+      :pointmax 7374
+      :fsize 7374
+      :lastmodtime '(26654 58174 63901 813000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-15daa75f5358"
+      :major-mode c++-mode
+      :tags 
+        '( ("rclcpp/rclcpp.hpp" include nil nil [1 29])
+            ("std_srvs/srv/trigger.hpp" include nil nil [30 65])
+            ("std::chrono_literals" using (:type ("std::chrono_literals" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [67 104])
+            ("Diagnostics" type
+               (:superclasses 
+                  ( ("rclcpp::Node" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [548 555])
+                    ("Node" function (:type "int") (reparse-symbol classsubparts) [580 867])
+                    ("Diagnostics" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [869 886])
+                    ("timer_callback" function (:type "void") (reparse-symbol classsubparts) [1060 1939])
+                    ("response_callback" function
+                       (:arguments 
+                          ( ("future" variable (:type ("rclcpp::Client::SharedFuture" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1964 2024]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1941 2900])
+                    ("is_service_done" function
+                       (:methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2902 3003])
+                    ("private" label nil (reparse-symbol classsubparts) [3005 3013])
+                    ("client_" variable (:type ("rclcpp::Client::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3016 3074])
+                    ("timer_" variable (:type ("rclcpp::TimerBase::SharedPtr" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3077 3113])
+                    ("service_done_" variable
+                       (:default-value "false"
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3116 3143]))                  
+                :type "class")
+                nil [506 3148])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3162 3171])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3172 3184]))                  
+                :type "int")
+                nil [3153 3676]))          
+      :file "diagnostics_node.cpp"
+      :pointmax 3679
+      :fsize 3678
+      :lastmodtime '(26654 59071 639119 399000)
+      :unmatched-syntax nil))
+  :file "!home!smagri!uni!subj!pms3!pfms-2025a-smagri!scratch!tutorials!week11.rosServices.unitTesting!wk11_starter!srv_client_checks!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

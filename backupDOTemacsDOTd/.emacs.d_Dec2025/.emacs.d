@@ -1,0 +1,1 @@
+smagri_emacs_config/.emacs.d
