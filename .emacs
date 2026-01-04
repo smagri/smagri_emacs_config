@@ -287,15 +287,15 @@
  ;; If there is more than one, they won't work right.
  '(ede-project-directories '("/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2"))
  '(package-selected-packages
-   '(agda2-mode all-the-icons arduino-cli-mode auto-complete-c-headers
-		cmake-mode company-arduino company-irony-c-headers
-		cpputils-cmake diff-ansi diffview diminish flycheck
-		ggtags git-commit gnu-apl-mode gnu-elpa
-		gnu-elpa-keyring-update guess-language helm-gtags
-		helm-projectile helm-swoop ivy json-snatcher magit
-		persp-mode tree-sitter-indent tree-sitter-langs
-		treemacs use-package vdiff vdiff-magit
-		yasnippet-snippets)))
+   '(agda2-mode arduino-cli-mode auto-complete-c-headers bui cmake-mode
+		company-arduino company-irony-c-headers cpputils-cmake
+		diff-ansi diffview diminish flycheck ggtags git-commit
+		gnu-apl-mode gnu-elpa gnu-elpa-keyring-update
+		guess-language helm-gtags helm-projectile helm-swoop
+		ivy json-snatcher lsp-docker lsp-mode lsp-treemacs
+		markdown-mode nerd-icons persp-mode tree-sitter-indent
+		tree-sitter-langs treemacs-all-the-icons use-package
+		vdiff-magit yasnippet-snippets)))
 
 
 ;; toggle(?)/turn off line numbers.  to toggle M-x linum-mode in emacs
@@ -348,12 +348,24 @@
 ;;   :config
 ;;   (setq lsp-completion-provider :capf)
 
-;;   ;; Ignore only D103 (missing docstring) from pylsp/pydocstyle
-;;   ;; D101 remove docstring in public class
-;;   ;; D107 missing docstring for __init__
-;;   (setq lsp-pylsp-plugins-pydocstyle-ignore ["D103" "D100" "D101" "D107" "D102"])
+(use-package lsp-mode
+  :ensure t
+  :hook (
+	 ;;(c++-mode . lsp)
+         ;;(c-mode . lsp)
+	 (python-mode . lsp)
+	 ;;(python-mode . lsp-deferred)
+	 )
+  :commands lsp
+  :config
+  (setq lsp-completion-provider :capf)
 
-;;  )
+  ;; Ignore only D103 (missing docstring) from pylsp/pydocstyle
+  ;; D101 remove docstring in public class
+  ;; D107 missing docstring for __init__
+  (setq lsp-pylsp-plugins-pydocstyle-ignore ["D103" "D100" "D101" "D107" "D102"])
+
+  )
 
 ;; ;; Optional UI enhancements for LSP (tooltip, docs, sideline popups)
 ;; (use-package lsp-ui
