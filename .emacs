@@ -683,8 +683,10 @@
 ;; GIT support for inside emacs
 ;;
 (use-package magit
-  :ensure t)
-(global-set-key (kbd "C-x g") 'magit-status)
+  :ensure t
+  :config
+  ;;(global-set-key (kbd "C-x g") 'magit-status)
+  :bind (kbd "C-x g") 'magit-status)
 
 
 
