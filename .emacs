@@ -993,8 +993,9 @@
     (treemacs-follow-mode t)
     (treemacs-filewatch-mode t)
 
-    ;; Only works in treemacs-version greater than 3.3
-    ;; Auto-save and restore Treemacs workspace (projects, folders, window width)
+    ;; Only works in  treemacs-version greater than 3.3,  but only 3.2
+    ;; is stable  from melpa Auto-save and  restore Treemacs workspace
+    ;; (projects, folders, window width)
     ;;(treemacs-save-workspace-mode 1)   ;; enable persistent workspaces
     
     )
