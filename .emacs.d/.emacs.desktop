@@ -2,12 +2,12 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Jan  5 17:09:54 2026
+;; Created Mon Jan  5 18:48:25 2026
 ;; Desktop file format version 208
 ;; Emacs version 30.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (26971 21938 138001 906000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-27-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (frameset--id . "A4B0-24E6-45C5-2992") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (height . 61) (width . 238) (left . 3840) (top . 0)) ((min-height . 4) (min-width . 55) (min-height-ignore . 3) (min-width-ignore . 12) (min-height-safe . 1) (min-width-safe . 6) (min-pixel-height . 128) (min-pixel-width . 880) (min-pixel-height-ignore . 96) (min-pixel-width-ignore . 192) (min-pixel-height-safe . 32) (min-pixel-width-safe . 96)) hc (pixel-width . 3840) (pixel-height . 1922) (total-width . 240) (total-height . 60) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 560) (pixel-height . 1922) (total-width . 35) (total-height . 60) (normal-height . 1.0) (normal-width . 0.14583333333333331) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Buffer-#<frame /home/smagri/smagri_emacs_config/.emacs []  0x55cc4f4ef930>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1446) (start . 346))) (hc (last . t) (pixel-width . 3280) (pixel-height . 1922) (total-width . 205) (total-height . 60) (normal-height . 1.0) (normal-width . 0.8541666666666667) (combination-limit . t) (leaf (pixel-width . 1632) (pixel-height . 1922) (total-width . 102) (total-height . 60) (normal-height . 1.0) (normal-width . 0.4975609756097561) (buffer ".emacs" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 33649) (start . 31349)) (prev-buffers ("pythonPlay.py" 1 1083) ("*GNU Emacs*" 1 252) ("*scratch*" 1 147))) (leaf (last . t) (pixel-width . 1648) (pixel-height . 1922) (total-width . 103) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5024390243902439) (buffer "pythonPlay.py" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1083) (start . 1)) (prev-buffers (".pydocstyle" 1 302) ("*GNU Emacs*" 1 855))))))])
+(setq desktop-saved-frameset [frameset 1 (26971 27849 381620 804000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-27-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (frameset--id . "A4B0-24E6-45C5-2992") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (height . 61) (width . 238) (left . 3840) (top . 0)) ((min-height . 8) (min-width . 55) (min-height-ignore . 6) (min-width-ignore . 12) (min-height-safe . 2) (min-width-safe . 6) (min-pixel-height . 256) (min-pixel-width . 880) (min-pixel-height-ignore . 192) (min-pixel-width-ignore . 192) (min-pixel-height-safe . 64) (min-pixel-width-safe . 96)) hc (pixel-width . 3840) (pixel-height . 1922) (total-width . 240) (total-height . 60) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 560) (pixel-height . 1922) (total-width . 35) (total-height . 60) (normal-height . 1.0) (normal-width . 0.14583333333333331) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Buffer-#<frame /home/smagri/smagri_emacs_config/.emacs []  0x59c3830bb3b8>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1411) (start . 521))) (vc (last . t) (pixel-width . 3280) (pixel-height . 1922) (total-width . 205) (total-height . 60) (normal-height . 1.0) (normal-width . 0.8541666666666667) (combination-limit) (hc (pixel-width . 3280) (pixel-height . 1794) (total-width . 205) (total-height . 56) (normal-height . 0.9328824141519251) (normal-width . 1.0) (combination-limit . t) (leaf (pixel-width . 1632) (pixel-height . 1794) (total-width . 102) (total-height . 56) (normal-height . 1.0) (normal-width . 0.4975609756097561) (buffer ".emacs" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 32042) (start . 30228)) (prev-buffers ("pythonPlay.py" 1 1083) ("*GNU Emacs*" 1 252) ("*scratch*" 1 147))) (leaf (last . t) (pixel-width . 1648) (pixel-height . 1794) (total-width . 103) (total-height . 56) (normal-height . 1.0) (normal-width . 0.5024390243902439) (buffer "pythonPlay.py" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1083) (start . 1)) (prev-buffers (".pydocstyle" 1 302) ("*GNU Emacs*" 1 855)))) (leaf (last . t) (pixel-width . 3280) (pixel-height . 128) (total-width . 205) (total-height . 4) (normal-height . 0.06711758584807492) (normal-width . 1.0) (buffer "*Warnings*" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
@@ -21,35 +21,35 @@
   "/home/smagri/smagri_emacs_config/.emacs"
   ".emacs"
   'emacs-lisp-mode
-  '(auto-revert-mode flycheck-mode yas-minor-mode company-mode eldoc-mode font-lock-mode)
-  33649
-  '(33655 nil)
+  '(font-lock-mode eldoc-mode company-mode yas-minor-mode flycheck-mode auto-revert-mode)
+  32042
+  '(33642 nil)
   nil
   nil
-  '((buffer-display-time 26971 21938 135703 10000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (30514 26178 25976 26633 25657 1 25973 26633 26551 26631 26502 26627 26125 31891 33107 33649))))
+  '((buffer-display-time 26971 27849 378889 558000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (30514 26178 25976 26633 25657 1 25973 26633 26551 26631 26502 26627 26125 31878 33094 32042))))
 
 (desktop-create-buffer 208
   "/home/smagri/proj/python/paulMcWhorter/pythonPlay.py"
   "pythonPlay.py"
   'python-mode
-  '(flycheck-mode yas-minor-mode company-mode eldoc-mode font-lock-mode)
+  '(font-lock-mode eldoc-mode company-mode yas-minor-mode flycheck-mode)
   1083
   '(1083 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26971 21938 135703 209000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26971 27849 378889 692000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
   "/home/smagri/.pydocstyle"
   ".pydocstyle"
   'fundamental-mode
-  '(yas-minor-mode company-mode font-lock-mode)
+  '(font-lock-mode company-mode yas-minor-mode)
   302
   '(269 nil)
   nil
   nil
-  '((buffer-display-time 26971 21152 755631 150000) (buffer-file-coding-system . undecided-unix))
+  '((buffer-display-time 26971 27576 366577 963000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (1 269))))
 

@@ -974,19 +974,31 @@
           treemacs-user-header-line-format       nil
           treemacs-width                         35
           treemacs-workspace-switch-cleanup      nil)
-        ;; The default width and height of the icons is 22 pixels. If you are
+    ;; The default width and height of the icons is 22 pixels. If you are
     ;; using a Hi-DPI display, uncomment this to double the icon size.
     ;;(treemacs-resize-icons 44)
+    ;; Enable the minor modes
     (treemacs-follow-mode t)
     (treemacs-filewatch-mode t)
     (treemacs-fringe-indicator-mode t)
+
+    ;; Git mode
     (pcase (cons (not (null (executable-find "git")))
                  (not (null treemacs-python-executable)))
       (`(t . t)
        (treemacs-git-mode 'deferred))
       (`(t . _)
-       (treemacs-git-mode 'simple))))
-  :bind
+       (treemacs-git-mode 'simple)))
+
+    (treemacs-follow-mode t)
+    (treemacs-filewatch-mode t)
+
+    ;; Only works in treemacs-version greater than 3.3
+    ;; Auto-save and restore Treemacs workspace (projects, folders, window width)
+    ;;(treemacs-save-workspace-mode 1)   ;; enable persistent workspaces
+    
+    )
+    :bind
   (:map global-map
         ("M-0"       . treemacs-select-window)
         ("C-x t 1"   . treemacs-delete-other-windows)
