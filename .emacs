@@ -802,8 +802,10 @@
   ;; lsp-mode.  info messages are usually style, convention or quality
   ;; hints comming from tools like  pylint and flake8.  Your code will
   ;; run fine but the tool thinks  it could be cleaner, more Pythonic,
-  ;; or  better  style,  readability,   maintainability  They  do  not
-  ;; indicate bugs, incorrect behaviour or runtime failures.
+  ;; or  better  style,  readability, maintainability.   They  do  not
+  ;; indicate  bugs, incorrect  behaviour or  runtime failures.   Use:
+  ;; flycheck-list-errors to  see info messages before  disabling them
+  ;; here.
   (setq flycheck-checker-error-threshold 'warning)
   ;;(setq flycheck-checker-error-threshold 'error)
   
