@@ -287,15 +287,15 @@
  ;; If there is more than one, they won't work right.
  '(ede-project-directories '("/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2"))
  '(package-selected-packages
-   '(agda2-mode arduino-cli-mode auto-complete-c-headers bui cmake-mode
-		company-arduino company-irony-c-headers cpputils-cmake
-		diff-ansi diffview diminish flycheck ggtags git-commit
-		gnu-apl-mode gnu-elpa gnu-elpa-keyring-update
-		guess-language helm-gtags helm-projectile helm-swoop
-		ivy json-snatcher lsp-docker lsp-mode lsp-treemacs
-		markdown-mode nerd-icons persp-mode tree-sitter-indent
-		tree-sitter-langs treemacs-all-the-icons use-package
-		vdiff-magit yasnippet-snippets)))
+   '(agda2-mode all-the-icons arduino-cli-mode auto-complete-c-headers
+		cmake-mode company-arduino company-irony-c-headers
+		cpputils-cmake diff-ansi diffview diminish flycheck
+		ggtags git-commit gnu-apl-mode gnu-elpa
+		gnu-elpa-keyring-update guess-language helm-gtags
+		helm-projectile helm-swoop ivy json-snatcher magit
+		persp-mode tree-sitter-indent tree-sitter-langs
+		treemacs use-package vdiff vdiff-magit
+		yasnippet-snippets)))
 
 
 ;; toggle(?)/turn off line numbers.  to toggle M-x linum-mode in emacs
@@ -341,31 +341,19 @@
 ;;   :ensure t
 ;;   :hook ((c++-mode . lsp)
 ;;          (c-mode . lsp)
-;; 	 (python-mode . lsp)
+;;	    (python-mode . lsp)
 ;; 	 ;;(python-mode . lsp-deferred)
 ;; 	 )
 ;;   :commands lsp
 ;;   :config
 ;;   (setq lsp-completion-provider :capf)
 
-(use-package lsp-mode
-  :ensure t
-  :hook (
-	 ;;(c++-mode . lsp)
-         ;;(c-mode . lsp)
-	 (python-mode . lsp)
-	 ;;(python-mode . lsp-deferred)
-	 )
-  :commands lsp
-  :config
-  (setq lsp-completion-provider :capf)
+;;   ;; Ignore only D103 (missing docstring) from pylsp/pydocstyle
+;;   ;; D101 remove docstring in public class
+;;   ;; D107 missing docstring for __init__
+;;   (setq lsp-pylsp-plugins-pydocstyle-ignore ["D103" "D100" "D101" "D107" "D102"])
 
-  ;; Ignore only D103 (missing docstring) from pylsp/pydocstyle
-  ;; D101 remove docstring in public class
-  ;; D107 missing docstring for __init__
-  (setq lsp-pylsp-plugins-pydocstyle-ignore ["D103" "D100" "D101" "D107" "D102"])
-
-  )
+;;  )
 
 ;; ;; Optional UI enhancements for LSP (tooltip, docs, sideline popups)
 ;; (use-package lsp-ui
@@ -786,7 +774,9 @@
   :diminish
   :ensure t ;; install package if its not already installed.
   :init	    ;; execute code before a package is loaded
-;;  :config   ;; execute code after a package is loaded	
+  ;;  :config   ;; execute code after a package is loaded
+  ;; (setq flycheck-python-pydocstyle-ignore
+  ;;       '("D100" "D101" "D102" "D103" "D104" "D105" "D106" "D107"))
   (global-flycheck-mode)
   :config
   ;; Use M-x flycheck-describe-checker to determine what checker
@@ -805,8 +795,20 @@
       )
   ;; flycheck-clang-include-path
   ;; flycheck-clang-includes
+
+  ;; Removes all info  messages from flycheck, otherwise  it show them
+  ;; unnecessarily in  the error  bar.  This  just allows  warning and
+  ;; error messages  to be flagged.   This is required when  not using
+  ;; lsp-mode.  info messages are usually style, convention or quality
+  ;; hints comming from tools like  pylint and flake8.  Your code will
+  ;; run fine but the tool thinks  it could be cleaner, more Pythonic,
+  ;; or  better  style,  readability,   maintainability  They  do  not
+  ;; indicate bugs, incorrect behaviour or runtime failures.
+  (setq flycheck-checker-error-threshold 'warning)
+  ;;(setq flycheck-checker-error-threshold 'error)
   
   )
+
 ;; permanently enable syntax checking
 ;; END Flycheck CONFIG
 
