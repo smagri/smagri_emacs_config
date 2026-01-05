@@ -682,11 +682,19 @@
 
 ;; GIT support for inside emacs
 ;;
+;; (use-package magit
+;;   :ensure t
+;;   :config
+;;   ;;(global-set-key (kbd "C-x g") 'magit-status)
+;;   :bind (kbd "C-x g") 'magit-status)
+;; )
+;; chatGPT minimum setup
 (use-package magit
-  :ensure t
+  :ensure t               ;; auto-install if missing
+  :defer t                ;; load only when needed
   :config
-  ;;(global-set-key (kbd "C-x g") 'magit-status)
-  :bind (kbd "C-x g") 'magit-status)
+  ;; Global keybinding for Magit status
+  (global-set-key (kbd "C-x g") 'magit-status))
 
 
 
