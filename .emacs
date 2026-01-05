@@ -1,4 +1,4 @@
-;;; package --- Summary"
+;; package --- Summary"
 ;; ***** should move this .emacs file to .emacs.d/init.el, preferred
 ;; system these days ****
 ;;
@@ -694,7 +694,8 @@
   :defer t                ;; load only when needed
   :config
   ;; Global keybinding for Magit status
-  (global-set-key (kbd "C-x g") 'magit-status))
+  (global-set-key (kbd "C-x g") 'magit-status)
+  )
 
 
 
@@ -956,6 +957,7 @@
           treemacs-no-delete-other-windows       t
 	  treemacs-project-follow-cleanup        nil
           treemacs-persist-file                  (expand-file-name ".cache/treemacs-persist" user-emacs-directory)
+	  ;;treemacs-persist-file                  "~/.emacs.d/treemacs-persist.el"
           treemacs-position                      'left
           treemacs-recenter-distance             0.1
           treemacs-recenter-after-file-follow    nil
@@ -974,7 +976,12 @@
           treemacs-user-header-line-format       nil
           treemacs-width                         35
           treemacs-workspace-switch-cleanup      nil)
-        ;; The default width and height of the icons is 22 pixels. If you are
+
+    ;; Set emacs to save state in to treemacs-persist-file
+    ;;(treemacs-save-state-mode 1)
+    
+    
+    ;; The default width and height of the icons is 22 pixels. If you are
     ;; using a Hi-DPI display, uncomment this to double the icon size.
     ;;(treemacs-resize-icons 44)
     (treemacs-follow-mode t)
@@ -985,7 +992,56 @@
       (`(t . t)
        (treemacs-git-mode 'deferred))
       (`(t . _)
-       (treemacs-git-mode 'simple))))
+       (treemacs-git-mode 'simple)))
+
+    ;; ;; --- START: Save and restore state ---
+    ;; ;;Save Treemacs state on Emacs exit
+    ;;(add-hook 'kill-emacs-hook #'treemacs-save-state)
+    ;; ;; Restore Treemacs state when Treemacs starts
+    ;;(treemacs-load-state)
+    ;; (add-hook 'treemacs-mode-hook #'treemacs-load-state)
+    ;; ;; --- END ---
+    ;; Save workspace on exit
+    ;; (add-hook 'kill-emacs-hook
+    ;;         (lambda ()
+    ;;           (dolist (ws (treemacs-workspaces))
+    ;;             (treemacs-workspace-save (car ws)))))
+
+    (use-package treemacs
+  :ensure t
+  :config
+  ;; --- START: Auto save & restore Treemacs workspaces ---
+
+  ;; Directory where Treemacs will store workspace state files
+  (setq treemacs-persist-file
+        (expand-file-name "treemacs-workspaces.el" user-emacs-directory))
+
+  ;; Function to save all workspaces on exit
+  (defun my/treemacs-save-all-workspaces ()
+    "Save all Treemacs workspaces to disk."
+    (dolist (ws (treemacs-workspaces))
+      (treemacs-workspace-save (car ws))))
+  (add-hook 'kill-emacs-hook #'my/treemacs-save-all-workspaces)
+
+  ;; Function to restore workspaces at startup
+  (defun my/treemacs-restore-workspaces ()
+    "Restore Treemacs workspaces from previous session."
+    (when (file-exists-p treemacs-persist-file)
+      ;; Load saved workspace data
+      (load-file treemacs-persist-file)
+      ;; Select the first workspace if none is active
+      (unless (treemacs-current-workspace)
+        (when-let ((first-ws (car (treemacs-workspaces))))
+          (treemacs-select-workspace (car first-ws))))))
+
+  ;; Restore workspaces after Treemacs is loaded
+  (add-hook 'after-init-hook #'my/treemacs-restore-workspaces)
+
+  ;; --- END ---
+)
+
+    
+    )
   :bind
   (:map global-map
         ("M-0"       . treemacs-select-window)
