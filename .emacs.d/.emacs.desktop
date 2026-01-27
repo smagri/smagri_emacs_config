@@ -2,54 +2,78 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Jan  5 18:48:25 2026
+;; Created Thu Jan 22 19:54:01 2026
 ;; Desktop file format version 208
 ;; Emacs version 30.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (26971 27849 381620 804000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-27-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (frameset--id . "A4B0-24E6-45C5-2992") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (height . 61) (width . 238) (left . 3840) (top . 0)) ((min-height . 8) (min-width . 55) (min-height-ignore . 6) (min-width-ignore . 12) (min-height-safe . 2) (min-width-safe . 6) (min-pixel-height . 256) (min-pixel-width . 880) (min-pixel-height-ignore . 192) (min-pixel-width-ignore . 192) (min-pixel-height-safe . 64) (min-pixel-width-safe . 96)) hc (pixel-width . 3840) (pixel-height . 1922) (total-width . 240) (total-height . 60) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 560) (pixel-height . 1922) (total-width . 35) (total-height . 60) (normal-height . 1.0) (normal-width . 0.14583333333333331) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Buffer-#<frame /home/smagri/smagri_emacs_config/.emacs []  0x59c3830bb3b8>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 1411) (start . 521))) (vc (last . t) (pixel-width . 3280) (pixel-height . 1922) (total-width . 205) (total-height . 60) (normal-height . 1.0) (normal-width . 0.8541666666666667) (combination-limit) (hc (pixel-width . 3280) (pixel-height . 1794) (total-width . 205) (total-height . 56) (normal-height . 0.9328824141519251) (normal-width . 1.0) (combination-limit . t) (leaf (pixel-width . 1632) (pixel-height . 1794) (total-width . 102) (total-height . 56) (normal-height . 1.0) (normal-width . 0.4975609756097561) (buffer ".emacs" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 32042) (start . 30228)) (prev-buffers ("pythonPlay.py" 1 1083) ("*GNU Emacs*" 1 252) ("*scratch*" 1 147))) (leaf (last . t) (pixel-width . 1648) (pixel-height . 1794) (total-width . 103) (total-height . 56) (normal-height . 1.0) (normal-width . 0.5024390243902439) (buffer "pythonPlay.py" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1083) (start . 1)) (prev-buffers (".pydocstyle" 1 302) ("*GNU Emacs*" 1 855)))) (leaf (last . t) (pixel-width . 3280) (pixel-height . 128) (total-width . 205) (total-height . 4) (normal-height . 0.06711758584807492) (normal-width . 1.0) (buffer "*Warnings*" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1))))))])
+(setq desktop-saved-frameset [frameset 1 (26993 58793 692932 471000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-27-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (frameset--id . "D7BB-B756-AC28-E1B3") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (height . 61) (width . 238) (left . 3840) (top . 0)) ((min-height . 4) (min-width . 55) (min-height-ignore . 3) (min-width-ignore . 12) (min-height-safe . 1) (min-width-safe . 6) (min-pixel-height . 128) (min-pixel-width . 880) (min-pixel-height-ignore . 96) (min-pixel-width-ignore . 192) (min-pixel-height-safe . 32) (min-pixel-width-safe . 96)) hc (pixel-width . 3840) (pixel-height . 1922) (total-width . 240) (total-height . 60) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 560) (pixel-height . 1922) (total-width . 35) (total-height . 60) (normal-height . 1.0) (normal-width . 0.14583333333333331) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Buffer-#<frame /home/smagri/proj/paulMcWhorter/ultimateGPStracker/xferPicoLog2PCcsv2kml.py [Python]  0x6118f5f61ed8>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 401) (start . 19))) (hc (last . t) (pixel-width . 3280) (pixel-height . 1922) (total-width . 205) (total-height . 60) (normal-height . 1.0) (normal-width . 0.8541666666666667) (combination-limit . t) (leaf (pixel-width . 1648) (pixel-height . 1922) (total-width . 103) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5024390243902439) (buffer "ultimateGPStracker.py" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 18418) (start . 17949)) (prev-buffers ("output.ultimateGPStracker" 5596 5596) ("ultimateGPStracker.py" 62342 64177) ("xferPicoLog2PCcsv2kml.py" 2780 4247) ("*Async-native-compile-log*" 1 165))) (leaf (last . t) (pixel-width . 1632) (pixel-height . 1922) (total-width . 102) (total-height . 60) (normal-height . 1.0) (normal-width . 0.4975609756097561) (buffer "ultimateGPStracker.py" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 24599) (start . 24346)) (prev-buffers ("xferSDcardLog2PCcsv2kml.py" 5311 5994) ("ultimateGPStrackerSDcard.log.onPC.log.kml" 5493 5493) ("xferPicoLog2PCcsv2kml.py" 2315 2315))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("treemacs" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("flycheck" 0 8 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq search-ring '(#("readGPSdata" 0 11 (isearch-case-fold-search nil isearch-regexp-function nil)) #("pree" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("readGPSdataOrig()" 0 17 (isearch-case-fold-search nil isearch-regexp-function nil)) #("read" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("global" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("readGPSdata()" 0 13 (isearch-case-fold-search nil isearch-regexp-function nil)) #("readGPSdataOrig" 0 15 (isearch-case-fold-search nil isearch-regexp-function nil)) #("keep" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("butOne" 0 6 (isearch-case-fold-search nil isearch-regexp-function nil)) #("import" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("butO" 0 4 (isearch-case-fold-search nil isearch-regexp-function nil)) #("global GPS" 0 10 (isearch-case-fold-search nil isearch-regexp-function nil)) #("main()" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("keepRunning" 0 11 (isearch-case-fold-search nil isearch-regexp-function nil)) #("NMEAdata" 0 8 (isearch-case-fold-search nil isearch-regexp-function nil)) #("dataLock" 0 8 (isearch-case-fold-search nil isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.pydocstyle" "~/.emacs"))
+(setq file-name-history '("~/proj/paulMcWhorter/ultimateGPStracker/output.ultimateGPStracker"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/smagri/smagri_emacs_config/.emacs"
-  ".emacs"
-  'emacs-lisp-mode
-  '(font-lock-mode eldoc-mode company-mode yas-minor-mode flycheck-mode auto-revert-mode)
-  32042
-  '(33642 nil)
-  nil
-  nil
-  '((buffer-display-time 26971 27849 378889 558000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (30514 26178 25976 26633 25657 1 25973 26633 26551 26631 26502 26627 26125 31878 33094 32042))))
-
-(desktop-create-buffer 208
-  "/home/smagri/proj/python/paulMcWhorter/pythonPlay.py"
-  "pythonPlay.py"
+  "/home/smagri/proj/paulMcWhorter/ultimateGPStracker/ultimateGPStracker.py"
+  "ultimateGPStracker.py"
   'python-mode
   '(font-lock-mode eldoc-mode company-mode yas-minor-mode flycheck-mode)
-  1083
-  '(1083 nil)
+  18418
+  '(26551 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26971 27849 378889 692000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26993 58793 690709 366000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (26306 25240 21081 20900 16265 16172 20743 20794 16127 21652 24433 24690 24226 24176 23667 18418))))
+
+(desktop-create-buffer 208
+  "/home/smagri/proj/paulMcWhorter/ultimateGPStracker/output.ultimateGPStracker"
+  "output.ultimateGPStracker"
+  'fundamental-mode
+  '(font-lock-mode company-mode yas-minor-mode)
+  5596
+  '(906 nil)
+  nil
+  nil
+  '((buffer-display-time 26989 58062 3305 241000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 36097 906))))
+
+(desktop-create-buffer 208
+  "/home/smagri/proj/paulMcWhorter/ultimateGPStracker/xferPicoLog2PCcsv2kml.py"
+  "xferPicoLog2PCcsv2kml.py"
+  'python-mode
+  '(flycheck-mode yas-minor-mode company-mode eldoc-mode font-lock-mode)
+  4247
+  '(4248 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26989 49555 535031 817000) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/home/smagri/.pydocstyle"
-  ".pydocstyle"
-  'fundamental-mode
-  '(font-lock-mode company-mode yas-minor-mode)
-  302
-  '(269 nil)
+  "/home/smagri/proj/paulMcWhorter/ultimateGPStracker/xferSDcardLog2PCcsv2kml.py"
+  "xferSDcardLog2PCcsv2kml.py"
+  'python-mode
+  '(flycheck-mode yas-minor-mode company-mode eldoc-mode font-lock-mode)
+  5994
+  '(1654 nil)
   nil
   nil
-  '((buffer-display-time 26971 27576 366577 963000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (1 269))))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 26989 49555 534952 32000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1426 1224 1232 1195 1231 191 965 197 628 1398 328 1319 1857 1353 197 5994))))
+
+(desktop-create-buffer 208
+  "/home/smagri/proj/paulMcWhorter/ultimateGPStracker/ultimateGPStrackerSDcard.log.onPC.log.kml"
+  "ultimateGPStrackerSDcard.log.onPC.log.kml"
+  'nxml-mode
+  '(font-lock-mode company-mode yas-minor-mode flycheck-mode rng-validate-mode)
+  5493
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 26989 38251 446881 432000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
 
