@@ -39,13 +39,21 @@
 (add-to-list 'package-archives
              '("gnu" . "https://elpa.gnu.org/packages/") t)
 
-;;(add-to-list 'package-archives
-;;             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives
+             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 (package-initialize)
+
+
+
+;; Force Flycheck to come from melpa-stable, not melpa snapshots
+(setq package-pinned-packages
+      '((flycheck . "melpa-stable")))
+
+
 
 ;; Personal general key mappings, put here so other mode remappings
 ;; get overridden, I don't like it when that happens.

@@ -1,0 +1,20 @@
+Flycheck version: 20251128.1706 - a timestamped snapshot of flycheck.
+
+This interferes with emacs30 as flycheck is a MELPA snapshot, not in
+the stable MELPA release.
+
+You can install melpa-stable, see dot emacs on how to do that, or just
+update flycheck.
+
+However, I prefer not to do that so I'll just fix flycheck:
+
+Kill all running emacs instances
+
+Remove current Flycheck
+rm -rf ~/.emacs.d/elpa/flycheck-*
+
+M-x package-refresh-contents
+M-x package-install RET flycheck
+
+
+
