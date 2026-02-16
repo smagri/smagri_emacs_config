@@ -292,8 +292,8 @@
 		cpputils-cmake diff-ansi diffview diminish flycheck
 		ggtags git-commit gnu-apl-mode gnu-elpa
 		gnu-elpa-keyring-update guess-language helm-gtags
-		helm-projectile helm-swoop ivy json-snatcher magit
-		persp-mode tree-sitter-indent tree-sitter-langs
+		helm-projectile helm-swoop ivy json-mode json-snatcher
+		magit persp-mode tree-sitter-indent tree-sitter-langs
 		treemacs use-package vdiff vdiff-magit
 		yasnippet-snippets)))
 
