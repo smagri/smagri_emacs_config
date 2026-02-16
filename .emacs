@@ -1071,3 +1071,30 @@
 (diminish 'toggle-mode)
 
 
+
+;; Syntax Highlighting for AVR
+
+;; Syntax Highlighting for AVR Registers
+
+;; Highlight AVR registers and functions.  This will make the main AVR
+;; symbols colored like keywords. You can extend the list with any
+;; registers you use.
+;; (font-lock-add-keywords 'c-mode
+;;   '(("\\<\\(DDRB\\|PORTB\\|PORTC\\|DDRC\\|_delay_ms\\|_delay_us\\)\\>" 
+;;      . font-lock-keyword-face)))
+(font-lock-add-keywords 'c-mode
+  '(("\\<\\(DDRB\\|PORTB\\|PORTC\\|DDRC\\|_delay_us\\)\\>" 
+     . font-lock-keyword-face)))
+
+
+;; Example for company-clang completion from AVR headers
+(require 'company)
+(require 'company-clang)
+(add-to-list 'company-backends 'company-clang)
+
+(setq company-clang-arguments
+      '("-I/usr/lib/avr/include"  ;; AVR standard headers
+        "-I/usr/lib/gcc/avr/11/include"
+	"-I/usr/lib/gcc/avr/11/include-fixed"
+	)
+      ) ;; GCC built-ins
