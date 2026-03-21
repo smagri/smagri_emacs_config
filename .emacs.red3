@@ -75,7 +75,7 @@
 ;;  '(default ((t (:family "Liberation Mono" :foundry "1ASC" :background "#000015" :foreground "white" :slant normal :weight normal :height 100 :width normal) )) )
 ;;  )
 
-;; 
+;; ;; 
 ;; (custom-set-faces
 ;;  ;; custom-set-faces was added by Custom.
 ;;  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -86,14 +86,14 @@
 ;;  '(font-lock-type-face ((((class color)) (:foreground "plum"))))
 ;;  '(font-lock-variable-name-face ((((class color)) (:foreground "#FF4277")))))
 
-
+;; 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Liberation Mono" :foundry "1ASC" :background "#000015" :foreground "white" :slant normal :weight normal :height 100 :width normal))))
- '(font-lock-comment-face ((((class color)) (:foreground "MediumSeaGreen"))))
+ '(font-lock-comment-face ((((class color)) (:foreground "red3"))))
  '(font-lock-type-face ((((class color)) (:foreground "plum"))))
  '(font-lock-variable-name-face ((((class color)) (:foreground "#FF4277")))))
 
