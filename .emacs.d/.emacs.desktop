@@ -2,12 +2,12 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Tue Mar 17 20:53:38 2026
+;; Created Thu Mar 26 17:54:26 2026
 ;; Desktop file format version 208
 ;; Emacs version 30.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (27065 9378 280494 522000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-13-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (frameset--id . "59F6-A801-338A-1752") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (height . 63) (width . 236) (left . 1920) (top . 27)) ((min-height . 4) (min-width . 55) (min-height-ignore . 3) (min-width-ignore . 18) (min-height-safe . 1) (min-width-safe . 6) (min-pixel-height . 60) (min-pixel-width . 440) (min-pixel-height-ignore . 45) (min-pixel-width-ignore . 144) (min-pixel-height-safe . 15) (min-pixel-width-safe . 48)) hc (pixel-width . 1920) (pixel-height . 935) (total-width . 240) (total-height . 62) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 280) (pixel-height . 935) (total-width . 35) (total-height . 62) (normal-height . 1.0) (normal-width . 0.14583333333333331) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Buffer-#<frame /home/smagri/uni/subj/ies/src/lab5/main.cpp.before.refractor.debounce.cpp [C++//l]  0x58f5437b9a78>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 728) (start . 164))) (hc (last . t) (pixel-width . 1640) (pixel-height . 935) (total-width . 205) (total-height . 62) (normal-height . 1.0) (normal-width . 0.8541666666666667) (combination-limit . t) (leaf (pixel-width . 824) (pixel-height . 935) (total-width . 103) (total-height . 62) (normal-height . 1.0) (normal-width . 0.5) (buffer "main.cpp<lab5_car_alert_system_switch_toggle>" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 11482) (start . 9312)) (prev-buffers ("main.cpp.before.refractor.debounce.cpp" 3510 5126))) (leaf (last . t) (pixel-width . 816) (pixel-height . 935) (total-width . 102) (total-height . 62) (normal-height . 1.0) (normal-width . 0.5) (buffer "main.cpp<lab5_car_alert_system>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 4541) (start . 2685)) (prev-buffers ("main.cpp.before.refractor.debounce.cpp" 3614 5126))))))])
+(setq desktop-saved-frameset [frameset 1 (27076 55330 264371 630000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-13-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (frameset--id . "59F6-A801-338A-1752") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (height . 62) (width . 209) (left . 0) (top . 27)) ((min-height . 8) (min-width . 55) (min-height-ignore . 6) (min-width-ignore . 18) (min-height-safe . 2) (min-width-safe . 6) (min-pixel-height . 120) (min-pixel-width . 440) (min-pixel-height-ignore . 90) (min-pixel-width-ignore . 144) (min-pixel-height-safe . 30) (min-pixel-width-safe . 48)) hc (pixel-width . 1704) (pixel-height . 920) (total-width . 213) (total-height . 61) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 280) (pixel-height . 920) (total-width . 35) (total-height . 61) (normal-height . 1.0) (normal-width . 0.16666666666666669) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Buffer-#<frame /home/smagri/uni/subj/ies/src/lab5/lab5_car_alert_system_switch_toggle/src/main.cpp [C++//l]  0x55944e116a58>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 510) (start . 243))) (hc (last . t) (pixel-width . 1424) (pixel-height . 920) (total-width . 178) (total-height . 61) (normal-height . 1.0) (normal-width . 0.8333333333333333) (combination-limit . t) (leaf (pixel-width . 712) (pixel-height . 920) (total-width . 89) (total-height . 61) (normal-height . 1.0) (normal-width . 0.5) (buffer "main.cpp<lab6_scientific_calculator>" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1491) (start . 761)) (prev-buffers ("main.cpp<lab5_car_alert_system_switch_toggle>" 9312 11482) ("main.cpp.before.refractor.debounce.cpp" 3510 5126))) (vc (last . t) (pixel-width . 712) (pixel-height . 920) (total-width . 89) (total-height . 61) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 712) (pixel-height . 455) (total-width . 89) (total-height . 30) (normal-height . 0.5) (normal-width . 1.0) (buffer "main.cpp<lab7_task3_led_toggle_via_serialport_and_interrupts>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1828) (start . 1520)) (prev-buffers ("main.cpp<lab5_car_alert_system>" 2685 4541) ("main.cpp.before.refractor.debounce.cpp" 3614 5126))) (leaf (last . t) (pixel-width . 712) (pixel-height . 465) (total-width . 89) (total-height . 31) (normal-height . 0.5) (normal-width . 1.0) (buffer "README.qANDa<lab6>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1175) (start . 1175)) (prev-buffers ("main.cpp<lab7_task3_led_toggle_via_serialport_and_interrupts>" 1520 1828)))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
@@ -18,266 +18,266 @@
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/smagri/uni/subj/ies/src/lab5/lab5_car_alert_system_switch_toggle/src/main.cpp"
+  "/home/smagri/uni/subj/ies/src/lab6/lab6_scientific_calculator/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(helm-gtags-mode company-mode flycheck-mode yas-minor-mode font-lock-mode)
-  11482
-  '(368 nil)
+  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
+  1491
+  '(1286 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27065 9378 277555 931000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1 7586 5627 16867 16869 4343 8984 1646 18264 8892 1909 19246 11441 1675 1675 11482))))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27076 55330 261175 235000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1419))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/ies/src/lab6/README.qANDa"
+  "README.qANDa"
+  'fundamental-mode
+  '(font-lock-mode company-mode yas-minor-mode)
+  1175
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 27076 55330 261175 880000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/ies/src/lab7/lab7_task3_led_toggle_via_serialport_and_interrupts/src/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
+  1828
+  '(1828 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27076 55330 261175 684000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab5/lab5_car_alert_system/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(helm-gtags-mode company-mode flycheck-mode yas-minor-mode font-lock-mode)
+  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
   4541
   '(13936 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27065 9378 277556 322000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27076 55105 211153 752000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (13935 9274 3916 3580 5105 5072 4757 4642 4541))))
+
+(desktop-create-buffer 208
+  "/home/smagri/uni/subj/ies/src/lab5/lab5_car_alert_system_switch_toggle/src/main.cpp"
+  "main.cpp"
+  'c++-mode
+  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
+  11482
+  '(368 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27076 55108 890677 642000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1 7586 5627 16867 16869 4343 8984 1646 18264 8892 1909 19246 11441 1675 1675 11482))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab5/main.cpp.before.refractor.debounce.cpp"
   "main.cpp.before.refractor.debounce.cpp"
   'c++-mode
-  '(helm-gtags-mode company-mode flycheck-mode yas-minor-mode font-lock-mode)
+  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
   5126
   '(1 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27064 63461 86130 374000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27076 43650 763944 181000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (18298 8583 18084 18236 18299 18172 17822 18283 5126))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab2/lab2_task3_led_chaser/.gitignore"
   ".gitignore"
   'fundamental-mode
-  '(font-lock-mode company-mode yas-minor-mode)
+  '(yas-minor-mode company-mode font-lock-mode)
   1
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 27064 63455 490164 431000) (buffer-file-coding-system . undecided-unix))
+  '((buffer-display-time 27076 43645 181171 138000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab5/lab5_car_alert_system_HC-SRO4-spec/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(helm-gtags-mode company-mode flycheck-mode yas-minor-mode font-lock-mode)
+  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
   12805
   '(14483 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27064 55954 724836 193000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27076 36144 489446 785000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (16 12677 3263 3072 821 747 9520 9484 715 1 4321 3 2835 4110 3646 3407))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lectures/switch_debouncing/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
+  '(helm-gtags-mode company-mode flycheck-mode yas-minor-mode font-lock-mode)
   2026
   '(1 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27064 63454 117428 435000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27076 43644 6603 257000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (1274 1025 426 997 3038 1024 1 42 135 2921 472 1307 824 1010 472 472))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab5/README.qANDa"
   "README.qANDa"
   'fundamental-mode
-  '(yas-minor-mode company-mode font-lock-mode)
+  '(font-lock-mode company-mode yas-minor-mode)
   752
   '(759 nil)
   nil
   nil
-  '((buffer-display-time 27063 8935 219539 895000) (buffer-file-coding-system . utf-8-unix))
+  '((buffer-display-time 27074 54661 129687 892000) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring (1 2386 2386 422 523 530 613 571 1058 1986 1986 1992 2199 2251 2209 759))))
 
 (desktop-create-buffer 208
   nil
   "src"
   'dired-mode
-  '(helm-gtags-mode yas-minor-mode company-mode font-lock-mode)
+  '(font-lock-mode company-mode yas-minor-mode helm-gtags-mode)
   233
   '(230 nil)
   t
   '("/home/smagri/uni/subj/ies/src/lab5/lab5_car_alert_system_HC-SRO4-spec/src/")
-  '((buffer-display-time 27062 12935 252045 567000))
+  '((buffer-display-time 27073 58661 171687 32000))
   '((mark-ring (233))))
 
 (desktop-create-buffer 208
   nil
   "lab5_car_alert_system_HC-SRO4-spec"
   'dired-mode
-  '(helm-gtags-mode yas-minor-mode company-mode font-lock-mode)
+  '(font-lock-mode company-mode yas-minor-mode helm-gtags-mode)
   499
   '(499 nil)
   t
   '("/home/smagri/uni/subj/ies/src/lab5/lab5_car_alert_system_HC-SRO4-spec/")
-  '((buffer-display-time 27062 12932 916930 202000))
+  '((buffer-display-time 27073 58658 843305 508000))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab4/lab4_playtime/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(helm-gtags-mode company-mode flycheck-mode yas-minor-mode font-lock-mode)
+  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
   3111
   '(2302 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27062 12930 427319 892000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27073 58656 429772 558000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (2245 3111))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab4/lab4_diff_freq/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(helm-gtags-mode company-mode flycheck-mode yas-minor-mode font-lock-mode)
+  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
   89
   '(nil nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27060 41980 353980 78000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27072 22170 435823 799000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lectures/sonar_sensor/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
+  '(helm-gtags-mode company-mode flycheck-mode yas-minor-mode font-lock-mode)
   3203
   '(1291 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27060 39756 868572 944000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27072 19947 76864 394000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (1524 1488 3637 3548 3490 3471 3416 3397 308 333 3364 3344 3321 3287 3279 3179))))
-
-(desktop-create-buffer 208
-  "/home/smagri/uni/subj/ies/src/lab2/lab2_task4_lecture_notes_v4_led_chaser_bit_shifting/lab2_task4_lecture_notes_v4_led_chaser_bit_shifting_state_machine/src/main.cpp"
-  "main.cpp"
-  'c++-mode
-  '(font-lock-mode helm-gtags-mode company-mode yas-minor-mode flycheck-mode)
-  1201
-  '(575 nil)
-  nil
-  nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27055 53905 638464 424000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (658 1201))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab1/lab1_input_led_p5/src/main.c"
   "main.c"
   'c-mode
-  '(font-lock-mode helm-gtags-mode company-mode yas-minor-mode flycheck-mode)
+  '(flycheck-mode yas-minor-mode company-mode helm-gtags-mode font-lock-mode)
   760
   '(760 nil)
   nil
   nil
-  '((buffer-display-time 27054 44937 333304 616000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  nil
-  "src"
-  'dired-mode
-  '(helm-gtags-mode font-lock-mode company-mode yas-minor-mode)
-  233
-  '(233 nil)
-  t
-  '("/home/smagri/uni/subj/ies/src/lab2/lab2_task4_led_chaser_bit_shifting/src/")
-  '((buffer-display-time 27053 48984 113658 969000))
-  '((mark-ring (233))))
-
-(desktop-create-buffer 208
-  nil
-  "test"
-  'dired-mode
-  '(helm-gtags-mode font-lock-mode company-mode yas-minor-mode)
-  225
-  '(nil nil)
-  t
-  '("/home/smagri/uni/subj/ies/src/lab2/lab2_task4_led_chaser_bit_shifting/test/")
-  '((buffer-display-time 27053 48979 690313 201000))
+  '((buffer-display-time 27066 25127 644407 472000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab1/lab1_onboard_led_codeV2/src/main.c"
   "main.c"
   'c-mode
-  '(helm-gtags-mode font-lock-mode company-mode yas-minor-mode flycheck-mode)
+  '(flycheck-mode yas-minor-mode company-mode font-lock-mode helm-gtags-mode)
   760
   '(760 nil)
   nil
   nil
-  '((buffer-display-time 27053 38670 334819 234000) (buffer-file-coding-system . undecided-unix))
+  '((buffer-display-time 27065 18860 720327 172000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (760))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab2/lab2_task4_8_led_chaser_bit_shifing/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(font-lock-mode helm-gtags-mode company-mode yas-minor-mode flycheck-mode)
+  '(flycheck-mode yas-minor-mode company-mode helm-gtags-mode font-lock-mode)
   1896
   '(1786 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27053 31137 780873 532000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27065 11328 244503 568000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (1611 1 1330 1256 1068 1077 1227 782 1126 647 1125 1058 986 1126 1024 1615))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab2/lab2_task2/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(font-lock-mode helm-gtags-mode company-mode yas-minor-mode flycheck-mode)
+  '(flycheck-mode yas-minor-mode company-mode helm-gtags-mode font-lock-mode)
   1102
   '(938 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27053 31138 765973 888000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27065 11329 304734 899000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (805 1 564 1092 1092 883 975 701 1259 1390 567 1102))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab2/lab2_task1/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(font-lock-mode helm-gtags-mode company-mode yas-minor-mode flycheck-mode)
+  '(flycheck-mode yas-minor-mode company-mode helm-gtags-mode font-lock-mode)
   1139
   '(3607 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27053 11636 964404 557000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27064 57363 581587 998000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (3556 3760 3910 3910 1198 3433 3708 3723 1169 1169 1584 1884 3340 3510 1140 1139))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab1/lab1_onboard_led/src/main.c"
   "main.c"
   'c-mode
-  '(font-lock-mode helm-gtags-mode company-mode yas-minor-mode flycheck-mode)
+  '(flycheck-mode yas-minor-mode company-mode helm-gtags-mode font-lock-mode)
   451
   '(1 nil)
   nil
   nil
-  '((buffer-display-time 27053 6604 201277 22000) (buffer-file-coding-system . undecided-unix))
+  '((buffer-display-time 27064 52330 941440 540000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (451 451 451 451 451))))
 
 (desktop-create-buffer 208
   "/home/smagri/uni/subj/ies/src/lab2/lab2_task3_led_chaser/src/main.cpp"
   "main.cpp"
   'c++-mode
-  '(font-lock-mode helm-gtags-mode company-mode yas-minor-mode flycheck-mode)
+  '(flycheck-mode yas-minor-mode company-mode helm-gtags-mode font-lock-mode)
   346
   '(1 nil)
   nil
   nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27053 3581 238550 964000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27076 55105 207171 986000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring (1 757 764 807 515 595 594 348 425 409 185 201 877 888 117 117))))
 

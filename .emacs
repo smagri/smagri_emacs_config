@@ -58,6 +58,7 @@
 (global-set-key	"\C-cpl"	'compile)
 (global-set-key	"\C-cds"	'desktop-save)
 (global-set-key	"\C-cdr"	'desktop-read)
+(global-set-key	"\C-xb"		'ibuffer)
 (global-set-key [f12] 'quick-load-home-dot_emacs-file)
 (global-set-key [f11] 'quick-load-work-dot_emacs-file)
 (global-set-key [f10] 'quick-load-work-NT-dot_emacs-file)
