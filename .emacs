@@ -225,8 +225,12 @@
    (c-set-offset 'statement-case-open 4 t)
    (setq c-comment-only-line-offset 0)
    (setq indent-tabs-mode nil) ;; disable using tabs for indentation, use spaces instead
-   (setq tab-width 4) ;; set the number of spaces for indentation, or tabs
+   (setq tab-widt 4)
 
+   ;; Start LSP after Simone's C++ settings are applied.
+   (lsp-deferred)
+   (simones-c-c++-lsp-company-setup)
+   
    )
 
 
@@ -298,16 +302,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ede-project-directories '("/lu1/smagri/sftw/emacs/intelligent.autocomplete/ass2"))
- '(package-selected-packages
-   '(agda2-mode all-the-icons arduino-cli-mode auto-complete-c-headers
-		cmake-mode company-arduino company-irony-c-headers
-		cpputils-cmake diff-ansi diffview diminish flycheck
-		ggtags git-commit gnu-apl-mode gnu-elpa
-		gnu-elpa-keyring-update guess-language helm-gtags
-		helm-projectile helm-swoop ivy json-mode json-snatcher
-		magit persp-mode tree-sitter-indent tree-sitter-langs
-		treemacs use-package vdiff vdiff-magit
-		yasnippet-snippets)))
+ '(package-selected-packages nil))
 
 
 ;; toggle(?)/turn off line numbers.  to toggle M-x linum-mode in emacs
@@ -372,7 +367,63 @@
 ;;   :ensure t
 ;;   :hook (lsp-mode . lsp-ui-mode)
 ;;   :commands lsp-ui-mode)
+;; LSP for C/C++, but keep normal Emacs C/C++ syntax highlighting.
 
+;; ------------------------------------------------------------
+;; LSP MODE for C/C++
+;; ------------------------------------------------------------
+;; Requires clangd to be installed:
+;;   sudo apt install clangd
+(require 'use-package)
+
+(use-package lsp-mode
+  :ensure t
+  :commands (lsp lsp-deferred)
+
+  :init
+  ;; Keep normal Emacs C/C++ syntax highlighting.
+  (setq lsp-semantic-tokens-enable nil)
+  (setq lsp-enable-semantic-highlighting nil)
+
+  ;; Use company-capf/completion-at-point for LSP completion.
+  (setq lsp-completion-provider :capf)
+
+  ;; Keep snippets active for function-call completions.
+  (setq lsp-enable-snippet t)
+
+  ;; Less intrusive LSP highlighting.
+  (setq lsp-enable-symbol-highlighting nil)
+
+  ;; clangd settings for C/C++ and Arduino.
+  (setq lsp-clients-clangd-args
+        '("--background-index"
+          "--completion-style=detailed"
+          "--header-insertion=never"
+          "--query-driver=/usr/bin/g++,/usr/bin/clang++,/usr/bin/avr-g++,/usr/bin/arm-none-eabi-g++,/home/smagri/.arduino15/packages/**/tools/**/bin/*g++"))
+
+  :config
+  ;; Reapply normal font-lock if LSP startup changes faces.
+  (add-hook 'lsp-after-open-hook
+            (lambda ()
+              (when (derived-mode-p 'c-mode 'c++-mode)
+                (font-lock-flush)
+                (font-lock-ensure))))
+  )
+(defun simones-c-c++-lsp-company-setup ()
+  "Use LSP/company completion for Simone's C/C++ modes."
+  (company-mode 1)
+
+  ;; company-capf must come first so completion comes from lsp-mode/clangd.
+  ;; company-yasnippet keeps snippets working with completion.
+  (setq-local company-backends
+              '((company-capf :with company-yasnippet)
+                company-files
+                company-dabbrev-code
+                company-keywords))
+
+  ;; Start clangd via lsp-mode.
+  (lsp-deferred)
+  )
 
 
 ;; ediff setup
