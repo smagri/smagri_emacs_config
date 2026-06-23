@@ -2,90 +2,66 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Tue Jun 23 15:29:58 2026
+;; Created Tue Jun 23 17:29:52 2026
 ;; Desktop file format version 208
 ;; Emacs version 30.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (27194 6614 559736 613000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-27-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (frameset--id . "3358-831D-2168-177D") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (height . 59) (width . 238) (left . 3840) (top . 54)) ((min-height . 8) (min-width . 55) (min-height-ignore . 6) (min-width-ignore . 12) (min-height-safe . 2) (min-width-safe . 6) (min-pixel-height . 256) (min-pixel-width . 880) (min-pixel-height-ignore . 192) (min-pixel-width-ignore . 192) (min-pixel-height-safe . 64) (min-pixel-width-safe . 96)) hc (pixel-width . 3840) (pixel-height . 1868) (total-width . 240) (total-height . 58) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 560) (pixel-height . 1868) (total-width . 35) (total-height . 58) (normal-height . 1.0) (normal-width . 0.14583333333333331) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Buffer-#<frame  *Minibuf-1* 0x650eb83bd998>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 795) (start . 1))) (hc (last . t) (pixel-width . 3280) (pixel-height . 1868) (total-width . 205) (total-height . 58) (normal-height . 1.0) (normal-width . 0.8541666666666667) (combination-limit . t) (vc (pixel-width . 1648) (pixel-height . 1868) (total-width . 103) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 1648) (pixel-height . 940) (total-width . 103) (total-height . 29) (normal-height . 0.5) (normal-width . 1.0) (buffer "main.cpp.48434.cpp" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 23559) (start . 23315))) (leaf (last . t) (pixel-width . 1648) (pixel-height . 928) (total-width . 103) (total-height . 29) (normal-height . 0.5) (normal-width . 1.0) (buffer "Sketch_10.1.1_Control_Motor_by_Relay.ino" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 283) (start . 1)) (prev-buffers ("Sketch_10.1.1_Control_Motor_by_Relay" 1 232) ("smagri" 1 383) ("freenove" 1 406) ("main.cpp.48434.cpp" 23355 23500)))) (leaf (last . t) (pixel-width . 1632) (pixel-height . 1868) (total-width . 102) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5) (buffer ".emacs" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 8077) (start . 6530)) (prev-buffers ("main.cpp.48434.cpp" 22830 23549))))))])
+(setq desktop-saved-frameset [frameset 1 (27194 13808 696922 630000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-27-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (frameset--id . "3358-831D-2168-177D") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (height . 59) (width . 238) (left . 3840) (top . 54)) ((min-height . 8) (min-width . 20) (min-height-ignore . 6) (min-width-ignore . 8) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 256) (min-pixel-width . 320) (min-pixel-height-ignore . 192) (min-pixel-width-ignore . 128) (min-pixel-height-safe . 64) (min-pixel-width-safe . 64)) hc (pixel-width . 3840) (pixel-height . 1868) (total-width . 240) (total-height . 58) (normal-height . 1.0) (normal-width . 1.0) (combination-limit . t) (vc (pixel-width . 1904) (pixel-height . 1868) (total-width . 119) (total-height . 58) (normal-height . 1.0) (normal-width . 0.4975609756097561) (combination-limit) (leaf (pixel-width . 1904) (pixel-height . 896) (total-width . 119) (total-height . 28) (normal-height . 0.47965738758029974) (normal-width . 1.0) (buffer "main.cpp.48434.cpp" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("*GNU Emacs*" 1 3))) (leaf (last . t) (pixel-width . 1904) (pixel-height . 972) (total-width . 119) (total-height . 30) (normal-height . 0.5203426124197003) (normal-width . 1.0) (buffer "Sketch_10.1.1_Control_Motor_by_Relay.ino" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("*GNU Emacs*" 1 158)))) (vc (last . t) (pixel-width . 1936) (pixel-height . 1868) (total-width . 121) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5024390243902439) (combination-limit) (leaf (pixel-width . 1936) (pixel-height . 928) (total-width . 121) (total-height . 29) (normal-height . 0.49678800856531047) (normal-width . 1.0) (buffer ".emacs" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("*GNU Emacs*" 1 323))) (leaf (last . t) (pixel-width . 1936) (pixel-height . 940) (total-width . 121) (total-height . 29) (normal-height . 0.5032119914346895) (normal-width . 1.0) (buffer "write2sdcardInMicropython.py" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)) (prev-buffers ("*GNU Emacs*" 1 140))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring '(#("simones-c++mo" 0 13 (isearch-case-fold-search t isearch-regexp-function nil)) #("simones-c-mode-hook" 0 19 (isearch-case-fold-search t isearch-regexp-function nil)) #("lsp-mode" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("AVR" 0 3 (isearch-case-fold-search nil isearch-regexp-function nil)) #("display." 0 8 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs" "~/proj/arduino/radarI2Cssd1309/docs/main.cpp.48434.cpp"))
+(setq file-name-history '("~/testing/Sketch_10.1.1_Control_Motor_by_Relay.ino" "~/testing/main.cpp.48434.cpp" "~/testing/write2sdcardInMicropython.py" "~/smagri_emacs_config/.emacs" "~/proj/testing/write2sdcardInMicropython.py" "~/.emacs" "~/proj/arduino/radarI2Cssd1309/docs/main.cpp.48434.cpp"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/smagri/proj/arduino/freenove/smagri/Sketch_10.1.1_Control_Motor_by_Relay/Sketch_10.1.1_Control_Motor_by_Relay.ino"
+  "/home/smagri/testing/Sketch_10.1.1_Control_Motor_by_Relay.ino"
   "Sketch_10.1.1_Control_Motor_by_Relay.ino"
   'arduino-mode
   '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
-  283
-  '(793 nil)
+  1
+  '(nil nil)
   nil
   nil
-  '((tab-width . 2) (buffer-display-time 27194 6614 556854 69000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (552 283))))
+  '((tab-width . 2) (buffer-display-time 27194 13808 693692 601000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
 
 (desktop-create-buffer 208
-  "/home/smagri/.emacs"
+  "/home/smagri/testing/main.cpp.48434.cpp"
+  "main.cpp.48434.cpp"
+  'c++-mode
+  '(font-lock-mode yas-minor-mode flycheck-mode company-mode helm-gtags-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-display-time 27194 13808 693692 204000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/testing/write2sdcardInMicropython.py"
+  "write2sdcardInMicropython.py"
+  'python-mode
+  '(font-lock-mode eldoc-mode company-mode yas-minor-mode flycheck-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27194 13808 693693 46000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/smagri_emacs_config/.emacs"
   ".emacs"
   'emacs-lisp-mode
   '(font-lock-mode eldoc-mode company-mode yas-minor-mode flycheck-mode)
-  8077
-  '(8044 nil)
-  nil
-  nil
-  '((buffer-display-time 27194 6614 556854 220000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1 23563 13410 13790 12683 1435 38634 38045 1386 907 8044))))
-
-(desktop-create-buffer 208
-  nil
-  "Sketch_10.1.1_Control_Motor_by_Relay"
-  'dired-mode
-  '(font-lock-mode company-mode yas-minor-mode helm-gtags-mode)
-  232
+  1
   '(nil nil)
-  t
-  '("/home/smagri/proj/arduino/freenove/smagri/Sketch_10.1.1_Control_Motor_by_Relay/")
-  '((buffer-display-time 27194 5776 593235 113000))
+  nil
+  nil
+  '((buffer-display-time 27194 13808 693692 933000) (buffer-file-coding-system . utf-8-unix))
   '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  nil
-  "smagri"
-  'dired-mode
-  '(font-lock-mode company-mode yas-minor-mode helm-gtags-mode)
-  383
-  '(nil nil)
-  t
-  '("/home/smagri/proj/arduino/freenove/smagri/")
-  '((buffer-display-time 27194 5769 476290 16000))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  nil
-  "freenove"
-  'dired-mode
-  '(font-lock-mode company-mode yas-minor-mode helm-gtags-mode)
-  406
-  '(nil nil)
-  t
-  '("/home/smagri/proj/arduino/freenove/")
-  '((buffer-display-time 27194 5765 626622 540000))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/smagri/proj/arduino/radarI2Cssd1309/docs/main.cpp.48434.cpp"
-  "main.cpp.48434.cpp"
-  'c++-mode
-  '(helm-gtags-mode company-mode flycheck-mode yas-minor-mode font-lock-mode lsp-mode)
-  23559
-  '(10851 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-display-time 27194 6614 556853 932000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (832 1820 23497 2015 23499 23500 23499 23549 23559 23500))))
 

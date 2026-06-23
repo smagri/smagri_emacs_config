@@ -1105,45 +1105,83 @@
 
 
 
-;; ================================================================
-;; Simone: force Eglot/clangd completions only
-;; ================================================================
 
-(require 'eglot)
-(require 'company)
+;; ============================================================
+;; INTELLISENSE / LSP SETUP FOR C / C++ / PYTHON / ARDUINO .ino
+;; ============================================================
+;;
+;; Uses:
+;;   C/C++/.ino  -> clangd
+;;   Python      -> pyright
+;;
+;; This keeps your existing syntax highlighting and your existing
+;; simones-c-mode-hook / simones-c++-mode-hook settings.
+;;
+;; Important:
+;;   Do NOT also uncomment the older lsp-mode block above.
+;;   This block replaces that older commented-out LSP idea.
 
-;; Use clangd for C/C++
-(add-to-list 'eglot-server-programs
-             '((c-mode c++-mode c-ts-mode c++-ts-mode)
-               . ("clangd" "--background-index")))
+;; Treat Arduino .ino files as C++ files.
+;; This means your existing simones-c++-mode-hook will still run.
+(add-to-list 'auto-mode-alist '("\\.ino\\'" . c++-mode))
 
-;; Use pyright for Python
-(add-to-list 'eglot-server-programs
-             '((python-mode python-ts-mode)
-               . ("pyright-langserver" "--stdio")))
 
-(defun simones-eglot-company-setup ()
-  "Use only Eglot/LSP completion in this buffer."
+;; In LSP buffers, use the LSP completion source through company-capf.
+;; This avoids company-clang / company-c-headers fighting with LSP.
+(defun simones-lsp-company-setup ()
+  "Use company-capf for LSP IntelliSense buffers."
   (company-mode 1)
+  (setq-local company-backends
+              '((company-capf :with company-yasnippet company-files))))
 
-  ;; Important:
-  ;; Do NOT include company-clang, company-c-headers, company-dabbrev,
-  ;; or company-files here. They can produce irrelevant suggestions.
-  (setq-local company-backends '((company-capf)))
 
-  (setq-local company-minimum-prefix-length 1)
-  (setq-local company-idle-delay 0.2))
+;; Main LSP setup.
+(use-package lsp-mode
+  :ensure t
+  :commands (lsp lsp-deferred)
+  :init
+  ;; LSP command prefix. Example: C-c l r for rename if available.
+  (setq lsp-keymap-prefix "C-c l")
+  :hook
+  ((c-mode    . lsp-deferred)
+   (c++-mode  . lsp-deferred)
+   (lsp-mode  . simones-lsp-company-setup))
+  :config
+  ;; company-capf is the current supported company backend for lsp-mode.
+  (setq lsp-completion-provider :capf)
 
-(add-hook 'eglot-managed-mode-hook #'simones-eglot-company-setup)
+  ;; Keep your normal font-lock syntax highlighting.
+  ;; This avoids LSP semantic highlighting changing your colours.
+  (setq lsp-semantic-tokens-enable nil)
 
-(add-hook 'c-mode-hook      #'eglot-ensure)
-(add-hook 'c++-mode-hook    #'eglot-ensure)
-(add-hook 'python-mode-hook #'eglot-ensure)
+  ;; Keep snippets working with yasnippet.
+  (setq lsp-enable-snippet t)
 
-(add-hook 'c-ts-mode-hook      #'eglot-ensure)
-(add-hook 'c++-ts-mode-hook    #'eglot-ensure)
-(add-hook 'python-ts-mode-hook #'eglot-ensure)
+  ;; Useful but not too visually noisy.
+  (setq lsp-headerline-breadcrumb-enable nil)
+  (setq lsp-modeline-diagnostics-enable t)
 
-;; ================================================================
-;; End Simone Eglot setup
-;; ================================================================
+  ;; clangd options for C/C++/.ino.
+  (setq lsp-clients-clangd-args
+        '("--header-insertion=never"
+          "--completion-style=detailed")))
+
+
+;; Python LSP setup using pyright.
+;;
+;; You said you already have pyright installed, so you should not need npm
+;; just for this, as long as pyright-langserver is on your PATH.
+(use-package lsp-pyright
+  :ensure t
+  :after lsp-mode
+  :custom
+  ;; lsp-pyright expects "pyright" here; it runs pyright-langserver internally.
+  (lsp-pyright-langserver-command "pyright")
+  :hook
+  (python-mode . (lambda ()
+                   (require 'lsp-pyright)
+                   (lsp-deferred))))
+
+
+
+

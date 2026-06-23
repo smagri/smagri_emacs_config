@@ -1,0 +1,112 @@
+;; ============================================================
+;; Minimal LSP IntelliSense test config
+;; Start with:
+;;   emacs -q -l ~/.emacs.lsp-test test.cpp
+;; ============================================================
+
+(require 'package)
+
+(add-to-list 'package-archives
+             '("gnu" . "https://elpa.gnu.org/packages/") t)
+
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/") t)
+
+(package-initialize)
+
+;; Make sure Emacs can find programs installed in normal shell locations.
+;; This is especially useful with GUI/snap Emacs.
+(setq exec-path
+      (append exec-path
+              '("/usr/bin"
+                "/usr/local/bin")
+              (list (expand-file-name "~/.local/bin"))))
+
+(setenv "PATH"
+        (concat "/usr/bin:/usr/local/bin:"
+                (expand-file-name "~/.local/bin")
+                ":"
+                (or (getenv "PATH") "")))
+
+;; Install use-package if missing.
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(require 'use-package)
+
+(use-package company
+  :ensure t
+  :init
+  (global-company-mode 1)
+  :config
+  (setq company-idle-delay 0.2)
+  (setq company-minimum-prefix-length 1)
+  (setq company-show-numbers t)
+  (setq company-tooltip-limit 30))
+
+(use-package yasnippet
+  :ensure t
+  :init
+  (yas-global-mode 1))
+
+(use-package flycheck
+  :ensure t
+  :init
+  (global-flycheck-mode 1))
+
+;; Treat Arduino .ino files as C++ files.
+(add-to-list 'auto-mode-alist '("\\.ino\\'" . c++-mode))
+
+(use-package lsp-mode
+  :ensure t
+  :commands (lsp lsp-deferred)
+  :hook
+  ((c-mode   . lsp-deferred)
+   (c++-mode . lsp-deferred))
+  :config
+  ;; LSP completion uses company-capf.
+  ;; lsp-mode documents :capf as the company-capf backend provider.
+  (setq lsp-completion-provider :capf)
+
+  ;; Keep your normal Emacs syntax highlighting colours.
+  (setq lsp-semantic-tokens-enable nil)
+
+  ;; Keep yasnippet working.
+  (setq lsp-enable-snippet t)
+
+  ;; Use flycheck rather than flymake.
+  (setq lsp-prefer-flymake nil)
+
+  ;; Basic clangd settings.
+  (setq lsp-clients-clangd-args
+        '("--header-insertion=never"
+          "--completion-style=detailed")))
+
+(use-package lsp-pyright
+  :ensure t
+  :after lsp-mode
+  :hook
+  (python-mode . (lambda ()
+                   (require 'lsp-pyright)
+                   (lsp-deferred))))
+
+;; In LSP buffers, force company to use the LSP completion backend.
+(add-hook 'lsp-mode-hook
+          (lambda ()
+            (company-mode 1)
+            (setq-local company-minimum-prefix-length 1)
+            (setq-local company-backends
+                        '((company-capf :with company-yasnippet company-files)))))
+
+(defun simones-lsp-debug-status ()
+  "Show useful LSP debug information."
+  (interactive)
+  (message
+   "major-mode=%s, lsp-mode=%s, clangd=%s, pyright-langserver=%s, company-backends=%S"
+   major-mode
+   (if (bound-and-true-p lsp-mode) "ON" "OFF")
+   (or (executable-find "clangd") "NOT FOUND")
+   (or (executable-find "pyright-langserver") "NOT FOUND")
+   company-backends))
+
