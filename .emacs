@@ -329,6 +329,15 @@
   )
 
 
+
+;; ============================================================
+;; Automatically insert matching brackets, braces, parentheses,
+;; and quotes.
+;; ============================================================
+(electric-pair-mode 1)
+
+
+
 ;; Personal general key mappings, put here so other mode remappings
 ;; get overridden, I don't like it when that happens.
 ;;(global-set-key (kbd "\C-cg")   'goto-line)
