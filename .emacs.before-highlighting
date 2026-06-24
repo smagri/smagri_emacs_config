@@ -240,29 +240,3 @@
 ;;; ------------------------------------------------------------
 ;;; End of pristine .emacs
 ;;; ------------------------------------------------------------
-
-;;; Emacs highlighting configuration
-;;;
-(global-font-lock-mode 1)
-(setq font-lock-maximum-decoration t)
-
-(when (boundp 'treesit-font-lock-level)
-  (setq treesit-font-lock-level 4))
-
-(show-paren-mode 1)
-(setq show-paren-delay 0)
-(setq show-paren-style 'parenthesis)
-
-(global-hl-line-mode 1)
-
-;;; Exact old highlighting colours
-;;;
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Liberation Mono" :foundry "1ASC" :background "#000015" :foreground "white" :slant normal :weight normal :height 100 :width normal))))
- '(font-lock-comment-face ((((class color)) (:foreground "MediumSeaGreen"))))
- '(font-lock-type-face ((((class color)) (:foreground "plum"))))
- '(font-lock-variable-name-face ((((class color)) (:foreground "#FF4277")))))
