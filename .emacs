@@ -521,6 +521,28 @@
 
 
 
+;; ============================================================
+;; AVR register/function highlighting
+;; Highlight AVR registers and functions.  This will make the main AVR
+;; symbols colored like keywords. You can extend the list with any                                                  
+;; registers you use.                                                                    
+;; Cosmetic only. Safe with lsp-mode/company.
+;; ============================================================
+
+(defun smagri-avr-highlighting ()
+  "Highlight common AVR register names and AVR delay functions."
+  (font-lock-add-keywords
+   nil
+   '(("\\<\\(DDRB\\|PORTB\\|PINB\\|DDRC\\|PORTC\\|PINC\\|DDRD\\|PORTD\\|PIND\\|TCCR0A\\|TCCR0B\\|TCCR1A\\|TCCR1B\\|TCCR2A\\|TCCR2B\\|OCR0A\\|OCR0B\\|OCR1A\\|OCR1B\\|OCR2A\\|OCR2B\\|TIMSK0\\|TIMSK1\\|TIMSK2\\|EIMSK\\|EIFR\\|PCICR\\|PCMSK0\\|PCMSK1\\|PCMSK2\\|ADMUX\\|ADCSRA\\|ADCSRB\\|ADCL\\|ADCH\\|UDR0\\|UCSR0A\\|UCSR0B\\|UCSR0C\\|UBRR0H\\|UBRR0L\\|_delay_ms\\|_delay_us\\)\\>"
+      . font-lock-keyword-face)))
+  (font-lock-flush))
+
+(add-hook 'c-mode-hook #'smagri-avr-highlighting)
+(add-hook 'c++-mode-hook #'smagri-avr-highlighting)
+(add-hook 'arduino-mode-hook #'smagri-avr-highlighting)
+
+
+
 ;; Personal general key mappings, put here so other mode remappings
 ;; get overridden, I don't like it when that happens.
 ;;(global-set-key (kbd "\C-cg")   'goto-line)
