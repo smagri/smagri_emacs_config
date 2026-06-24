@@ -231,16 +231,28 @@
 
 
 
+
 ;;; ------------------------------------------------------------
 ;;; Custom C / C++ / Arduino / Python editing settings
 ;;; Safe with lsp-mode/company
 ;;; ------------------------------------------------------------
 
+;;; ------------------------------------------------------------
+;;; Make RET auto-indent in C / C++ / Arduino / Python
+;;; ------------------------------------------------------------
+
+(electric-indent-mode 1)
+
+;; C / C++ / Arduino .ino
+;; .ino files are opened as c++-mode in your config, so this covers them too.
 (defun simones-c-mode-hook ()
   "Set up Simone's C editing style."
-  (setq-local c-basic-offset 2)
+  (c-set-style "linux")
+
+  ;; C indent = 4 spaces
+  (setq-local c-basic-offset 4)
   (setq-local indent-tabs-mode nil)
-  (setq-local tab-width 2)
+  (setq-local tab-width 4)
 
   ;; Brace / colon behaviour
   (setq-local c-hanging-braces-alist
@@ -252,9 +264,9 @@
 
   ;; Indentation rules
   (c-set-offset 'substatement-open 0)
-  (c-set-offset 'statement-case-intro 2)
-  (c-set-offset 'case-label 2)
-  (c-set-offset 'statement-case-open 2)
+  (c-set-offset 'statement-case-intro 4)
+  (c-set-offset 'case-label 4)
+  (c-set-offset 'statement-case-open 4)
 
   (setq-local c-comment-only-line-offset 0)
 
@@ -264,6 +276,9 @@
 
 (defun simones-c++-mode-hook ()
   "Set up Simone's C++ / Arduino editing style."
+  (c-set-style "linux")
+
+  ;; C++ / Arduino indent = 4 spaces
   (setq-local c-basic-offset 4)
   (setq-local indent-tabs-mode nil)
   (setq-local tab-width 4)
@@ -292,10 +307,24 @@
   (setq-local tab-width 4))
 
 
-;; Use add-hook, do not overwrite the whole hook variable.
+;; Use add-hook. Do not overwrite the whole hook variable.
 (add-hook 'c-mode-hook #'simones-c-mode-hook)
 (add-hook 'c++-mode-hook #'simones-c++-mode-hook)
 (add-hook 'python-mode-hook #'simones-python-mode-hook)
+
+(with-eval-after-load 'cc-mode
+  (define-key c-mode-base-map (kbd "RET") #'c-context-line-break)
+  (define-key c-mode-base-map (kbd "<return>") #'c-context-line-break)
+  (define-key c-mode-base-map (kbd "C-m") #'c-context-line-break))
+
+;; Python
+(with-eval-after-load 'python
+  (define-key python-mode-map (kbd "RET") #'newline-and-indent)
+  (define-key python-mode-map (kbd "<return>") #'newline-and-indent)
+  (define-key python-mode-map (kbd "C-m") #'newline-and-indent))
+
+
+
 
 
 
