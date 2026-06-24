@@ -60,7 +60,7 @@
 (setq ring-bell-function 'ignore)
 
 ;; Show line numbers in programming buffers.
-;;(add-hook 'prog-mode-hook #'display-line-numbers-mode)
+;; (add-hook 'prog-mode-hook #'display-line-numbers-mode)
 
 ;; Highlight matching brackets.
 (show-paren-mode 1)
@@ -79,36 +79,6 @@
 
 ;; Treat .h files as C++ by default.
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-
-
-;;; ------------------------------------------------------------
-;;; Completion popup: company-mode
-;;; ------------------------------------------------------------
-
-(use-package company
-  :hook (after-init . global-company-mode)
-  :custom
-  ;; Start suggestions quickly.
-  (company-idle-delay 0.2)
-
-  ;; Start suggesting after 1 character.
-  (company-minimum-prefix-length 1)
-
-  ;; lsp-mode provides completions through completion-at-point.
-  (company-backends '(company-capf))
-
-  ;; Show numbers in the completion list.
-  (company-show-numbers t)
-
-  ;; Keep popup aligned.
-  (company-tooltip-align-annotations t)
-
-  :bind
-  (:map company-active-map
-        ("TAB" . company-complete-selection)
-        ("<tab>" . company-complete-selection)
-        ("RET" . company-complete-selection)
-        ("<return>" . company-complete-selection)))
 
 
 ;;; ------------------------------------------------------------
