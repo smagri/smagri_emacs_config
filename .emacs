@@ -232,18 +232,71 @@
 
 
 ;;; ------------------------------------------------------------
-;;; C / C++ indentation preferences
+;;; Custom C / C++ / Arduino / Python editing settings
+;;; Safe with lsp-mode/company
 ;;; ------------------------------------------------------------
 
-(setq-default c-basic-offset 4)
+(defun simones-c-mode-hook ()
+  "Set up Simone's C editing style."
+  (setq-local c-basic-offset 2)
+  (setq-local indent-tabs-mode nil)
+  (setq-local tab-width 2)
 
-(defun simone-c-cpp-style ()
-  "Simple C/C++ style settings."
-  (setq c-basic-offset 4)
-  (setq indent-tabs-mode nil))
+  ;; Brace / colon behaviour
+  (setq-local c-hanging-braces-alist
+              '((brace-list-open)
+                (brace-list-close)))
 
-(add-hook 'c-mode-hook #'simone-c-cpp-style)
-(add-hook 'c++-mode-hook #'simone-c-cpp-style)
+  (setq-local c-hanging-colons-alist
+              '((case-label after)))
+
+  ;; Indentation rules
+  (c-set-offset 'substatement-open 0)
+  (c-set-offset 'statement-case-intro 2)
+  (c-set-offset 'case-label 2)
+  (c-set-offset 'statement-case-open 2)
+
+  (setq-local c-comment-only-line-offset 0)
+
+  ;; Keep old comment style preference
+  (c-toggle-comment-style -1))
+
+
+(defun simones-c++-mode-hook ()
+  "Set up Simone's C++ / Arduino editing style."
+  (setq-local c-basic-offset 4)
+  (setq-local indent-tabs-mode nil)
+  (setq-local tab-width 4)
+
+  ;; Brace / colon behaviour
+  (setq-local c-hanging-braces-alist
+              '((brace-list-open)
+                (brace-list-close)))
+
+  (setq-local c-hanging-colons-alist
+              '((case-label after)))
+
+  ;; Indentation rules
+  (c-set-offset 'substatement-open 0)
+  (c-set-offset 'statement-case-intro 4)
+  (c-set-offset 'case-label 4)
+  (c-set-offset 'statement-case-open 4)
+
+  (setq-local c-comment-only-line-offset 0))
+
+
+(defun simones-python-mode-hook ()
+  "Set up Simone's Python editing style."
+  (setq-local python-indent-offset 4)
+  (setq-local indent-tabs-mode nil)
+  (setq-local tab-width 4))
+
+
+;; Use add-hook, do not overwrite the whole hook variable.
+(add-hook 'c-mode-hook #'simones-c-mode-hook)
+(add-hook 'c++-mode-hook #'simones-c++-mode-hook)
+(add-hook 'python-mode-hook #'simones-python-mode-hook)
+
 
 
 ;;; ------------------------------------------------------------
@@ -332,29 +385,32 @@
 
 
 
-;; gdb IDE-like interface                                                                                           
-;;                                                                                                                  
-(setq                                                                                                               
-;; use gdb-many-windows by default                                                                                  
- gdb-many-windows t                                                                                                 
-                                                                                                                    
-;; Non-nil means display source file containing the main routine at startup                                         
+
+;; gdb IDE-like interface
+;;
+(setq
+;; use gdb-many-windows by default
+ gdb-many-windows t
+
+;; Non-nil means display source file containing the main routine at startup
  gdb-show-main t
+ 
  )
-;;                                                                                                                  
-;; sidebar/fringe of a buffer                                                                                       
-;;                                                                                                                  
-;; very useful for gdb/GUD debugging                                                                                
-;;                                                                                                                  
-;; make both fringes 4 pixels wide                                                                                  
-;; (fringe-mode 4)                                                                                                  
-;;                                                                                                                  
-;; ;; make the left fringe 4 pixels wide and the right disappear                                                    
-;; (fringe-mode '(4 . 0))                                                                                           
-;;                                                                                                                  
-;; ;; restore the default sizes == 8pixels,(rounded to multiple)                                                    
-;; (fringe-mode nil)                                                                                                
-(fringe-mode '(32 . 0))                                                                                             
+;;
+;; sidebar/fringe of a buffer
+;;
+;; very useful for gdb/GUD debugging
+;;
+;; make both fringes 4 pixels wide
+;; (fringe-mode 4)
+;;
+;; ;; make the left fringe 4 pixels wide and the right disappear
+;; (fringe-mode '(4 . 0))
+;;
+;; ;; restore the default sizes == 8pixels,(rounded to multiple)
+;; (fringe-mode nil)
+(fringe-mode '(32 . 0))
+
 
  
 
@@ -366,37 +422,38 @@
 
 
 
+;; set titlebar to path/filename:
+;;
+;; sets filename with full path %f
+;; major mode type %m
+;; narrow if appropriate %n
+;; biffer name %b
+;;
+;; /lu1/smagri
+;; (when window-system
+;;   (setq-default frame-title-format '("%f [%m] %n"))
+;;   (setq frame-title-format '((:eval default-directory)))
+;;   )
 
-;; set titlebar to path/filename:                                                                                   
-;;                                                                                                                  
-;; sets filename with full path %f                                                                                  
-;; major mode type %m                                                                                               
-;; narrow if appropriate %n                                                                                         
-;; biffer name %b                                                                                                   
-;;                                                                                                                  
-;; /lu1/smagri                                                                                                      
-;; (when window-system                                                                                              
-;;   (setq-default frame-title-format '("%f [%m] %n"))                                                              
-;;   (setq frame-title-format '((:eval default-directory)))                                                         
-;;   )                                                                                                              
-                                                                                                                    
-;; directories ~/                                                                                                   
-;; filenames /lu1/smagri                                                                                            
-(setq frame-title-format                                                                                            
-      '(buffer-file-name "%f [%m] %n"                                                                               
-             (dired-directory dired-directory "%b")))                                                               
-                                                                                                                    
-;; emacs -nw                                                                                                        
-;;                                                                                                                  
-(defun xterm-title-update ()                                                                                        
-  (interactive)                                                                                                     
-  (send-string-to-terminal (concat "\033]1; " (buffer-name) "\007"))                                                
-  (if buffer-file-name                                                                                              
-      (send-string-to-terminal (concat "\033]2; " (buffer-file-name) "\007"))                                       
-    (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007")))                                             
-  )
+;; directories ~/
+;; filenames /lu1/smagri
+(setq frame-title-format
+      '(buffer-file-name "%f [%m] %n"
+			 (dired-directory dired-directory "%b")))
+
+;; emacs -nw
+;;
+(defun xterm-title-update ()
+  (interactive)
+  (send-string-to-terminal (concat "\033]1; " (buffer-name) "\007"))
+  (if buffer-file-name
+      (send-string-to-terminal (concat "\033]2; " (buffer-file-name) "\007"))
+    (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007")))
+)
 ;; This would run it constantly after every command, probably unecessary
 ;;(add-hook 'post-command-hook 'xterm-title-update)
+
+
 
 
 ;; ============================================================
@@ -540,6 +597,7 @@
 (add-hook 'c-mode-hook #'smagri-avr-highlighting)
 (add-hook 'c++-mode-hook #'smagri-avr-highlighting)
 (add-hook 'arduino-mode-hook #'smagri-avr-highlighting)
+
 
 
 
