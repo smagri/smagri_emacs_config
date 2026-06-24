@@ -5,6 +5,13 @@
 ;;;
 ;;; Important:
 ;;; Python is forced to use pyright, not pylsp.
+;;;
+;; Now you will have:
+;; Auto-completion / IntelliSense
+;; Function signatures on hover
+;; Go-to-definition (M-.) / References (M-?)
+;; Rename symbols (M-x lsp-rename)
+;; Diagnostics / linting via Flycheck
 ;;; ------------------------------------------------------------
 
 
@@ -53,7 +60,7 @@
 (setq ring-bell-function 'ignore)
 
 ;; Show line numbers in programming buffers.
-(add-hook 'prog-mode-hook #'display-line-numbers-mode)
+;;(add-hook 'prog-mode-hook #'display-line-numbers-mode)
 
 ;; Highlight matching brackets.
 (show-paren-mode 1)
@@ -203,6 +210,55 @@
                    (lsp-deferred))))
 
 
+
+;;; ------------------------------------------------------------
+;;; Completion popup: company-mode
+;;; ------------------------------------------------------------
+
+(use-package company
+  :hook (after-init . global-company-mode)
+  :custom
+  ;; Start suggestions quickly.
+  (company-idle-delay 0.2)
+
+  ;; Start suggesting after 1 character.
+  (company-minimum-prefix-length 1)
+
+  ;; lsp-mode provides completions through completion-at-point.
+  (company-backends '(company-capf))
+
+  ;; Show numbers in the completion list.
+  (company-show-numbers t)
+
+  ;; Keep popup aligned.
+  (company-tooltip-align-annotations t)
+
+  :bind
+  (:map company-active-map
+        ("TAB" . company-complete-selection)
+        ("<tab>" . company-complete-selection)
+        ("RET" . company-complete-selection)
+        ("<return>" . company-complete-selection)))
+
+;; ============================================================
+;; Company completion popup keys
+;; C-n/C-p move through suggestions.
+;; RET accepts suggestion.
+;; TAB is left free for indentation/yasnippet.
+;; ============================================================
+
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "C-n") #'company-select-next)
+  (define-key company-active-map (kbd "C-p") #'company-select-previous)
+  (define-key company-active-map (kbd "RET") #'company-complete-selection)
+  (define-key company-active-map (kbd "<return>") #'company-complete-selection)
+
+  ;; Keep TAB free for indentation/yasnippet
+  (define-key company-active-map (kbd "TAB") nil)
+  (define-key company-active-map (kbd "<tab>") nil))
+
+
+
 ;;; ------------------------------------------------------------
 ;;; C / C++ indentation preferences
 ;;; ------------------------------------------------------------
@@ -266,3 +322,56 @@
  '(font-lock-comment-face ((((class color)) (:foreground "MediumSeaGreen"))))
  '(font-lock-type-face ((((class color)) (:foreground "plum"))))
  '(font-lock-variable-name-face ((((class color)) (:foreground "#FF4277")))))
+
+
+
+;; Howto launch meld from emacs
+;;
+;; M-x meld-files
+(defun meld-files (file1 file2)
+  "Run Meld on two files."
+  (interactive "fFile 1: \nfFile 2: ")
+  (start-process "meld" nil "/usr/bin/meld"
+                 (expand-file-name file1)
+                 (expand-file-name file2)))
+
+
+
+;; add yasnippet to modes, ie AUTO-COMPLETION of LANGUAGE PRIMATIVES
+;;
+;; type 'yas-describe-tables' to determine the snippets available in
+;; the current mode
+;;
+;; see@5:37min 4 this cleaner settup https://www.youtube.com/watch?v=4aYMa8f6B0o
+;;
+(use-package yasnippet ;; install package
+  :diminish 
+  :ensure t ;; install package if not already installed
+  :config   ;; execute code after package is loaded
+  :init     ;; execute code before package is loaded
+  (yas-global-mode 1) ;; enables yasnippet in all modes
+  (use-package yasnippet-snippets  ;; package dependancy
+    :diminish
+    :ensure t
+    )
+  (yas-reload-all) ;; seems important when you write your own snippets
+
+  )
+
+
+;; Personal general key mappings, put here so other mode remappings
+;; get overridden, I don't like it when that happens.
+;;(global-set-key (kbd "\C-cg")   'goto-line)
+;;
+;; New way these should be written.
+;;(global-set-key (kbd "C-c c") #'comment-or-uncomment-region)
+(global-set-key "\C-cwl"	'what-line)
+(global-set-key "\C-cfj"	'set-justification-full)
+(global-set-key	"\C-ci"		'indent-region)
+(global-set-key	"\C-cm"		'menu-bar-mode)
+(global-set-key	"\C-cc"     'comment-or-uncomment-region)
+(global-set-key	"\C-cpl"	'compile)
+(global-set-key	"\C-cds"	'desktop-save)
+(global-set-key	"\C-cdr"	'desktop-read)
+(global-set-key	"\C-xb"		'ibuffer)
+(global-set-key (kbd "C-c f m") #'meld-files)
