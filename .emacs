@@ -341,6 +341,20 @@
 ;; Non-nil means display source file containing the main routine at startup                                         
  gdb-show-main t
  )
+;;                                                                                                                  
+;; sidebar/fringe of a buffer                                                                                       
+;;                                                                                                                  
+;; very useful for gdb/GUD debugging                                                                                
+;;                                                                                                                  
+;; make both fringes 4 pixels wide                                                                                  
+;; (fringe-mode 4)                                                                                                  
+;;                                                                                                                  
+;; ;; make the left fringe 4 pixels wide and the right disappear                                                    
+;; (fringe-mode '(4 . 0))                                                                                           
+;;                                                                                                                  
+;; ;; restore the default sizes == 8pixels,(rounded to multiple)                                                    
+;; (fringe-mode nil)                                                                                                
+(fringe-mode '(32 . 0))                                                                                             
 
  
 
@@ -350,6 +364,37 @@
 ;; ============================================================
 (electric-pair-mode 1)
 
+
+;; set titlebar to path/filename:                                                                                   
+;;                                                                                                                  
+;; sets filename with full path %f                                                                                  
+;; major mode type %m                                                                                               
+;; narrow if appropriate %n                                                                                         
+;; biffer name %b                                                                                                   
+;;                                                                                                                  
+;; /lu1/smagri                                                                                                      
+;; (when window-system                                                                                              
+;;   (setq-default frame-title-format '("%f [%m] %n"))                                                              
+;;   (setq frame-title-format '((:eval default-directory)))                                                         
+;;   )                                                                                                              
+                                                                                                                    
+;; directories ~/                                                                                                   
+;; filenames /lu1/smagri                                                                                            
+(setq frame-title-format                                                                                            
+      '(buffer-file-name "%f [%m] %n"                                                                               
+             (dired-directory dired-directory "%b")))                                                               
+                                                                                                                    
+;; emacs -nw                                                                                                        
+;;                                                                                                                  
+(defun xterm-title-update ()                                                                                        
+  (interactive)                                                                                                     
+  (send-string-to-terminal (concat "\033]1; " (buffer-name) "\007"))                                                
+  (if buffer-file-name                                                                                              
+      (send-string-to-terminal (concat "\033]2; " (buffer-file-name) "\007"))                                       
+    (send-string-to-terminal (concat "\033]2; " (buffer-name) "\007")))                                             
+  )
+;; This would run it constantly after every command, probably unecessary
+;;(add-hook 'post-command-hook 'xterm-title-update)
 
 
 ;; Personal general key mappings, put here so other mode remappings
