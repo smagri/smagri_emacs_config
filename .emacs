@@ -223,9 +223,11 @@
   (define-key company-active-map (kbd "RET") #'company-complete-selection)
   (define-key company-active-map (kbd "<return>") #'company-complete-selection)
 
-  ;; Keep TAB free for indentation/yasnippet
+;; Need them for tab completion in suggestions 
+;;   ;; Keep TAB free for indentation/yasnippet
   (define-key company-active-map (kbd "TAB") nil)
-  (define-key company-active-map (kbd "<tab>") nil))
+  (define-key company-active-map (kbd "<tab>") nil)
+  )
 
 
 
@@ -329,6 +331,18 @@
   )
 
 
+
+;; gdb IDE-like interface                                                                                           
+;;                                                                                                                  
+(setq                                                                                                               
+;; use gdb-many-windows by default                                                                                  
+ gdb-many-windows t                                                                                                 
+                                                                                                                    
+;; Non-nil means display source file containing the main routine at startup                                         
+ gdb-show-main t
+ )
+
+ 
 
 ;; ============================================================
 ;; Automatically insert matching brackets, braces, parentheses,
