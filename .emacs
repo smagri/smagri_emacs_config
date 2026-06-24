@@ -497,6 +497,29 @@
 
 
 
+;; chatGPT: But for now, I would leave both out until the rest of your .emacs is stable.
+;; (add-to-list 'load-path "~/.emacs.d/custom")
+;; (require 'setup-helm)
+;; (require 'setup-helm-gtags)
+
+
+
+
+;; ============================================================
+;; Diminish
+;; Hide minor-mode names from the mode line
+;; Cosmetic only
+;; ============================================================
+(use-package diminish
+  :ensure t)
+
+(with-eval-after-load 'abbrev
+  (diminish 'abbrev-mode ""))
+
+(with-eval-after-load 'yasnippet
+  (diminish 'yas-minor-mode ""))
+
+
 
 ;; Personal general key mappings, put here so other mode remappings
 ;; get overridden, I don't like it when that happens.
