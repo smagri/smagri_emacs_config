@@ -365,6 +365,8 @@
 (electric-pair-mode 1)
 
 
+
+
 ;; set titlebar to path/filename:                                                                                   
 ;;                                                                                                                  
 ;; sets filename with full path %f                                                                                  
@@ -395,6 +397,105 @@
   )
 ;; This would run it constantly after every command, probably unecessary
 ;;(add-hook 'post-command-hook 'xterm-title-update)
+
+
+;; ============================================================
+;; Menu bar, tool bar, scroll bar
+;; ============================================================
+
+;; Keep menu bar visible
+(menu-bar-mode 1)
+
+;; Keep toolbar visible, if available
+(when (fboundp 'tool-bar-mode)
+  (tool-bar-mode 1))
+
+;; Hide scrollbar, if available
+(when (fboundp 'scroll-bar-mode)
+  (scroll-bar-mode -1))
+
+
+
+;; ============================================================
+;; Treemacs
+;; IDE-like file/project navigation
+;; Safe with lsp-mode/company IntelliSense
+;; ============================================================
+(use-package treemacs
+  :ensure t
+  :diminish
+  :defer t
+  :init
+  (with-eval-after-load 'winum
+    (define-key winum-keymap (kbd "M-0") #'treemacs-select-window))
+
+  :config
+  (setq treemacs-collapse-dirs                 (if treemacs-python-executable 3 0)
+        treemacs-deferred-git-apply-delay      0.5
+        treemacs-display-in-side-window        t
+        treemacs-eldoc-display                 t
+        treemacs-file-event-delay              5000
+        treemacs-file-follow-delay             0.2
+        treemacs-follow-after-init             t
+        treemacs-goto-tag-strategy             'refetch-index
+        treemacs-indentation                   2
+        treemacs-indentation-string            " "
+        treemacs-is-never-other-window         nil
+        treemacs-max-git-entries               5000
+        treemacs-missing-project-action        'ask
+        treemacs-no-delete-other-windows       t
+        treemacs-position                      'left
+        treemacs-show-cursor                   nil
+        treemacs-show-hidden-files             t
+        treemacs-sorting                       'alphabetic-asc
+        treemacs-space-between-root-nodes      t
+        treemacs-width                         35)
+
+  ;; Enable Treemacs helper modes
+  (treemacs-follow-mode t)
+  (treemacs-filewatch-mode t)
+  (treemacs-fringe-indicator-mode t)
+
+  ;; Only works in  treemacs-version greater than 3.3,  but only 3.2
+  ;; is stable  from melpa Auto-save and  restore Treemacs workspace
+  ;; (projects, folders, window width)
+  ;;(treemacs-save-workspace-mode 1)   ;; enable persistent workspaces
+  ;; chatGPT  I would still keep persistence disabled until your Emacs setup is stable.
+  
+  ;; Git integration
+  (pcase (cons (not (null (executable-find "git")))
+               (not (null treemacs-python-executable)))
+    (`(t . t)
+     (treemacs-git-mode 'deferred))
+    (`(t . _)
+     (treemacs-git-mode 'simple)))
+
+  :bind
+  (:map global-map
+        ("M-0"       . treemacs-select-window)
+        ("C-x t 1"   . treemacs-delete-other-windows)
+        ("C-x t t"   . treemacs)
+        ("C-x t B"   . treemacs-bookmark)
+        ("C-x t C-t" . treemacs-find-file)
+        ("C-x t M-t" . treemacs-find-tag)))
+
+
+
+;; package projectile
+;;
+;; most useful commands(but I think treemacs-helm combination makes
+;; this useless for finding the 'other' files). 'other' files are same
+;; name but different type, eg ranger.cpp to ranger.h
+;;
+;; projectile-find-other-file-other-window
+;; projectile-find-other-file-other-buffer
+;;
+;; (use-package projectile-mode-line
+;;   :init
+;;   (projectile-global-mode)
+;;   (setq projectile-enable-caching t))
+
+
 
 
 ;; Personal general key mappings, put here so other mode remappings
