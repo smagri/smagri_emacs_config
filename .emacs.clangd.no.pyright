@@ -2,21 +2,7 @@
 ;;; Pristine Emacs 30.2 configuration for IntelliSense
 ;;; C / C++ / Arduino .ino / Python
 ;;; Uses: lsp-mode + company + flycheck
-;;;
-;;; Important:
-;;; Python is forced to use pyright, not pylsp.
 ;;; ------------------------------------------------------------
-
-
-;;; ------------------------------------------------------------
-;;; Make Emacs find user-installed command-line tools
-;;; Needed for pyright / pyright-langserver in ~/.local/bin
-;;; ------------------------------------------------------------
-
-(let ((local-bin "/home/smagri/.local/bin"))
-  (add-to-list 'exec-path local-bin)
-  (setenv "PATH" (concat local-bin path-separator (getenv "PATH"))))
-
 
 ;;; ------------------------------------------------------------
 ;;; Package setup
@@ -64,17 +50,6 @@
 
 
 ;;; ------------------------------------------------------------
-;;; Arduino / C / C++ file associations
-;;; ------------------------------------------------------------
-
-;; Treat Arduino .ino files as C++ files.
-(add-to-list 'auto-mode-alist '("\\.ino\\'" . c++-mode))
-
-;; Treat .h files as C++ by default.
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-
-
-;;; ------------------------------------------------------------
 ;;; Completion popup: company-mode
 ;;; ------------------------------------------------------------
 
@@ -87,10 +62,11 @@
   ;; Start suggesting after 1 character.
   (company-minimum-prefix-length 1)
 
-  ;; lsp-mode provides completions through completion-at-point.
+  ;; Use normal completion-at-point backend.
+  ;; This is what lsp-mode uses now.
   (company-backends '(company-capf))
 
-  ;; Show numbers in the completion list.
+  ;; Show numbers in completion list.
   (company-show-numbers t)
 
   ;; Keep popup aligned.
@@ -114,31 +90,44 @@
 
 
 ;;; ------------------------------------------------------------
+;;; Make Emacs find user-installed command-line tools
+;;; Needed for pyright / pyright-langserver installed in ~/.local/bin
+;;; ------------------------------------------------------------
+
+(let ((local-bin "/home/smagri/.local/bin"))
+  (add-to-list 'exec-path local-bin)
+  (setenv "PATH" (concat local-bin path-separator (getenv "PATH"))))
+
+
+;;; ------------------------------------------------------------
+;;; Python IntelliSense using pyright
+;;; ------------------------------------------------------------
+
+(use-package lsp-pyright
+  :after lsp-mode
+  :custom
+  (lsp-pyright-langserver-command "/home/smagri/.local/bin/pyright-langserver")
+  :hook (python-mode . (lambda ()
+                         (require 'lsp-pyright)
+                         (lsp-deferred))))
+
+
+;;; ------------------------------------------------------------
 ;;; LSP mode: main IntelliSense engine
 ;;; ------------------------------------------------------------
 
 (use-package lsp-mode
-  ;;  :commands (lsp lsp-deferred)
-  :demand t
-
-  ;; IMPORTANT:
-  ;; Do not put python-mode here.
-  ;; Python is started separately through lsp-pyright below.
+  :commands (lsp lsp-deferred)
   :hook
-  ((c-mode   . lsp-deferred)
-   (c++-mode . lsp-deferred))
-
-  :init
-  ;; Force lsp-mode not to choose pylsp.
-  ;; Your lsp-describe-session showed pylsp was being selected.
-  ;; We want pyright instead.
-  (setq lsp-disabled-clients '(pylsp pyls mspyls jedi-language-server))
+  ((c-mode          . lsp-deferred)
+   (c++-mode        . lsp-deferred)
+   (python-mode     . lsp-deferred))
 
   :custom
-  ;; Use company-capf for completion.
+  ;; Makes lsp-mode use company-capf, not old company-lsp.
   (lsp-completion-provider :capf)
 
-  ;; Keep interface simpler.
+  ;; Keep UI simpler.
   (lsp-headerline-breadcrumb-enable nil)
   (lsp-lens-enable nil)
 
@@ -150,14 +139,10 @@
   (lsp-diagnostics-provider :flycheck)
 
   ;; clangd is the C/C++ language server.
-  (lsp-clients-clangd-executable "/usr/bin/clangd")
-
-  ;; Optional: stop clangd auto-inserting #include lines.
-  ;; Comment this out if you want clangd to suggest includes.
-  (lsp-clients-clangd-args '("--header-insertion=never"))
+  (lsp-clients-clangd-executable "clangd")
 
   :config
-  ;; Useful LSP shortcuts.
+  ;; Useful key shortcuts after LSP starts.
   (define-key lsp-mode-map (kbd "C-c l r") #'lsp-rename)
   (define-key lsp-mode-map (kbd "C-c l a") #'lsp-execute-code-action)
   (define-key lsp-mode-map (kbd "C-c l d") #'lsp-find-definition)
@@ -173,11 +158,11 @@
   :commands lsp-ui-mode
   :hook (lsp-mode . lsp-ui-mode)
   :custom
-  ;; Documentation popup.
+  ;; Documentation popup on the side.
   (lsp-ui-doc-enable t)
   (lsp-ui-doc-delay 0.4)
 
-  ;; Diagnostics/messages on the right side.
+  ;; Show diagnostics on the right edge.
   (lsp-ui-sideline-enable t)
   (lsp-ui-sideline-show-diagnostics t)
   (lsp-ui-sideline-show-hover nil)
@@ -185,28 +170,29 @@
 
 
 ;;; ------------------------------------------------------------
-;;; Python IntelliSense using Pyright
+;;; Python IntelliSense using pyright
 ;;; ------------------------------------------------------------
 
 (use-package lsp-pyright
   :after lsp-mode
-
-  :custom
-  ;; Force lsp-pyright to use your installed pyright command.
-  ;; The lsp-pyright docs show this variable being used
-  ;; to select the Pyright command.
-  (lsp-pyright-langserver-command "/home/smagri/.local/bin/pyright")
-
-  :hook
-  (python-mode . (lambda ()
-                   (require 'lsp-pyright)
-                   (lsp-deferred))))
+  :hook (python-mode . (lambda ()
+                         (require 'lsp-pyright)
+                         (lsp-deferred))))
 
 
 ;;; ------------------------------------------------------------
-;;; C / C++ indentation preferences
+;;; C / C++ / Arduino .ino handling
 ;;; ------------------------------------------------------------
 
+;; Treat .ino files as C++ files.
+;; This lets clangd provide completion for Arduino-style code.
+(add-to-list 'auto-mode-alist '("\\.ino\\'" . c++-mode))
+
+;; Treat .h files as C++ by default.
+;; This is usually better for Arduino/C++ projects.
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
+;; Basic C/C++ formatting preferences.
 (setq-default c-basic-offset 4)
 
 (defun simone-c-cpp-style ()
@@ -219,7 +205,7 @@
 
 
 ;;; ------------------------------------------------------------
-;;; Helpful diagnostic commands
+;;; Helpful LSP diagnostic commands
 ;;; ------------------------------------------------------------
 
 (defun simone-lsp-status ()
