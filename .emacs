@@ -222,12 +222,31 @@
   (define-key company-active-map (kbd "C-p") #'company-select-previous)
   (define-key company-active-map (kbd "RET") #'company-complete-selection)
   (define-key company-active-map (kbd "<return>") #'company-complete-selection)
+  (define-key company-active-map (kbd "TAB") #'company-complete-selection)
+  (define-key company-active-map (kbd "<tab>") #'company-complete-selection)
 
 ;; Need them for tab completion in suggestions 
 ;;   ;; Keep TAB free for indentation/yasnippet
-  (define-key company-active-map (kbd "TAB") nil)
-  (define-key company-active-map (kbd "<tab>") nil)
+  ;;(define-key company-active-map (kbd "TAB") nil)
+  ;;(define-key company-active-map (kbd "<tab>") nil)
   )
+
+
+
+;; ============================================================
+;; Format current buffer using LSP / clangd / clang-format
+;;
+;; Otherwise spaces occur in fn prototypes in cpp mode
+;; ============================================================
+
+(defun smagri-format-buffer ()
+  "Format the current buffer using lsp-mode if available."
+  (interactive)
+  (if (bound-and-true-p lsp-mode)
+      (lsp-format-buffer)
+    (indent-region (point-min) (point-max))))
+
+(global-set-key (kbd "C-c f b") #'smagri-format-buffer)
 
 
 
