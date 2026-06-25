@@ -584,9 +584,9 @@
 
 
 ;; chatGPT: But for now, I would leave both out until the rest of your .emacs is stable.
-;; (add-to-list 'load-path "~/.emacs.d/custom")
-;; (require 'setup-helm)
-;; (require 'setup-helm-gtags)
+(add-to-list 'load-path "~/.emacs.d/custom")
+(require 'setup-helm)
+(require 'setup-helm-gtags)
 
 
 
