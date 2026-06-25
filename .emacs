@@ -70,16 +70,6 @@
 (setq-default tab-width 4)
 
 
-;;; ------------------------------------------------------------
-;;; Arduino / C / C++ file associations
-;;; ------------------------------------------------------------
-
-;; Treat Arduino .ino files as C++ files.
-(add-to-list 'auto-mode-alist '("\\.ino\\'" . c++-mode))
-
-;; Treat .h files as C++ by default.
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-
 
 ;;; ------------------------------------------------------------
 ;;; Syntax checking: flycheck
@@ -246,8 +236,6 @@
       (lsp-format-buffer)
     (indent-region (point-min) (point-max))))
 
-(global-set-key (kbd "C-c f b") #'smagri-format-buffer)
-
 
 
 
@@ -345,8 +333,6 @@
 
 
 
-
-
 ;;; ------------------------------------------------------------
 ;;; Helpful diagnostic commands
 ;;; ------------------------------------------------------------
@@ -430,6 +416,7 @@
   (yas-reload-all) ;; seems important when you write your own snippets
 
   )
+
 
 
 
@@ -647,6 +634,19 @@
 (add-hook 'arduino-mode-hook #'smagri-avr-highlighting)
 
 
+;; ==================================================================
+;; Setup Arduino code
+;;
+;; Treat Arduino .ino files as C++ files for clangd/lsp-mode.
+(add-to-list 'auto-mode-alist '("\\.ino\\'" . c++-mode))
+
+;; Treat .h files as C++ by default.
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
+;; Start LSP/clangd for C, C++, Arduino .ino files opened as c++-mode.
+(with-eval-after-load 'cc-mode
+  (add-hook 'c-mode-hook #'lsp-deferred)
+  (add-hook 'c++-mode-hook #'lsp-deferred))
 
 
 ;; Personal general key mappings, put here so other mode remappings
@@ -665,3 +665,6 @@
 (global-set-key	"\C-cdr"	'desktop-read)
 (global-set-key	"\C-xb"		'ibuffer)
 (global-set-key (kbd "C-c f m") #'meld-files)
+(global-set-key (kbd "C-c l s") #'lsp-restart-workspace)
+(global-set-key (kbd "C-c f b") #'smagri-format-buffer)
+
