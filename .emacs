@@ -155,19 +155,48 @@
 ;;; Python IntelliSense using Pyright
 ;;; ------------------------------------------------------------
 
+;; (use-package lsp-pyright
+;;   :after lsp-mode
+
+  ;; :custom
+  ;; ;; Force lsp-pyright to use your installed pyright command.
+  ;; ;; The lsp-pyright docs show this variable being used
+  ;; ;; to select the Pyright command.
+  ;; (lsp-pyright-langserver-command "/home/smagri/.local/bin/pyright")
+
+  
+;;   :hook
+;;   (python-mode . (lambda ()
+;;                    (require 'lsp-pyright)
+;;                    (lsp-deferred))))
+;;; ------------------------------------------------------------
+;;; Python IntelliSense using Pyright
+;;; Normal Python .py files, not MicroPython
+;;; ------------------------------------------------------------
+
 (use-package lsp-pyright
   :after lsp-mode
 
   :custom
-  ;; Force lsp-pyright to use your installed pyright command.
-  ;; The lsp-pyright docs show this variable being used
-  ;; to select the Pyright command.
-  (lsp-pyright-langserver-command "/home/smagri/.local/bin/pyright")
+  ;; Use your installed pyright command.
+  ;; /home/smagri/.local/bin is already added to exec-path/PATH
+  ;; near the top of your .emacs file.
+  (lsp-pyright-langserver-command "pyright")
 
-  :hook
-  (python-mode . (lambda ()
-                   (require 'lsp-pyright)
-                   (lsp-deferred))))
+  :config
+  (defun smagri-python-lsp-start ()
+    "Start Pyright LSP for normal Python files."
+    (require 'lsp-pyright)
+    (lsp-deferred))
+
+  ;; Normal Python mode.
+  (add-hook 'python-mode-hook #'smagri-python-lsp-start)
+
+  ;; Emacs 30 may use python-ts-mode instead of python-mode.
+  ;; This makes completion work there too.
+  (when (boundp 'python-ts-mode-hook)
+    (add-hook 'python-ts-mode-hook #'smagri-python-lsp-start)))
+
 
 
 
