@@ -269,145 +269,7 @@
 
 
 
-;;; ------------------------------------------------------------
-;;; Fix bad C++ completion spacing on current line only
-;;; Example:
-;;; bool  Controller:: setTolerance(double tolerance){
-;;; becomes:
-;;; bool Controller::setTolerance(double tolerance) {
-;;; ------------------------------------------------------------
 
-;; (defun sm/cpp-fix-function-spacing-current-line ()
-;;   "Fix common bad C++ completion spacing on the current line only."
-;;   (interactive)
-;;   (save-excursion
-;;     (let* ((beg (line-beginning-position))
-;;            (end (line-end-position))
-;;            (line (buffer-substring-no-properties beg end)))
-
-;;       ;; Remove the old line
-;;       (delete-region beg end)
-
-;;       ;; Preserve leading indentation
-;;       (let* ((indent
-;;               (if (string-match "\\`[ \t]*" line)
-;;                   (match-string 0 line)
-;;                 ""))
-;;              (body
-;;               (substring line (length indent))))
-
-;;         ;; Fix spacing in the non-indentation part of the line
-;;         (setq body (replace-regexp-in-string "[ \t]*::[ \t]*" "::" body))
-
-;;         ;; Collapse repeated spaces/tabs into one space
-;;         (setq body (replace-regexp-in-string "[ \t][ \t]+" " " body))
-
-;;         ;; Remove space before function parentheses:
-;;         ;; setTolerance (...) -> setTolerance(...)
-;;         (setq body
-;;               (replace-regexp-in-string
-;;                "\\([A-Za-z_~][A-Za-z0-9_~]*\\)[ \t]+("
-;;                "\\1("
-;;                body))
-
-;;         ;; Put one space before opening brace:
-;;         ;; ) { is preferred instead of ){
-;;         ;; (setq body
-;;         ;;       (replace-regexp-in-string
-;;         ;;        ")[ \t]*{"
-;;         ;;        ") {"
-;;         ;;        body))
-
-;;         ;; Insert fixed line
-;;         (insert indent body)))))
-
-;; ;;(global-set-key (kbd "C-c f l") #'sm/cpp-fix-function-spacing-current-line)
-;; ------------------------------------------------------------
-;; Fix bad C++ completion spacing on current line
-;; Examples:
-;;   Controller:: setTolerance  -> Controller::setTolerance
-;;   u8g2. clearBuffer          -> u8g2.clearBuffer
-;;   obj-> method               -> obj->method
-;; ------------------------------------------------------------
-
-;; (defun smagri-fix-cpp-current-line-spacing ()
-;;   "Fix unwanted spaces inserted by completion on the current C/C++ line."
-;;   (interactive)
-;;   (save-excursion
-;;     (save-restriction
-;;       ;; Only operate on the current line.
-;;       (narrow-to-region (line-beginning-position) (line-end-position))
-
-;;       ;; Fix spaces around ::
-;;       ;; Example: Controller:: setTolerance -> Controller::setTolerance
-;;       (goto-char (point-min))
-;;       (while (re-search-forward
-;;               "\\([A-Za-z_~][A-Za-z0-9_~]*\\)\\s-*::\\s-*\\([A-Za-z_~][A-Za-z0-9_~]*\\)"
-;;               nil t)
-;;         (replace-match "\\1::\\2"))
-
-;;       ;; Fix spaces around .
-;;       ;; Example: u8g2. clearBuffer -> u8g2.clearBuffer
-;;       (goto-char (point-min))
-;;       (while (re-search-forward
-;;               "\\([A-Za-z_][A-Za-z0-9_]*\\)\\s-*\\.\\s-*\\([A-Za-z_][A-Za-z0-9_]*\\)"
-;;               nil t)
-;;         (replace-match "\\1.\\2"))
-
-;;       ;; Fix spaces around ->
-;;       ;; Example: ptr-> method -> ptr->method
-;;       (goto-char (point-min))
-;;       (while (re-search-forward
-;;               "\\([A-Za-z_][A-Za-z0-9_]*\\)\\s-*->\\s-*\\([A-Za-z_][A-Za-z0-9_]*\\)"
-;;               nil t)
-;;         (replace-match "\\1->\\2")))))
-
-;; ;;(global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
-
-
-;;; ------------------------------------------------------------
-;;; Fix bad C++ / Arduino completion spacing on current line
-;;;
-;;; Examples:
-;;;   Controller:: setTolerance  -> Controller::setTolerance
-;;;   u8g2. clearBuffer          -> u8g2.clearBuffer
-;;;   obj-> method               -> obj->method
-;;;
-;;; Use:
-;;;   Put cursor on the bad line, then press C-c f l
-;;; ------------------------------------------------------------
-
-;; (defun smagri-fix-cpp-current-line-spacing ()
-;;   "Remove unwanted spaces around C++ member/function operators on current line."
-;;   (interactive)
-;;   (save-excursion
-;;     (let ((beg (line-beginning-position))
-;;           (end (line-end-position)))
-
-;;       ;; Fix spaces around ->
-;;       ;; obj-> method  or  obj -> method  becomes obj->method
-;;       (goto-char beg)
-;;       (while (re-search-forward "[ \t]*->[ \t]*" end t)
-;;         (replace-match "->" nil nil)
-;;         (setq end (line-end-position)))
-
-;;       ;; Fix spaces around ::
-;;       ;; Controller:: setTolerance becomes Controller::setTolerance
-;;       (goto-char beg)
-;;       (while (re-search-forward "[ \t]*::[ \t]*" end t)
-;;         (replace-match "::" nil nil)
-;;         (setq end (line-end-position)))
-
-;;       ;; Fix spaces around .
-;;       ;; u8g2. clearBuffer becomes u8g2.clearBuffer
-;;       (goto-char beg)
-;;       (while (re-search-forward "[ \t]*\\.[ \t]*" end t)
-;;         (replace-match "." nil nil)
-;;         (setq end (line-end-position)))))
-
-;;   (message "Fixed C++ spacing on current line"))
-
-;; ;;(global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
 ;;; ------------------------------------------------------------
 ;;; Fix bad C++ / Arduino completion spacing on current line
 ;;;
@@ -562,7 +424,6 @@
   (define-key python-mode-map (kbd "RET") #'newline-and-indent)
   (define-key python-mode-map (kbd "<return>") #'newline-and-indent)
   (define-key python-mode-map (kbd "C-m") #'newline-and-indent))
-
 
 
 
@@ -887,10 +748,16 @@
 (add-hook 'c++-mode-hook #'lsp-deferred)
 
 ;; IntelliSense in cpp files that have arduino libraries in them
+;; (setq lsp-clients-clangd-args
+;;       '("--background-index"
+;;         "--completion-style=detailed"
+;;         "--header-insertion=iwyu"))
+;; IntelliSense in cpp files that have Arduino libraries in them.
+;; Use bundled completion to avoid weird inserted completion prefixes.
 (setq lsp-clients-clangd-args
       '("--background-index"
-        "--completion-style=detailed"
-        "--header-insertion=iwyu"))
+        "--completion-style=bundled"
+        "--header-insertion=never"))
 
 
 
