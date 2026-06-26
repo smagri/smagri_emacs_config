@@ -2,66 +2,54 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Wed Jun 24 19:58:20 2026
+;; Created Thu Jun 25 20:56:34 2026
 ;; Desktop file format version 208
 ;; Emacs version 30.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (27195 43580 686550 227000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-27-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (frameset--id . "79A2-6D69-E4AE-C610") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (lsp-ui-doc-buffer . "Unprintable entity") (height . 59) (width . 237) (left . 3840) (top . 54)) ((min-height . 8) (min-width . 20) (min-height-ignore . 4) (min-width-ignore . 10) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 256) (min-pixel-width . 320) (min-pixel-height-ignore . 128) (min-pixel-width-ignore . 160) (min-pixel-height-safe . 64) (min-pixel-width-safe . 64)) hc (pixel-width . 3840) (pixel-height . 1868) (total-width . 240) (total-height . 58) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (vc (pixel-width . 1920) (pixel-height . 1868) (total-width . 120) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 1920) (pixel-height . 928) (total-width . 120) (total-height . 29) (normal-height . 0.49678800856531047) (normal-width . 1.0) (buffer "main.cpp.48434.cpp" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1190) (start . 542)) (prev-buffers (".emacs" 1 1539) ("*scratch*" 1 148))) (leaf (last . t) (pixel-width . 1920) (pixel-height . 940) (total-width . 120) (total-height . 29) (normal-height . 0.5032119914346895) (normal-width . 1.0) (buffer "controller.cpp" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 645) (start . 343)) (prev-buffers ("write2sdcardInMicropython.py" 1 438) ("main.cpp.48434.cpp" 542 1191)))) (vc (last . t) (pixel-width . 1920) (pixel-height . 1868) (total-width . 120) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 1920) (pixel-height . 940) (total-width . 120) (total-height . 29) (normal-height . 0.5) (normal-width . 1.0) (buffer ".emacs" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 7018) (start . 6474))) (leaf (last . t) (pixel-width . 1920) (pixel-height . 928) (total-width . 120) (total-height . 29) (normal-height . 0.5) (normal-width . 1.0) (buffer "write2sdcardInMicropython.py" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 438) (start . 1)) (prev-buffers (".emacs" 6474 6654))))))])
+(setq desktop-saved-frameset [frameset 1 (27197 2402 92988 408000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-27-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (lsp-ui-doc-buffer . "Unprintable entity") (frameset--id . "E92A-0F2F-A9B1-10F5") (frameset--mini t . t) (height . 59) (width . 238) (modeline . t) (unsplittable) (left . 3840) (top . 54) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 55) (min-height-ignore . 2) (min-width-ignore . 12) (min-height-safe . 1) (min-width-safe . 6) (min-pixel-height . 128) (min-pixel-width . 880) (min-pixel-height-ignore . 64) (min-pixel-width-ignore . 192) (min-pixel-height-safe . 32) (min-pixel-width-safe . 96)) hc (pixel-width . 3840) (pixel-height . 1868) (total-width . 240) (total-height . 58) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 560) (pixel-height . 1868) (total-width . 35) (total-height . 58) (normal-height . 1.0) (normal-width . 0.14583333333333331) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Buffer-#<frame *scratch* 0x604cef28efb0>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 704) (start . 41))) (hc (last . t) (pixel-width . 3280) (pixel-height . 1868) (total-width . 205) (total-height . 58) (normal-height . 1.0) (normal-width . 0.8541666666666667) (combination-limit) (leaf (pixel-width . 1632) (pixel-height . 1868) (total-width . 102) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5) (buffer "main.cpp" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 22437) (start . 21114)) (prev-buffers ("main.cpp.48434.cpp" 17096 18095) ("*scratch*" 1 147))) (leaf (last . t) (pixel-width . 1648) (pixel-height . 1868) (total-width . 103) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5) (buffer ".emacs" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 21688) (start . 19456)) (prev-buffers ("*scratch*" 1 147))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring nil)
+(setq search-ring '(#("main(" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("d" 0 1 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs.d/" "~/proj/testing.emacs/write2sdcardInMicropython.py" "~/proj/testing.emacs/a1_skeleton.doxygen.experiments/controller.cpp" "~/.emacs.d/" "~/proj/testing.emacs/write2sdcardInMicropython.py" "~/proj/testing.emacs/main.cpp.48434.cpp" "~/smagri_emacs_config/.emacs"))
+(setq file-name-history '("~/.emacs"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/smagri/proj/testing.emacs/write2sdcardInMicropython.py"
-  "write2sdcardInMicropython.py"
-  'python-mode
-  '(company-mode lsp-completion-mode flycheck-mode lsp-diagnostics-mode lsp-modeline-code-actions-mode lsp-modeline-diagnostics-mode lsp-modeline-workspace-status-mode lsp-ui-doc-mode lsp-ui-sideline-mode lsp-ui-mode eldoc-mode lsp-managed-mode lsp-mode yas-minor-mode font-lock-mode)
-  438
-  '(438 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 27195 43578 713589 612000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/smagri/smagri_emacs_config/.emacs"
-  ".emacs"
-  'emacs-lisp-mode
-  '(company-mode yas-minor-mode flycheck-mode eldoc-mode font-lock-mode)
-  7018
-  '(1539 nil)
-  nil
-  nil
-  '((buffer-display-time 27195 43578 713589 416000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (1128 6951 7366 7018 6654))))
-
-(desktop-create-buffer 208
-  "/home/smagri/proj/testing.emacs/a1_skeleton.doxygen.experiments/controller.cpp"
-  "controller.cpp"
+  "/home/smagri/proj/arduino/radarI2Cssd1309.copy/src/main.cpp"
+  "main.cpp"
   'c++-mode
-  '(lsp-ui-doc-mode lsp-ui-sideline-mode lsp-ui-mode lsp-mode company-mode lsp-completion-mode flycheck-mode lsp-diagnostics-mode lsp-modeline-code-actions-mode lsp-modeline-diagnostics-mode lsp-modeline-workspace-status-mode eldoc-mode lsp-managed-mode font-lock-mode yas-minor-mode)
-  645
-  '(511 nil)
+  '(company-mode lsp-completion-mode flycheck-mode lsp-diagnostics-mode lsp-modeline-code-actions-mode lsp-modeline-diagnostics-mode lsp-modeline-workspace-status-mode lsp-ui-doc-mode lsp-ui-sideline-mode lsp-ui-mode eldoc-mode lsp-managed-mode lsp-mode font-lock-mode yas-minor-mode helm-gtags-mode)
+  22437
+  '(1562 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 27195 43578 713589 150000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (94 535 535 698 645))))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27197 2398 796390 325000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (22437))))
 
 (desktop-create-buffer 208
   "/home/smagri/proj/testing.emacs/main.cpp.48434.cpp"
   "main.cpp.48434.cpp"
   'c++-mode
-  '(company-mode lsp-completion-mode flycheck-mode lsp-diagnostics-mode lsp-modeline-code-actions-mode lsp-modeline-diagnostics-mode lsp-modeline-workspace-status-mode lsp-ui-doc-mode lsp-ui-sideline-mode lsp-ui-mode eldoc-mode lsp-managed-mode lsp-mode yas-minor-mode font-lock-mode)
-  1190
-  '(1190 nil)
+  '(company-mode lsp-completion-mode flycheck-mode lsp-diagnostics-mode lsp-modeline-code-actions-mode lsp-modeline-diagnostics-mode lsp-modeline-workspace-status-mode lsp-ui-doc-mode lsp-ui-sideline-mode lsp-ui-mode eldoc-mode lsp-managed-mode lsp-mode font-lock-mode yas-minor-mode helm-gtags-mode)
+  18095
+  '(23264 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 27195 43578 713588 762000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (1191))))
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27197 2250 943784 30000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (18095 1944 18880 18095))))
+
+(desktop-create-buffer 208
+  "/home/smagri/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(font-lock-mode eldoc-mode flycheck-mode yas-minor-mode company-mode)
+  21688
+  '(1 nil)
+  nil
+  nil
+  '((buffer-display-time 27197 2398 796390 575000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
 

@@ -245,9 +245,9 @@
   (define-key company-active-map (kbd "<tab>") #'company-complete-selection)
 
 ;; Need them for tab completion in suggestions 
-;;   ;; Keep TAB free for indentation/yasnippet
-  ;;(define-key company-active-map (kbd "TAB") nil)
-  ;;(define-key company-active-map (kbd "<tab>") nil)
+;; Keep TAB free for indentation/yasnippet
+;;  (define-key company-active-map (kbd "TAB") nil)
+;;  (define-key company-active-map (kbd "<tab>") nil)
   )
 
 
@@ -264,6 +264,63 @@
   (if (bound-and-true-p lsp-mode)
       (lsp-format-buffer)
     (indent-region (point-min) (point-max))))
+
+
+
+
+;;; ------------------------------------------------------------
+;;; Fix bad C++ completion spacing on current line only
+;;; Example:
+;;; bool  Controller:: setTolerance(double tolerance){
+;;; becomes:
+;;; bool Controller::setTolerance(double tolerance) {
+;;; ------------------------------------------------------------
+
+(defun sm/cpp-fix-function-spacing-current-line ()
+  "Fix common bad C++ completion spacing on the current line only."
+  (interactive)
+  (save-excursion
+    (let* ((beg (line-beginning-position))
+           (end (line-end-position))
+           (line (buffer-substring-no-properties beg end)))
+
+      ;; Remove the old line
+      (delete-region beg end)
+
+      ;; Preserve leading indentation
+      (let* ((indent
+              (if (string-match "\\`[ \t]*" line)
+                  (match-string 0 line)
+                ""))
+             (body
+              (substring line (length indent))))
+
+        ;; Fix spacing in the non-indentation part of the line
+        (setq body (replace-regexp-in-string "[ \t]*::[ \t]*" "::" body))
+
+        ;; Collapse repeated spaces/tabs into one space
+        (setq body (replace-regexp-in-string "[ \t][ \t]+" " " body))
+
+        ;; Remove space before function parentheses:
+        ;; setTolerance (...) -> setTolerance(...)
+        (setq body
+              (replace-regexp-in-string
+               "\\([A-Za-z_~][A-Za-z0-9_~]*\\)[ \t]+("
+               "\\1("
+               body))
+
+        ;; Put one space before opening brace:
+        ;; ) { is preferred instead of ){
+        ;; (setq body
+        ;;       (replace-regexp-in-string
+        ;;        ")[ \t]*{"
+        ;;        ") {"
+        ;;        body))
+
+        ;; Insert fixed line
+        (insert indent body)))))
+
+;;(global-set-key (kbd "C-c f l") #'sm/cpp-fix-function-spacing-current-line)
 
 
 
@@ -385,6 +442,9 @@
 ;;; End of pristine .emacs
 ;;; ------------------------------------------------------------
 
+
+
+
 ;;; Emacs highlighting configuration
 ;;;
 (global-font-lock-mode 1)
@@ -485,8 +545,9 @@
 (electric-pair-mode 1)
 
 
-
+;; ============================================================
 ;; set titlebar to path/filename:
+;; ============================================================
 ;;
 ;; sets filename with full path %f
 ;; major mode type %m
@@ -678,6 +739,8 @@
   (add-hook 'c++-mode-hook #'lsp-deferred))
 
 
+
+
 ;; Personal general key mappings, put here so other mode remappings
 ;; get overridden, I don't like it when that happens.
 ;;(global-set-key (kbd "\C-cg")   'goto-line)
@@ -697,3 +760,9 @@
 (global-set-key (kbd "C-c l s") #'lsp-restart-workspace)
 (global-set-key (kbd "C-c f b") #'smagri-format-buffer)
 
+;;C-c f  l fix bad completion  spacing on current line  only, must put
+;;cursor somewhere on the line
+(global-set-key (kbd "C-c f l") #'sm/cpp-fix-function-spacing-current-line)
+
+;;C-c f b    clang-format whole buffer, only when deliberately wanted
+(global-set-key (kbd "C-c f f") #'sm/clang-format-current-defun)
