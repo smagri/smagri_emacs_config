@@ -252,6 +252,7 @@
 
 
 
+
 ;; ============================================================
 ;; Format current buffer using LSP / clangd / clang-format
 ;;
@@ -276,51 +277,197 @@
 ;;; bool Controller::setTolerance(double tolerance) {
 ;;; ------------------------------------------------------------
 
-(defun sm/cpp-fix-function-spacing-current-line ()
-  "Fix common bad C++ completion spacing on the current line only."
+;; (defun sm/cpp-fix-function-spacing-current-line ()
+;;   "Fix common bad C++ completion spacing on the current line only."
+;;   (interactive)
+;;   (save-excursion
+;;     (let* ((beg (line-beginning-position))
+;;            (end (line-end-position))
+;;            (line (buffer-substring-no-properties beg end)))
+
+;;       ;; Remove the old line
+;;       (delete-region beg end)
+
+;;       ;; Preserve leading indentation
+;;       (let* ((indent
+;;               (if (string-match "\\`[ \t]*" line)
+;;                   (match-string 0 line)
+;;                 ""))
+;;              (body
+;;               (substring line (length indent))))
+
+;;         ;; Fix spacing in the non-indentation part of the line
+;;         (setq body (replace-regexp-in-string "[ \t]*::[ \t]*" "::" body))
+
+;;         ;; Collapse repeated spaces/tabs into one space
+;;         (setq body (replace-regexp-in-string "[ \t][ \t]+" " " body))
+
+;;         ;; Remove space before function parentheses:
+;;         ;; setTolerance (...) -> setTolerance(...)
+;;         (setq body
+;;               (replace-regexp-in-string
+;;                "\\([A-Za-z_~][A-Za-z0-9_~]*\\)[ \t]+("
+;;                "\\1("
+;;                body))
+
+;;         ;; Put one space before opening brace:
+;;         ;; ) { is preferred instead of ){
+;;         ;; (setq body
+;;         ;;       (replace-regexp-in-string
+;;         ;;        ")[ \t]*{"
+;;         ;;        ") {"
+;;         ;;        body))
+
+;;         ;; Insert fixed line
+;;         (insert indent body)))))
+
+;; ;;(global-set-key (kbd "C-c f l") #'sm/cpp-fix-function-spacing-current-line)
+;; ------------------------------------------------------------
+;; Fix bad C++ completion spacing on current line
+;; Examples:
+;;   Controller:: setTolerance  -> Controller::setTolerance
+;;   u8g2. clearBuffer          -> u8g2.clearBuffer
+;;   obj-> method               -> obj->method
+;; ------------------------------------------------------------
+
+;; (defun smagri-fix-cpp-current-line-spacing ()
+;;   "Fix unwanted spaces inserted by completion on the current C/C++ line."
+;;   (interactive)
+;;   (save-excursion
+;;     (save-restriction
+;;       ;; Only operate on the current line.
+;;       (narrow-to-region (line-beginning-position) (line-end-position))
+
+;;       ;; Fix spaces around ::
+;;       ;; Example: Controller:: setTolerance -> Controller::setTolerance
+;;       (goto-char (point-min))
+;;       (while (re-search-forward
+;;               "\\([A-Za-z_~][A-Za-z0-9_~]*\\)\\s-*::\\s-*\\([A-Za-z_~][A-Za-z0-9_~]*\\)"
+;;               nil t)
+;;         (replace-match "\\1::\\2"))
+
+;;       ;; Fix spaces around .
+;;       ;; Example: u8g2. clearBuffer -> u8g2.clearBuffer
+;;       (goto-char (point-min))
+;;       (while (re-search-forward
+;;               "\\([A-Za-z_][A-Za-z0-9_]*\\)\\s-*\\.\\s-*\\([A-Za-z_][A-Za-z0-9_]*\\)"
+;;               nil t)
+;;         (replace-match "\\1.\\2"))
+
+;;       ;; Fix spaces around ->
+;;       ;; Example: ptr-> method -> ptr->method
+;;       (goto-char (point-min))
+;;       (while (re-search-forward
+;;               "\\([A-Za-z_][A-Za-z0-9_]*\\)\\s-*->\\s-*\\([A-Za-z_][A-Za-z0-9_]*\\)"
+;;               nil t)
+;;         (replace-match "\\1->\\2")))))
+
+;; ;;(global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
+
+
+;;; ------------------------------------------------------------
+;;; Fix bad C++ / Arduino completion spacing on current line
+;;;
+;;; Examples:
+;;;   Controller:: setTolerance  -> Controller::setTolerance
+;;;   u8g2. clearBuffer          -> u8g2.clearBuffer
+;;;   obj-> method               -> obj->method
+;;;
+;;; Use:
+;;;   Put cursor on the bad line, then press C-c f l
+;;; ------------------------------------------------------------
+
+;; (defun smagri-fix-cpp-current-line-spacing ()
+;;   "Remove unwanted spaces around C++ member/function operators on current line."
+;;   (interactive)
+;;   (save-excursion
+;;     (let ((beg (line-beginning-position))
+;;           (end (line-end-position)))
+
+;;       ;; Fix spaces around ->
+;;       ;; obj-> method  or  obj -> method  becomes obj->method
+;;       (goto-char beg)
+;;       (while (re-search-forward "[ \t]*->[ \t]*" end t)
+;;         (replace-match "->" nil nil)
+;;         (setq end (line-end-position)))
+
+;;       ;; Fix spaces around ::
+;;       ;; Controller:: setTolerance becomes Controller::setTolerance
+;;       (goto-char beg)
+;;       (while (re-search-forward "[ \t]*::[ \t]*" end t)
+;;         (replace-match "::" nil nil)
+;;         (setq end (line-end-position)))
+
+;;       ;; Fix spaces around .
+;;       ;; u8g2. clearBuffer becomes u8g2.clearBuffer
+;;       (goto-char beg)
+;;       (while (re-search-forward "[ \t]*\\.[ \t]*" end t)
+;;         (replace-match "." nil nil)
+;;         (setq end (line-end-position)))))
+
+;;   (message "Fixed C++ spacing on current line"))
+
+;; ;;(global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
+;;; ------------------------------------------------------------
+;;; Fix bad C++ / Arduino completion spacing on current line
+;;;
+;;; Examples:
+;;;   Controller:: setTolerance      -> Controller::setTolerance
+;;;   Ackerman::Ackerman::  setGoal  -> Ackerman::Ackerman::setGoal
+;;;   u8g2. clearBuffer              -> u8g2.clearBuffer
+;;;   obj-> method                   -> obj->method
+;;;   int tw =  u8g2.func()          -> int tw = u8g2.func()
+;;;   bool   Ackerman::func()        -> bool Ackerman::func()
+;;;
+;;; Use:
+;;;   Put cursor on the bad line, then press C-c f l
+;;; ------------------------------------------------------------
+
+(defun smagri-fix-cpp-current-line-spacing ()
+  "Fix unwanted spaces inserted by completion on the current C/C++ line."
   (interactive)
   (save-excursion
-    (let* ((beg (line-beginning-position))
-           (end (line-end-position))
-           (line (buffer-substring-no-properties beg end)))
+    (let ((beg (line-beginning-position))
+          (end (line-end-position)))
 
-      ;; Remove the old line
-      (delete-region beg end)
+      ;; Fix spaces around ->
+      ;; obj-> method  or  obj -> method  becomes obj->method
+      (goto-char beg)
+      (while (re-search-forward "[ \t]*->[ \t]*" end t)
+        (replace-match "->" nil nil)
+        (setq end (line-end-position)))
 
-      ;; Preserve leading indentation
-      (let* ((indent
-              (if (string-match "\\`[ \t]*" line)
-                  (match-string 0 line)
-                ""))
-             (body
-              (substring line (length indent))))
+      ;; Fix spaces around ::
+      ;; Controller:: setTolerance becomes Controller::setTolerance
+      ;; Ackerman::Ackerman::  setGoal becomes Ackerman::Ackerman::setGoal
+      (goto-char beg)
+      (while (re-search-forward "[ \t]*::[ \t]*" end t)
+        (replace-match "::" nil nil)
+        (setq end (line-end-position)))
 
-        ;; Fix spacing in the non-indentation part of the line
-        (setq body (replace-regexp-in-string "[ \t]*::[ \t]*" "::" body))
+      ;; Fix spaces around .
+      ;; u8g2. clearBuffer becomes u8g2.clearBuffer
+      (goto-char beg)
+      (while (re-search-forward "[ \t]*\\.[ \t]*" end t)
+        (replace-match "." nil nil)
+        (setq end (line-end-position)))
 
-        ;; Collapse repeated spaces/tabs into one space
-        (setq body (replace-regexp-in-string "[ \t][ \t]+" " " body))
+      ;; Collapse repeated spaces inside the line, but keep indentation.
+      ;; This fixes:
+      ;;   bool   Ackerman::func()
+      ;;   int tw =  u8g2.func()
+      ;;
+      ;; Do not use this helper on comment/string lines where you want
+      ;; multiple spaces preserved.
+      (goto-char beg)
+      (skip-chars-forward " \t" end)
+      (while (re-search-forward "[ \t][ \t]+" end t)
+        (replace-match " " nil nil)
+        (setq end (line-end-position)))))
 
-        ;; Remove space before function parentheses:
-        ;; setTolerance (...) -> setTolerance(...)
-        (setq body
-              (replace-regexp-in-string
-               "\\([A-Za-z_~][A-Za-z0-9_~]*\\)[ \t]+("
-               "\\1("
-               body))
+  (message "Fixed C++ spacing on current line"))
 
-        ;; Put one space before opening brace:
-        ;; ) { is preferred instead of ){
-        ;; (setq body
-        ;;       (replace-regexp-in-string
-        ;;        ")[ \t]*{"
-        ;;        ") {"
-        ;;        body))
-
-        ;; Insert fixed line
-        (insert indent body)))))
-
-;;(global-set-key (kbd "C-c f l") #'sm/cpp-fix-function-spacing-current-line)
+;;(global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
 
 
 
@@ -727,16 +874,23 @@
 ;; ==================================================================
 ;; Setup Arduino code
 ;;
+;; ==================================================================
+
 ;; Treat Arduino .ino files as C++ files for clangd/lsp-mode.
 (add-to-list 'auto-mode-alist '("\\.ino\\'" . c++-mode))
 
 ;; Treat .h files as C++ by default.
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
-;; Start LSP/clangd for C, C++, Arduino .ino files opened as c++-mode.
-(with-eval-after-load 'cc-mode
-  (add-hook 'c-mode-hook #'lsp-deferred)
-  (add-hook 'c++-mode-hook #'lsp-deferred))
+;; C / C++ / Arduino files use clangd through lsp-mode
+(add-hook 'c-mode-hook #'lsp-deferred)
+(add-hook 'c++-mode-hook #'lsp-deferred)
+
+;; IntelliSense in cpp files that have arduino libraries in them
+(setq lsp-clients-clangd-args
+      '("--background-index"
+        "--completion-style=detailed"
+        "--header-insertion=iwyu"))
 
 
 
@@ -762,7 +916,8 @@
 
 ;;C-c f  l fix bad completion  spacing on current line  only, must put
 ;;cursor somewhere on the line
-(global-set-key (kbd "C-c f l") #'sm/cpp-fix-function-spacing-current-line)
-
+;;(global-set-key (kbd "C-c f l") #'sm/cpp-fix-function-spacing-current-line)
+;;(global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
+(global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
 ;;C-c f b    clang-format whole buffer, only when deliberately wanted
 (global-set-key (kbd "C-c f f") #'sm/clang-format-current-defun)
