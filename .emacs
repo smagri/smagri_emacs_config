@@ -200,6 +200,12 @@
 
 
 
+;;
+;; For micropython projects disable flycheck, it produces false errors
+;;
+
+
+
 ;;; ------------------------------------------------------------
 ;;; Completion popup: company-mode
 ;;; ------------------------------------------------------------
@@ -553,6 +559,8 @@
 (electric-pair-mode 1)
 
 
+
+
 ;; ============================================================
 ;; set titlebar to path/filename:
 ;; ============================================================
@@ -687,11 +695,25 @@
 
 
 
-;; chatGPT: But for now, I would leave both out until the rest of your .emacs is stable.
-(add-to-list 'load-path "~/.emacs.d/custom")
+;; Setup helm
+;;
+;; (add-to-list 'load-path "~/.emacs.d/custom")
+;; (require 'setup-helm)
+;; (require 'setup-helm-gtags)
+;;
+;;For now, test these three:
+;;M: (featurep 'setup-helm)
+;;M: (featurep 'helm)
+;;M: helm-mode
+;;If they all return t, then setup-helm is loading. - they do
+
+;; Tell Emacs where your personal setup files are
+(add-to-list 'load-path
+             (file-name-as-directory
+              (expand-file-name "custom" user-emacs-directory)))
+
 (require 'setup-helm)
 (require 'setup-helm-gtags)
-
 
 
 
@@ -713,9 +735,11 @@
 
 ;; ============================================================
 ;; AVR register/function highlighting
+;;
 ;; Highlight AVR registers and functions.  This will make the main AVR
-;; symbols colored like keywords. You can extend the list with any                                                  
-;; registers you use.                                                                    
+;; symbols colored  like keywords.  You can extend  the list  with any
+;; registers you use.
+;;
 ;; Cosmetic only. Safe with lsp-mode/company.
 ;; ============================================================
 
@@ -783,8 +807,6 @@
 
 ;;C-c f  l fix bad completion  spacing on current line  only, must put
 ;;cursor somewhere on the line
-;;(global-set-key (kbd "C-c f l") #'sm/cpp-fix-function-spacing-current-line)
-;;(global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
 (global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
 ;;C-c f b    clang-format whole buffer, only when deliberately wanted
 (global-set-key (kbd "C-c f f") #'sm/clang-format-current-defun)
