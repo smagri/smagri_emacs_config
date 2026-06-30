@@ -2,54 +2,54 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Thu Jun 25 20:56:34 2026
+;; Created Tue Jun 30 18:35:28 2026
 ;; Desktop file format version 208
 ;; Emacs version 30.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (27197 2402 92988 408000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-27-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (lsp-ui-doc-buffer . "Unprintable entity") (frameset--id . "E92A-0F2F-A9B1-10F5") (frameset--mini t . t) (height . 59) (width . 238) (modeline . t) (unsplittable) (left . 3840) (top . 54) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 55) (min-height-ignore . 2) (min-width-ignore . 12) (min-height-safe . 1) (min-width-safe . 6) (min-pixel-height . 128) (min-pixel-width . 880) (min-pixel-height-ignore . 64) (min-pixel-width-ignore . 192) (min-pixel-height-safe . 32) (min-pixel-width-safe . 96)) hc (pixel-width . 3840) (pixel-height . 1868) (total-width . 240) (total-height . 58) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 560) (pixel-height . 1868) (total-width . 35) (total-height . 58) (normal-height . 1.0) (normal-width . 0.14583333333333331) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Buffer-#<frame *scratch* 0x604cef28efb0>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 704) (start . 41))) (hc (last . t) (pixel-width . 3280) (pixel-height . 1868) (total-width . 205) (total-height . 58) (normal-height . 1.0) (normal-width . 0.8541666666666667) (combination-limit) (leaf (pixel-width . 1632) (pixel-height . 1868) (total-width . 102) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5) (buffer "main.cpp" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 22437) (start . 21114)) (prev-buffers ("main.cpp.48434.cpp" 17096 18095) ("*scratch*" 1 147))) (leaf (last . t) (pixel-width . 1648) (pixel-height . 1868) (total-width . 103) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5) (buffer ".emacs" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 21688) (start . 19456)) (prev-buffers ("*scratch*" 1 147))))))])
+(setq desktop-saved-frameset [frameset 1 (27203 32720 508652 261000) (desktop . "208") "smagri@texas" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-regular-normal-normal-*-27-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 0) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "white") (background-color . "#000015") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 32) (right-fringe . 0) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tab-bar-lines . 0) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 32) (scroll-bar-height . 32) (alpha) (alpha-background) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (use-frame-synchronization) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "white") (font-parameter) (sticky) (shaded) (environment) (dnd-root-window-position) (last-focus-update . t) (lsp-ui-doc-buffer . "Unprintable entity") (frameset--id . "AA5B-DF2A-EB9C-A129") (frameset--mini t . t) (height . 59) (width . 238) (modeline . t) (unsplittable) (left . 3840) (top . 54) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 55) (min-height-ignore . 2) (min-width-ignore . 12) (min-height-safe . 1) (min-width-safe . 6) (min-pixel-height . 128) (min-pixel-width . 880) (min-pixel-height-ignore . 64) (min-pixel-width-ignore . 192) (min-pixel-height-safe . 32) (min-pixel-width-safe . 96)) hc (pixel-width . 3840) (pixel-height . 1868) (total-width . 240) (total-height . 58) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 560) (pixel-height . 1868) (total-width . 35) (total-height . 58) (normal-height . 1.0) (normal-width . 0.14583333333333331) (parameters (window-side . left) (window-slot . 0)) (buffer " *Treemacs-Buffer-#<frame *scratch* 0x62085b747fb0>" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated . t) (point . 763) (start . 106))) (hc (last . t) (pixel-width . 3280) (pixel-height . 1868) (total-width . 205) (total-height . 58) (normal-height . 1.0) (normal-width . 0.8541666666666667) (combination-limit . t) (leaf (pixel-width . 1648) (pixel-height . 1868) (total-width . 103) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5) (buffer "ackerman.cpp" (selected) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1721) (start . 1)) (prev-buffers ("CMakeLists.txt" 1 1) ("*scratch*" 1 147))) (leaf (last . t) (pixel-width . 1632) (pixel-height . 1868) (total-width . 102) (total-height . 58) (normal-height . 1.0) (normal-width . 0.5) (buffer ".emacs" (selected . t) (hscroll . 0) (fringes 32 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 7741) (start . 6345)) (prev-buffers ("CMakeLists.txt" 1 890))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("main(" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("d" 0 1 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq search-ring nil)
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs"))
+(setq file-name-history '("~/smagri_emacs_config/.emacs"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/smagri/proj/arduino/radarI2Cssd1309.copy/src/main.cpp"
-  "main.cpp"
-  'c++-mode
-  '(company-mode lsp-completion-mode flycheck-mode lsp-diagnostics-mode lsp-modeline-code-actions-mode lsp-modeline-diagnostics-mode lsp-modeline-workspace-status-mode lsp-ui-doc-mode lsp-ui-sideline-mode lsp-ui-mode eldoc-mode lsp-managed-mode lsp-mode font-lock-mode yas-minor-mode helm-gtags-mode)
-  22437
-  '(1562 nil)
-  nil
-  nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27197 2398 796390 325000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (22437))))
-
-(desktop-create-buffer 208
-  "/home/smagri/proj/testing.emacs/main.cpp.48434.cpp"
-  "main.cpp.48434.cpp"
-  'c++-mode
-  '(company-mode lsp-completion-mode flycheck-mode lsp-diagnostics-mode lsp-modeline-code-actions-mode lsp-modeline-diagnostics-mode lsp-modeline-workspace-status-mode lsp-ui-doc-mode lsp-ui-sideline-mode lsp-ui-mode eldoc-mode lsp-managed-mode lsp-mode font-lock-mode yas-minor-mode helm-gtags-mode)
-  18095
-  '(23264 nil)
-  nil
-  nil
-  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27197 2250 943784 30000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (18095 1944 18880 18095))))
-
-(desktop-create-buffer 208
-  "/home/smagri/.emacs"
+  "/home/smagri/smagri_emacs_config/.emacs"
   ".emacs"
   'emacs-lisp-mode
   '(font-lock-mode eldoc-mode flycheck-mode yas-minor-mode company-mode)
-  21688
-  '(1 nil)
+  7741
+  '(7689 nil)
   nil
   nil
-  '((buffer-display-time 27197 2398 796390 575000) (buffer-file-coding-system . undecided-unix))
+  '((buffer-display-time 27203 32717 340829 542000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (7689))))
+
+(desktop-create-buffer 208
+  "/home/smagri/proj/testing.emacs/a1_skeleton.doxygen.experiments/ackerman.cpp"
+  "ackerman.cpp"
+  'c++-mode
+  '(company-mode lsp-completion-mode flycheck-mode lsp-diagnostics-mode lsp-modeline-code-actions-mode lsp-modeline-diagnostics-mode lsp-modeline-workspace-status-mode lsp-ui-doc-mode lsp-ui-sideline-mode lsp-ui-mode eldoc-mode lsp-managed-mode lsp-mode font-lock-mode yas-minor-mode helm-gtags-mode)
+  1721
+  '(1722 nil)
+  nil
+  nil
+  '((tab-width . 4) (indent-tabs-mode) (buffer-display-time 27203 32717 340829 412000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/smagri/proj/testing.emacs/a1_skeleton.doxygen.experiments/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(font-lock-mode flycheck-mode yas-minor-mode company-mode)
+  890
+  '(890 nil)
+  nil
+  nil
+  '((buffer-display-time 27203 32638 793067 443000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1 890))))
 

@@ -1,4 +1,4 @@
-;;; ------------------------------------------------------------
+;; ------------------------------------------------------------
 ;;; Pristine Emacs 30.2 configuration for IntelliSense
 ;;; C / C++ / Arduino .ino / Python
 ;;; Uses: lsp-mode + company + flycheck
@@ -252,90 +252,80 @@
 
 ;; Need them for tab completion in suggestions 
 ;; Keep TAB free for indentation/yasnippet
-;;  (define-key company-active-map (kbd "TAB") nil)
-;;  (define-key company-active-map (kbd "<tab>") nil)
+  (define-key company-active-map (kbd "TAB") nil)
+  (define-key company-active-map (kbd "<tab>") nil)
   )
 
 
 
 
-;; ============================================================
-;; Format current buffer using LSP / clangd / clang-format
-;;
-;; Otherwise spaces occur in fn prototypes in cpp mode
-;; ============================================================
-
-(defun smagri-format-buffer ()
-  "Format the current buffer using lsp-mode if available."
-  (interactive)
-  (if (bound-and-true-p lsp-mode)
-      (lsp-format-buffer)
-    (indent-region (point-min) (point-max))))
-
-
-
-
-
 ;;; ------------------------------------------------------------
-;;; Fix bad C++ / Arduino completion spacing on current line
+;;; Fix bad C++ / Arduino completion spacing
 ;;;
-;;; Examples:
-;;;   Controller:: setTolerance      -> Controller::setTolerance
-;;;   Ackerman::Ackerman::  setGoal  -> Ackerman::Ackerman::setGoal
-;;;   u8g2. clearBuffer              -> u8g2.clearBuffer
-;;;   obj-> method                   -> obj->method
-;;;   int tw =  u8g2.func()          -> int tw = u8g2.func()
-;;;   bool   Ackerman::func()        -> bool Ackerman::func()
+;;; Works on:
+;;;   - active selected region, or
+;;;   - current line if no region is selected
 ;;;
-;;; Use:
-;;;   Put cursor on the bad line, then press C-c f l
+;;; Examples fixed:
+;;;   Controller:: setTolerance  -> Controller::setTolerance
+;;;   u8g2. clearBuffer          -> u8g2.clearBuffer
+;;;   obj-> method               -> obj->method
+;;; ------------------------------------------------------------
+;;; ------------------------------------------------------------
+;;; Safer C++ / Arduino completion spacing fixer
+;;; Skips comments and strings.
 ;;; ------------------------------------------------------------
 
-(defun smagri-fix-cpp-current-line-spacing ()
-  "Fix unwanted spaces inserted by completion on the current C/C++ line."
+(defun smagri-not-in-comment-or-string-p ()
+  "Return t when point is not inside a comment or string."
+  (not (nth 8 (syntax-ppss))))
+
+(defun smagri-fix-cpp-spacing-region-or-line ()
+  "Fix unwanted spaces inserted by C/C++/Arduino completion.
+If a region is selected, fix the region.
+Otherwise fix only the current line.
+Skips comments and strings."
   (interactive)
-  (save-excursion
-    (let ((beg (line-beginning-position))
-          (end (line-end-position)))
-
-      ;; Fix spaces around ->
-      ;; obj-> method  or  obj -> method  becomes obj->method
-      (goto-char beg)
-      (while (re-search-forward "[ \t]*->[ \t]*" end t)
-        (replace-match "->" nil nil)
-        (setq end (line-end-position)))
-
-      ;; Fix spaces around ::
-      ;; Controller:: setTolerance becomes Controller::setTolerance
-      ;; Ackerman::Ackerman::  setGoal becomes Ackerman::Ackerman::setGoal
-      (goto-char beg)
-      (while (re-search-forward "[ \t]*::[ \t]*" end t)
-        (replace-match "::" nil nil)
-        (setq end (line-end-position)))
-
-      ;; Fix spaces around .
-      ;; u8g2. clearBuffer becomes u8g2.clearBuffer
-      (goto-char beg)
-      (while (re-search-forward "[ \t]*\\.[ \t]*" end t)
-        (replace-match "." nil nil)
-        (setq end (line-end-position)))
-
-      ;; Collapse repeated spaces inside the line, but keep indentation.
-      ;; This fixes:
-      ;;   bool   Ackerman::func()
-      ;;   int tw =  u8g2.func()
+  (let* ((beg (if (use-region-p)
+                  (region-beginning)
+                (line-beginning-position)))
+         (end-marker (copy-marker
+                      (if (use-region-p)
+                          (region-end)
+                        (line-end-position)))))
+    (save-excursion
+      ;; Fix spaces after :: . ->
       ;;
-      ;; Do not use this helper on comment/string lines where you want
-      ;; multiple spaces preserved.
+      ;; Controller:: setGoal  -> Controller::setGoal
+      ;; u8g2. clearBuffer     -> u8g2.clearBuffer
+      ;; obj-> method          -> obj->method
       (goto-char beg)
-      (skip-chars-forward " \t" end)
-      (while (re-search-forward "[ \t][ \t]+" end t)
-        (replace-match " " nil nil)
-        (setq end (line-end-position)))))
+      (while (re-search-forward
+              "\\(::\\|\\.\\|->\\)[ \t]+\\([A-Za-z_~][A-Za-z0-9_~]*\\)"
+              end-marker
+              t)
+        (when (smagri-not-in-comment-or-string-p)
+          (replace-match "\\1\\2")))
 
-  (message "Fixed C++ spacing on current line"))
+      ;; Fix spaces before :: . ->
+      ;;
+      ;; Controller ::setGoal  -> Controller::setGoal
+      ;; u8g2 .clearBuffer     -> u8g2.clearBuffer
+      ;; obj ->method          -> obj->method
+      (goto-char beg)
+      (while (re-search-forward
+              "\\([A-Za-z0-9_>)\\]]\\)[ \t]+\\(::\\|\\.\\|->\\)"
+              end-marker
+              t)
+        (when (smagri-not-in-comment-or-string-p)
+          (replace-match "\\1\\2"))))))
 
-;;(global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
+(with-eval-after-load 'cc-mode
+  (define-key c-mode-base-map
+              (kbd "C-c f l")
+              #'smagri-fix-cpp-spacing-region-or-line))
+
+
 
 
 
@@ -803,10 +793,4 @@
 (global-set-key	"\C-xb"		'ibuffer)
 (global-set-key (kbd "C-c f m") #'meld-files)
 (global-set-key (kbd "C-c l s") #'lsp-restart-workspace)
-(global-set-key (kbd "C-c f b") #'smagri-format-buffer)
 
-;;C-c f  l fix bad completion  spacing on current line  only, must put
-;;cursor somewhere on the line
-(global-set-key (kbd "C-c f l") #'smagri-fix-cpp-current-line-spacing)
-;;C-c f b    clang-format whole buffer, only when deliberately wanted
-(global-set-key (kbd "C-c f f") #'sm/clang-format-current-defun)
